@@ -1,0 +1,115 @@
+\chapter{VMS based error estimator}
+
+\label{chapter:APEE} %a posteriori error estimator
+
+In this work, we focus on controlling the spatial discretization error through an \textit{a posteriori} error estimate.
+Ideally, \textit{a posteriori} error estimate must provide pointwise the exact error, $e^{exact}=u-u^h$, where $u$ is the exact solution and $u^h$ is the numerical approximation $u$, since knowing how the error varies over space allows us to better choose our spatial discretization. 
+Of course, knowledge of the exact error implies knowledge of the true solution rendering the simulation pointless.
+Therefore, we employ an approximate error estimate $\apee$ measured in some norm of interest such as the $L^2$ norm, $\HOne$ norm, or $\HOne$ semi-norm.
+We would like that the the error estimate has a local representation over an element $k$ and bounds (from above) the exact error.
+
+%The local error estimate property provides a means of motivating adaptive methods and the upper-bound property provides safety against underestimating the global error. 
+%An additional desired, but signficantly stronger, property would be to have the local error estimate bound the local true error.
+%To measure the performance of an error estimate, it is common practice to look at the global effectivity index, $\eta$, or simply effectivity
+
+%\begin{equation}
+%%\eta = \frac{\apee}{||u-u^h||_{*}}
+%\eta = \frac{\apee}{||e||_{*}^{exact}}
+%\end{equation}
+
+%\noindent which is the ratio between the estimated error and the exact error.
+%Note that a local effectivity can also be defined on the element-level.
+
+Many estimators, both explicit and implicit, have been developed and studied in the literature (e.g. see books by Ainsworth and Oden \cite{ainsworth2011book}, Verf\"urth \cite{verfurth2013posteriori}).
+%and convection-diffusion systems (reviewed by John \cite{john2000numerical} and Verfurth \cite{verfurth2005robust}).
+More recently, progress has been made in obtaining reliable explicit error estimates for the Navier-Stokes equations through the variational multi-scale approach (e.g. Hauke, Fuster, and Lizarraga \cite{hauke2015variational}).
+%Although even in the context of convection-diffusion systems, John \cite{john2000numerical} finds that there is no optimal approach for all situations.
+We employ the VMS-based error estimator since the VMS framework is currently used for LES and it is computationally inexpensive.
+
+%In this work, we develop an explicit error estimator for the Navier-Stokes equations similar to that found in Hauke \textit{et al} \cite{hauke2015variational} in that we take advantage of the variational multiscale approach (VMS), which yield local error estimates in the norm of our choice. 
+%A primary difference is in the norm which we choose to measure the error - $\HOne$ seminorm vs. $L^2$ or $L^1$.
+We first review the general formulation of the VMS approach.
+We then discuss the error estimator based on the VMS approach for a model 1D advection-diffusion problem followed by how it can be extended to a multi-dimensional setting.
+We then extend the VMS-based error estimator to the Navier-Stokes equations and periodic problems of interest.
+
+\section{General Formulation}
+\label{sec:VMS_form}
+
+%What is VMS?
+
+The VMS paradigm relies on the idea of decomposing spaces of interest into coarse-scale and fine-scale subspaces.
+The coarse-scale space represents our choice of spatial discretization and is therefore finite dimensional, whereas the fine-scale space encompasses the remainder of the space that our discretization cannot represent and is therefore infinite dimensional.
+More importantly, the fine-scale space is necessarily a representation of the spatial discretization error for the solution space.
+
+Let us specifically consider the trial and weighting spaces for some model finite element problem as $\mathcal{S}$ and $\mathcal{W}$, respectively.
+Let $\bar{\mathcal{S}}$ be a subset of $\mathcal{S}$ and let $\Projector: \mathcal{S} \rightarrow \bar{\mathcal{S}}$ be a linear projector such that $\Projector u = \bar{u}$ where $u \in \mathcal{S}$, $\bar{u} \in \bar{\mathcal{S}}$, and $Range(\Projector)=\bar{\mathcal{S}}$.
+This naturally leads to the definition of a complementary space $\mathcal{S}' = Kernel(\Projector)$ and allows for the direct sum decomposition $\mathcal{S} = \bar{\mathcal{S}} \oplus \mathcal{S}'$ and $\mathcal{W}$ = $\bar{\mathcal{W}} \oplus \mathcal{W}'$, where $\bar{\mathcal{S}}$ and $\bar{\mathcal{W}}$ represent the coarse-scale subspaces and $\mathcal{S}'$ and $\mathcal{W}'$ represent the fine-scale subspaces.
+$\bar{\mathcal{S}}$ is the same as $\mathcal{S}^h$ and $\bar{u}$ is the same as $u^h$. This equivalence applies for the coarse-scale weighting space as well. 
+We use the $\bar{\cdot}$ notation in this section to be consistent with the most prevalant literature on VMS-based error estimation (i.e., it is slightly different from the notation used in the previous section).
+
+Because of the direct-sum representation, we can also state that $u=\bar{u}+u'$ is a unique decomposition where $\bar{u} \in \bar{\mathcal{S}}$ and $u' \in \mathcal{S}'$ for any $u \in \mathcal{S}$.
+
+Consider the usual statement of a homogeneous linear partial-differential equation with linear operator $\mathcal{L}$ and forcing function $f$
+
+\begin{equation}
+    \mathcal{L}(u) = f \qquad u|_{\Gamma} = 0
+    \label{eq:modelProblem}
+\end{equation} 
+
+\noindent which yields the following finite element problem:
+find $u \in \mathcal{S}$ such that
+
+\begin{equation}
+    B(w,u) = (w,f), \qquad \forall w \in \mathcal{W}
+\end{equation} 
+
+\noindent where $B(\cdot,\cdot)$ is a bilinear form stemming from integration by parts of Equation \ref{eq:modelProblem} and $(\cdot,\cdot)$ is the $L^2$ inner product.
+
+Applying the scale decomposition and leveraging the direct-sum representation yields a coarse-scale problem and a fine-scale problem.
+
+Find $\bar{u} \in \bar{\mathcal{S}}$ such that
+\begin{equation}
+    B(\bar{w},\bar{u}) + B(\bar{w},u') = B(\bar{w},\bar{u}) + (\mathcal{L}^{*}\bar{w},u') = (\bar{w},f), \qquad \forall \bar{w} \in \bar{\mathcal{W}}
+\end{equation} 
+
+Find $u' \in \mathcal{S}'$ such that
+\begin{equation}
+    B(w',\bar{u}) + B(w',u') = (w',\mathcal{L}\bar{u}) + B(w',u') = (w',f), \qquad \forall w' \in \mathcal{W}'
+    \label{eq:fineScale}
+\end{equation}
+
+The coarse-scale problem is coupled with the fine-scale problem through $u'$, which again is conveniently also a representation of the discretization error.
+A further remark is that the coarse-scale problem has the form of a stabilized finite element method once a substitution for the form of $u'$ is made.
+The fine-scale problem does afford a solution (see Hughes and Sangalli \cite{hughes2007variational}), where
+
+\begin{equation}
+    u'(y_i) = -\int_{\Omega} g'(x_i,y_i)(\mathcal{L}\bar{u}-f)(x_i) d\Omega
+    \label{eq:uPrimeSoln}
+\end{equation} 
+
+\noindent where $g'(x_i,y_i)$ is the fine-scale Green's function with $x_i,y_j \in \Omega$, which is not known in general, except for certain cases - one of which is the 1D linear advection-diffusion equation.
+Since the Navier-Stokes equations have advective and diffusive properties, we use the 1D linear advection-diffusion as a starting point to derive the a posteriori error estimator.
+
+One final remark is that the form of the fine-scale Green's function is directly tied to the choice of projector $\Projector$.
+This equivalently also means that the various choices of $\Projector$ leads to different unique pairings of $u$ and $u'$.
+Hughes and Sangalli \cite{hughes2007variational} explored two options for the $\Projector$: $\Projector_{L^2}$ and $\Projector_{H^1}$, and found that for 1D advection-diffusion systems, the $\Projector_{H^1}$ led to a localization of $g'$ to single elements and led to an optimal solution for $\bar{u}$ in the $\HOne_0$-norm or $\HOne$-seminorm, making this choice a practical one.
+The localization of $g'$ is ideal for constructing local error estimators.
+
+\section{Formulation for 1D Advection-Diffusion Equation}
+\input{chapters/VMS_EE/Formulation1D}
+\label{sec:1D_AD}
+
+\subsection{Application to the Navier-Stokes Equations}
+\input{chapters/VMS_EE/App_toNS}
+
+\subsection{Application to Periodic Problems}
+\input{chapters/VMS_EE/App_toPeriodic}
+\label{sec:app_to_periodic}
+%\section{Non-dimensionalization of Error}
+
+%One convenient aspect of the VMS approach to obtaining an error estimate is that the resulting units of the estimate are  
+
+
+
+%%%xxx LATER Add a multi-D case (internal layer or boundary layer). Add a comment on Ainsworth 2013 paper with global effectivity order 60-100 for Pe of O(100).
+

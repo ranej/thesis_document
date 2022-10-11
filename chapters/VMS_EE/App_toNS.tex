@@ -1,0 +1,24 @@
+\label{sec:VMS_NS}
+As discussed previously, the Navier-Stokes equations possess advective and diffusive properties and extending the stabilization expressions from the 1D advection-diffusion to 3D Navier-Stokes have been effective in previous work.
+We follow the same path for applying Equation \ref{eq:VMSerr} to each momentum component of the Navier-Stokes equations and arrive at the following
+
+\begin{align}
+    \seminorm{\bm{e}^{NS}}^2_{\HOne(\Omega^h)} &= \sum_{i}\seminorm{e^{NS}_i}^2_{\HOne(\Omega^h_k)} \\
+    \seminorm{e^{NS}_i}_{\HOne(\Omega^h_k)} &= \seminorm{u_i'}_{\HOne(\Omega^h_k)} \approx \nu^{err,NS}_{k} \norm{\mathcal{R}^{NS}_i (\bar{u}_k)}_{L^2(\Omega^h_k)} \\
+    \nu^{err,NS}_{k} &= \dfrac{1}{\sqrt{ \nu\sqrt{\bar{u}_i g_{ij} \bar{u}_j} + 3\nu^2\sqrt{g_{ij}g_{ij}}  }  } \\
+    \label{eq:VMSerrNS}
+\end{align} 
+
+\noindent which uses the momentum residual $R^{NS}_i(\bar{u})=R^{NS}_i(u^h)$.
+
+The discretization error resulting from the continuity equation is ignored since it is generally insignificant compared to the momentum discretization error.
+
+\iffalse
+One noticeable omission from the $\nu^{err}_e$ expression is any dependency on the time step, which is commonly found in stabilization expressions. 
+As a reminder, the current form for the error-constant is derived from a steady-state advection-diffusion problem, and we are interested in the effectiveness of this current form.
+Any extensions to the error-constant pave the way for future work.
+
+This approach differs from previous work in that we use the $\HOne$-seminorm to measure the error whereas Hauke et al. \cite{hauke2008variational,hauke2015variational} focuses on the $L^2$ and $L^1$ norms. 
+Moreover, we reach the form of the error constant through a direct extension of the 1D advection-diffusion setting to multidimensional settings which has not been done previously.
+\fi
+

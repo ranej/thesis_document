@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            ROOT FILE                            %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+%  Run LaTeX or pdfLaTeX on this file to produce your thesis.
+%  To produce the abstract title page followed by the abstract,
+%  see the file abstitle-phd.tex or abstitle-mas.tex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[chap]{thesis}
+
+% Uncomment the following if you want centered-lined captions:
+\captionsetup{format=plain,justification=centering}
+
+
+%\includeonly{rpichap1}  % use \includeonly to process only
+                         % the file(s) listed inside the braces        
+                
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{longtable,tabularx}
+\usepackage{caption}
+\usepackage{subcaption}
+\setlength\LTleft{0pt} 
+
+\usepackage{float,amsmath,amssymb,bm,wrapfig}
+\newcommand{\ph}[0]{\mathbb{P}^h}
+\newcommand{\pp}[0]{\mathbb{P}'}
+\newcommand{\pH}[0]{\mathbb{P}^H}
+\newcommand{\pHk}[0]{\mathbb{P}^{H_k}}
+\newcommand{\fH}[0]{\mathbb{F}^{H}}
+\newcommand{\aH}[0]{\mathbb{A}^{H}}
+\newcommand{\aHk}[0]{\mathbb{A}^{H_k}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}  
+\usepackage{graphicx, amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{bm}
+\usepackage{mathtools,commath}
+\usepackage{placeins} %for floatbarrier
+%\usepackage{multirow} %used for table formatting
+\usepackage{tabularx}
+\usepackage{array} % for table formatting to avoid hyphenation
+\usepackage{siunitx} %for writing in scientific notation
+\usepackage{csquotes} %for quotes in boundary marker section
+\usepackage[hidelinks]{hyperref} %links to sections and figures
+
+\input{usercommands.tex}
+\begin{document}
+ 
+% Use the appropriate example title page.
+\include{rpititle-phd}   % titlepage material for PhD thesis 
+%\include{rpititle-mas}   % titlepage material for Master thesis 
+\include{rpiack}  % include for acknowledgements
+\include{rpiabs} % abstract
+\include{chapters/Introduction/Introduction} % chapter 1
+
+\include{chapters/LES/numerical_discretization} % chapter 2
+
+\include{chapters/VMS_EE/VMS_EE}
+\label{sec:VMSEE}
+
+\include{chapters/adapt_strat/Adapt_St}
+\label{adapt_strat}
+
+\include{bibtex_database.bib} % bibliography
+\include{rpiapp} % appendix
+
+
+ 
+\end{document}

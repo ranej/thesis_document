@@ -1,0 +1,205 @@
+In this section, we focus only on high Reynolds number flow ($Re=1,000,000$) at higher angle of attack of $\alpha=10^\circ$ and section advance ratios of $\mu_{sect}= 1.5$ and $2.0$. These advance ratios include a significant portion of the retreating phase with negative relative velocity or a reversed flow condition. 
+In this reverse flow condition, massive flow separation near the geometric trailing edge is observed, and as a result, a force is experienced by the airfoil along the surging direction. We try to mitigate this by applying active flow control in the form of active reflex camber. 
+
+The case with active reflex camber is referred as the actuated case.
+In the actuated case, the (geometric) trailing edge is deflected up by an angle of $\beta_{TE}$=$\alpha$=10$^\circ$, with the hinge point at the 3/4th or 75\% chord location (i.e., close to the trailing edge).
+The reflex camber is applied smoothly over a short period of time (both at activation and deactivation).
+The full reflex/deflection is achieved just before the reverse flow regime is encountered by the airfoil in the retreating phase, and the airfoil starts to return to its original/undeflected shape once the airfoil is out of the reverse flow.
+
+Figure \ref{fig:U_rel} shows the variation of $\tilde{U}_{rel}$ over the cycle at sectional advance ratio of $\mu_{sect}=1.5$ (blue dashed line) and $2.0$ (green solid line). The region with $\tilde{U}_{rel}<0$ shows the phases when reverse flow is encountered by the airfoil. The open circles on each curve represent the portion of the oscillation cycle when reflex camber is activated for that particular sectional advance ratio.
+
+
+\begin{figure}[H]
+	\begin{center}
+\texttt{}		\includegraphics[width=4in]{figures/U_rel_vs_t_tilde_without_lines.png}
+		\caption{Variation of $\tilde{U}_{rel}$ at $\mu_{sect}=1.5$ (green solid line) and $2.0$ (blue dashed line), open circles on each curve represent the portion of the oscillation cycle when reflex camber is activated}
+		% with $\tilde{t}$ for $\lambda = 1.5$; shaded region where actuated camber is employed; red vertical lines showing instances where data is captured}
+		\label{fig:U_rel}
+	\end{center}
+\end{figure}
+
+
+
+Table~\ref{table:summary_cases} provides a summary of the current cases. $\beta_{TE}=0$ refers to the non-actuated case while $\beta_{TE}=\alpha$ is the actuated case.
+
+\begin{table}[H]
+	\centering
+	\caption{Summary of cases}
+	\label{table:summary_cases}
+	\begin{tabular}{|l|c|c|c|c|c|}
+		\hline
+		Airfoil   & $\alpha$ & $k$ & $\mu_{sect}$ & $Re$ (mean) & $\beta_{TE}$\\
+		\hline
+		\hline
+		NACA 0012 & 10$^\circ$ & $0.133$ & \{1.5, 2.0\} & 1,000,000 & \{0,$\alpha$\} \\
+		\hline
+		
+	\end{tabular}
+	
+\end{table}
+
+The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:baseline_cases}.
+Also, as noted earlier, an ALE description is used to account for the motion and deformation of the airfoil.
+Mesh deformation is currently prescribed based on the motion and deformation of the airfoil.
+The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}.
+
+The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:baseline_cases}.
+Also, as noted earlier, an ALE description is used to account for the motion and deformation of the airfoil.
+Mesh deformation is currently prescribed based on the motion and deformation of the airfoil.
+The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Setup/mesh}
+		\caption{non-actuated case}
+		\label{fig:mesh_non-actuated}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Setup/mesh_AC}
+		\caption{actuated case (with reflex camber)}
+		\label{fig:mesh_actuated}
+	\end{subfigure}
+	\caption{Mesh around the airfoil for the non-actuated and actuated cases during the reverse flow region}
+	\label{fig:mesh3}
+\end{figure}
+
+Instantaneous spanwise vorticity over the oscillation cycle at a few different phases of interest (i.e., in the retreating phase of the cycle) is shown in Figure \ref{fig:vortScreen_mu2pt0} for the higher sectional advance ratio of $\mu_{sect}=2.0$.
+We focus our attention on the flow separation near the (geometric) trailing edge region, and note the significant difference in the separated region due to active reflex camber.
+
+Four different phases over the retreating phase of the cycle are shown, and vorticity range is selected to be [-30,30]$ U_{sect} /C$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
+Reflex camber is activated at the phase of $\psi$=$200^\circ$ and reaches the full deflection at $\psi$=$205^\circ$.
+After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$335^\circ$, and smoothly reaches its original shape at $\psi$=$340^\circ$.
+
+As the airfoil trailing edge is deflected upwards for this actuated case with $\mu_{sect}=2.0$, a small vortex is formed near it. Roll up of the boundary layer and LEV formation is seen for both non-actuated and actuated cases at $\psi$=$210^\circ$.
+The flow separation near the trailing edge starts to form at the phase of $\psi$=$225^\circ$.
+
+In the subsequent phases after $\psi$=$225^\circ$ the size of the separated region increases for the non-actuated case till up to $\psi$=$285^\circ$.
+%However, the separation bubble is larger in the non-actuated case with $\mu_{sect}=2.0$ as compared to that with $\mu_{sect}=1.5$.
+For the actuated case, the separated region is relatively small (see Figures \ref{fig:mu_2pt0_non-actuated_psi270} and \ref{fig:mu_2pt0_AC_psi270}) and its size remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$.
+Overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
+The implications of this trailing-edge separated region on the drag force is discussed further below.
+
+After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both non-actuated and actuated cases, see Figures \ref{fig:mu_2pt0_non-actuated_psi315} and \ref{fig:mu_2pt0_AC_psi315}. 
+For the actuated case at $\psi$=$345^\circ$, the reflexed trailing edge is at its undeflected position.
+As the trailing edge is deflected down to its original position, this results in the formation of a small vortex as seen in Figure \ref{fig:mu_2pt0_AC_psi345}.
+
+
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_225.png}
+	\caption{ $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
+	\label{fig:mu_2pt0_non-actuated_psi225}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_225.png}
+	\caption{ $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
+	\label{fig:mu_2pt0_AC_psi225}
+\end{subfigure}
+
+	
+
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_270.png}
+	\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+	\label{fig:mu_2pt0_non-actuated_psi270}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_270.png}
+	\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+	\label{fig:mu_2pt0_AC_psi270}
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_315.png}
+	\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+	\label{fig:mu_2pt0_non-actuated_psi315}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_315.png}
+	\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+	\label{fig:mu_2pt0_AC_psi315}
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_345.png}
+	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+	\label{fig:mu_2pt0_non-actuated_psi345}
+\end{subfigure}
+\begin{subfigure}[b]{0.4\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_345.png}
+	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+	\label{fig:mu_2pt0_AC_psi345}
+\end{subfigure}
+
+
+
+	\caption{Instantaneous spanwise vorticity at 4 different phases for the non-actuated (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
+\label{fig:vortScreen_mu2pt0}
+\end{figure}
+
+Figure \ref{fig:total_drag_zoomed_mu_2pt0} shows the behavior of the total drag in the reverse flow region for the non-actuated and actuated cases at $\mu_{sect}=2.0$. As before, the total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
+The drag is negative in the majority of the reverse flow region.
+For $\mu_{sect}=2.0$, the reduction in the negative drag due to active reflex camber is significant.
+
+Again, in the non-actuated case the drag fluctuates in the reverse flow region.
+On the other hand, the drag is fairly monotonic in the actuated case.
+In the non-actuated case, the drag exhibits a local maximum around $\psi=220^\circ$ and a local minimum around $\psi=285^\circ$.
+The resulting peak-to-peak variation in the non-actuated case is substantial, as shown in Figure \ref{fig:total_drag_zoomed_mu_2pt0}.
+This peak-to-peak variation in the reverse flow region is mitigated in the actuated case.
+This is because the trailing-edge separation bubble in the actuated case is substantially smaller and remains fairly constant in size during the reverse flow region, see Figure ~\ref{fig:vortScreen_mu2pt0}.
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png}
+	\caption{Normalized total drag in the reverse flow region for the non-actuated (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=2.0$}
+	\label{fig:total_drag_zoomed_mu_2pt0}
+\end{figure}
+
+Table \ref{table:D_ratios_mu_2pt0} provides the ratios of the different components of the drag at three phases. At $\psi=240^\circ$, the total drag in the actuated case is about 0.36 times of the total drag in the non-actuated case. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.26 and 0.24, respectively. That is we observe a reduction by up to 76\% in the total drag.
+Note that the pressure drag ratios are very similar to the total drag ratios (since at these phases the pressure drag dominates over the viscous drag).
+
+\begin{table}[H]
+%   \begin{wraptable}[10]{l}[.005in]{3in}
+	\vspace{0cm}
+	\centering
+\caption{Drag ratios ($\mu_{sect} = 2.0$ )}
+\label{table:D_ratios_mu_2pt0}
+\begin{tabular}{|l|c|c|c|}
+	\hline
+	$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
+	\hline
+	\hline
+	$240^\circ$ & 0.36 & 0.35 & 1.44   \\
+	\hline
+	$255^\circ$ & 0.26 & 0.24 & 2.34   \\
+	\hline
+	$270^\circ$ & 0.24 & 0.22 & 4.19   \\
+	\hline
+%	$285^\circ$ & 0.14 & 0.12 & -5.95   \\
+%	\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+

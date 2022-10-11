@@ -1,0 +1,68 @@
+\usepackage{algorithm}
+
+
+
+%Bold line numbers
+% Default definition is \footnotesize#1:
+%\algrenewcommand\alglinenumber[1]{%
+%  \footnotesize\ifboldnumber\bfseries\fi\global\boldnumberfalse#1:}
+\algrenewcommand\alglinenumber[1]{%
+  \footnotesize\bfseries#1:}
+
+
+
+%\newcommand{\boldu}{\boldsymbol{u}}
+\newcommand{\NS}{\mathbf{u}}
+\newcommand{\wNS}{\mathbf{w}}
+\newcommand{\boldu}{\mathbf{u}}
+\newcommand{\vof}{\hat{H}}
+\newcommand{\wvof}{w_{\hat{H}}}
+\newcommand{\LS}{\phi}
+\newcommand{\wLS}{w_{\phi}}
+\newcommand{\signed}{S_{\epsilon}}
+\newcommand{\RD}{\phi_d}
+\newcommand{\wRD}{w_{\phi_d}}
+\newcommand{\MC}{\phi_c}
+\newcommand{\wMC}{w_{\phi_c}}
+\newcommand{\xvec}{\mathbf{x}}
+\newcommand{\yvec}{\mathbf{y}}
+
+\newcommand{\wAD}{w_{\psi}}
+
+
+%figure lengths
+\newcommand{\marinL}{0.6\textwidth}
+
+
+\newcommand{\HeaviEps}{H_{\epsilon}} %smoothed heaviside function
+\newcommand{\SignFunc}{S_{\epsilon}} %smoothed sign function
+
+
+\newcommand{\Projector}{\mathcal{P}} %smoothed sign function
+\newcommand{\HOne}{H^{1}} %H1 space shortcut
+
+\newcommand{\apee}{||e||_{*}} %error 
+\newcommand{\seminorm}[1]{|#1|}
+\newcommand{\mesh}{\mathcal{M}}
+\newcommand{\adjacent}[1]{\mathcal{A}^1_0(#1)}
+
+\newcommand{\gradation}{\beta}
+%\newcommand{\errtarget}{e_{target}}
+\newcommand{\errtarget}{e^{target}_{loc}}
+\newcommand{\sizefield}{\mathcal{F}^{h}}
+\newcommand{\solutionfield}{\mathcal{F}^{S}}
+\newcommand{\metriclength}{\chi}
+\newcommand{\field}{\mathcal{F}}
+\newcommand{\lag}{\alpha}
+\newcommand{\traverse}[1]{\Delta^{r}_#1}
+
+
+%\newcommand{\apf}{\begin{verbatim}apf\end{verbatim}} %H1 space shortcut
+
+\newcommand{\boldU}{\boldsymbol{U}}
+\newcommand{\boldw}{\boldsymbol{w}}
+\newcommand{\boldW}{\boldsymbol{W}}
+\newcommand{\boldx}{\boldsymbol{x}}
+\newcommand{\Rey}{\mbox{\textit{Re}}}  % Reynolds number
+\newcommand{\Peh}{Pe_h}  % Reynolds number
+

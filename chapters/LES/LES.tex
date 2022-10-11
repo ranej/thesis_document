@@ -1,0 +1,232 @@
+This work uses the incompressible Navier Stokes equations in the arbitrary Lagrangian Eulerian (ALE) description.
+The strong form of the equations is given as
+
+\begin{equation}
+\label{eq:NS_strong}
+\begin{split}
+  &u_{k,k} = 0\\
+  &u_{i,t} + (u_j - u^m_j) u_{i,j}  =  - p_{,i} + \tau^{\nu}_{ij,j}  + f_i 
+\end{split}
+\end{equation}
+
+\noindent where $u_i$ is the velocity vector,
+$u^m_i$ is the mesh velocity vector,
+$p$ is the pressure (scaled by the constant density),
+$\tau^{\nu}_{ij}=2 \nu S_{ij}$ is the symmetric (Newtonian) viscous stress
+tensor (scaled by the density), $\nu$ is the kinematic viscosity, 
+$S_{ij}=0.5(u_{i,j} + u_{j,i})$ is the strain-rate tensor,
+and $f_i$ is the body force vector (per unit mass).
+Note that Einstein summation notation is used.
+
+The weak form is stated as follows:
+find $\mathbf{u} \in \bm{\mathcal{S}}$ and $p \in \mathcal{P}$ such that
+
+\begin{equation}
+\label{eq:NS_weak}
+\begin{split}
+B(\{w_i,q\}, \{u_i,p\};u^m_l) =& \int\limits_\Omega [w_i (u_{i,t} + u_i u^m_{j,j}) + w_{i,j} (-u_i (u_j - u^m_j) + \tau^{\nu}_{ij} - p \delta_{ij}) -q_{,k} u_k] \, d\Omega \\
+      +& \int\limits_{\Gamma_h} [w_i (u_i(u_j-u^m_j)  - \tau^{\nu}_{ij} + p \delta_{ij}) n_j + q u_k n_k] \, d\Gamma_h \\
+	  =& \int\limits_\Omega w_i f_i d\Omega
+\end{split}
+\end{equation}
+
+\noindent for all $\mathbf{w} \in \bm{\mathcal{W}}$ and $q \in \mathcal{P}$.
+$\bm{\mathcal{S}}$ and $\mathcal{P}$ are suitable trial/solution spaces
+and $\bm{\mathcal{W}}$ is the test/weight space.
+$\mathbf{w}$ and $q$ are the weight
+functions for the velocity and pressure variables, respectively.
+$\Omega$ is the spatial domain and $\Gamma_h$ is the portion of the domain
+boundary with Neumann or natural boundary conditions.
+
+The above weak form can be written concisely as:
+find $\bm{U} \in \bm{\mathcal{U}}$ such that 
+
+\begin{equation}
+\label{eq:NS_weak2}
+B(\bm{W},\bm{U};u^m_l) = (\bm{W},\bm{F})
+\end{equation}
+
+\noindent for all $\bm{W}=[\mathbf{w},q]^T \in \bm{\mathcal{V}}$.
+$\bm{U}=[\mathbf{u},p]^T$ is the vector of unknown solution variables
+and $\bm{F}=[\mathbf{f},0]^T$ is the source vector.
+The solution and weight spaces are:
+$\bm{\mathcal{U}} = \{\bm{U}=[\mathbf{u},q]^T | \mathbf{u} \in 
+\bm{\mathcal{S}}; p \in \mathcal{P}\}$ and
+$\bm{\mathcal{V}} = \{\bm{W}=[\mathbf{w},q]^T | \mathbf{w} \in
+\bm{\mathcal{W}}; q \in \mathcal{P}\}$, respectively.
+
+Throughout this text $B(\cdot,\cdot)$ is used to represent the semi-linear
+form that is linear in its first argument and $(\cdot,\cdot)$ is used to denote the $L_2$
+inner product.
+$B(\bm{W},\bm{U};u^m_l)$ is split into bilinear and semi-linear terms as shown below. 
+
+\begin{equation}
+B(\bm{W},\bm{U};u^m_l) = B_1(\bm{W},\bm{U};u^m_l) + B_2(\bm{W}, \bm{U}) = (\bm{W},\bm{F})
+\end{equation}
+
+\noindent where $B_1(\bm{W},\bm{U};u^m_l)$ contains the bilinear terms and $B_2(\bm{W}, \bm{U})$ consists of the semi-linear terms. These are defined as
+
+\begin{equation}
+\begin{split}
+B_1(\bm{W},\bm{U};u^m_l)  =& \int\limits_\Omega [w_i (u_{i,t} + u_i u^m_{j,j}) + w_{i,j} (u_i u^m_j + \tau^{\nu}_{ij} - p \delta_{ij}) -q_{,k} u_k] \, d\Omega \\
+      +& \int\limits_{\Gamma_h} [w_i (-u_i u^m_j -\tau^{\nu}_{ij} + p \delta_{ij}) n_j + q u_k n_k] \, d\Gamma_h 
+\end{split}
+\end{equation}
+
+\begin{equation}
+B_2(\bm{W},\bm{U})  = -\int\limits_\Omega w_{i,j} u_i u_j d\Omega +\int\limits_{\Gamma_h} w_i u_i u_j n_j d\Gamma_h 
+\end{equation}
+
+
+
+The Galerkin weak form is obtained by considering
+the finite-dimensional or discrete solution spaces
+$\bm{\mathcal{S}}^h \subset \bm{\mathcal{S}}$ and
+$\mathcal{P}^h \subset \mathcal{P}$ and the weight
+space $\bm{\mathcal{W}}^h \subset \bm{\mathcal{W}}$, where
+the superscript $h$ is used as a mesh parameter to denote discretized spaces and variables in a finite element context.
+Using these spaces, $\bm{\mathcal{U}}^h =
+\{ \bm{U}^h=[\mathbf{u}^h,p^h]^T | \mathbf{u}^h \in \bm{\mathcal{S}}^h; p^h \in \mathcal{P}^h \}$ and $\bm{\mathcal{V}}^h =
+\{ \bm{W}^h=[\mathbf{w}^h,q^h]^T | \mathbf{w}^h \in \bm{\mathcal{W}}^h; q^h \in \mathcal{P}^h \}$ are defined.
+The Galerkin weak form is then stated concisely as:
+find $\bm{U}^h \in \bm{\mathcal{U}}^h$ such that
+
+\begin{equation}
+\label{eq:NS_Gal_weak}
+B(\bm{W}^h,\bm{U}^h) = (\bm{W}^h,\bm{F})
+\end{equation}
+
+\noindent for all $\bm{W}^h \in \bm{\mathcal{V}}^h$.
+Note for brevity we have dropped $u^m_l$ term in the arguments of the semi-linear form.
+The Galerkin weak formulation corresponds to a method for
+direct numerical simulation since no modeling is employed.
+However, when the finite-dimensional spaces are incapable of representing the
+fine/small scales, the Galerkin formulation yields an
+inaccurate solution.
+A model term is added to overcome this difficulty, e.g.,
+as done in the residual-based variational multiscale (RBVMS) formulation.
+
+In RBVMS, a set of model terms is added to the Galerkin weak form that results in
+the following variational formulation:
+find $\bm{U}^h \in \bm{\mathcal{U}}^h$ such that
+
+\begin{equation}
+\label{eq:NS_rbvms}
+ B(\bm{W}^h,\bm{U}^h) + M_{rbvms}(\bm{W}^h,\bm{U}^h ) = (\bm{W}^h,\bm{F})
+\end{equation}
+
+\noindent for all $\bm{W}^h \in \bm{\mathcal{V}}^h$.
+$M_{rbvms}$ represents the set of model terms
+due to the RBVMS approach.
+
+A scale separation is used to decompose
+the solution and weight spaces as
+$\bm{\mathcal{S}}=\bm{\mathcal{S}}^h \oplus \bm{\mathcal{S}}'$ and $\mathcal{P} = \mathcal{P}^h \oplus \mathcal{P}'$,
+and $\bm{\mathcal{W}}=\bm{\mathcal{W}}^h\oplus \bm{\mathcal{W}}'$,
+respectively. Thus, the solution and weight functions
+are decomposed as $u_i = u^h_i + u'_i$ and $p = p^h + p'$ or $\bm{U}=\bm{U}^h+\bm{U}'$, and
+$w_i = w^h_i + w'_i$ and $q = q^h + q'$ or $\bm{W}=\bm{W}^h+\bm{W}'$, respectively.
+Note that coarse-scale or resolved quantities are
+denoted by $(\cdot)^h$ and fine-scale or unresolved quantities 
+by $(\cdot)'$.
+The coarse-scale quantities are resolved by
+the grid whereas the effects of the fine scales on the coarse scales
+are modeled.
+In RBVMS, the fine scales are modeled as a function of the strong-form residual
+due to the coarse-scale solution. This is represented abstractly as
+$\bm{U}' = \mathcal{F}(\bm{R}(\bm{U}^h);\bm{U}^h)$, where
+$\bm{R}(\cdot) = [\bm{R}^m(\cdot),R^c(\cdot)]^T$ 
+is the strong-form residual of the equations with
+$\bm{R}^m(\cdot)$ (or $R^m_i(\cdot)$) and $R^c(\cdot)$ as those
+of the momentum and continuity equations, respectively.
+Specifically, the fine-scale quantities are modeled as 
+$u'_i \approx -\tau_M R^m_i(u_k^h,p^h;u^m_l)$
+and $p' \approx -\tau_C R^c(u^h_k)$, where
+$\tau_C$ and $\tau_M$ are stabilization parameters
+(e.g., see details in Tran and Sahni~\cite{bib:tran2017b}).
+This provides a closure to the coarse-scale problem as it involves coarse-scale solution as the only unknown. 
+This is why $M_{rbvms}(\bm{W}^h,\bm{U}^h )$ is written only in terms of the unknown coarse-scale solution $\bm{U}^h$.
+In summary, $M_{rbvms}(\bm{W}^h,\bm{U}^h)$ can be written as
+
+%\begin{equation}
+%\label{eq:NS_Mrbvms}
+%\begin{split}
+%M_{rbvms}(\bm{W}^h,\bm{U}^h)= \sum_e \int\limits_{\Omega^h_e} [&\underbrace{-(w^h_i u^m_{j,j}
+%+ w^h_{i,j} u^m_j ) \tau_M {R}^m_i(u_k^h,p^h;u^m_l)}_{M^{ALE}_{rbvms}(\bm{W}^h,\bm{U}^h)} \\
+%&+ \underbrace{q^h_{,i} \tau_M {R}^m_i(u_k^h,p^h;u^m_l)}_{M_{rbvms}^{cont}(\bm{W}^h, \bm{U}^h)} + \underbrace{w^h_{i,j}  \tau_C R^c(u^h_k)\delta_{ij}}_{M^P_{rbvms}(\bm{W}^h, \bm{U}^h)} \\
+%&+\underbrace{w^h_{i,j}\left( u^h_i \tau_M {R}^m_j(u_k^h,p^h;u^m_l) + \tau_M {R}^m_i(u_k^h,p^h;u^m_l) u^h_j \right)}_{M^C_{rbvms}(\bm{W}^h, \bm{U}^h)} \\
+%&\underbrace{-w^h_{i,j} \tau_M {R}^m_i(u_k^h,p^h;u^m_l) \tau_M {R}^m_j(u_k^h,p^h)}_{M^R_{rbvms}(\bm{W}^h,\bm{U}^h)} ]d\Omega^h_e
+%\end{split}
+%\end{equation}
+
+%%%\begin{equation*}
+%%%M_{rbvms}(\bm{W}^h,\bm{U}^h)=
+%%%\end{equation*}
+
+\begin{equation}
+\label{eq:NS_Mrbvms}
+\begin{split}
+M_{rbvms}(& \bm{W}^h, \bm{U}^h) = \\
+\sum_e \int\limits_{\Omega^h_e} [&\underbrace{-(w^h_i u^m_{j,j}
++ w^h_{i,j} u^m_j ) \tau_M {R}^m_i(u_k^h,p^h;u^m_l)}_{M^{ALE}_{rbvms}(\bm{W}^h,\bm{U}^h)} \\
+&+ \underbrace{q^h_{,i} \tau_M {R}^m_i(u_k^h,p^h;u^m_l)}_{M_{rbvms}^{cont}(\bm{W}^h, \bm{U}^h)} + \underbrace{w^h_{i,j}  \tau_C R^c(u^h_k)\delta_{ij}}_{M^P_{rbvms}(\bm{W}^h, \bm{U}^h)} \\
+&+\underbrace{w^h_{i,j}\left( u^h_i \tau_M {R}^m_j(u_k^h,p^h;u^m_l) + \tau_M {R}^m_i(u_k^h,p^h;u^m_l) u^h_j \right)}_{M^C_{rbvms}(\bm{W}^h, \bm{U}^h)} \\
+&\underbrace{-w^h_{i,j} \tau_M {R}^m_i(u_k^h,p^h;u^m_l) \tau_M {R}^m_j(u_k^h,p^h)}_{M^R_{rbvms}(\bm{W}^h,\bm{U}^h)} ]d\Omega^h_e
+\end{split}
+\end{equation}
+
+
+
+Note that all model terms are written in terms of the resolved scales within
+each element (where $e$ denotes an element and contributions from all elements
+are summed).
+The last model term is used to represent the Reynolds stresses
+(i.e., $M^R_{rbvms}$)
+while the two terms prior to it are used to represent the cross-stress terms
+(i.e., $M^C_{rbvms}$).
+
+In previous studies~\cite{bib:wang2010,bib:tran2017a}, it was found that the RBVMS model provides a good
+approximation for the turbulent dissipation due to the cross stresses but the
+dissipation due to the Reynolds stresses is underpredicted and turns out to be
+insufficient. Therefore, a combined subgrid-scale model was employed which
+uses the RBVMS model for the cross-stress terms
+and the dynamic Smagorinsky eddy-viscosity model for the Reynolds stress terms.
+This was done in both 
+a finite element code~\cite{bib:tran2016,bib:tran2017a}
+and a spectral code~\cite{bib:wang2010}.
+The combined subgrid-scale model is defined as
+
+\begin{equation}
+\label{eq:NS_comb}
+ B(\bm{W}^h,\bm{U}^h) + M_{comb}(\bm{W}^h,\bm{U}^h; C_S, h)  = (\bm{W}^h,\bm{F})
+\end{equation}
+
+\noindent where
+
+\begin{equation}
+\label{eq:NS_Mcomb}
+\begin{split}
+M_{comb}(\bm{W}^h,\bm{U}^h; C_S, h) =& M^{ALE}_{rbvms}(\bm{W}^h,\bm{U}^h) +M^{cont}_{rbvms}(\bm{W}^h, \bm{U}^h) \\
+& + M^P_{rbvms}(\bm{W}^h, \bm{U}^h) + M^C_{rbvms}(\bm{W}^h, \bm{U}^h) \\
+& + (1-\gamma) M^R_{rbvms}(\bm{W}^h, \bm{U}^h)
+\\
+& +\gamma M^R_{smag}(\bm{W}^h,\bm{U}^h; C_S, h)
+\end{split}
+\end{equation}
+
+\begin{equation}
+\label{eq:NS_Smag_sub}
+%M^R_{smag}(\bm{W}^h,\bm{U}^h; C_S, h) = \int\limits_\Omega w^h_{i,j} 2 \nu_t S^h_{ij} d\Omega = \int\limits_\Omega w^h_{i,j} 2 \, \underbrace{(C_S h)^2 |S^h|}_{\nu_t} S^h_{ij} d\Omega
+M^R_{smag}(\bm{W}^h,\bm{U}^h; C_S, h) = \int\limits_\Omega w^h_{i,j} 2 \, \underbrace{(C_S h)^2 |S^h|}_{\nu_t} S^h_{ij} d\Omega
+\end{equation}
+
+\noindent where $\nu_t$ is the eddy viscosity, $|S^h|$ is the norm of the
+strain-rate tensor (i.e., $|S^h|=\sqrt{2 \bm{S}^h : \bm{S}^h} = \sqrt{2 S^h_{ij} S^h_{ij}}$),
+$h$ is the local mesh size,
+and $C_S$ is the Smagorinsky parameter.
+The parameter $\gamma$ is set to be either $0$ or $1$ in order to control
+which model is used for the Reynolds stresses.
+Note that $\gamma=0$ results in the
+original RBVMS model and $\gamma=1$ results in the combined subgrid-scale model.
+In this study, $\gamma=1$ is employed.
+The Smagorinsky parameter is computed dynamically in a local fashion as discussed below.

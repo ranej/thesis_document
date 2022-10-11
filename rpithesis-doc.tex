@@ -1,0 +1,663 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{calc}
+\usepackage{array}
+\usepackage{color}
+\usepackage[margin=1in, left=1.25in, top=.5in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{enumitem}
+\usepackage{times}
+\usepackage{courier}
+\usepackage[OT1, T1]{fontenc}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{bm}
+\usepackage{mathtools,commath}
+\usepackage{placeins} %for floatbarrier
+\usepackage{subcaption}
+%\usepackage{multirow} %used for table formatting
+\usepackage{tabularx}
+\usepackage{array} % for table formatting to avoid hyphenation
+\usepackage{siunitx} %for writing in scientific notation
+\usepackage{csquotes} %for quotes in boundary marker section
+\usepackage[hidelinks]{hyperref} %links to sections and figures
+
+
+
+%\usepackage{fancyvrb}
+%\usepackage{singlespace}
+
+\definecolor{altncolor}{rgb}{0,0,.8}
+%\definecolor{altncolor}{rgb}{0,0,0}
+
+\usepackage[colorlinks=true, linkcolor=altncolor, anchorcolor=altncolor, citecolor=altncolor, filecolor=altncolor, menucolor=altncolor, urlcolor=altncolor]{hyperref}
+
+\usepackage{parskip}
+
+\lstset{basicstyle=\ttfamily, columns=fullflexible, keepspaces=true, xleftmargin=1em}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{.5\baselineskip}
+
+\begin{document}
+
+\title{Preparing a Thesis With \LaTeX}
+\author{Client Information Services\\
+Information Technology Infrastructure}
+\date{September 2018}
+
+\maketitle
+
+\tableofcontents        
+
+\newpage
+
+\section{About the Thesis Class}
+
+The Rensselaer {\LaTeX} thesis document class, available for download on the Web, can be used
+to produce either a master's or a doctoral thesis with a format that meets the requirements of
+the Office of Graduate Education.
+The Thesis document class allows you to generate:
+\begin{itemize}
+   \item title page
+   \item abstract title page
+   \item copyright page (optional)
+   \item lists of contents (table of contents, list of tables, and list of figures)
+   \item acknowledgment, preface, etc.
+   \item abstract
+   \item chapters with numbered headings and subheadings
+   \item bibliography
+   \item appendices
+\end{itemize}
+
+Although the thesis document class produces an acceptable format, you should be familiar
+with the regulations on thesis preparation produced by the Office of Graduate Education. The
+OGE Thesis Writing Manual, which includes information on electronic submission, is available
+online at
+\url{https://info.rpi.edu/sites/default/files/OGE Preparation Manual.pdf}
+% \url{http://www.rpi.edu/dept/grad/docs/ThesisGuide/manual.pdf}
+
+% These directions need updating.
+\href{https://dotcio.rpi.edu/services/printing-publishing/thesis-preparation}{The Rensselaer {\LaTeX} Thesis web page}
+provides information on writing a thesis with {\LaTeX},
+including documentation and files for download.
+%You can reach this page easily from the Help
+%Desk web page: in the Quick Links drop-down menu, select ``Prepare a thesis''.
+If you are not
+familiar with {\LaTeX}, first read the ARC tutorial,
+\href{http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf}{Text Formatting with {\LaTeX}},
+which will get you started. You can print it from the Thesis web page, or pick it up
+free of charge at the VCC Help Desk.
+
+Another good source of information is the Rensselaer {\LaTeX} information web page,
+\url{http://www.rpi.edu/dept/arc/training/latex/}. In addition to course material, this page
+has links to various useful documents and a number of {\LaTeX} examples.
+
+The complete reference for {\LaTeX} is the \textit{{\LaTeX} User's Guide} by Leslie Lamport. Since the
+thesis class is based on the standard {\LaTeX} class \textbf{report}, the information in this book and
+in the ARC tutorial, \textit{Text Formatting with {\LaTeX}}, applies to using the thesis class as well as
+standard classes. Any differences are described in this document.
+
+The thesis class and the template files described in this document can be used on any system
+with {\LaTeX}, which includes Windows machines, Macs, or Linux/Unix systems. It is assumed
+that you know how to run {\LaTeX} on your system. Note, however, that using RCS Unix is
+not recommended because it is no longer actively maintained, and its {\LaTeX} programs and
+packages are not recent enough.
+
+\section{Downloading the Thesis Class}
+
+To use the thesis class on your personal computer, you first need to download the file \verb|thesis.cls|
+from the \href{https://dotcio.rpi.edu/services/printing-publishing/thesis-preparation}{{\LaTeX} Thesis web page}.
+You can either put it in the folder with your thesis material
+(to use it only with documents in that folder), or place it in the standard TEX input path
+for your system, along with all the other files that end in .cls or .sty. If you do the latter, it's best to put thesis.cls in a folder you create in a ``local tree'' to preserve it in the
+case of future TeX upgrades. It is easiest to create the folder first and then download the file
+thesis.cls. For example, If you are using the TeXLive system on a Windows machine and
+% HERE: Update years, and check installation locations.
+have installed under \verb|C:\TeXLive2005|, the folder name will be:
+\verb|C:\TeXLive2005\texmf-local\tex\latex\thesis\|.
+
+After downloading the file, check that Windows has not named it
+\verb|thesis.cls.txt| instead of \verb|thesis.cls|! Then, if you've chosen to put it
+in \TeX's input path, be sure to rebuild the ``\verb|ls-R|'' filename
+database: for a {\TeX}Live installation on Windows, go to Start \verb|->|
+Programs \verb|->| TeXLive and follow the appropriate links from
+there.
+
+\section{Using the Template Files}
+
+For a quick start, you can use the template (or prototype) files. You
+can download these template files from links on the
+\href{http://www.rpi.edu/dept/arc/docs/latex-thesis/}{{\LaTeX} Thesis web page}
+or directly from
+\url{http://www.rpi.edu/dept/arc/docs/latex-thesis/}. Put them in your own
+folder or directory that will hold the material for your thesis and
+from which you will be running {\LaTeX}.  Note: To create correct
+tables of contents and to resolve forward references, remember that
+you need to run {\LaTeX} or pdf{\LaTeX} twice. This is necessary
+because the information taken from the auxiliary files, which store
+this information, is always from the previous run.
+
+\subsection{Short Thesis}
+
+If your thesis is only about 20--30 pages, you will probably want to keep everything in one file.
+In this case, you can download the template file for a short thesis:
+\begin{verbatim}
+rpithes-short.tex
+\end{verbatim}
+Replace the text with your own, and run \verb|latex| or \verb|pdflatex| to produce your thesis. A listing
+of the above file is in is in \nameref{sec:appA} of this document. You'll also need the template for
+producing the abstract title page and abstract, a separate file required by OGE for all theses:
+\begin{verbatim}
+abstitle-mas.tex
+\end{verbatim}
+\nameref{sec:appB} lists this template file and the corresponding file for a Ph.D. dissertation.
+
+\subsection{Long Thesis}
+
+For a longer thesis or dissertation, it will be easier to use separate files for different sections.
+The set of template files below are designed to do this: each file contains the commands to
+produce a particular section. The root file, rpithes.tex, is the file that you supply as input
+to the {\LaTeX} (or pdf{\LaTeX}) program, and it in turn instructs {\LaTeX} to process the other files.
+\begin{verbatim}
+rpithes.tex (root file)     rpiack.tex     rpichap2.tex
+rpititle-mas.tex (masters)  rpiabs.tex     rpibib.tex
+rpititle-phd.tex (Ph.D.)    rpichap1.tex   rpiapp.tex
+\end{verbatim}
+In addition to your thesis or dissertation, you are required to submit a separate file containing
+just the abstract title page and the abstract. You can prepare this file using one of templates:
+\begin{verbatim}
+abstitle-mas.tex    abstitle-phd.tex
+\end{verbatim}
+
+
+These two template files are listed in \nameref{sec:appB}. The listings of the set of template files for
+a longer thesis are in \nameref{sec:appC}, and the output they produce is included as \nameref{sec:appD}.
+The root file, rpithes.tex, is also reproduced below.
+After downloading the template files, you will probably want to choose your own names for
+these files. If you change the file names, be sure to edit the ``root file'' rpithes.tex and change
+the \verb|\include| statements accordingly. You can then modify the text of the template files and
+run latex or pdflatex on the root file.
+
+\lstinputlisting{rpithes.tex}
+
+
+By using a root file with \verb|\include| commands, you can produce the entire thesis, or you can
+use the \verb|\includeonly| command to produce just certain parts. In nthe prototype file above,
+this command instructs {\LaTeX} to process only the file rpichap1.tex. To process more than one
+file, include several file names (separated by commas) as the argument to the \verb|\includeonly|
+command. For example, in the prototype file, the following command would instruct {\LaTeX} to
+process only the files rpititle-mas.tex and rpiabs.tex.
+\begin{verbatim}
+\includeonly{rpititle-mas,rpiabs}
+\end{verbatim}
+To process the entire thesis, comment out the \verb|\includeonly| command by preceding it with a
+percent sign (\%).
+
+
+\section{Thesis Document Class Options}
+
+Document class options, which are specified in square brackets on the
+\verb|\documentclass| command, provide various modifications to the
+formatting of the text. There are several options you may find useful
+with the thesis class.
+
+\subsection{Type Size}
+
+By default, the thesis is in 12-point type. Two smaller type sizes, 10 and 11 points, are available
+as options on the documentclass command. For example, to use 11 points, edit the root file
+(i.e., rpithes.tex) and specify
+\begin{verbatim}
+\documentclass[11pt]{thesis}
+\end{verbatim}
+
+
+\subsection{The Chapter Heading Format}
+
+
+Another option, this one unique to the thesis class, is chap. The chap option writes the word
+``CHAPTER'' on a separate line above the chapter title. If you have included \verb|[chap]| in the
+documentclass command, the line
+\begin{verbatim}
+\chapter{INTRODUCTION AND HISTORICAL REVIEW}
+\end{verbatim}
+would produce:
+\begin{center}
+  {\large\bf CHAPTER 1
+    
+  INTRODUCTION AND HISTORICAL REVIEW
+  }
+\end{center}
+Without the chap option, the chapter title would look like:
+\begin{center}
+  {\large\bf 1. INTRODUCTION AND HISTORICAL REVIEW}
+\end{center}
+Note that if you use two or more options, you must separate them with commas. Therefore,
+to use both the chap option and the 11-point option, use the command:
+\begin{verbatim}
+\documentclass[chap,11pt]{thesis}
+\end{verbatim}
+
+
+\subsection{Twosided Formatting}
+
+Although the Office of Graduate Education requires a onesided copy of your thesis, your
+department or other recipients may be happy with a double-sided copy. If you include twoside
+in square brackets in the \verb|\documentclass| command, your thesis will be formatted for twosided
+printing. This means that the 1.5 inch margin, which is always the left margin on onesided
+pages, will cycle so that it is always on the binding edge, and that page numbers, normally in
+the upper right corner, will cycle so that they are always on the outside edge. (This option
+does not force the printer to print double-sided. To also get twosided printing, you must use a
+duplex printer, such as VCLW.)
+
+Using the twoside option will also ensure that the table of contents does not print on the back
+of the title page and that the first chapter always starts on a right-hand page. Subsequent
+chapters, however, will not necessarily begin on a new sheet of paper. To force each chapter
+to start on a right-hand page, also include the openright option:
+\begin{verbatim}
+\documentclass[twoside,openright]{thesis}
+\end{verbatim}
+
+
+\section{Other Features and Considerations of the Thesis Class}
+
+The thesis document class contains some features that are not part of the standard {\LaTeX}
+classes. Most of these are built into the thesis class; a few are provided by \emph{packages}, sets of
+{\LaTeX} or {\TeX} commands written by users and made available to the {\LaTeX} community. A
+package often defines totally new commands that add extra features.
+
+\subsection{Producing Unnumbered Section Headings and Appendices}
+
+The command \verb|\specialhead| produces a section heading similar to those produced by the
+\verb|\chapter| command but without a number. Use it for Abstract, Acknowledgment, Bibliography, etc.
+
+Note that appendices are produced with the \verb|\chapter| command, but you must have previously
+included the {\LaTeX} command \verb|\appendix|. (This is documented in the \textit{{\LaTeX} User's Guide} and
+illustrated in the RPI template file \verb|rpiapp.tex|.) Note the \verb|\appendix| command should appear
+only once, before the first appendix. (Do NOT include it before each appendix.)
+
+\subsection{Footnote Numbering}
+
+Unlike other {\LaTeX} document classes, which reset the footnote counter to 1 at the start of each
+new chapter, the thesis class numbers footnotes sequentially throughout the thesis. To start
+over with number~1 at any time, use the command \verb|\resetfootnote|.
+
+\subsection{Figure and Table Captions}
+
+Prepare figures and tables using the figure and table environments as
+described in the \textit{{\LaTeX} User's Guide}, and use the \verb|\caption|
+command to specify the caption.\footnote{Note: if you are planning to
+  cross-reference the caption, be sure to put the \label command after
+  the caption.}  In the thesis class, table and figure captions are in
+boldface type by default.  Short captions are centered on the line;
+captions longer than one line are left-aligned. If you would like to
+indent subsequent lines of long captions, you can use the caption
+package with the hang option to do this. After the
+\verb|\documentclass| command, include the line:
+\begin{verbatim}
+\usepackage[hang]{caption}
+\end{verbatim}
+If you use the caption package, your captions will not be bold. However, the package provides
+the captionfont command, which allows you to control the font of the captions. Therefore,
+to get bold with the caption package, follow the above command with the line:
+\begin{verbatim}
+\renewcommand{\captionfont}{\bfseries}
+\end{verbatim}
+Note that the above two lines should be part of your preamble–that is, after the \verb|\documentclass|
+command and before the \verb|\begin{document}| command. See the root template file rpithes.tex
+for an example.
+
+\subsection{Line Spacing}
+
+The spacing of your thesis will be line-and-a-half, which is acceptable to the Office of Graduate
+Education. This spacing was achieved by using a stretch factor of 1.4, which is just right for
+typesizes of 12 points (the default) and 11 points. If you choose 10 points, the smallest type size
+allowed, you should increase the spacing slightly by including in your preamble the command
+\verb|\setstretch{1.5}|.
+
+The thesis document class defines a new environment called singlespace. To single space a
+section of text inside the otherwise line-and-a-half-spaced thesis, do the following:
+% Here: How to get the text in italic inside verbatim?
+\begin{verbatim}
+\begin{singlespace}
+put the single-spaced text here
+\end{singlespace}
+\end{verbatim}
+
+\subsection{Heading Size}
+
+If you wish, you can change the type size of your section headings. By default, the chapter
+and section headings are a little larger than the text, and the subsection and subsubsection
+headings are the same size as the text. (All headings are boldface.) Below are the heading
+size commands used by default. You can change any of them by putting a similar command
+in your preamble with a different size specified.
+\begin{verbatim}
+\renewcommand\chaptersize{\large}
+\renewcommand\sectionsize{\large}
+\renewcommand\subsectionsize{\normalsize}
+\renewcommand\subsubsectionsize{\normalsize}
+\end{verbatim}
+
+\subsection{The Bibliography}
+
+\subsubsection{Using {\LaTeX}'s Built-in Method}
+
+
+To prepare a bibliography in {\LaTeX}, you use the command \verb|\cite{key}|
+within your text to cite various works. ``key'' is a keyword of your
+choosing that identifies the work. For example your document might
+include, at the appropriate places: \verb|\cite{lamport}| \verb|\cite{kopka}|
+\verb|\cite{goossens}|. These commands place numbers (enclosed in square
+brackets) in the text that match the numbers which will be
+automatically generated in the bibliography. (Remember to run {\LaTeX}
+twice to get correct numbers in the text!) Then, at the end of the
+document, you put your bibliographic entries in a special environment
+called \textbf{thebibliography}.
+\href{http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf}{Text Formatting with {\LaTeX}}
+has more
+information on preparing a bibliography.
+
+This method is illustrated
+in the sample thesis appended to this document. Note that the entries
+in the template file \texttt{rpibib.tex} are inside the \texttt{singlespace}
+environment. This produces an attractive bibliography and is
+recommended, though certainly not required.
+
+The alignment of the
+bibliography section is ragged right by default, because in many cases
+it looks better. (When fully justified, a bibliography can have some
+very wide spaces between words.) However, if you prefer that it be
+fully justified, just put the following command in the preamble:
+\verb|\renewcommand{\bibalign}{}|
+
+\subsubsection{Using Bib{\TeX} with the Thesis Class}
+
+Bib{\TeX}, a separate program included with {\TeX} distributions, generates a list of references
+from information contained in a bibliographic database—a file you create whose name ends
+with the extension .bib. the There are several books, inluding Leslie Lamport's {\LaTeX} manual,
+that describe in detail how to use Bib{\TeX} and how to prepare the
+\verb|.bib| file.
+
+If you use one of the basic bibliography styles such as plain, unsrt or alpha, using Bib{\TeX}
+with the thesis class is straightforward. In your \verb|rpibib.tex| file, use \verb|\specialhead| to make
+an unnumbered heading. Then add the \verb|bibliographystyle| command and the \verb|biblography|
+command. For example, if the section heading is ``REFERENCES,'' if you are using the \verb|unsrt|
+bibliography style, and if your database entries are in the file \verb|myrefs.bib|, your \verb|rpibib.tex|
+file would look like:
+\begin{verbatim}
+\specialhead{REFERENCES}
+\bibliographystyle{unsrt} % specify bibliography style
+\begin{singlespace}
+\bibliography{myrefs} % Prints the bibliography here, using "myrefs.bib"
+\end{singlespace}
+\end{verbatim}
+That's all. Just remember that to create the bibliography, you must run {\LaTeX}, then Bib{\TeX},
+then run {\LaTeX} twice more. Windows editors, such as WinShell and WinEdt, have a button
+for Bib{\TeX} on the toolbar.
+
+If you are further customizing your bibliography by using a package
+such as natbib\footnote{A good overview of how to use natbib is at
+  \url{http://www.ctan.org/tex-archive/macros/latex/contrib/natbib/natnotes.pdf}}
+or harvard, do not use \verb|\specialhead|. The package will make its own new
+page and heading, and you don't want two! But you will need to add the
+command \verb|\addcontentsline| to get the entry into the table of
+contents. And, if you are using the hyperref package to put live links
+in your PDF file, you'll also need the \verb|\phantomsection| command
+to put the anchor in the right place. Assuming you want the title to
+be ``REFERENCES'' (rather than the default name ``BIBLIOGRAPHY''),
+your preamble would include commands such as:
+\begin{verbatim}
+\usepackage{harvard}
+\renewcommand\bibname{REFERENCES} % specify name of your heading
+\end{verbatim}
+and your rpibib.tex file might look like:
+\begin{verbatim}
+\clearpage
+\phantomsection % To make hyperref link in TOC work correctly
+\addcontentsline{toc}{chapter}{\bibname} % puts entry in TOC.
+\bibliographystyle{agsm} % specify bibliography style
+\begin{singlespace}
+\bibliography{myrefs} % Prints the bibliography here, using "myrefs.bib"
+\end{singlespace}
+\end{verbatim}
+
+
+\subsection{Making an Index}
+
+An index is not required for your thesis, but you can include one if
+you would like to.
+\href{http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf}{Text Formatting with {\LaTeX}}
+includes a section on generating an index, which describes what you
+need in the preamble and how to index the entries. For more complete information, the
+documentation that comes with the makeindex program, makeindex.dvi, should be available
+on your system.
+
+To print an index at the end of your thesis, there are several commands you will want to
+use in addition to the usual \verb|\printindex| command. You'll want the Index in the Table of
+Contents, and you'll want single spacing. You do not want to use \verb|\specialhead| because
+makeindex automatically creates the heading, and you don't want two. And, if you are using
+the hyperref package to put live links in your PDF file, you'll also need the \verb|\phantomsection|
+command to put the anchor in the right place. You can put these commands in a separate file
+which you \verb|\include| in your root file. A file named, for example
+\verb|rpiind.tex|, might look like:
+\begin{verbatim}
+\clearpage
+\phantomsection
+% To make hyperref link in TOC work correctly
+\addcontentsline{toc}{chapter}{\indexname} % puts entry in TOC
+\begin{singlespace}
+\printindex
+\end{singlespace}
+\end{verbatim}
+Remember that you must run {\LaTeX} (or pdf{\LaTeX}), then \verb|makeindex|, then {\LaTeX}(or pdf{\LaTeX})
+again. WinEdt has a menu item to run makeindex, but other Windows editors may not. If you
+don't have a menu item, you'll need to open a command window and \verb|cd| to the appropriate
+directory/folder) to run \verb|makeindex|.
+
+\section{Your Final Output: Creating the PDF Files}
+
+Rensselaer requires that electronically-submitted theses or
+dissertations be in Adobe Portable Document Format (PDF), the current
+standard for electronic information exchange. PDF files look exactly
+like the original documents and are viewable and printable on any
+platform. Remember that you need to make two PDF files: one containing
+the complete thesis or dissertation and the other containing just the
+Abstract Title Page and abstract.
+
+After you have written your thesis in {\LaTeX}, it is straightforward to convert your .tex files to
+PDF. There are two widely-used methods:
+\begin{enumerate}
+\item The traditional way is to run {\LaTeX} followed by dvips to
+  create a PostScript file and then convert that to PDF. On Windows,
+  you can do the conversion by opening the .ps file with GSView and
+  using menu items to convert to PDF; on unix/Linux systems, you run
+  the \verb|ps2pdf| program (part of \verb|ghostscript|).
+
+\item A simpler method is to use the relatively recent program
+  pdf{\LaTeX}, which processes your {\LaTeX} file and produces a PDF
+  file directly. On Windows systems, your editor/shell (e.g.,
+  WinShell, WinEdt) has a pdf{\LaTeX} button on the menu bar; on unix
+  systems you type \verb|pdflatex <filename>| on the command
+  line.\footnote{Acrobat Reader cannot automatically update the view
+    if you reprocess your document, unlike xdvi and GSview. You have
+    to close the display with \texttt{Ctrl-W} and reload the file with \texttt{Alt-}{$\leftarrow$}
+    (left arrow). Or, you can configure your editor to view PDF files
+    with GSView instead of Acrobat.}
+\end{enumerate}
+This is simple enough. Unfortunately, a complication arises when you
+consider included graphics.
+(See section~\ref{sec:graphics}
+for how to include graphics
+in a {\LaTeX} file.) When you use the traditional conversion method
+({\LaTeX} plus \verb|dvips|), your graphics files must be in \textbf{eps}
+(Encapsulated PostScript) format. But when you use pdf{\LaTeX}, it
+accepts the formats \textbf{pdf}, \textbf{jpg}, and \textbf{png}, but not \textbf{eps}. If you want to use
+pdf{\LaTeX} and your graphics files are in \textbf{eps} format, a solution is
+to convert them to \textbf{pdf} using the \verb|epstopdf| utility, which is most
+likely on your system.
+
+For detailed instructions on creating the PDF files, including how to manage graphics files and
+how to make hyperlinks, see Creating a PDF File from a {\LaTeX} Thesis, at
+\url{http://www.rpi.edu/dept/arc/docs/latex-thesis/latextopdf.pdf}.
+
+
+\section{Including Graphics}
+\label{sec:graphics}
+
+You can use a variety of applications to create your graphics. Maple, Matlab, CorelDRAW,
+Xfig, Gnuplot, and even Windows applications such as Word or Excel are common choices. If
+you are using {\LaTeX} plus dvips to produce your final output, you should save the graphic as
+encapsulated PostScript (\textbf{EPS}), not plain PostScript. If you are using pdf{\LaTeX}, you can save
+it as \textbf{pdf}, \textbf{jpg}, or \textbf{png}.
+To import graphics, you first need to load the graphicx package in
+your preamble:
+\begin{verbatim}
+\usepackage{graphicx}   % Note the "x" in "graphicx"
+\end{verbatim}
+And then, at the spot you want to insert the graphic (for example, myfigure.eps or myfigure.pdf)
+use the \verb|\includegraphics| command:
+\begin{verbatim}
+\includegraphics{myfigure}  % note filename extension is omitted
+\end{verbatim}
+
+If you want to be able to use either pdflatex or latex on the same file, you'll need to have your
+graphics files in both eps format and one of the others, such as pdf. Then omit the filename
+extension on the \verb|\includegraphics| command: latex will look for an eps file, and \verb|pdflatex|
+will look for a \textbf{pdf}, \textbf{jpg}, or \textbf{png} file. The \verb|\includegraphics| command also provides optional
+arguments for scaling or rotating the figure. Assuming you have a file named \verb|myfigure.eps|
+or \verb|myfigure.pdf| (or both), the command, which usually goes inside the figure environment,
+will look something like:
+\begin{verbatim}
+\includegraphics[width=4in]{myfigure}
+\end{verbatim}
+There is more information on the \verb|\includegraphics| command in
+\href{ttp://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf}{Text Formatting with {\LaTeX}}.
+Official documentation for the graphics package is in the file \verb|grfguide.pdf|; look for it on your
+system. The information on including graphics is in Section~4.4.
+
+After you have put the appropriate commands for including graphics into your {\LaTeX} file, you
+can run pdf{\LaTeX} and view the result with Acrobat or GSView. If you create a \textbf{.dvi} file by
+running {\LaTeX} and then view it with your previewer, most of the time the previewer will be able
+to display the included PostScript graphics (by calling the \verb|ghostscript| program). However,
+there may be some cases, for example if the graphic is in landscape orientation, where it is
+not displayed properly. In this case, you can use dvips to put the output in a PostScript file
+which will display the result correctly.
+
+There is a wealth of information in \textit{Using Imported Graphics in {\LaTeX}2e}, a PDF document by
+Keith Reckdahl of Stanford University. It includes all you would ever want to know with many
+examples. You can find it at:
+\url{http://www.ctan.org/tex-archive/info/epslatex.pdf}.
+
+
+\section{Printing Landscape Figures and Tables}
+
+You can print figures or tables, along with their captions, in landscape orientation (sideways)
+through the use of the rotating package. To use this package, put the following command in
+your preamble:
+\begin{verbatim}
+\usepackage{rotating}
+\end{verbatim}
+The rotating package defines two new environments, \textbf{sidewaysfigure} and \textbf{sidewaystable},
+which can be used in place of the standard {\LaTeX} environments \textbf{figure} and \textbf{table}.
+Probably the easiest way to see how to insert figures (either portrait or landscape) or landscape
+tables is to look at examples. The file \verb|exrotating.tex|, one of the example files on the
+{\LaTeX} information web page, contains examples of using both the \textbf{graphicx} and the \textbf{rotating}
+packages. You can view the \verb|.tex| file to see the {\LaTeX} commands and the file \verb|exrotating.ps|
+or \verb|exrotating.pdf| to see the results.
+
+You can run this file yourself by copying exrotating.tex to your own space, along with the
+\verb|.eps| and/or \verb|.pdf| files it uses. If you process it with pdf{\LaTeX}, the resulting \textbf{PDF} file should
+look fine. If you process it with {\LaTeX}, note that you should create a \verb|.ps| file to view the result,
+as most dvi previewers cannot display landscape graphics or tables properly.
+
+\appendix
+%\setcounter{secnumdepth}{0}
+
+% HERE: Using * also takes them out of the TOC.
+
+\newpage
+
+\section*{Appendix A}
+\label{sec:appA}
+\addcontentsline{toc}{section}{\nameref{sec:appA}: Template File for a Short Thesis}
+
+\subsection*{Template File for a Short Thesis}
+
+Filename: \verb|rpithes-short.tex|
+
+\lstinputlisting{rpithes-short.tex}
+
+\newpage
+
+\section*{Appendix B}
+\label{sec:appB}
+\addcontentsline{toc}{section}{\nameref{sec:appB}: Template Files for Abstract Title Page and Abstract}
+
+\subsection*{Template Files for Abstract Title Page and Abstract}
+
+Filename: \verb|abstitle-mas.tex|
+
+\lstinputlisting{abstitle-mas.tex}
+
+Filename: \verb|abstitle-phd.tex|
+
+\lstinputlisting{abstitle-phd.tex}
+
+\newpage
+
+\section*{Appendix C}
+\label{sec:appC}
+\addcontentsline{toc}{section}{\nameref{sec:appC}: Template Files for Longer Thesis}
+
+\subsection*{Template Files for Longer Thesis}
+
+Filename: \verb|rpithes.tex|
+
+\lstinputlisting{rpithes.tex}
+
+Filename: \verb|rpititle-mas.tex|
+
+\lstinputlisting{rpititle-mas.tex}
+
+Filename: \verb|rpititle-phd.tex|
+
+\lstinputlisting{rpititle-phd.tex}
+
+Filename: \verb|rpiack.tex|
+
+\lstinputlisting{rpiack.tex}
+
+Filename: \verb|rpiabs.tex|
+
+\lstinputlisting{rpiabs.tex}
+
+Filename: \verb|rpichap1.tex|
+
+\lstinputlisting{rpichap1.tex}
+
+Filename: \verb|rpichap2.tex|
+
+\lstinputlisting{rpichap2.tex}
+
+Filename: \verb|rpibib.tex|
+
+\lstinputlisting{rpibib.tex}
+
+Filename: \verb|rpiapp.tex|
+
+\lstinputlisting{rpiapp.tex}
+
+\newpage
+
+\vspace*{3in}
+
+\section*{Appendix D}
+\label{sec:appD}
+\addcontentsline{toc}{section}{\nameref{sec:appD}: Output from the Template Files for Longer Thesis}
+
+\subsection*{Output from the Template Files for Longer Thesis}
+
+\includepdf[pages=-]{rpithes.pdf}
+
+
+\end{document}
