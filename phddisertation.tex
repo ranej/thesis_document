@@ -50,6 +50,7 @@
 \usepackage{siunitx} %for writing in scientific notation
 \usepackage{csquotes} %for quotes in boundary marker section
 \usepackage[hidelinks]{hyperref} %links to sections and figures
+\usepackage{comment}
 
 \input{usercommands.tex}
 \begin{document}
@@ -62,12 +63,17 @@
 \include{chapters/Introduction/Introduction} % chapter 1
 
 \include{chapters/LES/numerical_discretization} % chapter 2
+\label{chap:num_disc}
 
 \include{chapters/VMS_EE/VMS_EE}
-\label{sec:VMSEE}
+\label{chap:vms_ee}
 
 \include{chapters/adapt_strat/Adapt_St}
 \label{adapt_strat}
+
+\include{chapters/zonal_adapt_results/zonal_adapt_results}
+\label{zonal_adapt_results}
+
 
 \include{bibtex_database.bib} % bibliography
 \include{rpiapp} % appendix
