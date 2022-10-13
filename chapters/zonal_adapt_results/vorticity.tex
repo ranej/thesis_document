@@ -1,4 +1,14 @@
 
+
+
+In this section, we focus on instantaneous spanwise vorticity for the different meshes considered due to zonal-based refinement/adaptation. Here, instantaneous data is considered since we are interested in observing the flow structures and turbulence captured by different meshes, and obtaining phase-averaged data over multiple cycles can be computationally expensive, especially for the finer meshes, and can also filter out the turbulence in the flow-field.
+
+A comparison of instantaneous spanwise vorticity for the different meshes is shown in Figures \ref{fig:vorticity_zonal_180}, \ref{fig:vorticity_zonal_210}, \ref{fig:vorticity_zonal_240}, and \ref{fig:vorticity_zonal_270} for phases $\psi=180^\circ$, $\psi=210^\circ$, $\psi=240^\circ$, and $\psi=270^\circ$ respectively. For $\psi=180^\circ$, Mza2 and Mza3 meshes show the onset of boundary layer roll-up towards the geometric leading edge over the airfoil surface. M0 and Mza1 meshes fail to capture a significant boundary layer roll-up. Moreover, Mza2 and Mza3 meshes capture more turbulence than M0 and Mza1 meshes, with the flow-structures captured by Mza2 meshes being slightly more diffused than Mza3 meshes. Note that changes in spanwise resolution for the same in-plane mesh do not show any significant variations in the flow-field.
+
+For $\psi=210^\circ$, formation of LEV begins to take place for all meshes apart from M0, as we see a distinct vortex build up near the geometric leading edge, which M0 mesh fails to capture. There is a clear difference between the both the location of the roll-up over the airfoil surface, and the size and extent of the roll-up between Mza1 meshes and Mza2 and Mza3 meshes. The flow-field for Mza2 and Mza3 meshes compare well with each other, with some minor differences due to the flow-field being instantaneous. More fine-scale flow structures are resolved by the finer meshes Mza2 and Mza3, while M0 and Mza1 show poor resolution of these structures.
+
+
+
 %%=====================================
 %% Phase = 180
 %%=====================================
@@ -63,7 +73,7 @@
 		\label{fig:Mza3_100_sp_psi180}
 	\end{subfigure}
 	\caption{Spanwise vorticity comparison at $\psi$ = $180^\circ$ for different meshes}
-	\label{fig:vorticity_sp_180}
+	\label{fig:vorticity_zonal_180}
 \end{figure}
 
 %%=====================================
@@ -130,7 +140,7 @@
 		\label{fig:Mza3_100_sp_psi210}
 	\end{subfigure}
 	\caption{Spanwise vorticity comparison at $\psi$ = $210^\circ$ for different meshes}
-	\label{fig:vorticity_sp_210}
+	\label{fig:vorticity_zonal_210}
 \end{figure}
 
 %%=====================================
@@ -203,7 +213,7 @@
 		\label{fig:Mza3_100_sp_psi240}
 	\end{subfigure}
 	\caption{Spanwise vorticity comparison at $\psi$ = $240^\circ$ for different meshes}
-	\label{fig:vorticity_sp_240}
+	\label{fig:vorticity_zonal_240}
 \end{figure}
 
 %%=====================================
@@ -270,7 +280,7 @@
 		\label{fig:Mza3_100_sp_psi270}
 	\end{subfigure}
 	\caption{Spanwise vorticity comparison at $\psi$ = $270^\circ$ for different meshes}
-	\label{fig:vorticity_sp_270}
+	\label{fig:vorticity_zonal_270}
 \end{figure}
 
 \begin{comment}
@@ -333,7 +343,7 @@
 		\label{fig:Mza3_100_sp_psi300}
 	\end{subfigure}
 	\caption{Spanwise vorticity comparison at $\psi$ = $300^\circ$ for different meshes}
-	\label{fig:vorticity_sp_300}
+	\label{fig:vorticity_zonal_300}
 \end{figure}
 
 \end{comment}

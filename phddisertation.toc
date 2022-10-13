@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {4.2.3}Feature-based Refinement/Adaptation}{36}{subsection.4.2.3}% 
 \contentsline {subsection}{\numberline {4.2.4}Results using Different Adaptive Strategies}{37}{subsection.4.2.4}% 
 \contentsline {chapter}{\numberline {5.}Results and Discussion: Zonal Based Adaptation/Refinement}{46}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Force Response}{47}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Flowfield: Spanwise Vorticity}{48}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Cp}{52}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Cp: LEV}{52}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Cp: Trailing Edge Separation}{52}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.1}Force Response}{46}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Flowfield: Spanwise Vorticity}{47}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Cp}{53}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Cp: LEV}{53}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Cp: Trailing Edge Separation}{53}{subsection.5.3.2}% 
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{54}{appendix.A}% 
+\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{55}{appendix.A}% 
