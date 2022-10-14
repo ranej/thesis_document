@@ -1,5 +1,18 @@
 %%Cp plots
 
+In this section, we focus on $C_p$ for the different meshes considered due to zonal-based refinement/adaptation. Here, phase averaged and spanwise averaged data is considered over multiple cycles.
+
+A comparison of $C_p$ for the different meshes is shown in Figure \ref{fig:zonal_Cp_plots_LEV}, for four phases of interest leading up to the LEV formation. For phase $\psi=150^\circ$, flow has started to separate for Mza2 and Mza3 meshes around $x/c = 0.2$, whereas M0 and Mza1 meshes fail to capture this flow separation. These differences in separation/boundary layer roll-up can also be seen in the spanwise vorticity plots in Figures \ref{fig:vorticity_zonal_150}.
+
+For phase $\psi=180^\circ$, Mza1 meshes also show boundary layer/vorticity roll-up with a peak in $C_p$ around $x/c = 0.1$. This peak, however, does not match with the peak in $C_p$ in Mza2 and Mza3 meshes, and is also not clearly visible in spanwise vorticity plots shown in Figure \ref{fig:vorticity_zonal_180}. M0 mesh fails to capture this peak in $C_p$. 
+
+
+For phase $\psi=210^\circ$, all meshes show LEV formation apart from M0 mesh. Note that the peak in $C_p$ corresponds with the low pressure region of the LEV core. Note that the peak and the drop in $C_p$ occurs between $x/c=0.15$ and $x/c=0.22$ for Mza1 meshes. For Mza2 and Mza3 meshes, this event occurs between $x/c=0.25$ and $x/c=0.35$.
+
+For phase $\psi=240^\circ$, LEV formation can be seen for all the meshes, however peak in $C_p$ differs between different meshes. M0 mesh predicts a peak around $x/c=0.1$, whereas Mza1 meshes predict a peak and drop in $C_p$ around $x/c=0.13$ and $x/c=0.22$. Mza2 and Mza3 meshes predict a peak in $C_p$ around $x/c=0.17$ and $x/c=0.3$. Once again, it is observed that Mza2 and Mza3 meshes show reasonable agreement. Also, meshes with same in-plane resolution considered here do not show significant variations with changes in spanwise resolution.
+
+
+
 
 \subsection{Cp: LEV}
 \begin{figure}[H]
@@ -8,8 +21,8 @@
 \begin{subfigure}[b]{0.475\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{figures/zonal_adapt_results/Cp/phase_150.png}
-	\caption{ $C_p$ at $\psi$ = $180^\circ$}
-	\label{fig:zonal_Cp_180}
+	\caption{ $C_p$ at $\psi$ = $150^\circ$}
+	\label{fig:zonal_Cp_150}
 \end{subfigure}
 \begin{subfigure}[b]{0.475\textwidth}
 \centering
@@ -34,6 +47,8 @@
 
 
 \subsection{Cp: Trailing Edge Separation}
+
+
 \begin{figure}
 \begin{subfigure}[b]{0.475\textwidth}
 \centering
@@ -44,13 +59,12 @@
 \begin{subfigure}[b]{0.475\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/zonal_adapt_results/Cp/phase_300.png}
-\caption{ $C_p$ at $\psi$ = $285^\circ$}
-\label{fig:zonal_Cp_285}
+\caption{ $C_p$ at $\psi$ = $300^\circ$}
+\label{fig:zonal_Cp_300}
 \end{subfigure}
 \caption{$C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines}
 \label{fig:zonal_Cp_plots_TEV}
 \end{figure}
 
 
-Adding some words to see if github syncs with overleaf.
-Testing2.
+Since we have already seen through spanwise vorticity plots and Cp that the spanwise resolution of the meshes considered does not affect the solution significantly [need to figure out a better way to say this], we only show data from meshes with the 2nd highest spanwise resolution for brevity. $C_p$ for phases $\psi=270^\circ$ and $\psi=300^\circ$ which is shown in Figure \ref{fig:zonal_Cp_plots_TEV} show formation of trailing edge separation, which is evident from peaks in $C_p$ near the geometric trailing edge. For both these phases, all meshes compare well with each other apart from M0 mesh.
