@@ -20,12 +20,12 @@ Figure \ref{fig:U_rel} shows the variation of $\tilde{U}_{rel}$ over the cycle a
 
 
 
-Table~\ref{table:summary_cases} provides a summary of the current cases. $\beta_{TE}=0$ refers to the non-actuated case while $\beta_{TE}=\alpha$ is the actuated case.
+Table~\ref{table:summary_cases_AC} provides a summary of the current cases. $\beta_{TE}=0$ refers to the non-actuated case while $\beta_{TE}=\alpha$ is the actuated case.
 
 \begin{table}[H]
 	\centering
 	\caption{Summary of cases}
-	\label{table:summary_cases}
+	\label{table:summary_cases_AC}
 	\begin{tabular}{|l|c|c|c|c|c|}
 		\hline
 		Airfoil   & $\alpha$ & $k$ & $\mu_{sect}$ & $Re$ (mean) & $\beta_{TE}$\\
@@ -57,99 +57,447 @@ The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}
 		\caption{non-actuated case}
 		\label{fig:mesh_non-actuated}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.4\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{figures/Setup/mesh_AC}
-		\caption{actuated case (with reflex camber)}
-		\label{fig:mesh_actuated}
-	\end{subfigure}
+%	\begin{subfigure}[b]{0.4\textwidth}
+%		\centering
+%		\includegraphics[width=1\textwidth]{figures/Setup/mesh_AC}
+%		\caption{actuated case (with reflex camber)}
+%		\label{fig:mesh_actuated}
+%	\end{subfigure}
 	\caption{Mesh around the airfoil for the non-actuated and actuated cases during the reverse flow region}
 	\label{fig:mesh3}
 \end{figure}
 
-Instantaneous spanwise vorticity over the oscillation cycle at a few different phases of interest (i.e., in the retreating phase of the cycle) is shown in Figure \ref{fig:vortScreen_mu2pt0} for the higher sectional advance ratio of $\mu_{sect}=2.0$.
-We focus our attention on the flow separation near the (geometric) trailing edge region, and note the significant difference in the separated region due to active reflex camber.
 
-Four different phases over the retreating phase of the cycle are shown, and vorticity range is selected to be [-30,30]$ U_{sect} /C$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
+Figure \ref{fig:vortScreen_mu1pt5} shows the instantaneous spanwise vorticity for the sectional advance ratio of $\mu_{sect}$=1.5.
+8 different phases over the retreating phase of the oscillation cycle are shown. The vorticity range is selected to be [-30,30]$ U_{sect}/C$. For this sectional advance ratio, the airfoil enters the reverse flow region around $\psi=222^\circ$ and exits the reverse flow region at about $\psi$=$318^\circ$. In the actuated case, reflex camber is activated at $\psi$=$215^\circ$, and smoothly reaches the full deflection at $\psi$=$220^\circ$. After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$320^\circ$, and smoothly reaches its original shape at $\psi$=$325^\circ$.
+
+
+At $\psi$=$195^\circ$, the flow over the airfoil is very similar between the baseline and actuated cases.
+At $\psi$=$225^\circ$ for the actuated case, reflex camber is fully activated as seen in Figure \ref{fig:mu_1pt5_AC_psi225}. As the trailing edge is deflected upwards, a small vortex is formed just below it. Also, a roll up of the boundary layer is observed near the geometric leading edge for both baseline and actuated cases, and the formation of the leading edge vortex (LEV) begins. A more detailed analysis of the LEV at different Reynolds numbers and advance ratios was reported in \ref{sec:baseline_results}.
+
+At $\psi$=$240^\circ$, flow separation forms near the bottom of the trailing edge of the airfoil for both baseline and actuated cases.
+In the subsequent phases of the baseline case, the extent of this separated region increases along the airfoil and in the transverse direction, i.e., the separation bubble grows, till up to $\psi$=$285^\circ$. 
+On the contrary, the extent of the separated region remains relatively small in the actuated case. For example, see Figures \ref{fig:mu_1pt5_baseline_psi285} and \ref{fig:mu_1pt5_AC_psi285}.
+Moreover, in the actuated case the size of the separated region remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$, see Figures \ref{fig:mu_1pt5_AC_psi255}, \ref{fig:mu_1pt5_AC_psi270} and \ref{fig:mu_1pt5_AC_psi285}.
+Overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
+The implications of this trailing-edge separated region on the drag force is discussed in Section \ref{sec:drag_profile}
+
+After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both baseline and actuated cases.
+For the actuated case at $\psi$=$330^\circ$, the reflexed trailing edge is at its undeflected position.
+As the trailing edge is deflected down to its original position, this results in the formation of another small vortex as seen in Figure \ref{fig:mu_1pt5_AC_psi330}, similar to when the trailing edge is deflected up (e.g., at $\psi$=$225^\circ$ in Figure \ref{fig:mu_1pt5_AC_psi225}).
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_195.png}
+		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_1pt5_baseline_psi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_195.png}
+		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_1pt5_AC_psi195}
+	\end{subfigure}
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_210.png}
+	%	\caption{ $\psi$ = $210^\circ$, $\tilde{t}=0.583$}
+	%	\label{fig:mu_1pt5_baseline_psi210}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_210.png}
+	%	\caption{ $\psi$ = $210^\circ$, $\tilde{t}=0.583$}
+	%	\label{fig:mu_1pt5_AC_psi210}
+	%\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_225.png}
+		\caption{ $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
+		\label{fig:mu_1pt5_baseline_psi225}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_225.png}
+		\caption{ $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
+		\label{fig:mu_1pt5_AC_psi225}
+	\end{subfigure}
+	
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_240.png}
+		\caption{ $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:mu_1pt5_baseline_psi240}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_240.png}
+		\caption{ $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:mu_1pt5_AC_psi240}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_255.png}
+		\caption{ $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:mu_1pt5_baseline_psi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_255.png}
+		\caption{ $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:mu_1pt5_AC_psi255}
+	\end{subfigure}
+	
+	
+	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 1.5}
+	%\label{fig:vortScreen_mu1pt5}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_270.png}
+		\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+		\label{fig:mu_1pt5_baseline_psi270}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_270.png}
+		\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+		\label{fig:mu_1pt5_AC_psi270}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_285.png}
+		\caption{ $\psi$ = $285^\circ$, $\tilde{t}=0.792$}
+		\label{fig:mu_1pt5_baseline_psi285}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_285.png}
+		\caption{ $\psi$ = $285^\circ$,  $\tilde{t}=0.792$}
+		\label{fig:mu_1pt5_AC_psi285}
+	\end{subfigure}
+	
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_300.png}
+	%	\caption{ $\psi$ = $300^\circ$, $\tilde{t}=0.833$}
+	%	\label{fig:mu_1pt5_baseline_psi300}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_300.png}
+	%	\caption{ $\psi$ = $300^\circ$, $\tilde{t}=0.833$}
+	%	\label{fig:mu_1pt5_AC_psi300}
+	%\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_315.png}
+		\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:mu_1pt5_baseline_psi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_315.png}
+		\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:mu_1pt5_AC_psi315}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_330.png}
+		\caption{ $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+		\label{fig:mu_1pt5_baseline_psi330}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_330.png}
+		\caption{ $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+		\label{fig:mu_1pt5_AC_psi330}
+	\end{subfigure}
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/baseline/phase_345.png}
+	%	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+	%	\label{fig:mu_1pt5_baseline_psi345}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_1pt5/vorticity/AC/phase_345.png}
+	%	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+	%	\label{fig:mu_1pt5_AC_psi345}
+	%\end{subfigure}
+	
+	
+	
+	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 1.5}
+	\label{fig:vortScreen_mu1pt5}
+\end{figure}
+
+
+
+Figure \ref{fig:vortScreen_mu2pt0} shows the instantaneous spanwise vorticity for the sectional advance ratio of $\mu_{sect}=2.0$.
+As before, 8 different phases over the retreating phase of the cycle are shown and the vorticity range is selected to be [-30,30]$ U_{sect} /C$. Note that the set of phases shown is different between $\mu_{sect}=1.5$ and $2.0$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
 Reflex camber is activated at the phase of $\psi$=$200^\circ$ and reaches the full deflection at $\psi$=$205^\circ$.
 After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$335^\circ$, and smoothly reaches its original shape at $\psi$=$340^\circ$.
 
-As the airfoil trailing edge is deflected upwards for this actuated case with $\mu_{sect}=2.0$, a small vortex is formed near it. Roll up of the boundary layer and LEV formation is seen for both non-actuated and actuated cases at $\psi$=$210^\circ$.
-The flow separation near the trailing edge starts to form at the phase of $\psi$=$225^\circ$.
+As the airfoil trailing edge is deflected upwards for this actuated case with $\mu_{sect}=2.0$, a small vortex is formed near it, see Figure \ref{fig:mu_2pt0_AC_psi210}, which is similar to the actuated case with $\mu_{sect}=1.5$. Roll up of the boundary layer and LEV formation is seen for both baseline and actuated cases at $\psi$=$210^\circ$.
+The flow separation near the trailing edge starts to form at an earlier phase of $\psi$=$225^\circ$, as compared to $\psi$=$240^\circ$ for the lower sectional advance ratio of $\mu_{sect}=1.5$.
 
-In the subsequent phases after $\psi$=$225^\circ$ the size of the separated region increases for the non-actuated case till up to $\psi$=$285^\circ$.
-%However, the separation bubble is larger in the non-actuated case with $\mu_{sect}=2.0$ as compared to that with $\mu_{sect}=1.5$.
-For the actuated case, the separated region is relatively small (see Figures \ref{fig:mu_2pt0_non-actuated_psi270} and \ref{fig:mu_2pt0_AC_psi270}) and its size remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$.
-Overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
-The implications of this trailing-edge separated region on the drag force is discussed further below.
+In the subsequent phases after $\psi$=$225^\circ$ the size of the separated region increases for the baseline case till up to $\psi$=$285^\circ$. However, the separation bubble is larger in the baseline case with $\mu_{sect}=2.0$ as compared to that with $\mu_{sect}=1.5$.
+For the actuated case, the separated region is relatively small (see Figures \ref{fig:mu_2pt0_baseline_psi270} and \ref{fig:mu_2pt0_AC_psi270}) and its size remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$ (see Figures \ref{fig:mu_2pt0_AC_psi255}, \ref{fig:mu_2pt0_AC_psi270} and \ref{fig:mu_2pt0_AC_psi285}).
+As before, overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
+The implications of this trailing-edge separated region on the drag force is discussed in Section \ref{sec:drag_profile}.
 
-After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both non-actuated and actuated cases, see Figures \ref{fig:mu_2pt0_non-actuated_psi315} and \ref{fig:mu_2pt0_AC_psi315}. 
+After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both baseline and actuated cases, see Figures \ref{fig:mu_2pt0_baseline_psi315} and \ref{fig:mu_2pt0_AC_psi315}. 
 For the actuated case at $\psi$=$345^\circ$, the reflexed trailing edge is at its undeflected position.
 As the trailing edge is deflected down to its original position, this results in the formation of a small vortex as seen in Figure \ref{fig:mu_2pt0_AC_psi345}.
 
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_195.png}
+		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_2pt0_baseline_psi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_195.png}
+		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_2pt0_AC_psi195}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_210.png}
+		\caption{ $\psi$ = $210^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_2pt0_baseline_psi210}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_210.png}
+		\caption{ $\psi$ = $210^\circ$, $\tilde{t}=0.542$}
+		\label{fig:mu_2pt0_AC_psi210}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_225.png}
+		\caption{ $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
+		\label{fig:mu_2pt0_baseline_psi225}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_225.png}
+		\caption{ $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
+		\label{fig:mu_2pt0_AC_psi225}
+	\end{subfigure}
+	
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_240.png}
+	%	\caption{ $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+	%	\label{fig:mu_2pt0_baseline_psi240}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_240.png}
+	%	\caption{ $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+	%	\label{fig:mu_2pt0_AC_psi240}
+	%\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_255.png}
+		\caption{ $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:mu_2pt0_baseline_psi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_255.png}
+		\caption{ $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:mu_2pt0_AC_psi255}
+	\end{subfigure}
+	
+	
+	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
+	%\label{fig:vortScreen_mu2pt0}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_270.png}
+		\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+		\label{fig:mu_2pt0_baseline_psi270}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_270.png}
+		\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
+		\label{fig:mu_2pt0_AC_psi270}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_285.png}
+		\caption{ $\psi$ = $285^\circ$, $\tilde{t}=0.792$}
+		\label{fig:mu_2pt0_baseline_psi285}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_285.png}
+		\caption{ $\psi$ = $285^\circ$,  $\tilde{t}=0.792$}
+		\label{fig:mu_2pt0_AC_psi285}
+	\end{subfigure}
+	
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_300.png}
+	%	\caption{ $\psi$ = $300^\circ$, $\tilde{t}=0.833$}
+	%	\label{fig:mu_2pt0_baseline_psi300}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_300.png}
+	%	\caption{ $\psi$ = $300^\circ$, $\tilde{t}=0.833$}
+	%	\label{fig:mu_2pt0_AC_psi300}
+	%\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_315.png}
+		\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:mu_2pt0_baseline_psi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_315.png}
+		\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:mu_2pt0_AC_psi315}
+	\end{subfigure}
+	
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_330.png}
+	%	\caption{ $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+	%	\label{fig:mu_2pt0_baseline_psi330}
+	%\end{subfigure}
+	%\begin{subfigure}[b]{0.4\textwidth}
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_330.png}
+	%	\caption{ $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+	%	\label{fig:mu_2pt0_AC_psi330}
+	%\end{subfigure}
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_345.png}
+		\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:mu_2pt0_baseline_psi345}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_345.png}
+		\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:mu_2pt0_AC_psi345}
+	\end{subfigure}
+	
+	
+	
+	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
+	\label{fig:vortScreen_mu2pt0}
+\end{figure}
+
+Figure \ref{fig:total_drag_zoomed_mu_1pt5} shows the behavior of the total drag in the reverse flow region for the baseline and actuated cases at $\mu_{sect}=1.5$. The total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
+This normalization is used to be able to compare simulation and experimental data, where experiments involve tunnel effects such as walls and mounts (e.g., see \cite{bib:kocher2017}).
+It also avoids the indeterminate value at the point of reverse flow when instantaneous dynamic pressure (based on the relative velocity of the airfoil) is used for normalization.
+
+In Figure \ref{fig:total_drag_zoomed_mu_1pt5}, the drag is negative in the majority of the reverse flow region.
+The negative drag value implies that it acts in the opposite direction, i.e., it acts from the geometric trailing edge towards the leading edge, which is caused due to the negative relative velocity in the reverse flow region.
+In the actuated case, the negative drag value is reduced.
+We note that from a rotorcraft perspective a higher negative value of the sectional drag during the retreating phase results in a higher total rotor drag (i.e., H-force).
+
+In addition, in the baseline case the drag fluctuates around $\psi=270^\circ$ (i.e., around the peak of reverse flow), which is not the case in the actuated case.
+In the baseline case, the drag exhibits a local maximum around $\psi=235^\circ$ and a local minimum around $\psi=265^\circ$.
+This observation complies with that made in the flowfield (see Figure \ref{fig:vortScreen_mu1pt5}), i.e., the size of the trailing-edge separation bubble is relatively smaller and fairly constant in the actuated case.
 
 \begin{figure}[H]
-\centering
-
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_225.png}
-	\caption{ $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
-	\label{fig:mu_2pt0_non-actuated_psi225}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	 \includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_225.png}
-	\caption{ $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
-	\label{fig:mu_2pt0_AC_psi225}
-\end{subfigure}
-
 	
-
-\begin{subfigure}[b]{0.4\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_270.png}
-	\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
-	\label{fig:mu_2pt0_non-actuated_psi270}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_270.png}
-	\caption{ $\psi$ = $270^\circ$, $\tilde{t}=0.75$}
-	\label{fig:mu_2pt0_AC_psi270}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_315.png}
-	\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
-	\label{fig:mu_2pt0_non-actuated_psi315}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_315.png}
-	\caption{ $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
-	\label{fig:mu_2pt0_AC_psi315}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/baseline/phase_345.png}
-	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
-	\label{fig:mu_2pt0_non-actuated_psi345}
-\end{subfigure}
-\begin{subfigure}[b]{0.4\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/mu_2pt0/vorticity/AC/phase_345.png}
-	\caption{ $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
-	\label{fig:mu_2pt0_AC_psi345}
-\end{subfigure}
-
-
-
-	\caption{Instantaneous spanwise vorticity at 4 different phases for the non-actuated (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
-\label{fig:vortScreen_mu2pt0}
+	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png}
+	\caption{Normalized total drag in the reverse flow region for the baseline (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=1.5$}
+	\label{fig:total_drag_zoomed_mu_1pt5}
 \end{figure}
+
+
+%	\begin{subfigure}[b]{0.45\textwidth}
+%		\centering
+%		\includegraphics[width=1\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_2.png}
+%		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+%		\label{fig:mu_2pt0_AC_psi195}
+%	\end{subfigure}
+%
+%\end{figure}
+
+
+
+
+Table \ref{table:D_ratios_mu_1pt5} provides the ratios of the drag for the non-actuated and actuated cases denoted as $D^{non-act}$ and $D^{act}$, respectively.
+This is done for different components of the drag, namely, total drag ($D_T$) along with pressure ($D_p$) and viscous ($D_v$) components.
+Three phases of $\psi=240^\circ$, $255^\circ$ and $270^\circ$ are considered.
+
+
+\begin{table}[H]
+	%\begin{wraptable}[10]{l}[.005in]{3in}
+	\vspace{0cm}
+	\centering
+	\caption{Drag ratios ($\mu_{sect} = 1.5$ )}
+	\label{table:D_ratios_mu_1pt5}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
+		\hline
+		\hline
+		$240^\circ$ & 0.67 & 0.66 & 1.06   \\
+		\hline
+		$255^\circ$ & 0.48 & 0.47 & 1.16   \\
+		\hline
+		$270^\circ$ & 0.37 & 0.35 & 2.28   \\
+		\hline
+		%		$285^\circ$ & 0.23 & 0.24 & -1.11   \\
+		%		\hline
+	\end{tabular}
+\end{table}
+%\end{wraptable}
+
+At $\psi=240^\circ$, the total drag in the actuated case is about 0.67 times of the total drag in the baseline case, i.e., about 33\% drag reduction. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.48 and 0.37, respectively, i.e., about 52\% and 63\% drag reduction respectively.
+The pressure drag ratios are very similar to the total drag ratios.
+This is because at these phases the pressure drag accounts for about 97\% to 99\% of the total drag in the non-actuated case, and about 90\% to 94\% in the actuated case.
+The viscous drag ratios are higher than 1, indicating that the viscous drag is larger in the actuated case as compared to the baseline case. 
+
+
+
 
 Figure \ref{fig:total_drag_zoomed_mu_2pt0} shows the behavior of the total drag in the reverse flow region for the non-actuated and actuated cases at $\mu_{sect}=2.0$. As before, the total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
 The drag is negative in the majority of the reverse flow region.

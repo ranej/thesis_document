@@ -24,7 +24,6 @@
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
 \usepackage{longtable,tabularx}
-\usepackage{caption}
 \usepackage{subcaption}
 \setlength\LTleft{0pt} 
 
@@ -75,9 +74,12 @@
 \label{zonal_adapt_results}
 
 
-
-\bibliographystyle{new-aiaa}
+\begin{singlespace}
+\specialhead{REFERENCES}
 \bibliography{bibtex_database}
+\bibliographystyle{new-aiaa}
+%\bibliographystyle{new-aiaa}
+\end{singlespace}
 %\include{bibtex_database} % bibliography
 \include{rpiapp} % appendix
 
