@@ -1,24 +1,32 @@
 \chapter{Results and Discussion: Zonal Based Adaptation/Refinement}
 
-In chapter \ref{adapt_strat}, we established that the zonal based refinement/adaptation is the best strategy for computing accurate numerical solution using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation/refinement strategy to the low Reynolds number case of $Re=40,000$ at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$ till we obtain mesh convergence. Here, we also perform an in-depth study of how spanwise resolution of the mesh affects the solution.
+In chapter \ref{adapt_strat}, we established that the zonal based refinement/adaptation is the best strategy for computing accurate numerical solution of periodic problems in space and time using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation/refinement strategy to the low Reynolds number case of $Re=40,000$ at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$ till we obtain mesh convergence. Here, we also perform an in-depth study of how spanwise resolution of the mesh affects the solution.
 
 The nomenclature used for the different meshes, and mesh details are as follows:
 
 [insert table with mesh names and mesh details here]
 
+\section{ $Re=40,000$,  $\alpha=6^\circ$, $\mu_{sect}=1.2$}
 
-\section{Force Response}
+\subsection{Force Response}
 \input{chapters/zonal_adapt_results/force_response}
 \label{sec:zonal_force_response}
 
-\section{Flowfield: Spanwise Vorticity}
+\subsection{Flowfield: Spanwise Vorticity}
 \input{chapters/zonal_adapt_results/vorticity}
 \label{sec:zonal_vorticity}
 
-\section{Cp}
+\subsection{Cp}
 \input{chapters/zonal_adapt_results/Cp}
 \label{sec:zonal_cp}
 
-\section{LEV}
+\subsection{LEV}
 \input{chapters/zonal_adapt_results/LEV}
 \label{sec:zonal_LEV}
+
+
+\section{ $Re=40,000$,  $\alpha=10^\circ$, $\mu_{sect}=1.5$: Active Camber Case}
+
+\input{chapters/zonal_adapt_results/active_camber}
+\label{sec:zonal_active_camber}
+
