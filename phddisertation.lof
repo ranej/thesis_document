@@ -23,17 +23,18 @@
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $210^\circ $ for different meshes\relax }}{47}{figure.caption.37}% 
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $270^\circ $ for different meshes\relax }}{48}{figure.caption.38}% 
 \contentsline {figure}{\numberline {4.22}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{50}{figure.caption.39}% 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Normalized forces for different meshes\relax }}{53}{figure.caption.40}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $150^\circ $ for different meshes\relax }}{56}{figure.caption.41}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $180^\circ $ for different meshes\relax }}{57}{figure.caption.42}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $210^\circ $ for different meshes\relax }}{58}{figure.caption.43}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $240^\circ $ for different meshes\relax }}{59}{figure.caption.44}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $270^\circ $ for different meshes\relax }}{60}{figure.caption.45}% 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{62}{figure.caption.46}% 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{63}{figure.caption.47}% 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces LEV location for different meshes\relax }}{64}{figure.caption.48}% 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Tangential velocity profiles of LEV at different phases with 95\% confidence interval\relax }}{66}{figure.caption.49}% 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces LEV radius for different meshes\relax }}{67}{figure.caption.50}% 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Turbulence Intensity of LEV at different phases\relax }}{68}{figure.caption.51}% 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu _{sect}$ = 1.5\relax }}{69}{figure.caption.52}% 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu _{sect}$ = 1.5\relax }}{70}{figure.caption.53}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mesh and estimated error\relax }}{54}{figure.caption.40}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Normalized forces for different meshes\relax }}{55}{figure.caption.41}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $150^\circ $ for different meshes\relax }}{58}{figure.caption.42}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $180^\circ $ for different meshes\relax }}{59}{figure.caption.43}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $210^\circ $ for different meshes\relax }}{60}{figure.caption.44}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $240^\circ $ for different meshes\relax }}{61}{figure.caption.45}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $270^\circ $ for different meshes\relax }}{62}{figure.caption.46}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{64}{figure.caption.47}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{65}{figure.caption.48}% 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces LEV location for different meshes\relax }}{66}{figure.caption.49}% 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Tangential velocity profiles of LEV at different phases with 95\% confidence interval\relax }}{68}{figure.caption.50}% 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces LEV radius for different meshes\relax }}{69}{figure.caption.51}% 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Turbulence Intensity of LEV at different phases\relax }}{70}{figure.caption.52}% 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu _{sect}$ = 1.5\relax }}{71}{figure.caption.53}% 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu _{sect}$ = 1.5\relax }}{72}{figure.caption.54}% 
