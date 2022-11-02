@@ -1,23 +1,3 @@
-\chapter{Adaptive Strategies}
-
-In this section, we focus on adaptive LES of flow over a surging airfoil at different conditions. Problem setup, and baseline results including vortex detection and tracking, are first presented using the non-adapated mesh. We also present active flow control cases in the form of active reflex camber. Next, we present the three adaptive strategies and corresponding results. 
-
-\input{chapters/adapt_strat/baseline_results}
-\label{sec:baseline_results}
-
-\section{Overview of Adaptive Strategies}
-
-In this section, we focus on the low Reynolds number case of $Re=40,000$ at an angle of attack of $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$. We explore three different adaptation strategies for mesh adaptation based on the VMS-based estimated error. 
-
-The first strategy we employ is error estimator based zonal refinement/adaptation. 
-In this strategy, we obtain an initial solution on a baseline mesh for the problem at hand. The VMS-based error estimator is then applied to the solution corresponding to this mesh, and based on the estimated error, the mesh is refined by a factor of 2 in particular zones where high error values are found. Estimated error for this adapted mesh is then calculated, and the mesh is again refined by a factor of 2 in zones of high error. This process is repeated till it is computationally feasible, or a convergence is reached.
-
-The second strategy we employ is fully automated mesh adaptation based on the VMS-based error estimator. In this strategy, the estimated error and a specified target error are used to compute the desired mesh size or resolution in a local fashion, i.e., at every mesh vertex. We refer to this as the nodal size field, and the mesh is refined or coarsened based on this nodal size field. 
-
-The third strategy is to employ feature-based refinement/adaptation. This allows for refinement around dominant flow features and also along the path/trajectory of such features, for example, the paths of leading and trailing edge vortices (LEV and TEV) over a surging cycle using vortex tracking. By running an initial simulation, we can get information on the approximate path that a certain feature will follow, estimate the error along this path, and perform refinement/adaptation along this path. 
-
-Further details and applications of these three strategies are included in the following sections.
-
 \subsection{Zonal Refinement/Adaptation}
 \input{chapters/adapt_strat/zonal_based}
 
