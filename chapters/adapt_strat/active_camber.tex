@@ -1,21 +1,24 @@
-In this section, we focus only on high Reynolds number flow ($Re=1,000,000$) at higher angle of attack of $\alpha=10^\circ$ and section advance ratios of $\mu_{sect}= 1.5$ and $2.0$. These advance ratios include a significant portion of the retreating phase with negative relative velocity or a reversed flow condition. 
-In this reverse flow condition, massive flow separation near the geometric trailing edge is observed, and as a result, a force is experienced by the airfoil along the surging direction. We try to mitigate this by applying active flow control in the form of active reflex camber. 
+In this section, we focus only on high Reynolds number flow ($Re=1,000,000$) at higher angle of attack of $\alpha=10^\circ$ and section advance ratios of $\mu_{sect}= 1.5$ and $2.0$. 
+These advance ratios include a significant portion of the retreating phase with negative relative velocity or a reversed flow condition. 
+In this reverse flow condition, massive flow separation near the geometric trailing edge is observed, and as a result, a force is experienced by the airfoil along the surging direction. 
+We try to mitigate this by applying active flow control in the form of active reflex camber. 
 
 The case with active reflex camber is referred as the actuated case.
 In the actuated case, the (geometric) trailing edge is deflected up by an angle of $\beta_{TE}$=$\alpha$=10$^\circ$, with the hinge point at the 3/4th or 75\% chord location (i.e., close to the trailing edge).
 The reflex camber is applied smoothly over a short period of time (both at activation and deactivation).
 The full reflex/deflection is achieved just before the reverse flow regime is encountered by the airfoil in the retreating phase, and the airfoil starts to return to its original/undeflected shape once the airfoil is out of the reverse flow.
 
-Figure \ref{fig:U_rel} shows the variation of $\tilde{U}_{rel}$ over the cycle at sectional advance ratio of $\mu_{sect}=1.5$ (blue dashed line) and $2.0$ (green solid line). The region with $\tilde{U}_{rel}<0$ shows the phases when reverse flow is encountered by the airfoil. The open circles on each curve represent the portion of the oscillation cycle when reflex camber is activated for that particular sectional advance ratio.
+Figure \ref{fig:U_rel} shows the variation of $\tilde{U}_{rel}$ over the cycle at sectional advance ratio of $\mu_{sect}=1.5$ (blue dashed line) and $2.0$ (green solid line).
+The region with $\tilde{U}_{rel}<0$ shows the phases when reverse flow is encountered by the airfoil.
+The open circles on each curve represent the portion of the oscillation cycle when reflex camber is activated for that particular sectional advance ratio.
 
 
 \begin{figure}[H]
-	\begin{center}
+\centering
 \texttt{}		\includegraphics[width=4in]{figures/U_rel_vs_t_tilde_without_lines.png}
 		\caption{Variation of $\tilde{U}_{rel}$ at $\mu_{sect}=1.5$ (green solid line) and $2.0$ (blue dashed line), open circles on each curve represent the portion of the oscillation cycle when reflex camber is activated}
 		% with $\tilde{t}$ for $\lambda = 1.5$; shaded region where actuated camber is employed; red vertical lines showing instances where data is captured}
 		\label{fig:U_rel}
-	\end{center}
 \end{figure}
 
 
@@ -38,12 +41,12 @@ Table~\ref{table:summary_cases_AC} provides a summary of the current cases. $\be
 	
 \end{table}
 
-The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:baseline_cases}.
+The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:problem_setup_baseline}.
 Also, as noted earlier, an ALE description is used to account for the motion and deformation of the airfoil.
 Mesh deformation is currently prescribed based on the motion and deformation of the airfoil.
 The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}.
 
-The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:baseline_cases}.
+The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:problem_setup_baseline}.
 Also, as noted earlier, an ALE description is used to account for the motion and deformation of the airfoil.
 Mesh deformation is currently prescribed based on the motion and deformation of the airfoil.
 The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}.
@@ -51,18 +54,19 @@ The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.4\textwidth}
+	\begin{subfigure}[b]{0.6\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{figures/Setup/mesh}
 		\caption{non-actuated case}
 		\label{fig:mesh_non-actuated}
 	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=1\textwidth]{figures/Setup/mesh_AC}
-%		\caption{actuated case (with reflex camber)}
-%		\label{fig:mesh_actuated}
-%	\end{subfigure}
+
+	\begin{subfigure}[b]{0.6\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Setup/mesh_AC}
+		\caption{actuated case (with reflex camber)}
+		\label{fig:mesh_actuated}
+	\end{subfigure}
 	\caption{Mesh around the airfoil for the non-actuated and actuated cases during the reverse flow region}
 	\label{fig:mesh3}
 \end{figure}

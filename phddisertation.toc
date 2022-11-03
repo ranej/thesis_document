@@ -13,34 +13,36 @@
 \contentsline {section}{\numberline {3.2}Formulation for 1D Advection-Diffusion Equation}{12}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Generalization of VMS Error Estimator}{14}{subsection.3.2.1}% 
 \contentsline {subsubsection}{\numberline {3.2.1.1}Generalization to Multi-dimensional Cases}{14}{subsubsection.3.2.1.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Application to the Navier-Stokes Equations}{15}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Application to Periodic Problems}{15}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Overview of Adaptive Strategies}{16}{subsection.3.2.4}% 
-\contentsline {subsubsection}{\numberline {3.2.4.1}Zonal Refinement/Adaptation}{16}{subsubsection.3.2.4.1}% 
-\contentsline {subsubsection}{\numberline {3.2.4.2}Nodal Size Field-based Adaptation}{16}{subsubsection.3.2.4.2}% 
-\contentsline {subsubsection}{\numberline {3.2.4.3}Feature-based Refinement/Adaptation}{17}{subsubsection.3.2.4.3}% 
+\contentsline {section}{\numberline {3.3}Application to the Navier-Stokes Equations}{15}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Application to Periodic Problems}{15}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Overview of Adaptive Strategies}{16}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Zonal Refinement/Adaptation}{16}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Nodal Size Field-based Adaptation}{16}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.3}Feature-based Refinement/Adaptation}{17}{subsection.3.5.3}% 
 \contentsline {chapter}{\numberline {4.}Baseline/Non-adapted Cases}{19}{chapter.4}% 
-\contentsline {subsection}{\numberline {4.0.1}Problem Setup: Surging Airfoils}{19}{subsection.4.0.1}% 
-\contentsline {subsection}{\numberline {4.0.2}Summary of Baseline Cases}{20}{subsection.4.0.2}% 
-\contentsline {subsection}{\numberline {4.0.3}Results and Discussion}{22}{subsection.4.0.3}% 
-\contentsline {subsection}{\numberline {4.0.4}Feature/Vortex Detection and Tracking: LEV}{27}{subsection.4.0.4}% 
-\contentsline {subsection}{\numberline {4.0.5}Active Reflex Camber}{29}{subsection.4.0.5}% 
-\contentsline {chapter}{\numberline {5.}Adaptive LES}{42}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Adaptive Strategies}{42}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Zonal Refinement/Adaptation}{42}{subsection.5.1.1}% 
-\contentsline {subsection}{\numberline {5.1.2}Nodal Size Field-based Adaptation}{43}{subsection.5.1.2}% 
-\contentsline {subsection}{\numberline {5.1.3}Feature-based Refinement/Adaptation}{44}{subsection.5.1.3}% 
-\contentsline {subsection}{\numberline {5.1.4}Results using Different Adaptive Strategies}{45}{subsection.5.1.4}% 
-\contentsline {section}{\numberline {5.2}Application of Zonal Adaptive/Refinement Strategy}{54}{section.5.2}% 
-\contentsline {section}{\numberline {5.3} $Re=40,000$, $\alpha =6^\circ $, $\mu _{sect}=1.2$}{54}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Mesh and Estimated Error-Field}{56}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Force Response}{56}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Flowfield: Spanwise Vorticity}{58}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}Cp}{65}{subsection.5.3.4}% 
-\contentsline {subsection}{\numberline {5.3.5}Cp: LEV}{66}{subsection.5.3.5}% 
-\contentsline {subsection}{\numberline {5.3.6}Cp: Trailing Edge Separation}{66}{subsection.5.3.6}% 
-\contentsline {subsection}{\numberline {5.3.7}LEV}{67}{subsection.5.3.7}% 
-\contentsline {section}{\numberline {5.4} $Re=40,000$, $\alpha =10^\circ $, $\mu _{sect}=1.5$: Active Camber Case}{73}{section.5.4}% 
-\contentsline {chapter}{REFERENCES}{75}{section*.60}% 
+\contentsline {section}{\numberline {4.1}Problem Setup: Surging Airfoils}{19}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Summary of Baseline Cases}{20}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Results and Discussion}{22}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Force Response}{22}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Flowfield: Spanwise Vorticity}{23}{subsection.4.3.2}% 
+\contentsline {section}{\numberline {4.4}Feature/Vortex Detection and Tracking: LEV}{30}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Active Reflex Camber}{32}{section.4.5}% 
+\contentsline {chapter}{\numberline {5.}Adaptive LES}{45}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Adaptive Strategies}{45}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Zonal Refinement/Adaptation}{45}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Nodal Size Field-based Adaptation}{46}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Feature-based Refinement/Adaptation}{47}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Results using Different Adaptive Strategies}{48}{subsection.5.1.4}% 
+\contentsline {section}{\numberline {5.2}Application of Zonal Adaptive/Refinement Strategy}{57}{section.5.2}% 
+\contentsline {section}{\numberline {5.3} $Re=40,000$, $\alpha =6^\circ $, $\mu _{sect}=1.2$}{57}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Mesh and Estimated Error-Field}{59}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Force Response}{60}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Flowfield: Spanwise Vorticity}{61}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.4}Cp}{69}{subsection.5.3.4}% 
+\contentsline {subsection}{\numberline {5.3.5}Cp: LEV}{70}{subsection.5.3.5}% 
+\contentsline {subsection}{\numberline {5.3.6}Cp: Trailing Edge Separation}{70}{subsection.5.3.6}% 
+\contentsline {subsection}{\numberline {5.3.7}LEV}{71}{subsection.5.3.7}% 
+\contentsline {section}{\numberline {5.4} $Re=40,000$, $\alpha =10^\circ $, $\mu _{sect}=1.5$: Active Camber Case}{77}{section.5.4}% 
+\contentsline {chapter}{REFERENCES}{79}{section*.62}% 
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{77}{appendix.A}% 
+\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{81}{appendix.A}% 

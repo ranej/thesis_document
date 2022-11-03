@@ -5,7 +5,8 @@ In this section, we focus on LES of flow over a surging airfoil at different con
 
 \label{sec:baseline_results}
 
-\subsection{Problem Setup: Surging Airfoils}
+\section{Problem Setup: Surging Airfoils}
+\label{sec:problem_setup_baseline}
 
 A schematic of the problem setup is shown in Figure~\ref{fig:SetUpSketch}, where $U_\infty$ is the free-stream or mean velocity and $\alpha$ is the angle of attack.
 
@@ -42,7 +43,7 @@ Advancing phase is defined between $\tilde{t}$=0 or $\psi$=$0^\circ$ and $\tilde
 The free-stream or mean Reynolds number is defined as $Re=U_\infty C/\nu$, where $C$ is the chord.
 The reduced frequency is defined as $k=\pi f C/U_\infty$ while the amplitude is related as $A = \frac{\mu_{sect} C}{2k}$.
 
-\subsection{Summary of Baseline Cases}
+\section{Summary of Baseline Cases}
 \label{sec:baseline_case_summary}
 
 In the current study, the reduced frequency is held fixed at $k$=0.133 while three Reynolds numbers of $Re$=40,000, 200,000 and 1,000,000 are considered together with two advance ratios of $\mu_{sect}$=1.0 and 1.2, i.e., six cases are considered in total.
@@ -99,16 +100,18 @@ Overall the mesh contains about 6.2 million nodes and 10.8 million elements.
 \label{fig:mesh2}
 \end{figure}
 
-\subsection{Results and Discussion}
+\section{Results and Discussion}
+
+\subsection{Force Response}
 
 \begin{figure}[H]
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=1\textwidth]{figures/lift_Re_effect_lambda_1pt0}
+		\includegraphics[width=1\textwidth]{figures/lift_Re_effect_lambda_1pt0.png}
 		\subcaption{$\mu_{sect} = 1.0$}
 		\label{fig:lift_Re_comparision_lambda_1p0}
 	\end{subfigure}
  	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=1\textwidth]{figures/lift_Re_effect_lambda_1pt2}
+		\includegraphics[width=1\textwidth]{figures/lift_Re_effect_lambda_1pt2.png}
         \subcaption{$\mu_{sect} = 1.2$}
 		\label{fig:lift_Re_comparision_lambda_1p2}
 	\end{subfigure}
@@ -136,7 +139,9 @@ The peak normalized lift is about 9\% lower for the highest Reynolds number case
 On the other hand, for a given Reynolds number the normalized lift is higher for the higher advance ratio, which is expected due to the higher dynamic pressure in any given instance or phase in the surging cycle.
 The peak normalized lift is about 21\% higher for the higher advance ratio case as compared to the lower advance ratio case for each Reynolds number, which is the difference in the peak dynamic pressure between the two advance ratios.
 
-In this section, we present spanwise vorticity over the cycle at 4 different phases of $\psi$ = $195^\circ$, $225^\circ$, $270^\circ$, and $330^\circ$, which are all in the retreating phase of the surging cycle.
+\subsection{Flowfield: Spanwise Vorticity}
+
+In this section, we present spanwise vorticity over the cycle at 8 different phases of $\psi$ = $195^\circ$, $225^\circ$, $240^\circ$, $255^\circ$, $270^\circ$, $270^\circ$, $315^\circ$, $330^\circ$,and $345^\circ$, which are all in the retreating phase of the surging cycle.
 We focus our attention on the LEV which is the dominant flow feature.
 It forms and advects during the retreating phase while in the advancing phase the flow remains attached.
 As noted earlier, data is phase averaged over 4 cycles.
@@ -148,87 +153,170 @@ At $\psi$=$195^\circ$, the flow over the airfoil is mostly attached, however, th
 As expected, the boundary layer is much thicker for the lowest Reynolds number of $Re$=40,000 as compared to the other two higher Reynolds number.
 
 \begin{figure}[H]
-\centering
+	\centering
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_195.png}
+		\caption{$Re=4e4$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_40k_1pt0_phi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_195.png}
+		\caption{$Re=2e5$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_200k_1pt0_phi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_195.png}
+		\caption{$Re= 1e6$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_1m_1pt0_phi195}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_225.png}
+		\caption{$Re=4e4$, $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
+		\label{fig:Re_40k_1pt0_phi225}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_225.png}
+		\caption{$Re=2e5$, $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
+		\label{fig:Re_200k_1pt0_phi225}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_225.png}
+		\caption{$Re=1e6$, $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
+		\label{fig:Re_1m_1pt0_phi225}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_240.png}
+		\caption{$Re=4e4$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_40k_1pt0_phi240}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_240.png}
+		\caption{$Re=2e5$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_200k_1pt0_phi240}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_240.png}
+		\caption{$Re=1e6$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_1m_1pt0_phi240}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_255.png}
+		\caption{$Re=4e4$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_40k_1pt0_phi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_255.png}
+		\caption{$Re=2e5$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_200k_1pt0_phi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_255.png}
+		\caption{$Re=1e6$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_1m_1pt0_phi255}
+	\end{subfigure}
+	
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.0}
+	\label{fig:vortScreen_1pt0}
+\end{figure}
 
-\begin{subfigure}[b]{0.32\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt0/phase_195.png}
-\caption{$Re=4e4$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
-\label{fig:Re_40k_1pt0_phi195}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt0/phase_195.png}
-\caption{$Re=2e5$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
-\label{fig:Re_200k_1pt0_phi195}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt0/phase_195.png}
-\caption{$Re= 1e6$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
-\label{fig:Re_1m_1pt0_phi195}
-\end{subfigure}
 
-\begin{subfigure}[b]{0.32\textwidth}
+\begin{figure}[H]\ContinuedFloat
 	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt0/phase_225.png}
-	\caption{$Re=4e4$, $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
-	\label{fig:Re_40k_1pt0_phi225}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt0/phase_225.png}
-	\caption{$Re=2e5$, $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
-	\label{fig:Re_200k_1pt0_phi225}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt0/phase_225.png}
-	\caption{$Re=1e6$, $\psi$ = $225^\circ$,  $\tilde{t}=0.625$}
-	\label{fig:Re_1m_1pt0_phi225}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt0/phase_270.png}
-	\caption{$Re=4e4$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
-	\label{fig:Re_40k_1pt0_phi270}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt0/phase_270.png}
-	\caption{$Re=2e5$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
-	\label{fig:Re_200k_1pt0_phi2702}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt0/phase_270.png}
-	\caption{$Re=1e6$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
-	\label{fig:Re_1m_1pt0_phi270}
-\end{subfigure}
-
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt0/phase_330.png}
-	\caption{$Re=4e4$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
-	\label{fig:Re_40k_1pt0_phi330}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt0/phase_330.png}
-	\caption{$Re=2e5$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
-	\label{fig:Re_200k_1pt0_phi330}
-\end{subfigure}
-\begin{subfigure}[b]{0.32\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt0/phase_330.png}
-	\caption{$Re=1e6$,$\psi$ = $330^\circ$, $\tilde{t}=0.917$}
-	\label{fig:Re_1m_1pt0_phi330}
-\end{subfigure}
-
-\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.0}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_270.png}
+		\caption{$Re=4e4$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
+		\label{fig:Re_40k_1pt0_phi270}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_270.png}
+		\caption{$Re=2e5$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
+		\label{fig:Re_200k_1pt0_phi270}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_270.png}
+		\caption{$Re=1e6$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
+		\label{fig:Re_1m_1pt0_phi270}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_315.png}
+		\caption{$Re=4e4$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_40k_1pt0_phi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_315.png}
+		\caption{$Re=2e5$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_200k_1pt0_phi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_315.png}
+		\caption{$Re=1e6$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_1m_1pt0_phi315}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_330.png}
+		\caption{$Re=4e4$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+		\label{fig:Re_40k_1pt0_phi330}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_330.png}
+		\caption{$Re=2e5$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+		\label{fig:Re_200k_1pt0_phi330}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_330.png}
+		\caption{$Re=1e6$,$\psi$ = $330^\circ$, $\tilde{t}=0.917$}
+		\label{fig:Re_1m_1pt0_phi330}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt0/phase_345.png}
+		\caption{$Re=4e4$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_40k_1pt0_phi345}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt0/phase_345.png}
+		\caption{$Re=2e5$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_200k_1pt0_phi345}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt0/phase_345.png}
+		\caption{$Re=1e6$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_1m_1pt0_phi345}
+	\end{subfigure}	
+\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.0}
 \label{fig:vortScreen_1pt0}
 \end{figure}
+
 
 At $\psi$=$225^\circ$, the flow is separated near the leading edge for the lowest Reynolds number of $Re$=40,000 and the separated shear layer rolls up into an LEV, see Figure~\ref{fig:Re_200k_1pt0_phi225}
 For the other two higher Reynolds number, the flow remains attached.
@@ -269,67 +357,167 @@ This aspect is discussed further in Section \ref{sec:LEV}.
 	
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt2/phase_225.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_195.png}
+		\caption{$Re= 4e4$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_40k_1pt2_phi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_195.png}
+		\caption{$Re=2e5$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_200k_1pt2_phi195}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_195.png}
+		\caption{$Re= 1e6$, $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+		\label{fig:Re_1m_1pt2_phi195}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_225.png}
 		\caption{$Re=4e4$, $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
 		\label{fig:Re_40k_1pt2_phi225}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt2/phase_225.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_225.png}
 		\caption{$Re=2e5$, $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
 		\label{fig:Re_200k_1pt2_phi225}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt2/phase_225.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_225.png}
 		\caption{$Re=1e6$, $\psi$ = $225^\circ$, $\tilde{t}=0.625$}
 		\label{fig:Re_1m_1pt2_phi225}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt2/phase_270.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_240.png}
+		\caption{$Re=4e4$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_40k_1pt2_phi240}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_240.png}
+		\caption{$Re=2e5$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_200k_1pt2_phi240}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_240.png}
+		\caption{$Re=1e6$, $\psi$ = $240^\circ$, $\tilde{t}=0.667$}
+		\label{fig:Re_1m_1pt2_phi240}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_255.png}
+		\caption{$Re=4e4$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_40k_1pt2_phi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_255.png}
+		\caption{$Re=2e5$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_200k_1pt2_phi255}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_255.png}
+		\caption{$Re=1e6$, $\psi$ = $255^\circ$, $\tilde{t}=0.708$}
+		\label{fig:Re_1m_1pt2_phi255}
+	\end{subfigure}
+	
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.2}
+%	\label{fig:vortScreen_1pt2}
+\end{figure}
+
+
+\begin{figure}[H]\ContinuedFloat
+	\centering
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_270.png}
 		\caption{$Re=4e4$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
 		\label{fig:Re_40k_1pt2_phi270}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt2/phase_270.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_270.png}
 		\caption{$Re=2e5$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
 		\label{fig:Re_200k_1pt2_phi270}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt2/phase_270.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_270.png}
 		\caption{$Re=1e6$, $\psi$ = $270^\circ$, $\tilde{t}=0.750$}
 		\label{fig:Re_1m_1pt2_phi270}
 	\end{subfigure}
 	
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_40k_1pt2/phase_330.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_315.png}
+		\caption{$Re=4e4$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_40k_1pt2_phi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_315.png}
+		\caption{$Re=2e5$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_200k_1pt2_phi315}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_315.png}
+		\caption{$Re=1e6$, $\psi$ = $315^\circ$, $\tilde{t}=0.875$}
+		\label{fig:Re_1m_1pt2_phi315}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_330.png}
 		\caption{$Re=4e4$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
 		\label{fig:Re_40k_1pt2_phi330}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_200k_1pt2/phase_330.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_330.png}
 		\caption{$Re=2e5$, $\psi$ = $330^\circ$, $\tilde{t}=0.917$}
 		\label{fig:Re_200k_1pt2_phi330}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.32\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/vorticity_plots/Re_1m_1pt2/phase_330.png}
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_330.png}
 		\caption{$Re=1e6$,$\psi$ = $330^\circ$, $\tilde{t}=0.917$}
 		\label{fig:Re_1m_1pt2_phi330}
-		
 	\end{subfigure}	
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_40k_1pt2/phase_345.png}
+		\caption{$Re=4e4$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_40k_1pt2_phi345}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_200k_1pt2/phase_345.png}
+		\caption{$Re=2e5$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_200k_1pt2_phi345}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/Vorticity_plots/Re_1m_1pt2/phase_345.png}
+		\caption{$Re=1e6$,$\psi$ = $345^\circ$, $\tilde{t}=0.958$}
+		\label{fig:Re_1m_1pt2_phi345}
+	\end{subfigure}
 	
-\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.2}
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.2}
 	\label{fig:vortScreen_1pt2}
 \end{figure}
 
-\subsection{Feature/Vortex Detection and Tracking: LEV}
+\section{Feature/Vortex Detection and Tracking: LEV}
 \label{sec:LEV}
 
 In this section, we quantify the evolution of the LEV based on its size and position.
@@ -365,12 +553,12 @@ In the $\mu_{sect}$=1.2 case, the LEV increases in size throughout the cycle and
 
 \begin{figure}[H]
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=1\textwidth]{figures/LEV_size_lambda_1pt0}
+		\includegraphics[width=1\textwidth]{figures/LEV_size_lambda_1pt0.png}
 		\caption{$\mu_{sect} = 1.0$}
 		\label{fig:LEV_size_lambda_1p0}
 	\end{subfigure}
  	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=1\textwidth]{figures/LEV_size_lambda_1pt2}
+	\includegraphics[width=1\textwidth]{figures/LEV_size_lambda_1pt2.png}
 	\caption{$\mu_{sect} = 1.2$}
 	\label{fig:LEV_size_lambda_1p2}
 	\end{subfigure}
@@ -396,7 +584,7 @@ This feature/vortex detection and tracking procedure is useful for feature-based
 	\label{fig:LEV_location_LE_airfoil}
 \end{figure}
 
-\subsection{Active Reflex Camber}
+\section{Active Reflex Camber}
 \input{chapters/adapt_strat/active_camber}
 
 
