@@ -23,7 +23,7 @@ This mesh is referred to as Mza2.
 Multiple spanwise resolutions are considered again for this adaptation cycle.
 This process is repeated for further adaptation cycles till mesh convergence is achieved.
 
-\section{ $Re=40,000$,  $\alpha=6^\circ$, $\mu_{sect}=1.2$}
+\subsection{ $Re=40,000$,  $\alpha=6^\circ$, $\mu_{sect}=1.2$}
 
 In this section, we focus on applying the zonal based adaptation/refinement strategy to the low Reynolds number case of $Re=40,000$ at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$ till we obtain mesh convergence.
 We start with a baseline mesh that satisfies LES surface resolution criteria in wall plus units at maximum Reynolds number, which is achieved at $\psi=90^\circ$ (since relative velocity over the airfoil is maximum at this phase). 
@@ -44,29 +44,29 @@ Initial spanwise resolution of Mza3\_nz50 is chosen, along with factor of 2 span
 We would like to note that Mza3\_nz200 mesh was not computationally feasible, so we stop at Mza3\_nz100.
 Results for both Mza3\_nz50 and Mza3\_nz100 are shown in the following sections.
 
-\subsection{Mesh and Estimated Error-Field}
+\subsubsection{Mesh and Estimated Error-Field}
 \input{chapters/zonal_adapt_results/mesh_and_error_field}
 \label{sec:zonal_mesh_and_error}
 
-\subsection{Force Response}
+\subsubsection{Force Response}
 \input{chapters/zonal_adapt_results/force_response}
 \label{sec:zonal_force_response}
 
-\subsection{Flowfield: Spanwise Vorticity}
+\subsubsection{Flowfield: Spanwise Vorticity}
 \input{chapters/zonal_adapt_results/vorticity}
 \label{sec:zonal_vorticity}
 
-\subsection{Cp}
+\subsubsection{Pressure Coefficient}
 \input{chapters/zonal_adapt_results/Cp}
 \label{sec:zonal_cp}
 
-\subsection{LEV}
+\subsubsection{LEV}
 \input{chapters/zonal_adapt_results/LEV}
 \label{sec:zonal_LEV}
 
 
-\section{ $Re=40,000$,  $\alpha=10^\circ$, $\mu_{sect}=1.5$: Active Camber Case}
+%\section{ $Re=40,000$,  $\alpha=10^\circ$, $\mu_{sect}=1.5$: Active Camber Case}
 
-\input{chapters/zonal_adapt_results/active_camber}
-\label{sec:zonal_active_camber}
+%\input{chapters/zonal_adapt_results/active_camber_adapt}
+%\label{sec:zonal_active_camber}
 

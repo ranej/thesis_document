@@ -26,23 +26,24 @@
 \contentsline {subsection}{\numberline {4.3.1}Force Response}{22}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}Flowfield: Spanwise Vorticity}{23}{subsection.4.3.2}% 
 \contentsline {section}{\numberline {4.4}Feature/Vortex Detection and Tracking: LEV}{30}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}Active Reflex Camber}{32}{section.4.5}% 
-\contentsline {chapter}{\numberline {5.}Adaptive LES}{45}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Adaptive Strategies}{45}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Zonal Refinement/Adaptation}{45}{subsection.5.1.1}% 
-\contentsline {subsection}{\numberline {5.1.2}Nodal Size Field-based Adaptation}{46}{subsection.5.1.2}% 
-\contentsline {subsection}{\numberline {5.1.3}Feature-based Refinement/Adaptation}{47}{subsection.5.1.3}% 
-\contentsline {subsection}{\numberline {5.1.4}Results using Different Adaptive Strategies}{48}{subsection.5.1.4}% 
-\contentsline {section}{\numberline {5.2}Application of Zonal Adaptive/Refinement Strategy}{57}{section.5.2}% 
-\contentsline {section}{\numberline {5.3} $Re=40,000$, $\alpha =6^\circ $, $\mu _{sect}=1.2$}{57}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Mesh and Estimated Error-Field}{59}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Force Response}{60}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Flowfield: Spanwise Vorticity}{61}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}Cp}{69}{subsection.5.3.4}% 
-\contentsline {subsection}{\numberline {5.3.5}Cp: LEV}{70}{subsection.5.3.5}% 
-\contentsline {subsection}{\numberline {5.3.6}Cp: Trailing Edge Separation}{70}{subsection.5.3.6}% 
-\contentsline {subsection}{\numberline {5.3.7}LEV}{71}{subsection.5.3.7}% 
-\contentsline {section}{\numberline {5.4} $Re=40,000$, $\alpha =10^\circ $, $\mu _{sect}=1.5$: Active Camber Case}{77}{section.5.4}% 
-\contentsline {chapter}{REFERENCES}{79}{section*.62}% 
+\contentsline {chapter}{\numberline {5.}Adaptive LES}{33}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Adaptive Strategies}{33}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Zonal Refinement/Adaptation}{33}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Nodal Size Field-based Adaptation}{34}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Feature-based Refinement/Adaptation}{35}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Results using Different Adaptive Strategies}{36}{subsection.5.1.4}% 
+\contentsline {section}{\numberline {5.2}Application of Zonal Adaptive/Refinement Strategy}{45}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1} $Re=40,000$, $\alpha =6^\circ $, $\mu _{sect}=1.2$}{45}{subsection.5.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.1.1}Mesh and Estimated Error-Field}{47}{subsubsection.5.2.1.1}% 
+\contentsline {subsubsection}{\numberline {5.2.1.2}Force Response}{48}{subsubsection.5.2.1.2}% 
+\contentsline {subsubsection}{\numberline {5.2.1.3}Flowfield: Spanwise Vorticity}{49}{subsubsection.5.2.1.3}% 
+\contentsline {subsubsection}{\numberline {5.2.1.4}Pressure Coefficient}{57}{subsubsection.5.2.1.4}% 
+\contentsline {subsection}{\numberline {5.2.2}Cp: LEV}{58}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Cp: Trailing Edge Separation}{58}{subsection.5.2.3}% 
+\contentsline {subsubsection}{\numberline {5.2.3.1}LEV}{59}{subsubsection.5.2.3.1}% 
+\contentsline {chapter}{\numberline {6.}Active Flow Control: Active Reflex Camber}{65}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}NACA 0012}{67}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}SC1095}{78}{section.6.2}% 
+\contentsline {chapter}{REFERENCES}{82}{section*.64}% 
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{81}{appendix.A}% 
+\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{84}{appendix.A}% 
