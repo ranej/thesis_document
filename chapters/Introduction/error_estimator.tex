@@ -12,6 +12,7 @@ For implicit methods, Bank and Weiser \cite{bank1985some} proposed an approach f
 This approach was further extended by Oden, Wu, and Ainsworth \cite{oden1994posteriori} for steady incompressible Navier-Stokes equations, which was referred to as the element residual method.
 A further extension for this implicit method to the unsteady incompressible Navier-Stokes formulation was provided by Prudhomme and Oden~\cite{prudhomme1999posteriori}.
 An improvement upon the element residual method is the equilibrated residual method that imposes additional constraints upon the Neumann problem which Ainsworth et al. \cite{ainsworth2013fully} applies to advection-diffusion-reaction systems in multidimensions.
+Explicit error estimators are inherently cheaper than implicit error estimators because an additional problem does not need to be solved, thus making it attractive for large-scale applications.
 
 More recently, the variational multiscale (VMS) framework has been used to develop explicit error estimators. 
 The VMS framework, proposed by Hughes and co-workers ~\cite{hughes1995multiscale,hughes1998variational}, splits the solution into a coarse-scale solution and a fine-scale solution. 
@@ -20,6 +21,4 @@ A number of approaches have been proposed to model the fine-scale solution, for 
 In this work, we follow the approach of \cite{hughes2007variational} in which the fine-scale Green's function is used to model the fine-scale solution. 
 The fine-scale Green's function is also used to formulate an \textit{a posteriori} error estimate by Hauke and co-workers \cite{hauke2006proper,hauke2006multiscale,hauke2008variational,hauke2012mesh,hauke2014recent,hauke2015variational,irisarri2016posteriori} and others \cite{bayona2018variational}.
 
-
-Explicit error estimators are inherently cheaper than implicit error estimators because an additional problem does not need to be solved, thus making it attractive for large-scale applications.
 

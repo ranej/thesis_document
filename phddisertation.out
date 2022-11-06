@@ -4,49 +4,48 @@
 \BOOKMARK [0][-]{section*.8}{ABSTRACT}{}% 4
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.2}{Large Eddy Simulation}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.3}{Error Estimator}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.4}{Surging Airfoils}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{Dynamic Large Eddy Simulation}{}% 10
-\BOOKMARK [1][-]{section.2.1}{Combined Model Formulation}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Dynamic Procedure}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{Local Variational Germano Identity}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Local VGI Computation}{section.2.2}% 14
-\BOOKMARK [0][-]{chapter.3}{VMS based error estimator}{}% 15
-\BOOKMARK [1][-]{section.3.1}{General Formulation}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Formulation for 1D Advection-Diffusion Equation}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.2.1}{Generalization of VMS Error Estimator}{section.3.2}% 18
-\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Generalization to Multi-dimensional Cases}{subsection.3.2.1}% 19
-\BOOKMARK [1][-]{section.3.3}{Application to the Navier-Stokes Equations}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{Application to Periodic Problems}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.5}{Overview of Adaptive Strategies}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.5.1}{Zonal Refinement/Adaptation}{section.3.5}% 23
-\BOOKMARK [2][-]{subsection.3.5.2}{Nodal Size Field-based Adaptation}{section.3.5}% 24
-\BOOKMARK [2][-]{subsection.3.5.3}{Feature-based Refinement/Adaptation}{section.3.5}% 25
-\BOOKMARK [0][-]{chapter.4}{Baseline/Non-adapted Cases}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Problem Setup: Surging Airfoils}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Summary of Baseline Cases}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Results and Discussion}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Force Response}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{Flowfield: Spanwise Vorticity}{section.4.3}% 31
-\BOOKMARK [1][-]{section.4.4}{Feature/Vortex Detection and Tracking: LEV}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{Adaptive LES}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Adaptive Strategies}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.1.1}{Zonal Refinement/Adaptation}{section.5.1}% 35
-\BOOKMARK [2][-]{subsection.5.1.2}{Nodal Size Field-based Adaptation}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.3}{Feature-based Refinement/Adaptation}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.4}{Results using Different Adaptive Strategies}{section.5.1}% 38
-\BOOKMARK [1][-]{section.5.2}{Application of Zonal Adaptive/Refinement Strategy}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.2.1}{ Re=40,000, =6, sect=1.2}{section.5.2}% 40
-\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Mesh and Estimated Error-Field}{subsection.5.2.1}% 41
-\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Force Response}{subsection.5.2.1}% 42
-\BOOKMARK [3][-]{subsubsection.5.2.1.3}{Flowfield: Spanwise Vorticity}{subsection.5.2.1}% 43
-\BOOKMARK [3][-]{subsubsection.5.2.1.4}{Pressure Coefficient}{subsection.5.2.1}% 44
-\BOOKMARK [2][-]{subsection.5.2.2}{Cp: LEV}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.3}{Cp: Trailing Edge Separation}{section.5.2}% 46
-\BOOKMARK [3][-]{subsubsection.5.2.3.1}{LEV}{subsection.5.2.3}% 47
-\BOOKMARK [0][-]{chapter.6}{Active Flow Control: Active Reflex Camber}{}% 48
-\BOOKMARK [1][-]{section.6.1}{NACA 0012}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.2}{SC1095}{chapter.6}% 50
-\BOOKMARK [0][-]{section*.64}{REFERENCES}{}% 51
-\BOOKMARK [0][-]{appendix.A}{THIS IS AN APPENDIX}{}% 52
+\BOOKMARK [1][-]{section.1.2}{Error Estimator}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Surging Airfoils}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Dynamic Large Eddy Simulation}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Combined Model Formulation}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Dynamic Procedure}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Local Variational Germano Identity}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Local VGI Computation}{section.2.2}% 13
+\BOOKMARK [0][-]{chapter.3}{VMS based error estimator}{}% 14
+\BOOKMARK [1][-]{section.3.1}{General Formulation}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Formulation for 1D Advection-Diffusion Equation}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.2.1}{Generalization of VMS Error Estimator}{section.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Generalization to Multi-dimensional Cases}{subsection.3.2.1}% 18
+\BOOKMARK [1][-]{section.3.3}{Application to the Navier-Stokes Equations}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Application to Periodic Problems}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{Overview of Adaptive Strategies}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.5.1}{Zonal Refinement/Adaptation}{section.3.5}% 22
+\BOOKMARK [2][-]{subsection.3.5.2}{Nodal Size Field-based Adaptation}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.3}{Feature-based Refinement/Adaptation}{section.3.5}% 24
+\BOOKMARK [0][-]{chapter.4}{Baseline/Non-adapted Cases}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Problem Setup: Surging Airfoils}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Summary of Baseline Cases}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Results and Discussion}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.3.1}{Force Response}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.2}{Flowfield: Spanwise Vorticity}{section.4.3}% 30
+\BOOKMARK [1][-]{section.4.4}{Feature/Vortex Detection and Tracking: LEV}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Adaptive LES}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Adaptive Strategies}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.1.1}{Zonal Refinement/Adaptation}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.2}{Nodal Size Field-based Adaptation}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.3}{Feature-based Refinement/Adaptation}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.4}{Results using Different Adaptive Strategies}{section.5.1}% 37
+\BOOKMARK [1][-]{section.5.2}{Application of Zonal Adaptive/Refinement Strategy}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{ Re=40,000, =6, sect=1.2}{section.5.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Mesh and Estimated Error-Field}{subsection.5.2.1}% 40
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Force Response}{subsection.5.2.1}% 41
+\BOOKMARK [3][-]{subsubsection.5.2.1.3}{Flowfield: Spanwise Vorticity}{subsection.5.2.1}% 42
+\BOOKMARK [3][-]{subsubsection.5.2.1.4}{Pressure Coefficient}{subsection.5.2.1}% 43
+\BOOKMARK [2][-]{subsection.5.2.2}{Cp: LEV}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.3}{Cp: Trailing Edge Separation}{section.5.2}% 45
+\BOOKMARK [3][-]{subsubsection.5.2.3.1}{LEV}{subsection.5.2.3}% 46
+\BOOKMARK [0][-]{chapter.6}{Active Flow Control: Active Reflex Camber}{}% 47
+\BOOKMARK [1][-]{section.6.1}{NACA 0012}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.2}{SC1095}{chapter.6}% 49
+\BOOKMARK [0][-]{section*.64}{REFERENCES}{}% 50
+\BOOKMARK [0][-]{appendix.A}{THIS IS AN APPENDIX}{}% 51
