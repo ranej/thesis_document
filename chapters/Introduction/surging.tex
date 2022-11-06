@@ -1,0 +1,66 @@
+Surging motion arises in many aerodynamic problems.
+For example, in a forward flight for a rotorcraft.
+In a forward flight, rotor blades are subjected to fluctuating local velocity due to the forward motion of the rotorcraft 
+and rotational motion of the blade along the azimuth. 
+In a high-speed forward flight or at a high advance ratio (i.e., the ratio of forward to rotational motion), the relative velocity 
+can reverse in direction near the inboard portion of the retreating blade.
+The oscillatory relative velocity causes large changes in the lift force, with high lift 
+generated as the blade advances and small to no lift generated as the blade retreats. 
+Analytical models have been formulated in an attempt to predict this behavior. These theoretical efforts for predicting forces for surging motions began with unsteady potential flow models at low incidence. 
+Due to added mass effects and the influence of the airfoil’s wake, traditional thin airfoil theory failed to accurately predict flows of variable velocity. 
+Isaacs \cite{bib:Isaacs} adapted the thin aerofoil theory and applied it to sinusoidal flows, and caluclated lift as a Fourier series.
+Greenberg \cite{bib:Greenberg1947} modified Isaac's theory to assume a sinusoidal wake, and incorporated theory developed by Theodorsen \cite{bib:Theodorsen1934}, obtained closed form expressions for the lift and moment of an aerofoil in attached
+flow undergoing sinusoidal pitch, surge and plunge. 
+These theoretical models predict the forces reasonably well \cite{bib:greenblatt2016} for motions with low angle of attack and low advance rations, but often pose issues for higher angles of attack, and
+when there is complete flow reversal and the sharp trailing edge temporarily acts as the aerodynamic leading edge. 
+Some of the recent work to understand these flow phenomena has been done by conducting experiments in a quasi-3D environment by subjecting a blade model to cyclic surging and/or pitching motions.
+Greenblatt \textit{et al.}~\cite{bib:greenblatt2016} looked into the effects of fluctuating free-stream velocity and cyclic pitching on an airfoil section through experiments.
+Granlund \textit{et al.}~\cite{bib:granlund2016} considered the effect of large streamwise oscillations including a reverse flow regime, for different reduced frequencies, through water tunnel experiments.
+Numerical simulations have also been used as an effective way to further understand these effects.
+Numerical investigations on a quasi-3D model include that of Visbal~\cite{bib:visbal2014} and Gross and Wen~\cite{bib:gross2016}, with a high-order finite difference based large eddy simulation (LES), and Strangfeld~\cite{bib:stangfeld2015unsteady}, with unsteady Reynolds-averaged Navier-Stokes (URANS) simulations.
+Hodara \textit{et al.}~\cite{bib:hodara2016} investigated a pitching airfoil in a constant reverse flow (leading to a reserve dynamic stall) through a joint wind tunnel testing and numerical simulation based on a hybrid RANS-LES approach.
+Others have chosen to study the entire rotor in a forward flight using experimental testing~\cite{bib:norman2011} or a RANS or hybrid RANS-LES approach, e.g., see~\cite{bib:chaderjian2012detached,bib:potsdam2016}.
+
+Kirk and Jones ~\cite{bib:kirk_jones_2019} performed experiments to study geometric trailing edge separation in sinusoidally surging flows over airfoil with widely varying amplitudes and frequencies, including reverse flow surge. These experiments were compared against high-advance-ratio rotor experiments, performed by 
+Lind \textit{et al.}~\cite{bib:Lind2018}, and showed that reverse flow surging separation/vortices were of comparable strength to those observed in full rotor experiments. This shows that a surging-airfoil simplification provides a suitable basis for much more complex three-dimensional flows.
+
+Smith and Jones ~\cite{bib:smith2020} performed experiments to provide insight into the effect of a large amplitude unsteady freestream on the timing of vortex formation, for a range of high advance ratios and reduced frequencies. 
+
+Substantial research has also been done in studying constant reverse flow over an airfoil. 
+Over half a century ago wind tunnel tests of
+cambered airfoils (NACA 2212 and NACA M6) were conducted in reverse
+flow at Reynolds number of $Re$ = 0.4 million \cite{bib:naumann1942}  as well as a symmetric airfoil (NACA 0012) in reverse flow at $Re$ = 0.5 - 1.8 million
+\cite{bib:critzos1955}.
+Wind tunnel measurements were performed by Leishman  on an
+SC1095 airfoil in reverse flow \cite{bib:leishman1993} and reported that the airfoil stalled earlier leading to higher drag
+as the angle of attack deviated from 180 degrees, as compared to 0 degrees in forward flow. 
+It was also reported
+that the drag near 180 degrees was larger than the drag near 0 degrees due to a large amount of bluff body separation.
+Lind \textit{et al.} \cite{bib:lind2013, bib:lind2014}, through wind tunnel measurements, also showed that the drag in reverse flow on a NACA 0012 airfoil is more than twice as large compared to forward flow
+due to early onset of flow separation. 
+Hodara \textit{et al.} \cite{bib:hodara2016} investigated a pitching airfoil in a constant reverse flow (leading to a reserve dynamic stall) through a joint wind tunnel testing and numerical simulation based on a hybrid RANS-LES approach.
+
+Although there has been a significant amount of work in studying flowfields around airfoils in time-varying motions as well as airfoils in reverse flow configurations, not a lot of studies have focused on mitigating the negative aerodynamic effects of flow reversal. Sikorsky Aircraft Corporation used an elliptical airfoil in the
+inboard section on the X2TD helicopter \cite{bib:bagai2008} (along with reduced inboard blade pitch
+and chord). This still yielded large drag in the reverse flow region while being detrimental to hover performance. 
+One possible solution to this problem is to actively morph the shape of the retreating blade in the reverse flow region, such that it becomes more streamlined to the reverse flow, which can decrease drag. 
+Recently, Jacobellis \textit{et al.} \cite{bib:jacobellis2018} performed wind-tunnel measurements and unsteady RANS for a fixed NACA 63-218 airfoil
+in a constant reverse flow at $Re$ = 375,000 including reflex camber at different angles.
+They reported large drag reductions of about 50\% (wind tunnel) and 40\% (unsteady RANS) with reflex camber.
+
+Studying a rotor blade under a reversed flow condition
+is necessary to improve the forward flight capabilities of a rotorcraft.
+One way to achieve this is to employ high-fidelity simulations with reliable modeling.
+In this study, large eddy simulation (LES) is used to predict flow over an oscillating airfoil.
+Current LES uses a combined subgrid-scale model which uses the residual-based variational multiscale (RBVMS) model 
+along with the dynamic Smagorinsky model~\cite{bib:tran2017b}.
+An arbitrary Lagrangian Eulerian (ALE) description is used to account for
+the relative motion of the airfoil~\cite{bib:cummings2016bbaa}. 
+
+
+
+%%%Others have considered the use of other turbulence models, such as Unsteady Reynolds Averaged Navier-Stokes simulations (URANS), 
+%%%to study reverse flow but have noted limitations in the accuracy of the model, specifically in modeling the vortex in the wake~\cite{bib:strangfeld2015}. 
+%%%Using the aforementioned LES model is desirable for this application because it provides high resolution of the dominant flow features, 
+%%%including the shed vortices, without the cost associated with Direct Numerical Simulation (DNS) or the interference effects that may occur in experimental testing. 
+

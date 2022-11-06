@@ -1,0 +1,26 @@
+\section{Error Estimation}
+Adaptive mesh refinement provides a robust and efficient approach to investigate effects of mesh resolution on the numerical solution.
+A common approach to drive adaptive mesh refinement is through the use of an error estimator.
+The basic principle behind this approach is that discretization error should be ideally equidistributed \cite{baker1997mesh}, since the accuracy of the simulation is bounded by the worst-resolved features.
+For complex fluid flow problems, it is not known a priori where important flow features will occur. Thus, it is desirable to adapt the mesh based on an a posteriori error estimator.
+
+A wide range of error estimators, both explicit and implicit, have been developed and studied in the literature in the past few decades.
+%For a comprehensive review see Ainsworth ~\cite{ainsworth2011book}.
+Some of the early work by Babuska and Rheinboldt~\cite{babuvska1978posteriori} focused on the inter-element jump terms to derive an explicit error estimate.
+Zienkiewicz and Zhu~\cite{zienkiewicz1992superconvergent1,zienkiewicz1992superconvergent2} introduced a superconvergent patch recovery, a method that motivated an explicit error estimate based on recovered gradients (commonly referred to as the ZZ-error estimator).
+Ainsworth and Oden~\cite{ainsworth2011book}, and Verf\"urth~\cite{verfurth1994posteriori} provide a detailed review of more error estimators for elliptic problems.
+For implicit methods, Bank and Weiser \cite{bank1985some} proposed an approach for solving local Neumann problems to obtain an error estimate for elliptic problems.
+This approach was further extended by Oden, Wu, and Ainsworth \cite{oden1994posteriori} for steady incompressible Navier-Stokes equations, which was referred to as the element residual method.
+A further extension for this implicit method to the unsteady incompressible Navier-Stokes formulation was provided by Prudhomme and Oden~\cite{prudhomme1999posteriori}.
+An improvement upon the element residual method is the equilibrated residual method that imposes additional constraints upon the Neumann problem which Ainsworth et al. \cite{ainsworth2013fully} applies to advection-diffusion-reaction systems in multidimensions.
+
+More recently, the variational multiscale (VMS) framework has been used to develop explicit error estimators. 
+The VMS framework, proposed by Hughes and co-workers ~\cite{hughes1995multiscale,hughes1998variational}, splits the solution into a coarse-scale solution and a fine-scale solution. 
+The coarse-scale solution is obtained numerically while the fine-scale solution is modeled. 
+A number of approaches have been proposed to model the fine-scale solution, for example, see \cite{brezzi1997b,brezzi1992relationship,brezzi1994choosing,codina2002stabilized,hughes2007variational,principe2010stabilization}. 
+In this work, we follow the approach of \cite{hughes2007variational} in which the fine-scale Green's function is used to model the fine-scale solution. 
+The fine-scale Green's function is also used to formulate an \textit{a posteriori} error estimate by Hauke and co-workers \cite{hauke2006proper,hauke2006multiscale,hauke2008variational,hauke2012mesh,hauke2014recent,hauke2015variational,irisarri2016posteriori} and others \cite{bayona2018variational}.
+
+
+Explicit error estimators are inherently cheaper than implicit error estimators because an additional problem does not need to be solved, thus making it attractive for large-scale applications.
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.13)  4 NOV 2022 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.13)  5 NOV 2022 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,30 +546,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (c:/texlive/2018/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-
-(c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
-)
-\csq@reset=\count309
-\csq@gtype=\count310
-\csq@glevel=\count311
-\csq@qlevel=\count312
-\csq@maxlvl=\count313
-\csq@tshold=\count314
-\csq@ltx@everypar=\toks28
-
-(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
-))
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
@@ -611,6 +587,7 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
@@ -622,15 +599,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen196
-\Hy@linkcounter=\count315
-\Hy@pagecounter=\count316
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count317
+\Hy@SavedSpaceFactor=\count310
 
 (c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -642,7 +619,7 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count318
+\c@Hy@tempcnt=\count311
 
 (c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -650,7 +627,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen197
-\Fld@menulength=\count319
+\Fld@menulength=\count312
 \Field@Width=\dimen198
 \Fld@charsize=\dimen199
 Package hyperref Info: Hyper figures OFF on input line 6380.
@@ -662,16 +639,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count320
-\c@Item=\count321
-\c@Hfootnote=\count322
+\Hy@abspage=\count313
+\c@Item=\count314
+\c@Hfootnote=\count315
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count323
-\c@bookmark@seq@number=\count324
+\Fld@listcount=\count316
+\c@bookmark@seq@number=\count317
 
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -683,10 +660,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (c:/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
-Excluding comment 'comment') (./usercommands.tex)
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... none found.
- (./phddisertation.aux
+Excluding comment 'comment') (./usercommands.tex) (./phddisertation.aux
 (./rpititle-phd.aux) (./rpiack.aux) (./rpiabs.aux)
 (./chapters/Introduction/Introduction.aux)
 (./chapters/LES/numerical_discretization.aux) (./chapters/VMS_EE/VMS_EE.aux)
@@ -722,17 +696,17 @@ LaTeX Font Info:    ... okay on input line 55.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
+\scratchcounter=\count318
 \scratchdimen=\dimen256
 \scratchbox=\box60
-\nofMPsegments=\count326
-\nofMParguments=\count327
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count328
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count321
 \MPscratchDim=\dimen257
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks29
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -887,7 +861,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count331
+\c@section@level=\count324
 )
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
@@ -910,7 +884,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `rpititle-phd.aux'.
 
  (./rpititle-phd.tex
-<rpi_seal.png, id=196, 158.84344pt x 158.09062pt>
+<rpi_seal.png, id=217, 158.84344pt x 158.09062pt>
 File: rpi_seal.png Graphic file (type png)
 <use rpi_seal.png>
 Package pdftex.def Info: rpi_seal.png  used on input line 37.
@@ -977,76 +951,83 @@ sed cir-cles) and 1,000,000
 
 (./chapters/Introduction/Introduction.tex
 CHAPTER 1.
-) [1
+(./chapters/Introduction/motivation.tex) (./chapters/Introduction/les.tex)
+(./chapters/Introduction/error_estimator.tex [1
 
 
 
-]
+])
+(./chapters/Introduction/surging.tex
+
+LaTeX Warning: Citation `bib:Theodorsen1934' on page 2 undefined on input line 
+12.
+
+[2] [3])) [4]
 \openout2 = `chapters/LES/numerical_discretization.aux'.
 
  (./chapters/LES/numerical_discretization.tex
 CHAPTER 2.
-(./chapters/LES/LES.tex [2
+(./chapters/LES/LES.tex [5
 
 
 
-] [3] [4] [5]) (./chapters/LES/dynProc.tex [6]
-<figures/Setup/localization_grid.pdf, id=487, 588.7596pt x 366.16798pt>
+] [6] [7] [8]) (./chapters/LES/dynProc.tex [9]
+<figures/Setup/localization_grid.pdf, id=629, 588.7596pt x 366.16798pt>
 File: figures/Setup/localization_grid.pdf Graphic file (type pdf)
 <use figures/Setup/localization_grid.pdf>
 Package pdftex.def Info: figures/Setup/localization_grid.pdf  used on input lin
 e 43.
 (pdftex.def)             Requested size: 211.38832pt x 131.46837pt.
 
-[7 <./figures/Setup/localization_grid.pdf>] [8])) [9]
+[10 <./figures/Setup/localization_grid.pdf>] [11])) [12]
 \openout2 = `chapters/VMS_EE/VMS_EE.aux'.
 
 
 (./chapters/VMS_EE/VMS_EE.tex
 CHAPTER 3.
-[10
+[13
 
 
 
-] [11] (./chapters/VMS_EE/Formulation1D.tex [12] [13])
-(./chapters/VMS_EE/App_toNS.tex [14]) (./chapters/VMS_EE/App_toPeriodic.tex)
-(./chapters/VMS_EE/Adapt_St.tex [15]
-<figures/adapt_strat/zonal_based.png, id=602, 578.16pt x 253.20128pt>
+] [14] (./chapters/VMS_EE/Formulation1D.tex [15] [16])
+(./chapters/VMS_EE/App_toNS.tex [17]) (./chapters/VMS_EE/App_toPeriodic.tex)
+(./chapters/VMS_EE/Adapt_St.tex [18]
+<figures/adapt_strat/zonal_based.png, id=738, 578.16pt x 253.20128pt>
 File: figures/adapt_strat/zonal_based.png Graphic file (type png)
 <use figures/adapt_strat/zonal_based.png>
 Package pdftex.def Info: figures/adapt_strat/zonal_based.png  used on input lin
 e 12.
 (pdftex.def)             Requested size: 469.75502pt x 205.72552pt.
- [16 <./figures/adapt_strat/zonal_based.png>]
-<figures/adapt_strat/size_based.png, id=611, 578.16pt x 253.20128pt>
+ [19 <./figures/adapt_strat/zonal_based.png>]
+<figures/adapt_strat/size_based.png, id=747, 578.16pt x 253.20128pt>
 File: figures/adapt_strat/size_based.png Graphic file (type png)
 <use figures/adapt_strat/size_based.png>
 Package pdftex.def Info: figures/adapt_strat/size_based.png  used on input line
  34.
 (pdftex.def)             Requested size: 469.75502pt x 205.72552pt.
-<figures/adapt_strat/feature_based.png, id=613, 578.16pt x 253.20128pt>
+<figures/adapt_strat/feature_based.png, id=749, 578.16pt x 253.20128pt>
 File: figures/adapt_strat/feature_based.png Graphic file (type png)
 <use figures/adapt_strat/feature_based.png>
 Package pdftex.def Info: figures/adapt_strat/feature_based.png  used on input l
 ine 47.
 (pdftex.def)             Requested size: 469.75502pt x 205.72552pt.
- [17 <./figures/adapt_strat/size_based.png>])) [18 <./figures/adapt_strat/featu
+ [20 <./figures/adapt_strat/size_based.png>])) [21 <./figures/adapt_strat/featu
 re_based.png>]
 \openout2 = `chapters/adapt_strat/baseline_results.aux'.
 
  (./chapters/adapt_strat/baseline_results.tex
 CHAPTER 4.
-<figures/Setup/Setup.png, id=627, 549.55313pt x 185.19188pt>
+<figures/Setup/Setup.png, id=765, 549.55313pt x 185.19188pt>
 File: figures/Setup/Setup.png Graphic file (type png)
 <use figures/Setup/Setup.png>
 Package pdftex.def Info: figures/Setup/Setup.png  used on input line 17.
 (pdftex.def)             Requested size: 375.80544pt x 126.64372pt.
-[19
+[22
 
 
 
- <./figures/Setup/Setup.png>] [20]
-<figures/Setup/mesh_screenshot.pdf, id=646, 1352.66353pt x 1000.38342pt>
+ <./figures/Setup/Setup.png>] [23]
+<figures/Setup/mesh_screenshot.pdf, id=783, 1352.66353pt x 1000.38342pt>
 File: figures/Setup/mesh_screenshot.pdf Graphic file (type pdf)
 <use figures/Setup/mesh_screenshot.pdf>
 Package pdftex.def Info: figures/Setup/mesh_screenshot.pdf  used on input line 
@@ -1056,7 +1037,7 @@ Package pdftex.def Info: figures/Setup/mesh_screenshot.pdf  used on input line
 
 pdfTeX warning: pdflatex.exe (file ./figures/Setup/mesh_LE.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Setup/mesh_LE.pdf, id=647, 6393.33563pt x 3690.32706pt>
+<figures/Setup/mesh_LE.pdf, id=784, 6393.33563pt x 3690.32706pt>
 File: figures/Setup/mesh_LE.pdf Graphic file (type pdf)
 <use figures/Setup/mesh_LE.pdf>
 Package pdftex.def Info: figures/Setup/mesh_LE.pdf  used on input line 100.
@@ -1065,19 +1046,19 @@ Package pdftex.def Info: figures/Setup/mesh_LE.pdf  used on input line 100.
 
 pdfTeX warning: pdflatex.exe (file ./figures/Setup/mesh_TE.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Setup/mesh_TE.pdf, id=648, 6393.33563pt x 3690.32706pt>
+<figures/Setup/mesh_TE.pdf, id=785, 6393.33563pt x 3690.32706pt>
 File: figures/Setup/mesh_TE.pdf Graphic file (type pdf)
 <use figures/Setup/mesh_TE.pdf>
 Package pdftex.def Info: figures/Setup/mesh_TE.pdf  used on input line 101.
 (pdftex.def)             Requested size: 211.38832pt x 121.967pt.
-[21 <./figures/Setup/mesh_screenshot.pdf>]
-<figures/lift_Re_effect_lambda_1pt0.png, id=660, 721.824pt x 540.492pt>
+[24 <./figures/Setup/mesh_screenshot.pdf>]
+<figures/lift_Re_effect_lambda_1pt0.png, id=796, 721.824pt x 540.492pt>
 File: figures/lift_Re_effect_lambda_1pt0.png Graphic file (type png)
 <use figures/lift_Re_effect_lambda_1pt0.png>
 Package pdftex.def Info: figures/lift_Re_effect_lambda_1pt0.png  used on input 
 line 112.
 (pdftex.def)             Requested size: 234.8775pt x 175.87224pt.
-<figures/lift_Re_effect_lambda_1pt2.png, id=661, 722.7pt x 542.025pt>
+<figures/lift_Re_effect_lambda_1pt2.png, id=797, 722.7pt x 542.025pt>
 File: figures/lift_Re_effect_lambda_1pt2.png Graphic file (type png)
 <use figures/lift_Re_effect_lambda_1pt2.png>
 Package pdftex.def Info: figures/lift_Re_effect_lambda_1pt2.png  used on input 
@@ -1088,9 +1069,9 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 111--121
 []$[]$ $[]$ 
  []
 
-[22 <./figures/Setup/mesh_LE.pdf> <./figures/Setup/mesh_TE.pdf> <./figures/lift
+[25 <./figures/Setup/mesh_LE.pdf> <./figures/Setup/mesh_TE.pdf> <./figures/lift
 _Re_effect_lambda_1pt0.png> <./figures/lift_Re_effect_lambda_1pt2.png>]
-<figures/Vorticity_plots/Re_40k_1pt0/phase_195.png, id=688, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_195.png, id=824, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_195.png Graphic file (type png)
 
@@ -1098,7 +1079,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_195.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_195.png  use
 d on input line 163.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_195.png, id=689, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_195.png, id=825, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_195.png Graphic file (type png
 )
@@ -1106,14 +1087,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_195.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_195.png  us
 ed on input line 169.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_195.png, id=690, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_195.png, id=826, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_195.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_195.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_195.png  used
  on input line 175.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_225.png, id=691, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_225.png, id=827, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_225.png Graphic file (type png)
 
@@ -1121,7 +1102,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_225.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_225.png  use
 d on input line 182.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_225.png, id=692, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_225.png, id=828, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_225.png Graphic file (type png
 )
@@ -1129,14 +1110,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_225.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_225.png  us
 ed on input line 188.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_225.png, id=693, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_225.png, id=829, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_225.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_225.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_225.png  used
  on input line 194.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_240.png, id=694, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_240.png, id=830, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_240.png Graphic file (type png)
 
@@ -1144,7 +1125,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_240.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_240.png  use
 d on input line 201.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_240.png, id=695, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_240.png, id=831, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_240.png Graphic file (type png
 )
@@ -1152,14 +1133,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_240.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_240.png  us
 ed on input line 207.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_240.png, id=696, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_240.png, id=832, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_240.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_240.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_240.png  used
  on input line 213.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_255.png, id=697, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_255.png, id=833, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_255.png Graphic file (type png)
 
@@ -1167,7 +1148,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_255.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_255.png  use
 d on input line 220.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_255.png, id=698, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_255.png, id=834, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_255.png Graphic file (type png
 )
@@ -1175,7 +1156,7 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_255.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_255.png  us
 ed on input line 226.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_255.png, id=699, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_255.png, id=835, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_255.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_255.png>
@@ -1183,8 +1164,8 @@ Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_255.png  used
  on input line 232.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
 
-[23]
-<figures/Vorticity_plots/Re_40k_1pt0/phase_270.png, id=704, 1789.68625pt x 1302
+[26]
+<figures/Vorticity_plots/Re_40k_1pt0/phase_270.png, id=840, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_270.png Graphic file (type png)
 
@@ -1192,7 +1173,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_270.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_270.png  use
 d on input line 246.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_270.png, id=705, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_270.png, id=841, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_270.png Graphic file (type png
 )
@@ -1200,14 +1181,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_270.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_270.png  us
 ed on input line 252.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_270.png, id=706, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_270.png, id=842, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_270.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_270.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_270.png  used
  on input line 258.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_315.png, id=707, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_315.png, id=843, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_315.png Graphic file (type png)
 
@@ -1215,7 +1196,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_315.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_315.png  use
 d on input line 265.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_315.png, id=708, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_315.png, id=844, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_315.png Graphic file (type png
 )
@@ -1223,14 +1204,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_315.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_315.png  us
 ed on input line 271.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_315.png, id=709, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_315.png, id=845, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_315.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_315.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_315.png  used
  on input line 277.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_330.png, id=710, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_330.png, id=846, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_330.png Graphic file (type png)
 
@@ -1238,7 +1219,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_330.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_330.png  use
 d on input line 284.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_330.png, id=711, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_330.png, id=847, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_330.png Graphic file (type png
 )
@@ -1246,14 +1227,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_330.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_330.png  us
 ed on input line 290.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_330.png, id=712, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_330.png, id=848, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_330.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_330.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_330.png  used
  on input line 296.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt0/phase_345.png, id=713, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt0/phase_345.png, id=849, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt0/phase_345.png Graphic file (type png)
 
@@ -1261,7 +1242,7 @@ File: figures/Vorticity_plots/Re_40k_1pt0/phase_345.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt0/phase_345.png  use
 d on input line 303.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt0/phase_345.png, id=714, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt0/phase_345.png, id=850, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt0/phase_345.png Graphic file (type png
 )
@@ -1269,14 +1250,14 @@ File: figures/Vorticity_plots/Re_200k_1pt0/phase_345.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt0/phase_345.png  us
 ed on input line 309.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt0/phase_345.png, id=715, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt0/phase_345.png, id=851, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt0/phase_345.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt0/phase_345.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt0/phase_345.png  used
  on input line 315.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
- [24 <./figures/vorticity_plots/Re_40k_1pt0/phase_195.png (PNG copy)> <./figure
+ [27 <./figures/vorticity_plots/Re_40k_1pt0/phase_195.png (PNG copy)> <./figure
 s/vorticity_plots/Re_200k_1pt0/phase_195.png (PNG copy)> <./figures/vorticity_p
 lots/Re_1m_1pt0/phase_195.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt
 0/phase_225.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt0/phase_225.p
@@ -1286,7 +1267,7 @@ ticity_plots/Re_200k_1pt0/phase_240.png (PNG copy)> <./figures/vorticity_plots/
 Re_1m_1pt0/phase_240.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt0/pha
 se_255.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt0/phase_255.png (P
 NG copy)> <./figures/vorticity_plots/Re_1m_1pt0/phase_255.png (PNG copy)>]
-[25 <./figures/vorticity_plots/Re_40k_1pt0/phase_270.png (PNG copy)> <./figures
+[28 <./figures/vorticity_plots/Re_40k_1pt0/phase_270.png (PNG copy)> <./figures
 /vorticity_plots/Re_200k_1pt0/phase_270.png (PNG copy)> <./figures/vorticity_pl
 ots/Re_1m_1pt0/phase_270.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt0
 /phase_315.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt0/phase_315.pn
@@ -1296,8 +1277,8 @@ icity_plots/Re_200k_1pt0/phase_330.png (PNG copy)> <./figures/vorticity_plots/R
 e_1m_1pt0/phase_330.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt0/phas
 e_345.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt0/phase_345.png (PN
 G copy)> <./figures/vorticity_plots/Re_1m_1pt0/phase_345.png (PNG copy)>]
-[26]
-<figures/Vorticity_plots/Re_40k_1pt2/phase_195.png, id=736, 1789.68625pt x 1302
+[29]
+<figures/Vorticity_plots/Re_40k_1pt2/phase_195.png, id=873, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_195.png Graphic file (type png)
 
@@ -1305,7 +1286,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_195.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_195.png  use
 d on input line 363.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_195.png, id=737, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_195.png, id=874, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_195.png Graphic file (type png
 )
@@ -1313,14 +1294,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_195.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_195.png  us
 ed on input line 369.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_195.png, id=738, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_195.png, id=875, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_195.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_195.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_195.png  used
  on input line 375.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_225.png, id=739, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_225.png, id=876, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_225.png Graphic file (type png)
 
@@ -1328,7 +1309,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_225.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_225.png  use
 d on input line 382.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_225.png, id=740, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_225.png, id=877, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_225.png Graphic file (type png
 )
@@ -1336,14 +1317,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_225.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_225.png  us
 ed on input line 388.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_225.png, id=741, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_225.png, id=878, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_225.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_225.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_225.png  used
  on input line 394.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_240.png, id=742, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_240.png, id=879, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_240.png Graphic file (type png)
 
@@ -1351,7 +1332,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_240.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_240.png  use
 d on input line 401.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_240.png, id=743, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_240.png, id=880, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_240.png Graphic file (type png
 )
@@ -1359,14 +1340,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_240.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_240.png  us
 ed on input line 407.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_240.png, id=744, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_240.png, id=881, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_240.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_240.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_240.png  used
  on input line 413.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_255.png, id=745, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_255.png, id=882, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_255.png Graphic file (type png)
 
@@ -1374,7 +1355,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_255.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_255.png  use
 d on input line 420.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_255.png, id=746, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_255.png, id=883, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_255.png Graphic file (type png
 )
@@ -1382,15 +1363,15 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_255.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_255.png  us
 ed on input line 426.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_255.png, id=747, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_255.png, id=884, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_255.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_255.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_255.png  used
  on input line 432.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
- [27]
-<figures/Vorticity_plots/Re_40k_1pt2/phase_270.png, id=753, 1789.68625pt x 1302
+ [30]
+<figures/Vorticity_plots/Re_40k_1pt2/phase_270.png, id=889, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_270.png Graphic file (type png)
 
@@ -1398,7 +1379,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_270.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_270.png  use
 d on input line 446.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_270.png, id=754, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_270.png, id=890, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_270.png Graphic file (type png
 )
@@ -1406,14 +1387,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_270.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_270.png  us
 ed on input line 452.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_270.png, id=755, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_270.png, id=891, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_270.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_270.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_270.png  used
  on input line 458.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_315.png, id=756, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_315.png, id=892, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_315.png Graphic file (type png)
 
@@ -1421,7 +1402,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_315.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_315.png  use
 d on input line 465.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_315.png, id=757, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_315.png, id=893, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_315.png Graphic file (type png
 )
@@ -1429,14 +1410,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_315.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_315.png  us
 ed on input line 471.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_315.png, id=758, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_315.png, id=894, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_315.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_315.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_315.png  used
  on input line 477.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_330.png, id=759, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_330.png, id=895, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_330.png Graphic file (type png)
 
@@ -1444,7 +1425,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_330.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_330.png  use
 d on input line 484.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_330.png, id=760, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_330.png, id=896, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_330.png Graphic file (type png
 )
@@ -1452,14 +1433,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_330.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_330.png  us
 ed on input line 490.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_330.png, id=761, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_330.png, id=897, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_330.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_330.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_330.png  used
  on input line 496.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_40k_1pt2/phase_345.png, id=762, 1789.68625pt x 1302
+<figures/Vorticity_plots/Re_40k_1pt2/phase_345.png, id=898, 1789.68625pt x 1302
 .8675pt>
 File: figures/Vorticity_plots/Re_40k_1pt2/phase_345.png Graphic file (type png)
 
@@ -1467,7 +1448,7 @@ File: figures/Vorticity_plots/Re_40k_1pt2/phase_345.png Graphic file (type png)
 Package pdftex.def Info: figures/Vorticity_plots/Re_40k_1pt2/phase_345.png  use
 d on input line 502.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_200k_1pt2/phase_345.png, id=763, 1789.68625pt x 130
+<figures/Vorticity_plots/Re_200k_1pt2/phase_345.png, id=899, 1789.68625pt x 130
 2.8675pt>
 File: figures/Vorticity_plots/Re_200k_1pt2/phase_345.png Graphic file (type png
 )
@@ -1475,14 +1456,14 @@ File: figures/Vorticity_plots/Re_200k_1pt2/phase_345.png Graphic file (type png
 Package pdftex.def Info: figures/Vorticity_plots/Re_200k_1pt2/phase_345.png  us
 ed on input line 508.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
-<figures/Vorticity_plots/Re_1m_1pt2/phase_345.png, id=764, 1789.68625pt x 1302.
+<figures/Vorticity_plots/Re_1m_1pt2/phase_345.png, id=900, 1789.68625pt x 1302.
 8675pt>
 File: figures/Vorticity_plots/Re_1m_1pt2/phase_345.png Graphic file (type png)
 <use figures/Vorticity_plots/Re_1m_1pt2/phase_345.png>
 Package pdftex.def Info: figures/Vorticity_plots/Re_1m_1pt2/phase_345.png  used
  on input line 514.
 (pdftex.def)             Requested size: 150.32504pt x 109.42024pt.
- [28 <./figures/vorticity_plots/Re_40k_1pt2/phase_195.png (PNG copy)> <./figure
+ [31 <./figures/vorticity_plots/Re_40k_1pt2/phase_195.png (PNG copy)> <./figure
 s/vorticity_plots/Re_200k_1pt2/phase_195.png (PNG copy)> <./figures/vorticity_p
 lots/Re_1m_1pt2/phase_195.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt
 2/phase_225.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt2/phase_225.p
@@ -1491,7 +1472,7 @@ ng (PNG copy)> <./figures/vorticity_plots/Re_1m_1pt2/phase_225.png (PNG copy)>
 ticity_plots/Re_200k_1pt2/phase_240.png (PNG copy)> <./figures/vorticity_plots/
 Re_1m_1pt2/phase_240.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt2/pha
 se_255.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt2/phase_255.png (P
-NG copy)> <./figures/vorticity_plots/Re_1m_1pt2/phase_255.png (PNG copy)>] [29 
+NG copy)> <./figures/vorticity_plots/Re_1m_1pt2/phase_255.png (PNG copy)>] [32 
 <./figures/vorticity_plots/Re_40k_1pt2/phase_270.png (PNG copy)> <./figures/vor
 ticity_plots/Re_200k_1pt2/phase_270.png (PNG copy)> <./figures/vorticity_plots/
 Re_1m_1pt2/phase_270.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt2/pha
@@ -1502,14 +1483,14 @@ y_plots/Re_200k_1pt2/phase_330.png (PNG copy)> <./figures/vorticity_plots/Re_1m
 _1pt2/phase_330.png (PNG copy)> <./figures/vorticity_plots/Re_40k_1pt2/phase_34
 5.png (PNG copy)> <./figures/vorticity_plots/Re_200k_1pt2/phase_345.png (PNG co
 py)> <./figures/vorticity_plots/Re_1m_1pt2/phase_345.png (PNG copy)>]
-[30]
-<figures/LEV_size_lambda_1pt0.png, id=780, 490.56pt x 369.453pt>
+[33]
+<figures/LEV_size_lambda_1pt0.png, id=916, 490.56pt x 369.453pt>
 File: figures/LEV_size_lambda_1pt0.png Graphic file (type png)
 <use figures/LEV_size_lambda_1pt0.png>
 Package pdftex.def Info: figures/LEV_size_lambda_1pt0.png  used on input line 5
 59.
 (pdftex.def)             Requested size: 234.8775pt x 176.8957pt.
-<figures/LEV_size_lambda_1pt2.png, id=781, 490.56pt x 369.453pt>
+<figures/LEV_size_lambda_1pt2.png, id=917, 490.56pt x 369.453pt>
 File: figures/LEV_size_lambda_1pt2.png Graphic file (type png)
 <use figures/LEV_size_lambda_1pt2.png>
 Package pdftex.def Info: figures/LEV_size_lambda_1pt2.png  used on input line 5
@@ -1520,169 +1501,169 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 558--568
 []$[]$ $[]$ 
  []
 
-<figures/LEV_location_lambda_1pt0.pdf, id=783, 421.575pt x 316.18124pt>
+<figures/LEV_location_lambda_1pt0.pdf, id=919, 421.575pt x 316.18124pt>
 File: figures/LEV_location_lambda_1pt0.pdf Graphic file (type pdf)
 <use figures/LEV_location_lambda_1pt0.pdf>
 Package pdftex.def Info: figures/LEV_location_lambda_1pt0.pdf  used on input li
-ne 577.
+ne 579.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
-<figures/LEV_location_lambda_1pt2.pdf, id=784, 421.575pt x 316.18124pt>
+<figures/LEV_location_lambda_1pt2.pdf, id=920, 421.575pt x 316.18124pt>
 File: figures/LEV_location_lambda_1pt2.pdf Graphic file (type pdf)
 <use figures/LEV_location_lambda_1pt2.pdf>
 Package pdftex.def Info: figures/LEV_location_lambda_1pt2.pdf  used on input li
-ne 582.
+ne 584.
 (pdftex.def)             Requested size: 234.8775pt x 176.1581pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 576--586
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 578--588
 []$[]$ $[]$ 
  []
 
-[31 <./figures/LEV_size_lambda_1pt0.png> <./figures/LEV_size_lambda_1pt2.png>])
-[32 <./figures/LEV_location_lambda_1pt0.pdf> <./figures/LEV_location_lambda_1pt
+[34 <./figures/LEV_size_lambda_1pt0.png> <./figures/LEV_size_lambda_1pt2.png>])
+[35 <./figures/LEV_location_lambda_1pt0.pdf> <./figures/LEV_location_lambda_1pt
 2.pdf>]
 \openout2 = `chapters/zonal_adapt_results/zonal_adapt_results.aux'.
 
  (./chapters/zonal_adapt_results/zonal_adapt_results.tex
 CHAPTER 5.
 (./chapters/adapt_strat/Adapt_St.tex (./chapters/adapt_strat/zonal_based.tex
-[33
+[36
 
 
 
 ]
-<figures/adapt_strat/M0_mesh.png, id=813, 614.076pt x 343.83pt>
+<figures/adapt_strat/M0_mesh.png, id=949, 614.076pt x 343.83pt>
 File: figures/adapt_strat/M0_mesh.png Graphic file (type png)
 <use figures/adapt_strat/M0_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/M0_mesh.png  used on input line 42
 .
 (pdftex.def)             Requested size: 223.13649pt x 124.93816pt.
-<figures/adapt_strat/M0_error_plot.png, id=814, 614.295pt x 343.88475pt>
+<figures/adapt_strat/M0_error_plot.png, id=950, 614.295pt x 343.88475pt>
 File: figures/adapt_strat/M0_error_plot.png Graphic file (type png)
 <use figures/adapt_strat/M0_error_plot.png>
 Package pdftex.def Info: figures/adapt_strat/M0_error_plot.png  used on input l
 ine 48.
 (pdftex.def)             Requested size: 223.13649pt x 124.91083pt.
-<figures/adapt_strat/Mza1_mesh.png, id=815, 614.076pt x 343.83pt>
+<figures/adapt_strat/Mza1_mesh.png, id=951, 614.076pt x 343.83pt>
 File: figures/adapt_strat/Mza1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/Mza1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/Mza1_mesh.png  used on input line 
 54.
 (pdftex.def)             Requested size: 223.13649pt x 124.93816pt.
-<figures/adapt_strat/Mza1_error_plot.png, id=816, 614.295pt x 343.88475pt>
+<figures/adapt_strat/Mza1_error_plot.png, id=952, 614.295pt x 343.88475pt>
 File: figures/adapt_strat/Mza1_error_plot.png Graphic file (type png)
 <use figures/adapt_strat/Mza1_error_plot.png>
 Package pdftex.def Info: figures/adapt_strat/Mza1_error_plot.png  used on input
  line 60.
 (pdftex.def)             Requested size: 223.13649pt x 124.91083pt.
-) (./chapters/adapt_strat/size_based.tex [34 <./figures/adapt_strat/M0_mesh.png
+) (./chapters/adapt_strat/size_based.tex [37 <./figures/adapt_strat/M0_mesh.png
 > <./figures/adapt_strat/M0_error_plot.png> <./figures/adapt_strat/Mza1_mesh.pn
 g> <./figures/adapt_strat/Mza1_error_plot.png>]
-<figures/adapt_strat/h_adapt1_mesh.png, id=827, 614.076pt x 343.83pt>
+<figures/adapt_strat/h_adapt1_mesh.png, id=963, 614.076pt x 343.83pt>
 File: figures/adapt_strat/h_adapt1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/h_adapt1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/h_adapt1_mesh.png  used on input l
 ine 16.
 (pdftex.def)             Requested size: 223.13649pt x 124.93816pt.
-<figures/adapt_strat/h_adapt1_error_plot.png, id=828, 614.295pt x 343.88475pt>
+<figures/adapt_strat/h_adapt1_error_plot.png, id=964, 614.295pt x 343.88475pt>
 File: figures/adapt_strat/h_adapt1_error_plot.png Graphic file (type png)
 <use figures/adapt_strat/h_adapt1_error_plot.png>
 Package pdftex.def Info: figures/adapt_strat/h_adapt1_error_plot.png  used on i
 nput line 22.
 (pdftex.def)             Requested size: 223.13649pt x 124.91083pt.
 )
-(./chapters/adapt_strat/feature_based.tex [35 <./figures/adapt_strat/h_adapt1_m
+(./chapters/adapt_strat/feature_based.tex [38 <./figures/adapt_strat/h_adapt1_m
 esh.png> <./figures/adapt_strat/h_adapt1_error_plot.png>]
 Overfull \hbox (1.71776pt too wide) in paragraph at lines 15--18
 []\OT1/cmr/m/n/12 Error val-ues along the LEV path are re-duced as com-pared to
  Msa1[]nz50 and Mza1[]nz50,
  []
 
-<figures/adapt_strat/FB_mesh.png, id=843, 614.076pt x 345.801pt>
+<figures/adapt_strat/FB_mesh.png, id=979, 614.076pt x 345.801pt>
 File: figures/adapt_strat/FB_mesh.png Graphic file (type png)
 <use figures/adapt_strat/FB_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/FB_mesh.png  used on input line 26
 .
 (pdftex.def)             Requested size: 223.13649pt x 125.65436pt.
-<figures/adapt_strat/FB_error_plot.png, id=844, 614.295pt x 343.88475pt>
+<figures/adapt_strat/FB_error_plot.png, id=980, 614.295pt x 343.88475pt>
 File: figures/adapt_strat/FB_error_plot.png Graphic file (type png)
 <use figures/adapt_strat/FB_error_plot.png>
 Package pdftex.def Info: figures/adapt_strat/FB_error_plot.png  used on input l
 ine 32.
 (pdftex.def)             Requested size: 223.13649pt x 124.91083pt.
-) (./chapters/adapt_strat/Results.tex [36 <./figures/adapt_strat/FB_mesh.png> <
+) (./chapters/adapt_strat/Results.tex [39 <./figures/adapt_strat/FB_mesh.png> <
 ./figures/adapt_strat/FB_error_plot.png>]
-<figures/Results/Lift_adapt_strat.png, id=856, 707.64375pt x 518.6878pt>
+<figures/Results/Lift_adapt_strat.png, id=993, 707.64375pt x 518.6878pt>
 File: figures/Results/Lift_adapt_strat.png Graphic file (type png)
 <use figures/Results/Lift_adapt_strat.png>
 Package pdftex.def Info: figures/Results/Lift_adapt_strat.png  used on input li
 ne 16.
 (pdftex.def)             Requested size: 328.82707pt x 241.02113pt.
-<figures/Results/Drag_adapt_strat.png, id=857, 707.64375pt x 518.6878pt>
+<figures/Results/Drag_adapt_strat.png, id=994, 707.64375pt x 518.6878pt>
 File: figures/Results/Drag_adapt_strat.png Graphic file (type png)
 <use figures/Results/Drag_adapt_strat.png>
 Package pdftex.def Info: figures/Results/Drag_adapt_strat.png  used on input li
 ne 22.
 (pdftex.def)             Requested size: 328.82707pt x 241.02113pt.
- [37] [38 <./figures/Results/Lift_adapt_strat.png (PNG copy)> <./figures/Result
+ [40] [41 <./figures/Results/Lift_adapt_strat.png (PNG copy)> <./figures/Result
 s/Drag_adapt_strat.png (PNG copy)>]
-<figures/adapt_strat/vorticity_plots/M0/phase_195.png, id=866, 1409.265pt x 777
-.90625pt>
+<figures/adapt_strat/vorticity_plots/M0/phase_195.png, id=1003, 1409.265pt x 77
+7.90625pt>
 File: figures/adapt_strat/vorticity_plots/M0/phase_195.png Graphic file (type p
 ng)
 <use figures/adapt_strat/vorticity_plots/M0/phase_195.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/M0/phase_195.png  
 used on input line 58.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mza1_50/phase_195.png, id=867, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mza1_50/phase_195.png, id=1004, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mza1_50/phase_195.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mza1_50/phase_195.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mza1_50/phase_195.
 png  used on input line 64.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Msa1_50/phase_195.png, id=868, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Msa1_50/phase_195.png, id=1005, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Msa1_50/phase_195.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Msa1_50/phase_195.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Msa1_50/phase_195.
 png  used on input line 76.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_195.png, id=869, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_195.png, id=1006, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_195.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mfa1_50/phase_195.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_195.
 png  used on input line 82.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/M0/phase_210.png, id=870, 1409.265pt x 777
-.90625pt>
+<figures/adapt_strat/vorticity_plots/M0/phase_210.png, id=1007, 1409.265pt x 77
+7.90625pt>
 File: figures/adapt_strat/vorticity_plots/M0/phase_210.png Graphic file (type p
 ng)
 <use figures/adapt_strat/vorticity_plots/M0/phase_210.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/M0/phase_210.png  
 used on input line 96.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png, id=871, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png, id=1008, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mza1_50/phase_210.
 png  used on input line 102.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Msa1_50/phase_210.png, id=872, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Msa1_50/phase_210.png, id=1009, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Msa1_50/phase_210.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Msa1_50/phase_210.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Msa1_50/phase_210.
 png  used on input line 114.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_210.png, id=873, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_210.png, id=1010, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_210.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mfa1_50/phase_210.png>
@@ -1690,62 +1671,62 @@ Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_210.
 png  used on input line 120.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 
-[39 <./figures/adapt_strat/vorticity_plots/M0/phase_195.png (PNG copy)> <./figu
+[42 <./figures/adapt_strat/vorticity_plots/M0/phase_195.png (PNG copy)> <./figu
 res/adapt_strat/vorticity_plots/Mza1_50/phase_195.png (PNG copy)> <./figures/ad
 apt_strat/vorticity_plots/Msa1_50/phase_195.png (PNG copy)> <./figures/adapt_st
 rat/vorticity_plots/Mfa1_50/phase_195.png (PNG copy)>]
-<figures/adapt_strat/vorticity_plots/M0/phase_270.png, id=879, 1409.265pt x 777
-.90625pt>
+<figures/adapt_strat/vorticity_plots/M0/phase_270.png, id=1015, 1409.265pt x 77
+7.90625pt>
 File: figures/adapt_strat/vorticity_plots/M0/phase_270.png Graphic file (type p
 ng)
 <use figures/adapt_strat/vorticity_plots/M0/phase_270.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/M0/phase_270.png  
 used on input line 136.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mza1_50/phase_270.png, id=880, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mza1_50/phase_270.png, id=1016, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mza1_50/phase_270.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mza1_50/phase_270.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mza1_50/phase_270.
 png  used on input line 142.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Msa1_50/phase_270.png, id=881, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Msa1_50/phase_270.png, id=1017, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Msa1_50/phase_270.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Msa1_50/phase_270.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Msa1_50/phase_270.
 png  used on input line 154.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_270.png, id=882, 1409.265pt 
-x 777.90625pt>
+<figures/adapt_strat/vorticity_plots/Mfa1_50/phase_270.png, id=1018, 1409.265pt
+ x 777.90625pt>
 File: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_270.png Graphic file (t
 ype png)
 <use figures/adapt_strat/vorticity_plots/Mfa1_50/phase_270.png>
 Package pdftex.def Info: figures/adapt_strat/vorticity_plots/Mfa1_50/phase_270.
 png  used on input line 160.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-<figures/adapt_strat/zoomed/Mza1_mesh.png, id=883, 1389.19pt x 757.83125pt>
+<figures/adapt_strat/zoomed/Mza1_mesh.png, id=1019, 1389.19pt x 757.83125pt>
 File: figures/adapt_strat/zoomed/Mza1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mza1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_mesh.png  used on inpu
 t line 172.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
-<figures/adapt_strat/zoomed/Mza1_ph_210.png, id=884, 1389.19pt x 757.83125pt>
+<figures/adapt_strat/zoomed/Mza1_ph_210.png, id=1020, 1389.19pt x 757.83125pt>
 File: figures/adapt_strat/zoomed/Mza1_ph_210.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mza1_ph_210.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_ph_210.png  used on in
 put line 178.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
-<figures/adapt_strat/zoomed/Mza1_max_error.png, id=885, 1389.19pt x 757.83125pt
->
+<figures/adapt_strat/zoomed/Mza1_max_error.png, id=1021, 1389.19pt x 757.83125p
+t>
 File: figures/adapt_strat/zoomed/Mza1_max_error.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mza1_max_error.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_max_error.png  used on
  input line 184.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
- [40 <./figures/adapt_strat/vorticity_plots/M0/phase_210.png (PNG copy)> <./fig
+ [43 <./figures/adapt_strat/vorticity_plots/M0/phase_210.png (PNG copy)> <./fig
 ures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png (PNG copy)> <./figures/a
 dapt_strat/vorticity_plots/Msa1_50/phase_210.png (PNG copy)> <./figures/adapt_s
 trat/vorticity_plots/Mfa1_50/phase_210.png (PNG copy)> <./figures/adapt_strat/v
@@ -1753,67 +1734,67 @@ orticity_plots/M0/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_pl
 ots/Mza1_50/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_plots/Ms
 a1_50/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_plots/Mfa1_50/
 phase_270.png (PNG copy)>]
-<figures/adapt_strat/zoomed/Msa1_mesh.png, id=890, 1389.19pt x 757.83125pt>
+<figures/adapt_strat/zoomed/Msa1_mesh.png, id=1026, 1389.19pt x 757.83125pt>
 File: figures/adapt_strat/zoomed/Msa1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Msa1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_mesh.png  used on inpu
 t line 198.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
-<figures/adapt_strat/zoomed/Msa1_ph_210.png, id=891, 1389.19pt x 757.83125pt>
+<figures/adapt_strat/zoomed/Msa1_ph_210.png, id=1027, 1389.19pt x 757.83125pt>
 File: figures/adapt_strat/zoomed/Msa1_ph_210.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Msa1_ph_210.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_ph_210.png  used on in
 put line 204.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
-<figures/adapt_strat/zoomed/Msa1_max_error.png, id=892, 1389.19pt x 757.83125pt
->
+<figures/adapt_strat/zoomed/Msa1_max_error.png, id=1028, 1389.19pt x 757.83125p
+t>
 File: figures/adapt_strat/zoomed/Msa1_max_error.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Msa1_max_error.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_max_error.png  used on
  input line 210.
 (pdftex.def)             Requested size: 328.82707pt x 179.38548pt.
- [41 <./figures/adapt_strat/zoomed/Mza1_mesh.png (PNG copy)> <./figures/adapt_s
+ [44 <./figures/adapt_strat/zoomed/Mza1_mesh.png (PNG copy)> <./figures/adapt_s
 trat/zoomed/Mza1_ph_210.png (PNG copy)> <./figures/adapt_strat/zoomed/Mza1_max_
-error.png (PNG copy)>] [42 <./figures/adapt_strat/zoomed/Msa1_mesh.png (PNG cop
+error.png (PNG copy)>] [45 <./figures/adapt_strat/zoomed/Msa1_mesh.png (PNG cop
 y)> <./figures/adapt_strat/zoomed/Msa1_ph_210.png (PNG copy)> <./figures/adapt_
 strat/zoomed/Msa1_max_error.png (PNG copy)>]
-<figures/Results/Cp_plots/Cp_ph_180.png, id=902, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_180.png, id=1039, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_180.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_180.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_180.png  used on input 
 line 232.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
-<figures/Results/Cp_plots/Cp_ph_195.png, id=903, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_195.png, id=1040, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_195.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_195.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_195.png  used on input 
 line 238.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
-<figures/Results/Cp_plots/Cp_ph_210.png, id=904, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_210.png, id=1041, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_210.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_210.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_210.png  used on input 
 line 244.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
-<figures/Results/Cp_plots/Cp_ph_225.png, id=905, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_225.png, id=1042, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_225.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_225.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_225.png  used on input 
 line 250.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
-<figures/Results/Cp_plots/Cp_ph_270.png, id=906, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_270.png, id=1043, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_270.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_270.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_270.png  used on input 
 line 256.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
-<figures/Results/Cp_plots/Cp_ph_285.png, id=907, 421.575pt x 316.0608pt>
+<figures/Results/Cp_plots/Cp_ph_285.png, id=1044, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_285.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_285.png>
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_285.png  used on input 
 line 262.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
- [43] [44 <./figures/Results/Cp_plots/Cp_ph_180.png (PNG copy)> <./figures/Resu
+ [46] [47 <./figures/Results/Cp_plots/Cp_ph_180.png (PNG copy)> <./figures/Resu
 lts/Cp_plots/Cp_ph_195.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_210.pn
 g (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_225.png (PNG copy)> <./figures/
 Results/Cp_plots/Cp_ph_270.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_28
@@ -1862,73 +1843,73 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 26.
 
-[45] (./chapters/zonal_adapt_results/mesh_and_error_field.tex
-<figures/zonal_adapt_results/Mesh_and_error_plots/M0_inplane.png, id=923, 1467.
-4825pt x 780.9175pt>
+[48] (./chapters/zonal_adapt_results/mesh_and_error_field.tex
+<figures/zonal_adapt_results/Mesh_and_error_plots/M0_inplane.png, id=1058, 1467
+.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/M0_inplane.png Graphic f
 ile (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/M0_inplane.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/M0_in
 plane.png  used on input line 6.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/M0_error.png, id=924, 1467.48
-25pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/M0_error.png, id=1059, 1467.4
+825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/M0_error.png Graphic fil
 e (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/M0_error.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/M0_er
 ror.png  used on input line 12.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_inplane.png, id=925, 146
-7.4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_inplane.png, id=1060, 14
+67.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_inplane.png Graphic
  file (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_inplane.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_
 inplane.png  used on input line 19.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_error.png, id=926, 1467.
-4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_error.png, id=1061, 1467
+.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_error.png Graphic f
 ile (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_error.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza1_
 error.png  used on input line 25.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_inplane.png, id=927, 146
-7.4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_inplane.png, id=1062, 14
+67.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_inplane.png Graphic
  file (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_inplane.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_
 inplane.png  used on input line 33.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_error.png, id=928, 1467.
-4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_error.png, id=1063, 1467
+.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_error.png Graphic f
 ile (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_error.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza2_
 error.png  used on input line 39.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_inplane.png, id=929, 146
-7.4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_inplane.png, id=1064, 14
+67.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_inplane.png Graphic
  file (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_inplane.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_
 inplane.png  used on input line 46.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-<figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_error.png, id=930, 1467.
-4825pt x 780.9175pt>
+<figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_error.png, id=1065, 1467
+.4825pt x 780.9175pt>
 File: figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_error.png Graphic f
 ile (type png)
 <use figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_error.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Mesh_and_error_plots/Mza3_
 error.png  used on input line 52.
 (pdftex.def)             Requested size: 223.13649pt x 118.7412pt.
-) [46]
-(./chapters/zonal_adapt_results/force_response.tex [47 <./figures/zonal_adapt_r
+) [49]
+(./chapters/zonal_adapt_results/force_response.tex [50 <./figures/zonal_adapt_r
 esults/Mesh_and_error_plots/M0_inplane.png (PNG copy)> <./figures/zonal_adapt_r
 esults/Mesh_and_error_plots/M0_error.png (PNG copy)> <./figures/zonal_adapt_res
 ults/Mesh_and_error_plots/Mza1_inplane.png (PNG copy)> <./figures/zonal_adapt_r
@@ -1937,28 +1918,28 @@ esults/Mesh_and_error_plots/Mza2_inplane.png (PNG copy)> <./figures/zonal_adapt
 _results/Mesh_and_error_plots/Mza2_error.png (PNG copy)> <./figures/zonal_adapt
 _results/Mesh_and_error_plots/Mza3_inplane.png (PNG copy)> <./figures/zonal_ada
 pt_results/Mesh_and_error_plots/Mza3_error.png (PNG copy)>]
-<figures/zonal_adapt_results/force_response/Lift.png, id=941, 707.64375pt x 518
-.6878pt>
+<figures/zonal_adapt_results/force_response/Lift.png, id=1077, 707.64375pt x 51
+8.6878pt>
 File: figures/zonal_adapt_results/force_response/Lift.png Graphic file (type pn
 g)
 <use figures/zonal_adapt_results/force_response/Lift.png>
 Package pdftex.def Info: figures/zonal_adapt_results/force_response/Lift.png  u
 sed on input line 9.
 (pdftex.def)             Requested size: 328.82707pt x 241.02113pt.
-<figures/zonal_adapt_results/force_response/Drag.png, id=942, 707.64375pt x 518
-.6878pt>
+<figures/zonal_adapt_results/force_response/Drag.png, id=1078, 707.64375pt x 51
+8.6878pt>
 File: figures/zonal_adapt_results/force_response/Drag.png Graphic file (type pn
 g)
 <use figures/zonal_adapt_results/force_response/Drag.png>
 Package pdftex.def Info: figures/zonal_adapt_results/force_response/Drag.png  u
 sed on input line 15.
 (pdftex.def)             Requested size: 328.82707pt x 241.02113pt.
-) [48]
-(./chapters/zonal_adapt_results/vorticity.tex [49 <./figures/zonal_adapt_result
+) [51]
+(./chapters/zonal_adapt_results/vorticity.tex [52 <./figures/zonal_adapt_result
 s/force_response/Lift.png (PNG copy)> <./figures/zonal_adapt_results/force_resp
-onse/Drag.png (PNG copy)>] [50]
-<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png, id=960,
- 1409.265pt x 777.90625pt>
+onse/Drag.png (PNG copy)>] [53]
+<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png, id=1097
+, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png Gra
 phic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png>
@@ -1966,7 +1947,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/M0/spav
 g/phase_150.png  used on input line 43.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_150.png, id
-=961, 1409.265pt x 777.90625pt>
+=1098, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_150.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_150.png
@@ -1975,7 +1956,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25
 /spavg/phase_150.png  used on input line 50.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_150.png, id
-=962, 1409.265pt x 777.90625pt>
+=1099, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_150.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_150.png
@@ -1984,7 +1965,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_150.png  used on input line 56.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_150.png, id
-=963, 1409.265pt x 777.90625pt>
+=1100, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_150.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_150.png
@@ -1993,7 +1974,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50
 /spavg/phase_150.png  used on input line 74.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_150.png, i
-d=964, 1409.265pt x 777.90625pt>
+d=1101, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_150.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_150.pn
@@ -2002,7 +1983,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_10
 0/spavg/phase_150.png  used on input line 80.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_150.png, id
-=965, 1409.265pt x 777.90625pt>
+=1102, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_150.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_150.png
@@ -2011,7 +1992,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50
 /spavg/phase_150.png  used on input line 86.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_150.png, i
-d=966, 1409.265pt x 777.90625pt>
+d=1103, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_150.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_150.pn
@@ -2019,9 +2000,9 @@ g>
 Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_10
 0/spavg/phase_150.png  used on input line 92.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
- [51]
-<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png, id=972,
- 1409.265pt x 777.90625pt>
+ [54]
+<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png, id=1108
+, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png Gra
 phic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png>
@@ -2029,7 +2010,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/M0/spav
 g/phase_180.png  used on input line 113.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_180.png, id
-=973, 1409.265pt x 777.90625pt>
+=1109, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_180.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_180.png
@@ -2038,7 +2019,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25
 /spavg/phase_180.png  used on input line 120.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_180.png, id
-=974, 1409.265pt x 777.90625pt>
+=1110, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_180.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_180.png
@@ -2047,7 +2028,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_180.png  used on input line 126.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_180.png, id
-=975, 1409.265pt x 777.90625pt>
+=1111, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_180.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_180.png
@@ -2056,7 +2037,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50
 /spavg/phase_180.png  used on input line 144.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_180.png, i
-d=976, 1409.265pt x 777.90625pt>
+d=1112, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_180.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_180.pn
@@ -2065,7 +2046,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_10
 0/spavg/phase_180.png  used on input line 150.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_180.png, id
-=977, 1409.265pt x 777.90625pt>
+=1113, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_180.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_180.png
@@ -2074,7 +2055,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50
 /spavg/phase_180.png  used on input line 156.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_180.png, i
-d=978, 1409.265pt x 777.90625pt>
+d=1114, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_180.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_180.pn
@@ -2082,7 +2063,7 @@ g>
 Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_10
 0/spavg/phase_180.png  used on input line 162.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
- [52 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png (
+ [55 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_150.png (
 PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phas
 e_150.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_150.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots
@@ -2090,8 +2071,8 @@ e_150.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 icity_plots/v2/Mza2_100/spavg/phase_150.png (PNG copy)> <./figures/zonal_adapt_
 results/vorticity_plots/v2/Mza3_50/spavg/phase_150.png (PNG copy)> <./figures/z
 onal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_150.png (PNG copy)>]
-<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png, id=983,
- 1409.265pt x 777.90625pt>
+<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png, id=1119
+, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png Gra
 phic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png>
@@ -2099,7 +2080,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/M0/spav
 g/phase_210.png  used on input line 180.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_210.png, id
-=984, 1409.265pt x 777.90625pt>
+=1120, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_210.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_210.png
@@ -2108,7 +2089,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25
 /spavg/phase_210.png  used on input line 187.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_210.png, id
-=985, 1409.265pt x 777.90625pt>
+=1121, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_210.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_210.png
@@ -2117,7 +2098,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_210.png  used on input line 193.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_210.png, id
-=986, 1409.265pt x 777.90625pt>
+=1122, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_210.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_210.png
@@ -2126,7 +2107,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50
 /spavg/phase_210.png  used on input line 211.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_210.png, i
-d=987, 1409.265pt x 777.90625pt>
+d=1123, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_210.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_210.pn
@@ -2135,7 +2116,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_10
 0/spavg/phase_210.png  used on input line 217.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_210.png, id
-=988, 1409.265pt x 777.90625pt>
+=1124, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_210.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_210.png
@@ -2144,7 +2125,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50
 /spavg/phase_210.png  used on input line 223.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_210.png, i
-d=989, 1409.265pt x 777.90625pt>
+d=1125, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_210.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_210.pn
@@ -2152,7 +2133,7 @@ g>
 Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_10
 0/spavg/phase_210.png  used on input line 229.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
- [53 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png (
+ [56 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_180.png (
 PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phas
 e_180.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_180.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots
@@ -2160,8 +2141,8 @@ e_180.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 icity_plots/v2/Mza2_100/spavg/phase_180.png (PNG copy)> <./figures/zonal_adapt_
 results/vorticity_plots/v2/Mza3_50/spavg/phase_180.png (PNG copy)> <./figures/z
 onal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_180.png (PNG copy)>]
-<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png, id=994,
- 1409.265pt x 777.90625pt>
+<figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png, id=1130
+, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png Gra
 phic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png>
@@ -2169,7 +2150,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/M0/spav
 g/phase_240.png  used on input line 247.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_240.png, id
-=995, 1409.265pt x 777.90625pt>
+=1131, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_240.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phase_240.png
@@ -2178,7 +2159,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25
 /spavg/phase_240.png  used on input line 254.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_240.png, id
-=996, 1409.265pt x 777.90625pt>
+=1132, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_240.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50/spavg/phase_240.png
@@ -2187,7 +2168,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_240.png  used on input line 260.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_240.png, id
-=997, 1409.265pt x 777.90625pt>
+=1133, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_240.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50/spavg/phase_240.png
@@ -2196,7 +2177,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_50
 /spavg/phase_240.png  used on input line 266.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_240.png, i
-d=998, 1409.265pt x 777.90625pt>
+d=1134, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_240.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza2_100/spavg/phase_240.pn
@@ -2205,7 +2186,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza2_10
 0/spavg/phase_240.png  used on input line 290.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_240.png, id
-=999, 1409.265pt x 777.90625pt>
+=1135, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_240.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50/spavg/phase_240.png
@@ -2214,7 +2195,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_50
 /spavg/phase_240.png  used on input line 296.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_240.png, i
-d=1000, 1409.265pt x 777.90625pt>
+d=1136, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_240.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_240.pn
@@ -2222,7 +2203,7 @@ g>
 Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v2/Mza3_10
 0/spavg/phase_240.png  used on input line 302.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
- [54 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png (
+ [57 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_210.png (
 PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/phas
 e_210.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 /spavg/phase_210.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots
@@ -2230,7 +2211,7 @@ e_210.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_50
 icity_plots/v2/Mza2_100/spavg/phase_210.png (PNG copy)> <./figures/zonal_adapt_
 results/vorticity_plots/v2/Mza3_50/spavg/phase_210.png (PNG copy)> <./figures/z
 onal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_210.png (PNG copy)>]
-<figures/zonal_adapt_results/vorticity_plots/v3/M0/spavg/phase_270.png, id=1005
+<figures/zonal_adapt_results/vorticity_plots/v3/M0/spavg/phase_270.png, id=1142
 , 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/M0/spavg/phase_270.png Gra
 phic file (type png)
@@ -2239,7 +2220,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/M0/spav
 g/phase_270.png  used on input line 320.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza1_25/spavg/phase_270.png, id
-=1006, 1409.265pt x 777.90625pt>
+=1143, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza1_25/spavg/phase_270.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza1_25/spavg/phase_270.png
@@ -2248,7 +2229,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza1_25
 /spavg/phase_270.png  used on input line 327.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza1_50/spavg/phase_270.png, id
-=1007, 1409.265pt x 777.90625pt>
+=1144, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza1_50/spavg/phase_270.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza1_50/spavg/phase_270.png
@@ -2257,7 +2238,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza1_50
 /spavg/phase_270.png  used on input line 333.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza2_50/spavg/phase_270.png, id
-=1008, 1409.265pt x 777.90625pt>
+=1145, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza2_50/spavg/phase_270.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza2_50/spavg/phase_270.png
@@ -2266,7 +2247,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza2_50
 /spavg/phase_270.png  used on input line 351.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza2_100/spavg/phase_270.png, i
-d=1009, 1409.265pt x 777.90625pt>
+d=1146, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza2_100/spavg/phase_270.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza2_100/spavg/phase_270.pn
@@ -2275,7 +2256,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza2_10
 0/spavg/phase_270.png  used on input line 357.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza3_50/spavg/phase_270.png, id
-=1010, 1409.265pt x 777.90625pt>
+=1147, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza3_50/spavg/phase_270.pn
 g Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza3_50/spavg/phase_270.png
@@ -2284,7 +2265,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza3_50
 /spavg/phase_270.png  used on input line 363.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
 <figures/zonal_adapt_results/vorticity_plots/v3/Mza3_100/spavg/phase_270.png, i
-d=1011, 1409.265pt x 777.90625pt>
+d=1148, 1409.265pt x 777.90625pt>
 File: figures/zonal_adapt_results/vorticity_plots/v3/Mza3_100/spavg/phase_270.p
 ng Graphic file (type png)
 <use figures/zonal_adapt_results/vorticity_plots/v3/Mza3_100/spavg/phase_270.pn
@@ -2292,7 +2273,7 @@ g>
 Package pdftex.def Info: figures/zonal_adapt_results/vorticity_plots/v3/Mza3_10
 0/spavg/phase_270.png  used on input line 369.
 (pdftex.def)             Requested size: 223.13649pt x 123.16185pt.
-) [55 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png 
+) [58 <./figures/zonal_adapt_results/vorticity_plots/v2/M0/spavg/phase_240.png 
 (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_25/spavg/pha
 se_240.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v2/Mza1_5
 0/spavg/phase_240.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plot
@@ -2301,7 +2282,7 @@ ticity_plots/v2/Mza2_100/spavg/phase_240.png (PNG copy)> <./figures/zonal_adapt
 _results/vorticity_plots/v2/Mza3_50/spavg/phase_240.png (PNG copy)> <./figures/
 zonal_adapt_results/vorticity_plots/v2/Mza3_100/spavg/phase_240.png (PNG copy)>
 ] (./chapters/zonal_adapt_results/Cp.tex
-[56 <./figures/zonal_adapt_results/vorticity_plots/v3/M0/spavg/phase_270.png (P
+[59 <./figures/zonal_adapt_results/vorticity_plots/v3/M0/spavg/phase_270.png (P
 NG copy)> <./figures/zonal_adapt_results/vorticity_plots/v3/Mza1_25/spavg/phase
 _270.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/v3/Mza1_50/
 spavg/phase_270.png (PNG copy)> <./figures/zonal_adapt_results/vorticity_plots/
@@ -2309,28 +2290,28 @@ v3/Mza2_50/spavg/phase_270.png (PNG copy)> <./figures/zonal_adapt_results/vorti
 city_plots/v3/Mza2_100/spavg/phase_270.png (PNG copy)> <./figures/zonal_adapt_r
 esults/vorticity_plots/v3/Mza3_50/spavg/phase_270.png (PNG copy)> <./figures/zo
 nal_adapt_results/vorticity_plots/v3/Mza3_100/spavg/phase_270.png (PNG copy)>]
-<figures/zonal_adapt_results/Cp/phase_150.png, id=1022, 526.96875pt x 395.22656
+<figures/zonal_adapt_results/Cp/phase_150.png, id=1159, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_150.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_150.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_150.png  used on 
 input line 36.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/Cp/phase_180.png, id=1023, 526.96875pt x 395.22656
+<figures/zonal_adapt_results/Cp/phase_180.png, id=1160, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_180.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_180.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_180.png  used on 
 input line 42.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/Cp/phase_210.png, id=1024, 526.96875pt x 395.22656
+<figures/zonal_adapt_results/Cp/phase_210.png, id=1161, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_210.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_210.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_210.png  used on 
 input line 48.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/Cp/phase_240.png, id=1025, 526.96875pt x 395.22656
+<figures/zonal_adapt_results/Cp/phase_240.png, id=1162, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_240.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_240.png>
@@ -2338,40 +2319,40 @@ Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_240.png  used on
 input line 54.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
 
-[57]
-<figures/zonal_adapt_results/Cp/phase_270.png, id=1032, 526.96875pt x 395.22656
+[60]
+<figures/zonal_adapt_results/Cp/phase_270.png, id=1168, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_270.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_270.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_270.png  used on 
 input line 74.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/Cp/phase_300.png, id=1033, 526.96875pt x 395.22656
+<figures/zonal_adapt_results/Cp/phase_300.png, id=1169, 526.96875pt x 395.22656
 pt>
 File: figures/zonal_adapt_results/Cp/phase_300.png Graphic file (type png)
 <use figures/zonal_adapt_results/Cp/phase_300.png>
 Package pdftex.def Info: figures/zonal_adapt_results/Cp/phase_300.png  used on 
 input line 80.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-) (./chapters/zonal_adapt_results/LEV.tex [58 <./figures/zonal_adapt_results/Cp
+) (./chapters/zonal_adapt_results/LEV.tex [61 <./figures/zonal_adapt_results/Cp
 /phase_150.png (PNG copy)> <./figures/zonal_adapt_results/Cp/phase_180.png (PNG
  copy)> <./figures/zonal_adapt_results/Cp/phase_210.png (PNG copy)> <./figures/
 zonal_adapt_results/Cp/phase_240.png (PNG copy)>]
-<figures/zonal_adapt_results/LEV/LEV_location.png, id=1040, 526.96875pt x 395.2
+<figures/zonal_adapt_results/LEV/LEV_location.png, id=1176, 526.96875pt x 395.2
 2656pt>
 File: figures/zonal_adapt_results/LEV/LEV_location.png Graphic file (type png)
 <use figures/zonal_adapt_results/LEV/LEV_location.png>
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/LEV_location.png  used
  on input line 13.
 (pdftex.def)             Requested size: 352.31625pt x 264.25162pt.
- [59 <./figures/zonal_adapt_results/Cp/phase_270.png (PNG copy)> <./figures/zon
+ [62 <./figures/zonal_adapt_results/Cp/phase_270.png (PNG copy)> <./figures/zon
 al_adapt_results/Cp/phase_300.png (PNG copy)>]
 
 Package caption Warning: \label without proper reference on input line 59.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:zonal_utheta_LEV' on page 60 undefined on input l
+LaTeX Warning: Reference `fig:zonal_utheta_LEV' on page 63 undefined on input l
 ine 18.
 
 
@@ -2379,11 +2360,11 @@ Package caption Warning: \label without proper reference on input line 59.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:zonal_utheta_LEV' on page 60 undefined on input l
+LaTeX Warning: Reference `fig:zonal_utheta_LEV' on page 63 undefined on input l
 ine 19.
 
-[60 <./figures/zonal_adapt_results/LEV/LEV_location.png (PNG copy)>]
-<figures/zonal_adapt_results/LEV/u_theta/phase_240.png, id=1052, 462.528pt x 34
+[63 <./figures/zonal_adapt_results/LEV/LEV_location.png (PNG copy)>]
+<figures/zonal_adapt_results/LEV/u_theta/phase_240.png, id=1189, 462.528pt x 34
 6.896pt>
 File: figures/zonal_adapt_results/LEV/u_theta/phase_240.png Graphic file (type 
 png)
@@ -2391,7 +2372,7 @@ png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/phase_240.png 
  used on input line 43.
 (pdftex.def)             Requested size: 223.13649pt x 167.35509pt.
-<figures/zonal_adapt_results/LEV/u_theta/phase_270.png, id=1053, 462.528pt x 34
+<figures/zonal_adapt_results/LEV/u_theta/phase_270.png, id=1190, 462.528pt x 34
 6.896pt>
 File: figures/zonal_adapt_results/LEV/u_theta/phase_270.png Graphic file (type 
 png)
@@ -2399,7 +2380,7 @@ png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/phase_270.png 
  used on input line 49.
 (pdftex.def)             Requested size: 223.13649pt x 167.35509pt.
-<figures/zonal_adapt_results/LEV/u_theta/phase_300.png, id=1054, 462.528pt x 34
+<figures/zonal_adapt_results/LEV/u_theta/phase_300.png, id=1191, 462.528pt x 34
 6.896pt>
 File: figures/zonal_adapt_results/LEV/u_theta/phase_300.png Graphic file (type 
 png)
@@ -2407,8 +2388,8 @@ png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/phase_300.png 
  used on input line 55.
 (pdftex.def)             Requested size: 223.13649pt x 167.35509pt.
- [61]
-<figures/zonal_adapt_results/LEV/LEV_radius_vp.png, id=1061, 526.96875pt x 395.
+ [64]
+<figures/zonal_adapt_results/LEV/LEV_radius_vp.png, id=1198, 526.96875pt x 395.
 22656pt>
 File: figures/zonal_adapt_results/LEV/LEV_radius_vp.png Graphic file (type png)
 
@@ -2417,7 +2398,7 @@ Package pdftex.def Info: figures/zonal_adapt_results/LEV/LEV_radius_vp.png  use
 d on input line 73.
 (pdftex.def)             Requested size: 328.82707pt x 246.63002pt.
 
-[62 <./figures/zonal_adapt_results/LEV/u_theta/phase_240.png> <./figures/zonal_
+[65 <./figures/zonal_adapt_results/LEV/u_theta/phase_240.png> <./figures/zonal_
 adapt_results/LEV/u_theta/phase_270.png> <./figures/zonal_adapt_results/LEV/u_t
 heta/phase_300.png>]
 
@@ -2425,10 +2406,10 @@ Package caption Warning: \label without proper reference on input line 115.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:zonal_TI_plots_LEV' on page 63 undefined on input
+LaTeX Warning: Reference `fig:zonal_TI_plots_LEV' on page 66 undefined on input
  line 78.
 
-<figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.png, id=1070, 526.96875pt
+<figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.png, id=1207, 526.96875pt
  x 395.22656pt>
 File: figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.png Graphic file (ty
 pe png)
@@ -2436,7 +2417,7 @@ pe png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.p
 ng  used on input line 99.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.png, id=1071, 526.96875pt
+<figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.png, id=1208, 526.96875pt
  x 395.22656pt>
 File: figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.png Graphic file (ty
 pe png)
@@ -2444,7 +2425,7 @@ pe png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.p
 ng  used on input line 105.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-<figures/zonal_adapt_results/LEV/u_theta/TI_phase_300.png, id=1072, 526.96875pt
+<figures/zonal_adapt_results/LEV/u_theta/TI_phase_300.png, id=1209, 526.96875pt
  x 395.22656pt>
 File: figures/zonal_adapt_results/LEV/u_theta/TI_phase_300.png Graphic file (ty
 pe png)
@@ -2452,8 +2433,8 @@ pe png)
 Package pdftex.def Info: figures/zonal_adapt_results/LEV/u_theta/TI_phase_300.p
 ng  used on input line 111.
 (pdftex.def)             Requested size: 223.13649pt x 167.35092pt.
-[63 <./figures/zonal_adapt_results/LEV/LEV_radius_vp.png (PNG copy)>]))
-[64 <./figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.png (PNG copy)> <./
+[66 <./figures/zonal_adapt_results/LEV/LEV_radius_vp.png (PNG copy)>]))
+[67 <./figures/zonal_adapt_results/LEV/u_theta/TI_phase_240.png (PNG copy)> <./
 figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.png (PNG copy)> <./figures
 /zonal_adapt_results/LEV/u_theta/TI_phase_300.png (PNG copy)>]
 \openout2 = `chapters/active_camber/active_camber.aux'.
@@ -2461,151 +2442,151 @@ figures/zonal_adapt_results/LEV/u_theta/TI_phase_270.png (PNG copy)> <./figures
 
 (./chapters/active_camber/active_camber.tex
 CHAPTER 6.
-<figures/U_rel_vs_t_tilde_without_lines.png, id=1084, 705.38531pt x 583.42969pt
+<figures/U_rel_vs_t_tilde_without_lines.png, id=1219, 705.38531pt x 583.42969pt
 >
 File: figures/U_rel_vs_t_tilde_without_lines.png Graphic file (type png)
 <use figures/U_rel_vs_t_tilde_without_lines.png>
 Package pdftex.def Info: figures/U_rel_vs_t_tilde_without_lines.png  used on in
 put line 20.
 (pdftex.def)             Requested size: 289.07999pt x 239.10089pt.
-[65
+[68
 
 
 
 ]
-<figures/Setup/mesh.png, id=1094, 1696.3375pt x 1302.8675pt>
+<figures/Setup/mesh.png, id=1229, 1696.3375pt x 1302.8675pt>
 File: figures/Setup/mesh.png Graphic file (type png)
 <use figures/Setup/mesh.png>
 Package pdftex.def Info: figures/Setup/mesh.png  used on input line 61.
 (pdftex.def)             Requested size: 281.85587pt x 216.47475pt.
-<figures/Setup/mesh_AC.png, id=1095, 1696.3375pt x 1302.8675pt>
+<figures/Setup/mesh_AC.png, id=1230, 1696.3375pt x 1302.8675pt>
 File: figures/Setup/mesh_AC.png Graphic file (type png)
 <use figures/Setup/mesh_AC.png>
 Package pdftex.def Info: figures/Setup/mesh_AC.png  used on input line 68.
 (pdftex.def)             Requested size: 281.85587pt x 216.47475pt.
- [66 <./figures/U_rel_vs_t_tilde_without_lines.png (PNG copy)>] [67 <./figures/
+ [69 <./figures/U_rel_vs_t_tilde_without_lines.png (PNG copy)>] [70 <./figures/
 Setup/mesh.png (PNG copy)> <./figures/Setup/mesh_AC.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:drag_profile' on page 68 undefined on input line 
+LaTeX Warning: Reference `sec:drag_profile' on page 71 undefined on input line 
 90.
 
-<figures/mu_1pt5/vorticity/baseline/phase_195.png, id=1114, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_195.png, id=1251, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_195.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_195.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_195.png  used
  on input line 101.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_195.png, id=1115, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_195.png, id=1252, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_195.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_195.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_195.png  used on in
 put line 107.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_225.png, id=1116, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_225.png, id=1253, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_225.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_225.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_225.png  used
  on input line 127.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_225.png, id=1117, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_225.png, id=1254, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_225.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_225.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_225.png  used on in
 put line 133.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_240.png, id=1118, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_240.png, id=1255, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_240.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_240.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_240.png  used
  on input line 141.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_240.png, id=1119, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_240.png, id=1256, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_240.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_240.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_240.png  used on in
 put line 147.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_255.png, id=1120, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_255.png, id=1257, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_255.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_255.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_255.png  used
  on input line 154.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_255.png, id=1121, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_255.png, id=1258, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_255.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_255.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_255.png  used on in
 put line 160.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-[68]
+[71]
 Overfull \vbox (17.07114pt too high) has occurred while \output is active []
 
 
-[69 <./figures/mu_1pt5/vorticity/baseline/phase_195.png (PNG copy)> <./figures/
+[72 <./figures/mu_1pt5/vorticity/baseline/phase_195.png (PNG copy)> <./figures/
 mu_1pt5/vorticity/AC/phase_195.png (PNG copy)> <./figures/mu_1pt5/vorticity/bas
 eline/phase_225.png (PNG copy)> <./figures/mu_1pt5/vorticity/AC/phase_225.png (
 PNG copy)> <./figures/mu_1pt5/vorticity/baseline/phase_240.png (PNG copy)> <./f
 igures/mu_1pt5/vorticity/AC/phase_240.png (PNG copy)> <./figures/mu_1pt5/vortic
 ity/baseline/phase_255.png (PNG copy)> <./figures/mu_1pt5/vorticity/AC/phase_25
 5.png (PNG copy)>]
-<figures/mu_1pt5/vorticity/baseline/phase_270.png, id=1131, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_270.png, id=1267, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_270.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_270.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_270.png  used
  on input line 175.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_270.png, id=1132, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_270.png, id=1268, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_270.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_270.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_270.png  used on in
 put line 181.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_285.png, id=1133, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_285.png, id=1269, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_285.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_285.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_285.png  used
  on input line 188.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_285.png, id=1134, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_285.png, id=1270, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_285.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_285.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_285.png  used on in
 put line 194.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_315.png, id=1135, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_315.png, id=1271, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_315.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_315.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_315.png  used
  on input line 215.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_315.png, id=1136, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_315.png, id=1272, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_315.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_315.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/AC/phase_315.png  used on in
 put line 221.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/baseline/phase_330.png, id=1137, 1789.68625pt x 1302
+<figures/mu_1pt5/vorticity/baseline/phase_330.png, id=1273, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_1pt5/vorticity/baseline/phase_330.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/baseline/phase_330.png>
 Package pdftex.def Info: figures/mu_1pt5/vorticity/baseline/phase_330.png  used
  on input line 228.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_1pt5/vorticity/AC/phase_330.png, id=1138, 1789.68625pt x 1302.8675p
+<figures/mu_1pt5/vorticity/AC/phase_330.png, id=1274, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_1pt5/vorticity/AC/phase_330.png Graphic file (type png)
 <use figures/mu_1pt5/vorticity/AC/phase_330.png>
@@ -2616,7 +2597,7 @@ put line 234.
 Overfull \vbox (17.07114pt too high) has occurred while \output is active []
 
 
-[70 <./figures/mu_1pt5/vorticity/baseline/phase_270.png (PNG copy)> <./figures/
+[73 <./figures/mu_1pt5/vorticity/baseline/phase_270.png (PNG copy)> <./figures/
 mu_1pt5/vorticity/AC/phase_270.png (PNG copy)> <./figures/mu_1pt5/vorticity/bas
 eline/phase_285.png (PNG copy)> <./figures/mu_1pt5/vorticity/AC/phase_285.png (
 PNG copy)> <./figures/mu_1pt5/vorticity/baseline/phase_315.png (PNG copy)> <./f
@@ -2624,126 +2605,126 @@ igures/mu_1pt5/vorticity/AC/phase_315.png (PNG copy)> <./figures/mu_1pt5/vortic
 ity/baseline/phase_330.png (PNG copy)> <./figures/mu_1pt5/vorticity/AC/phase_33
 0.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:drag_profile' on page 71 undefined on input line 
+LaTeX Warning: Reference `sec:drag_profile' on page 74 undefined on input line 
 271.
 
-<figures/mu_2pt0/vorticity/baseline/phase_195.png, id=1153, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_195.png, id=1289, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_195.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_195.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_195.png  used
  on input line 282.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_195.png, id=1154, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_195.png, id=1290, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_195.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_195.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_195.png  used on in
 put line 288.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_210.png, id=1155, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_210.png, id=1291, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_210.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_210.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_210.png  used
  on input line 295.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_210.png, id=1156, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_210.png, id=1292, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_210.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_210.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_210.png  used on in
 put line 301.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_225.png, id=1157, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_225.png, id=1293, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_225.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_225.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_225.png  used
  on input line 308.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_225.png, id=1158, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_225.png, id=1294, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_225.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_225.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_225.png  used on in
 put line 314.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_255.png, id=1159, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_255.png, id=1295, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_255.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_255.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_255.png  used
  on input line 335.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_255.png, id=1160, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_255.png, id=1296, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_255.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_255.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_255.png  used on in
 put line 341.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-[71]
+[74]
 Overfull \vbox (17.07114pt too high) has occurred while \output is active []
 
 
-[72 <./figures/mu_2pt0/vorticity/baseline/phase_195.png (PNG copy)> <./figures/
+[75 <./figures/mu_2pt0/vorticity/baseline/phase_195.png (PNG copy)> <./figures/
 mu_2pt0/vorticity/AC/phase_195.png (PNG copy)> <./figures/mu_2pt0/vorticity/bas
 eline/phase_210.png (PNG copy)> <./figures/mu_2pt0/vorticity/AC/phase_210.png (
 PNG copy)> <./figures/mu_2pt0/vorticity/baseline/phase_225.png (PNG copy)> <./f
 igures/mu_2pt0/vorticity/AC/phase_225.png (PNG copy)> <./figures/mu_2pt0/vortic
 ity/baseline/phase_255.png (PNG copy)> <./figures/mu_2pt0/vorticity/AC/phase_25
 5.png (PNG copy)>]
-<figures/mu_2pt0/vorticity/baseline/phase_270.png, id=1169, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_270.png, id=1306, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_270.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_270.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_270.png  used
  on input line 356.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_270.png, id=1170, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_270.png, id=1307, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_270.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_270.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_270.png  used on in
 put line 362.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_285.png, id=1171, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_285.png, id=1308, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_285.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_285.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_285.png  used
  on input line 369.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_285.png, id=1172, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_285.png, id=1309, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_285.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_285.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_285.png  used on in
 put line 375.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_315.png, id=1173, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_315.png, id=1310, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_315.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_315.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_315.png  used
  on input line 396.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_315.png, id=1174, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_315.png, id=1311, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_315.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_315.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/AC/phase_315.png  used on in
 put line 402.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/baseline/phase_345.png, id=1175, 1789.68625pt x 1302
+<figures/mu_2pt0/vorticity/baseline/phase_345.png, id=1312, 1789.68625pt x 1302
 .8675pt>
 File: figures/mu_2pt0/vorticity/baseline/phase_345.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/baseline/phase_345.png>
 Package pdftex.def Info: figures/mu_2pt0/vorticity/baseline/phase_345.png  used
  on input line 422.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/mu_2pt0/vorticity/AC/phase_345.png, id=1176, 1789.68625pt x 1302.8675p
+<figures/mu_2pt0/vorticity/AC/phase_345.png, id=1313, 1789.68625pt x 1302.8675p
 t>
 File: figures/mu_2pt0/vorticity/AC/phase_345.png Graphic file (type png)
 <use figures/mu_2pt0/vorticity/AC/phase_345.png>
@@ -2754,14 +2735,14 @@ put line 428.
 Overfull \vbox (17.07114pt too high) has occurred while \output is active []
 
 
-[73 <./figures/mu_2pt0/vorticity/baseline/phase_270.png (PNG copy)> <./figures/
+[76 <./figures/mu_2pt0/vorticity/baseline/phase_270.png (PNG copy)> <./figures/
 mu_2pt0/vorticity/AC/phase_270.png (PNG copy)> <./figures/mu_2pt0/vorticity/bas
 eline/phase_285.png (PNG copy)> <./figures/mu_2pt0/vorticity/AC/phase_285.png (
 PNG copy)> <./figures/mu_2pt0/vorticity/baseline/phase_315.png (PNG copy)> <./f
 igures/mu_2pt0/vorticity/AC/phase_315.png (PNG copy)> <./figures/mu_2pt0/vortic
 ity/baseline/phase_345.png (PNG copy)> <./figures/mu_2pt0/vorticity/AC/phase_34
 5.png (PNG copy)>]
-<figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png, id=1185, 707.64375pt x
+<figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png, id=1322, 707.64375pt x
  517.935pt>
 File: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png Graphic file (type
  png)
@@ -2769,8 +2750,8 @@ File: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png Graphic file (type
 Package pdftex.def Info: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png
   used on input line 452.
 (pdftex.def)             Requested size: 352.31625pt x 257.86833pt.
- [74] [75 <./figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png>]
-<figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png, id=1203, 707.2824pt x 518.8
+ [77] [78 <./figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png>]
+<figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png, id=1339, 707.2824pt x 518.8
 986pt>
 File: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png Graphic file (type png)
 
@@ -2778,126 +2759,126 @@ File: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png Graphic file (type png)
 Package pdftex.def Info: figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png  use
 d on input line 520.
 (pdftex.def)             Requested size: 352.31625pt x 258.4827pt.
- [76 <./figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png>]
-<figures/SC1095/baseline/phase_195.png, id=1210, 1789.68625pt x 1302.8675pt>
+ [79 <./figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png>]
+<figures/SC1095/baseline/phase_195.png, id=1346, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_195.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_195.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_195.png  used on input l
 ine 558.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_195.png, id=1211, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_195.png, id=1347, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_195.png Graphic file (type png)
 <use figures/SC1095/AC/phase_195.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_195.png  used on input line 56
 4.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_210.png, id=1212, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_210.png, id=1348, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_210.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_210.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_210.png  used on input l
 ine 571.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_210.png, id=1213, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_210.png, id=1349, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_210.png Graphic file (type png)
 <use figures/SC1095/AC/phase_210.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_210.png  used on input line 57
 7.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_225.png, id=1214, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_225.png, id=1350, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_225.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_225.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_225.png  used on input l
 ine 584.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_225.png, id=1215, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_225.png, id=1351, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_225.png Graphic file (type png)
 <use figures/SC1095/AC/phase_225.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_225.png  used on input line 59
 0.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
- [77]
-<figures/SC1095/baseline/phase_255.png, id=1220, 1789.68625pt x 1302.8675pt>
+ [80]
+<figures/SC1095/baseline/phase_255.png, id=1356, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_255.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_255.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_255.png  used on input l
 ine 619.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_255.png, id=1221, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_255.png, id=1357, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_255.png Graphic file (type png)
 <use figures/SC1095/AC/phase_255.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_255.png  used on input line 62
 5.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_270.png, id=1222, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_270.png, id=1358, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_270.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_270.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_270.png  used on input l
 ine 631.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_270.png, id=1223, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_270.png, id=1359, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_270.png Graphic file (type png)
 <use figures/SC1095/AC/phase_270.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_270.png  used on input line 63
 7.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_285.png, id=1224, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_285.png, id=1360, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_285.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_285.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_285.png  used on input l
 ine 644.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_285.png, id=1225, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_285.png, id=1361, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_285.png Graphic file (type png)
 <use figures/SC1095/AC/phase_285.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_285.png  used on input line 65
 0.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
 
-[78 <./figures/SC1095/baseline/phase_195.png (PNG copy)> <./figures/SC1095/AC/p
+[81 <./figures/SC1095/baseline/phase_195.png (PNG copy)> <./figures/SC1095/AC/p
 hase_195.png (PNG copy)> <./figures/SC1095/baseline/phase_210.png (PNG copy)> <
 ./figures/SC1095/AC/phase_210.png (PNG copy)> <./figures/SC1095/baseline/phase_
 225.png (PNG copy)> <./figures/SC1095/AC/phase_225.png (PNG copy)>]
-<figures/SC1095/baseline/phase_300.png, id=1230, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_300.png, id=1367, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_300.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_300.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_300.png  used on input l
 ine 663.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_300.png, id=1231, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_300.png, id=1368, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_300.png Graphic file (type png)
 <use figures/SC1095/AC/phase_300.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_300.png  used on input line 66
 9.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_315.png, id=1232, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_315.png, id=1369, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_315.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_315.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_315.png  used on input l
 ine 676.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_315.png, id=1233, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_315.png, id=1370, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_315.png Graphic file (type png)
 <use figures/SC1095/AC/phase_315.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_315.png  used on input line 68
 2.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/baseline/phase_345.png, id=1234, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/baseline/phase_345.png, id=1371, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/baseline/phase_345.png Graphic file (type png)
 <use figures/SC1095/baseline/phase_345.png>
 Package pdftex.def Info: figures/SC1095/baseline/phase_345.png  used on input l
 ine 702.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
-<figures/SC1095/AC/phase_345.png, id=1235, 1789.68625pt x 1302.8675pt>
+<figures/SC1095/AC/phase_345.png, id=1372, 1789.68625pt x 1302.8675pt>
 File: figures/SC1095/AC/phase_345.png Graphic file (type png)
 <use figures/SC1095/AC/phase_345.png>
 Package pdftex.def Info: figures/SC1095/AC/phase_345.png  used on input line 70
 8.
 (pdftex.def)             Requested size: 187.89914pt x 136.7753pt.
- [79 <./figures/SC1095/baseline/phase_255.png (PNG copy)> <./figures/SC1095/AC/
+ [82 <./figures/SC1095/baseline/phase_255.png (PNG copy)> <./figures/SC1095/AC/
 phase_255.png (PNG copy)> <./figures/SC1095/baseline/phase_270.png (PNG copy)> 
 <./figures/SC1095/AC/phase_270.png (PNG copy)> <./figures/SC1095/baseline/phase
 _285.png (PNG copy)> <./figures/SC1095/AC/phase_285.png (PNG copy)>]
-<figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png, id=1240, 707.2824pt x 
+<figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png, id=1377, 707.2824pt x 
 518.8986pt>
 File: figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png Graphic file (type
  png)
@@ -2905,83 +2886,76 @@ File: figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png Graphic file (type
 Package pdftex.def Info: figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png
   used on input line 723.
 (pdftex.def)             Requested size: 352.31625pt x 258.4827pt.
- [80 <./figures/SC1095/baseline/phase_300.png (PNG copy)> <./figures/SC1095/AC/
+ [83 <./figures/SC1095/baseline/phase_300.png (PNG copy)> <./figures/SC1095/AC/
 phase_300.png (PNG copy)> <./figures/SC1095/baseline/phase_315.png (PNG copy)> 
 <./figures/SC1095/AC/phase_315.png (PNG copy)> <./figures/SC1095/baseline/phase
-_345.png (PNG copy)> <./figures/SC1095/AC/phase_345.png (PNG copy)>]) [81 <./fi
+_345.png (PNG copy)> <./figures/SC1095/AC/phase_345.png (PNG copy)>]) [84 <./fi
 gures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png>] (./phddisertation.bbl [8
-2
+5
 
 
 
-]) [83]
+] [86] [87] [88])
+[89]
 \openout2 = `rpiapp.aux'.
 
  (./rpiapp.tex
 APPENDIX A.
-) [84
+) [90
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (./phddisertation.aux (./rpititle-phd.aux) (./rpiack.aux) (./rpiabs.aux) (./ch
 apters/Introduction/Introduction.aux)
 (./chapters/LES/numerical_discretization.aux) (./chapters/VMS_EE/VMS_EE.aux)
 (./chapters/adapt_strat/baseline_results.aux)
 (./chapters/zonal_adapt_results/zonal_adapt_results.aux)
 (./chapters/active_camber/active_camber.aux) (./rpiapp.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package rerunfilecheck Info: File `phddisertation.out' has not changed.
+(rerunfilecheck)             Checksum: 4E232C7FA84CBE76474A434079DF50EF;3848.
 
-
-Package rerunfilecheck Warning: File `phddisertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `phddisertation.out':
-(rerunfilecheck)             Before: 58B3F896ECCE0DD34FE3BE9B0716BB72;3535
-(rerunfilecheck)             After:  2FF010379E538FAD00905DAA67ADA79D;3535.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 24344 strings out of 492616
- 483446 string characters out of 6132767
- 558112 words of memory out of 5000000
- 27539 multiletter control sequences out of 15000+600000
+ 23612 strings out of 492616
+ 473410 string characters out of 6132767
+ 535594 words of memory out of 5000000
+ 26755 multiletter control sequences out of 15000+600000
  551582 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,23n,63p,1150b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.63} has been referenced but does not exi
-st, replaced by a fixed one
-
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on phddisertation.pdf (94 pages, 74386978 bytes).
+ 43i,23n,63p,1150b,901s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on phddisertation.pdf (100 pages, 74409025 bytes).
 PDF statistics:
- 1393 PDF objects out of 1440 (max. 8388607)
- 1026 compressed objects within 11 object streams
- 267 named destinations out of 1000 (max. 500000)
- 1445 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1550 PDF objects out of 1728 (max. 8388607)
+ 1176 compressed objects within 12 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 1485 words of extra memory for PDF output out of 10000 (max. 10000000)
 
