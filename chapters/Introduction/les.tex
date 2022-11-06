@@ -3,12 +3,12 @@ Computational fluid dynamics (CFD) has been on a fast rise, having found applica
 Almost all naturally occuring flows involve turbulence, and the major drive in research remains on efficient and accurate techniques to accurately resolve/model turbulence.
 To this end, one of the most popular techniques, especially for industrial applications is Reynolds-averaged Navier–Stokes (RANS), since it is computationally inexpensive and feasible for most problems.
 In RANS, the averaged quantities are resolved, whereas the fluctuating quantities are modeled using some form of a turbulence model. For example, the Spalart-Allmaras turbulence model \cite{bib:Spalart} has been widely used for flow over airfoils.
-While Reynolds-averaged Navier–Stokes (RANS) is sufficient for predicting averaged quantities, it fails to accurately predict flows that are highly turbulent and highly unsteady.
-At the other end of the spectrum, Direct Numerical Simulation (DNS) is the most accurate approach for simulating fluid flows, where turbulent scales are resolved all the way upto molecular diffusion (i.e., Kolmogorov micro-scales).
+While RANS is sufficient for predicting averaged quantities, it fails to accurately predict flows that are highly turbulent and highly unsteady.
+At the other end of the spectrum, Direct Numerical Simulation (DNS) is the most accurate approach for simulating fluid flows, where turbulent scales are resolved all the way up to molecular diffusion (i.e., Kolmogorov micro-scales).
 DNS, however, is computationally very expensive, and as a result, can only be feasibly applied to low Reynolds number flows for simple geometries.
 
 An alternative turbulence modeling approach that provides a good balance between computational cost and turbulence/scale-resolving capabilities is Large eddy simulation (LES), which was proposed by Smagorinsky \cite{bib:smag} for simulating atmospheric flows, and first applied by Deardorff \cite{bib:deardorff1970} in 1970.
 In LES, large scale effects of turbulent flow are resolved directly, while the small scale effects are modeled using a sub-grid scale model.
-LES is shown to be robust and provide accurate predictions for complex flow problems including aerodynamic problems with spatiotemporal inhomogeneity. Particularly for problems that involve transition to turbulence and relaminarization in space and/or time and wake turbulence along with its interactions.
+LES is shown to be robust and provides accurate predictions for complex flow problems including aerodynamic problems with spatiotemporal inhomogeneity. Particularly for problems that involve transition to turbulence and relaminarization in space and/or time and wake turbulence along with its interactions.
 
 
