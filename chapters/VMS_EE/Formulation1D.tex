@@ -56,9 +56,7 @@ Note that this is an explicit expression which does not require solving addition
 This makes Equation \ref{eq:VMSerr1D} inexpensive to evaluate, although limited in scope to the one-dimensional case. The effectivity of the VMS based error estimator was tested for a series of cell Peclet numbers $Pe_h$ by Zhang \cite{zhang19} and showed that across all cases, the VMS error estimator provides the exact error in 1D. 
 This is expected since the VMS theory in 1D linear, steady advection-diffusion case makes no assumptions or approximations.
 
-\subsection{Generalization of VMS Error Estimator}
-
-\subsubsection{Generalization to Multi-dimensional Cases}
+\subsection{Generalization to Multi-dimensional Cases}
 
 The primary component of Equation \ref{eq:VMSerr1D} that is one-dimensional is the parameter $\nu^{err}_{e,1D}$ because it is not immediately obvious how to choose $h_k$, the element mesh size, for multi-dimensional anisotropic elements.
 This problem is equivalent to the problem found when generalizing the 1D stabilization expressions that are used in stabilized finite element methods for advection-diffusion equations to multi-dimensional problems \cite{hughes1986newiii} and can therefore be addressed with a similar approach.

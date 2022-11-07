@@ -1,13 +1,14 @@
-\chapter{Baseline/Non-adapted Cases}
+\chapter{LES of Flow Over Surging Airfoil}
 \label{chapter:baseline_results}
-
-%TODO: Move active camber to another chapter 
 
 In this section, we focus on LES of flow over a surging airfoil at different conditions. Problem setup, and baseline results including vortex detection and tracking, are presented using the non-adapated mesh. We also present active flow control cases in the form of active reflex camber. 
 
-\label{sec:baseline_results}
+%\section{LES of Flow Over Surging Airfoil}
+%\section{Adaptive LES of Flow Over Surging Airfoil}
+%\section{LES of Flow Over Surging Airfoils including Active Reflex}
 
-\section{Problem Setup: Surging Airfoils}
+
+\section{Problem Setup}
 \label{sec:problem_setup_baseline}
 
 A schematic of the problem setup is shown in Figure~\ref{fig:SetUpSketch}, where $U_\infty$ is the free-stream or mean velocity and $\alpha$ is the angle of attack.
@@ -45,7 +46,7 @@ Advancing phase is defined between $\tilde{t}$=0 or $\psi$=$0^\circ$ and $\tilde
 The free-stream or mean Reynolds number is defined as $Re=U_\infty C/\nu$, where $C$ is the chord.
 The reduced frequency is defined as $k=\pi f C/U_\infty$ while the amplitude is related as $A = \frac{\mu_{sect} C}{2k}$.
 
-\section{Summary of Baseline Cases}
+\section{Summary of Cases}
 \label{sec:baseline_case_summary}
 
 In the current study, the reduced frequency is held fixed at $k$=0.133 while three Reynolds numbers of $Re$=40,000, 200,000 and 1,000,000 are considered together with two advance ratios of $\mu_{sect}$=1.0 and 1.2, i.e., six cases are considered in total.
@@ -520,21 +521,10 @@ This aspect is discussed further in Section \ref{sec:LEV}.
 	\label{fig:vortScreen_1pt2}
 \end{figure}
 
-\section{Feature/Vortex Detection and Tracking: LEV}
+\subsection{LEV Evolution}
 \label{sec:LEV}
 
-In this section, we quantify the evolution of the LEV based on its size and position.
-In order to do so, for each case at first the phase of formation of the LEV is detected and in subsequent phases the LEV is tracked.
-Pressure and velocity data is analyzed to automatically detect the formation of the LEV.
-In the retreating portion of the cycle, location with minimum pressure is determined starting at $\psi=180^\circ$.
-The first phase at which the minimum pressure location is off the airfoil surface (i.e., away from the airfoil and into the flow) is tagged to be a potential phase for LEV formation.
-At this potential phase, velocity profile is obtained over multiple lines passing through the minimum pressure location.
-These are radial lines that are taken at an equispaced interval along the azimuth in the plane of the airfoil (note that the data is averaged in the spanwise direction).
-Along these lines, at first a relative velocity is computed with respect to the velocity at the minimum pressure location.
-Subsequently, normal component of the relative velocity is obtained (i.e., normal to each line), which is the azimuthal or tangential component in the polar coordinate system centered around the minimum pressure location.
-The azimuthal component (of the relative velocity) is analyzed against the velocity profile of a Lamb-Oseen vortex.
-It is noteworthy that the azimuthal component of the relative velocity along several radial lines at multiple phases in the surging cycle were visually analyzed for different cases and found to fit the Lamb-Oseen vortex model fairly well.
-
+%TODO: Use pics from presentation
 
 LEV position with respect to the leading edge of the airfoil is presented in Figure~\ref{fig:LEV_location_LE_airfoil}.
 In the $\mu_{sect}=1.0$ case, the initial position of the LEV (i.e., position at formation) gets closer to the leading edge as the Reynolds number is increased.
@@ -590,5 +580,6 @@ This feature/vortex detection and tracking procedure is useful for feature-based
 \end{figure}
 
 
-
+%TODO: LEV ground position plots
+%TODO: 
 

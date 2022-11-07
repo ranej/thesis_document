@@ -1,4 +1,6 @@
-\chapter{Active Flow Control: Active Reflex Camber}
+\chapter{LES of Flow Over Surging Airfoils including Active Reflex}
+
+\section{Problem Setup}
 
 In this section, we focus only on high Reynolds number flow ($Re=1,000,000$) at higher angle of attack of $\alpha=10^\circ$ and section advance ratios of $\mu_{sect}= 1.5$ and $2.0$. 
 These advance ratios include a significant portion of the retreating phase with negative relative velocity or a reversed flow condition. 
@@ -23,7 +25,7 @@ The open circles on each curve represent the portion of the oscillation cycle wh
 		\label{fig:U_rel}
 \end{figure}
 
-
+\section{Summary of Cases}
 
 Table~\ref{table:summary_cases_AC} provides a summary of the current cases. $\beta_{TE}=0$ refers to the non-actuated case while $\beta_{TE}=\alpha$ is the actuated case.
 
@@ -73,8 +75,127 @@ The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}
 	\label{fig:mesh3}
 \end{figure}
 
-\section{NACA 0012}
+\section{Results and Discussion}
 
+\subsection{NACA 0012: $\mu_{sect} = 1.5$ and $2.0$}
+
+\subsubsection{Force Response}
+
+Figure \ref{fig:total_drag_zoomed_mu_1pt5} shows the behavior of the total drag in the reverse flow region for the baseline and actuated cases at $\mu_{sect}=1.5$. The total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
+This normalization is used to be able to compare simulation and experimental data, where experiments involve tunnel effects such as walls and mounts (e.g., see \cite{bib:kocher2017}).
+It also avoids the indeterminate value at the point of reverse flow when instantaneous dynamic pressure (based on the relative velocity of the airfoil) is used for normalization.
+
+In Figure \ref{fig:total_drag_zoomed_mu_1pt5}, the drag is negative in the majority of the reverse flow region.
+The negative drag value implies that it acts in the opposite direction, i.e., it acts from the geometric trailing edge towards the leading edge, which is caused due to the negative relative velocity in the reverse flow region.
+In the actuated case, the negative drag value is reduced.
+We note that from a rotorcraft perspective a higher negative value of the sectional drag during the retreating phase results in a higher total rotor drag (i.e., H-force).
+
+In addition, in the baseline case the drag fluctuates around $\psi=270^\circ$ (i.e., around the peak of reverse flow), which is not the case in the actuated case.
+In the baseline case, the drag exhibits a local maximum around $\psi=235^\circ$ and a local minimum around $\psi=265^\circ$.
+This observation complies with that made in the flowfield (see Figure \ref{fig:vortScreen_mu1pt5}), i.e., the size of the trailing-edge separation bubble is relatively smaller and fairly constant in the actuated case.
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png}
+	\caption{Normalized total drag in the reverse flow region for the baseline (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=1.5$}
+	\label{fig:total_drag_zoomed_mu_1pt5}
+\end{figure}
+
+
+%	\begin{subfigure}[b]{0.45\textwidth}
+	%		\centering
+	%		\includegraphics[width=1\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_2.png}
+	%		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
+	%		\label{fig:mu_2pt0_AC_psi195}
+	%	\end{subfigure}
+%
+%\end{figure}
+
+
+
+
+Table \ref{table:D_ratios_mu_1pt5} provides the ratios of the drag for the non-actuated and actuated cases denoted as $D^{non-act}$ and $D^{act}$, respectively.
+This is done for different components of the drag, namely, total drag ($D_T$) along with pressure ($D_p$) and viscous ($D_v$) components.
+Three phases of $\psi=240^\circ$, $255^\circ$ and $270^\circ$ are considered.
+
+
+\begin{table}[H]
+	%\begin{wraptable}[10]{l}[.005in]{3in}
+	\vspace{0cm}
+	\centering
+	\caption{Drag ratios ($\mu_{sect} = 1.5$ )}
+	\label{table:D_ratios_mu_1pt5}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
+		\hline
+		\hline
+		$240^\circ$ & 0.67 & 0.66 & 1.06   \\
+		\hline
+		$255^\circ$ & 0.48 & 0.47 & 1.16   \\
+		\hline
+		$270^\circ$ & 0.37 & 0.35 & 2.28   \\
+		\hline
+		%		$285^\circ$ & 0.23 & 0.24 & -1.11   \\
+		%		\hline
+	\end{tabular}
+\end{table}
+%\end{wraptable}
+
+At $\psi=240^\circ$, the total drag in the actuated case is about 0.67 times of the total drag in the baseline case, i.e., about 33\% drag reduction. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.48 and 0.37, respectively, i.e., about 52\% and 63\% drag reduction respectively.
+The pressure drag ratios are very similar to the total drag ratios.
+This is because at these phases the pressure drag accounts for about 97\% to 99\% of the total drag in the non-actuated case, and about 90\% to 94\% in the actuated case.
+The viscous drag ratios are higher than 1, indicating that the viscous drag is larger in the actuated case as compared to the baseline case. 
+
+
+
+
+Figure \ref{fig:total_drag_zoomed_mu_2pt0} shows the behavior of the total drag in the reverse flow region for the non-actuated and actuated cases at $\mu_{sect}=2.0$. As before, the total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
+The drag is negative in the majority of the reverse flow region.
+For $\mu_{sect}=2.0$, the reduction in the negative drag due to active reflex camber is significant.
+
+Again, in the non-actuated case the drag fluctuates in the reverse flow region.
+On the other hand, the drag is fairly monotonic in the actuated case.
+In the non-actuated case, the drag exhibits a local maximum around $\psi=220^\circ$ and a local minimum around $\psi=285^\circ$.
+The resulting peak-to-peak variation in the non-actuated case is substantial, as shown in Figure \ref{fig:total_drag_zoomed_mu_2pt0}.
+This peak-to-peak variation in the reverse flow region is mitigated in the actuated case.
+This is because the trailing-edge separation bubble in the actuated case is substantially smaller and remains fairly constant in size during the reverse flow region, see Figure ~\ref{fig:vortScreen_mu2pt0}.
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png}
+	\caption{Normalized total drag in the reverse flow region for the non-actuated (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=2.0$}
+	\label{fig:total_drag_zoomed_mu_2pt0}
+\end{figure}
+
+Table \ref{table:D_ratios_mu_2pt0} provides the ratios of the different components of the drag at three phases. At $\psi=240^\circ$, the total drag in the actuated case is about 0.36 times of the total drag in the non-actuated case. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.26 and 0.24, respectively. That is we observe a reduction by up to 76\% in the total drag.
+Note that the pressure drag ratios are very similar to the total drag ratios (since at these phases the pressure drag dominates over the viscous drag).
+
+\begin{table}[H]
+	%   \begin{wraptable}[10]{l}[.005in]{3in}
+		\vspace{0cm}
+		\centering
+		\caption{Drag ratios ($\mu_{sect} = 2.0$ )}
+		\label{table:D_ratios_mu_2pt0}
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
+			\hline
+			\hline
+			$240^\circ$ & 0.36 & 0.35 & 1.44   \\
+			\hline
+			$255^\circ$ & 0.26 & 0.24 & 2.34   \\
+			\hline
+			$270^\circ$ & 0.24 & 0.22 & 4.19   \\
+			\hline
+			%	$285^\circ$ & 0.14 & 0.12 & -5.95   \\
+			%	\hline
+		\end{tabular}
+	\end{table}
+
+\subsubsection{Flowfield: Spanwise Vorticity and Velocity Magnitude}
 Figure \ref{fig:vortScreen_mu1pt5} shows the instantaneous spanwise vorticity for the sectional advance ratio of $\mu_{sect}$=1.5.
 8 different phases over the retreating phase of the oscillation cycle are shown. The vorticity range is selected to be [-30,30]$ U_{sect}/C$. For this sectional advance ratio, the airfoil enters the reverse flow region around $\psi=222^\circ$ and exits the reverse flow region at about $\psi$=$318^\circ$. In the actuated case, reflex camber is activated at $\psi$=$215^\circ$, and smoothly reaches the full deflection at $\psi$=$220^\circ$. After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$320^\circ$, and smoothly reaches its original shape at $\psi$=$325^\circ$.
 
@@ -433,122 +554,21 @@ As the trailing edge is deflected down to its original position, this results in
 	\label{fig:vortScreen_mu2pt0}
 \end{figure}
 
-Figure \ref{fig:total_drag_zoomed_mu_1pt5} shows the behavior of the total drag in the reverse flow region for the baseline and actuated cases at $\mu_{sect}=1.5$. The total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
-This normalization is used to be able to compare simulation and experimental data, where experiments involve tunnel effects such as walls and mounts (e.g., see \cite{bib:kocher2017}).
-It also avoids the indeterminate value at the point of reverse flow when instantaneous dynamic pressure (based on the relative velocity of the airfoil) is used for normalization.
+\subsection{SC1095: $\mu_{sect}=2.0$}
 
-In Figure \ref{fig:total_drag_zoomed_mu_1pt5}, the drag is negative in the majority of the reverse flow region.
-The negative drag value implies that it acts in the opposite direction, i.e., it acts from the geometric trailing edge towards the leading edge, which is caused due to the negative relative velocity in the reverse flow region.
-In the actuated case, the negative drag value is reduced.
-We note that from a rotorcraft perspective a higher negative value of the sectional drag during the retreating phase results in a higher total rotor drag (i.e., H-force).
-
-In addition, in the baseline case the drag fluctuates around $\psi=270^\circ$ (i.e., around the peak of reverse flow), which is not the case in the actuated case.
-In the baseline case, the drag exhibits a local maximum around $\psi=235^\circ$ and a local minimum around $\psi=265^\circ$.
-This observation complies with that made in the flowfield (see Figure \ref{fig:vortScreen_mu1pt5}), i.e., the size of the trailing-edge separation bubble is relatively smaller and fairly constant in the actuated case.
+\subsubsection{Force Response}
 
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_1pt5_3.png}
-	\caption{Normalized total drag in the reverse flow region for the baseline (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=1.5$}
-	\label{fig:total_drag_zoomed_mu_1pt5}
+	\includegraphics[width=0.75\textwidth]{figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png}
+	\caption{Normalized total drag in the reverse flow region for the non-actuated (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=2.0$ for SC1095 airfoil}
+	\label{fig:total_drag_zoomed_mu_2pt0_SC1095}
 \end{figure}
 
 
-%	\begin{subfigure}[b]{0.45\textwidth}
-%		\centering
-%		\includegraphics[width=1\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_2.png}
-%		\caption{ $\psi$ = $195^\circ$, $\tilde{t}=0.542$}
-%		\label{fig:mu_2pt0_AC_psi195}
-%	\end{subfigure}
-%
-%\end{figure}
 
-
-
-
-Table \ref{table:D_ratios_mu_1pt5} provides the ratios of the drag for the non-actuated and actuated cases denoted as $D^{non-act}$ and $D^{act}$, respectively.
-This is done for different components of the drag, namely, total drag ($D_T$) along with pressure ($D_p$) and viscous ($D_v$) components.
-Three phases of $\psi=240^\circ$, $255^\circ$ and $270^\circ$ are considered.
-
-
-\begin{table}[H]
-	%\begin{wraptable}[10]{l}[.005in]{3in}
-	\vspace{0cm}
-	\centering
-	\caption{Drag ratios ($\mu_{sect} = 1.5$ )}
-	\label{table:D_ratios_mu_1pt5}
-	\begin{tabular}{|l|c|c|c|}
-		\hline
-		$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
-		\hline
-		\hline
-		$240^\circ$ & 0.67 & 0.66 & 1.06   \\
-		\hline
-		$255^\circ$ & 0.48 & 0.47 & 1.16   \\
-		\hline
-		$270^\circ$ & 0.37 & 0.35 & 2.28   \\
-		\hline
-		%		$285^\circ$ & 0.23 & 0.24 & -1.11   \\
-		%		\hline
-	\end{tabular}
-\end{table}
-%\end{wraptable}
-
-At $\psi=240^\circ$, the total drag in the actuated case is about 0.67 times of the total drag in the baseline case, i.e., about 33\% drag reduction. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.48 and 0.37, respectively, i.e., about 52\% and 63\% drag reduction respectively.
-The pressure drag ratios are very similar to the total drag ratios.
-This is because at these phases the pressure drag accounts for about 97\% to 99\% of the total drag in the non-actuated case, and about 90\% to 94\% in the actuated case.
-The viscous drag ratios are higher than 1, indicating that the viscous drag is larger in the actuated case as compared to the baseline case. 
-
-
-
-
-Figure \ref{fig:total_drag_zoomed_mu_2pt0} shows the behavior of the total drag in the reverse flow region for the non-actuated and actuated cases at $\mu_{sect}=2.0$. As before, the total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
-The drag is negative in the majority of the reverse flow region.
-For $\mu_{sect}=2.0$, the reduction in the negative drag due to active reflex camber is significant.
-
-Again, in the non-actuated case the drag fluctuates in the reverse flow region.
-On the other hand, the drag is fairly monotonic in the actuated case.
-In the non-actuated case, the drag exhibits a local maximum around $\psi=220^\circ$ and a local minimum around $\psi=285^\circ$.
-The resulting peak-to-peak variation in the non-actuated case is substantial, as shown in Figure \ref{fig:total_drag_zoomed_mu_2pt0}.
-This peak-to-peak variation in the reverse flow region is mitigated in the actuated case.
-This is because the trailing-edge separation bubble in the actuated case is substantially smaller and remains fairly constant in size during the reverse flow region, see Figure ~\ref{fig:vortScreen_mu2pt0}.
-
-\begin{figure}[H]
-	
-	\centering
-	\includegraphics[width=0.75\textwidth]{figures/Zoomed_Drag_tot_NACA0012_Re1m_aoa10_3.png}
-	\caption{Normalized total drag in the reverse flow region for the non-actuated (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=2.0$}
-	\label{fig:total_drag_zoomed_mu_2pt0}
-\end{figure}
-
-Table \ref{table:D_ratios_mu_2pt0} provides the ratios of the different components of the drag at three phases. At $\psi=240^\circ$, the total drag in the actuated case is about 0.36 times of the total drag in the non-actuated case. At $\psi=255^\circ$ and $270^\circ$, the drag ratios are 0.26 and 0.24, respectively. That is we observe a reduction by up to 76\% in the total drag.
-Note that the pressure drag ratios are very similar to the total drag ratios (since at these phases the pressure drag dominates over the viscous drag).
-
-\begin{table}[H]
-%   \begin{wraptable}[10]{l}[.005in]{3in}
-	\vspace{0cm}
-	\centering
-\caption{Drag ratios ($\mu_{sect} = 2.0$ )}
-\label{table:D_ratios_mu_2pt0}
-\begin{tabular}{|l|c|c|c|}
-	\hline
-	$ \psi$   & {\large $\frac{D^{act}_{T}}{D^{non-act}_{T}}$} & {\large $\frac{D^{act}_{p}}{D^{non-act}_{p}}$} & {\large $\frac{D^{act}_{v}}{D^{non-act}_{v}}$} \\
-	\hline
-	\hline
-	$240^\circ$ & 0.36 & 0.35 & 1.44   \\
-	\hline
-	$255^\circ$ & 0.26 & 0.24 & 2.34   \\
-	\hline
-	$270^\circ$ & 0.24 & 0.22 & 4.19   \\
-	\hline
-%	$285^\circ$ & 0.14 & 0.12 & -5.95   \\
-%	\hline
-\end{tabular}
-\end{table}
-
-
-\section{SC1095}
+\subsubsection{Flowfield: Spanwise Vorticity and Velocity Magnitude}
 
 \begin{figure}[H]
 	\centering
@@ -715,14 +735,4 @@ Note that the pressure drag ratios are very similar to the total drag ratios (si
 	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0 for SC1095 airfoil}
 	\label{fig:vortScreen_mu2pt0}
 \end{figure}
-
-
-\begin{figure}[H]
-	
-	\centering
-	\includegraphics[width=0.75\textwidth]{figures/SC1095/Zoomed_Drag_tot_SC1095_Re1m_aoa10_2.png}
-	\caption{Normalized total drag in the reverse flow region for the non-actuated (blue with open circles) and actuated (red with open triangles) cases at $\mu_{sect}=2.0$ for SC1095 airfoil}
-	\label{fig:total_drag_zoomed_mu_2pt0_SC1095}
-\end{figure}
-
 

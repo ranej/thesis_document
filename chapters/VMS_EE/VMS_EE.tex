@@ -1,6 +1,8 @@
-\chapter{VMS based error estimator}
+\chapter{VMS-based Error Estimator}
 
 \label{chapter:APEE} %a posteriori error estimator
+
+%TODO: explain bar and h equivalance for VMS-based coarse scale
 
 In this work, we focus on controlling the spatial discretization error through an \textit{a posteriori} error estimate.
 Ideally, \textit{a posteriori} error estimate must provide pointwise the exact error, $e^{exact}=u-u^h$, where $u$ is the exact solution and $u^h$ is the numerical approximation $u$, since knowing how the error varies over space allows us to better choose our spatial discretization. 
@@ -95,18 +97,18 @@ This equivalently also means that the various choices of $\Projector$ leads to d
 Hughes and Sangalli \cite{hughes2007variational} explored two options for the $\Projector$: $\Projector_{L^2}$ and $\Projector_{H^1}$, and found that for 1D advection-diffusion systems, the $\Projector_{H^1}$ led to a localization of $g'$ to single elements and led to an optimal solution for $\bar{u}$ in the $\HOne_0$-norm or $\HOne$-seminorm, making this choice a practical one.
 The localization of $g'$ is ideal for constructing local error estimators.
 
-\section{Formulation for 1D Advection-Diffusion Equation}
+\section{Formulation for 1D Advection-diffusion Equation}
 \input{chapters/VMS_EE/Formulation1D}
 \label{sec:1D_AD}
 
 \section{Application to the Navier-Stokes Equations}
 \input{chapters/VMS_EE/App_toNS}
 
-\section{Application to Periodic Problems}
+\section{Application to Periodic Flow Problems}
 \input{chapters/VMS_EE/App_toPeriodic}
 \label{sec:app_to_periodic}
 
-\section{Overview of Adaptive Strategies}
+\section{Mesh Adaptation Strategies}
 \input{chapters/VMS_EE/Adapt_St}
 \label{sec:adapt_strat_overview}
 %\section{Non-dimensionalization of Error}
