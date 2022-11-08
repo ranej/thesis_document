@@ -40,11 +40,14 @@ Table~\ref{table:summary_cases_AC} provides a summary of the current cases. $\be
 		\hline
 		NACA 0012 & 10$^\circ$ & $0.133$ & \{1.5, 2.0\} & 1,000,000 & \{0,$\alpha$\} \\
 		\hline
+		SC1095 & 10$^\circ$ & $0.133$ & \{2.0\} & 1,000,000 & \{0,$\alpha$\} \\
+		\hline
 		
 	\end{tabular}
 	
 \end{table}
 
+Two airfoils are considered here: NACA 0012 airfoil at $\mu_{sect}=1.5$ and $2.0$, and SC1095 airfoil at $\mu_{sect}=2.0$, both at $Re = 1,000,000$
 The computational domain and boundary conditions for this case are similar to the one mentioned in Section \ref{sec:problem_setup_baseline}.
 Also, as noted earlier, an ALE description is used to account for the motion and deformation of the airfoil.
 Mesh deformation is currently prescribed based on the motion and deformation of the airfoil.
@@ -81,7 +84,7 @@ The deformed mesh due to active reflex camber is shown in Figure \ref{fig:mesh3}
 
 \subsubsection{Force Response}
 
-Figure \ref{fig:total_drag_zoomed_mu_1pt5} shows the behavior of the total drag in the reverse flow region for the baseline and actuated cases at $\mu_{sect}=1.5$. The total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
+Figure \ref{fig:total_drag_zoomed_mu_1pt5} shows the behavior of the total drag in the reverse flow region for NACA 0012 airfoil for the baseline and actuated cases at $\mu_{sect}=1.5$. The total drag is normalized with the total drag of the static case ($\mu_{sect}=0.0$) at the mean Reynolds number. 
 This normalization is used to be able to compare simulation and experimental data, where experiments involve tunnel effects such as walls and mounts (e.g., see \cite{bib:kocher2017}).
 It also avoids the indeterminate value at the point of reverse flow when instantaneous dynamic pressure (based on the relative velocity of the airfoil) is used for normalization.
 
@@ -208,7 +211,7 @@ In the subsequent phases of the baseline case, the extent of this separated regi
 On the contrary, the extent of the separated region remains relatively small in the actuated case. For example, see Figures \ref{fig:mu_1pt5_baseline_psi285} and \ref{fig:mu_1pt5_AC_psi285}.
 Moreover, in the actuated case the size of the separated region remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$, see Figures \ref{fig:mu_1pt5_AC_psi255}, \ref{fig:mu_1pt5_AC_psi270} and \ref{fig:mu_1pt5_AC_psi285}.
 Overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
-The implications of this trailing-edge separated region on the drag force is discussed in Section \ref{sec:drag_profile}
+The implications of this trailing-edge separated region on the drag force is discussed in Section \ref{sec:LEV}
 
 After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both baseline and actuated cases.
 For the actuated case at $\psi$=$330^\circ$, the reflexed trailing edge is at its undeflected position.
@@ -376,10 +379,96 @@ As the trailing edge is deflected down to its original position, this results in
 	\label{fig:vortScreen_mu1pt5}
 \end{figure}
 
+Figures \ref{fig:mu_1pt5_zoomed_velocity} and \ref{fig:mu_2pt0_zoomed_velocity} show a comparison of the instantaneous velocity magnitude in the vicinity of the trailing edge. Both baseline and actuated cases are shown at $\psi$ = $270^\circ$ (i.e., at the peak of reverse flow).
+The corresponding spanwise vorticity plots are shown in Figures \ref{fig:mu_1pt5_zoomed_vorticity} and \ref{fig:mu_2pt0_zoomed_vorticity}.
+Note that the flow velocity is with respect to the airfoil. 
+The velocity magnitude range is selected to be [0,1.5]$ U_{sect}$.
+The vorticity range is the same as before, [-30,30]$ U_{sect}/C$.
 
+In both cases, the flow is highly turbulent (as clearly evident from the resolved turbulent flow structures by the current LES). 
+In the baseline cases a large region of flow separation is observed while in the actuated cases this separated region is substantially smaller.
+In the baseline case with $\mu_{sect}=2.0$ the separated region in the baseline case is larger as compared to that in the case with $\mu_{sect}=1.5$.
+However, in the actuated cases the size of the separated region is very similar  between $\mu_{sect}=1.5$ and $2.0$, see Figures \ref{fig:mu_1pt5_AC_zoomed_velocity} and \ref{fig:mu_2pt0_AC_zoomed_velocity} as well as Figures \ref{fig:mu_1pt5_AC_zoomed_vorticity} and \ref{fig:mu_2pt0_AC_zoomed_vorticity}.
 
-Figure \ref{fig:vortScreen_mu2pt0} shows the instantaneous spanwise vorticity for the sectional advance ratio of $\mu_{sect}=2.0$.
-As before, 8 different phases over the retreating phase of the cycle are shown and the vorticity range is selected to be [-30,30]$ U_{sect} /C$. Note that the set of phases shown is different between $\mu_{sect}=1.5$ and $2.0$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/baseline/ph_270_velocity_zoomed_airfoil_0_to_1pt5.png}
+		\caption{ baseline}
+		\label{fig:mu_1pt5_baseline_zoomed_velocity}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/AC/ph_270_velocity_zoomed_airfoil_0_to_1pt5.png}
+		\caption{actuated}
+		\label{fig:mu_1pt5_AC_zoomed_velocity}
+	\end{subfigure}
+	\caption{Instantaneous velocity magnitude at $\psi$ = $270^\circ$ for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 1.5}
+	\label{fig:mu_1pt5_zoomed_velocity}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/baseline/ph_270_vorticity_zoomed_airfoil.png}
+		\caption{ baseline}
+		\label{fig:mu_1pt5_baseline_zoomed_vorticity}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_1pt5/AC/ph_270_vorticity_zoomed_airfoil.png}
+		\caption{actuated}
+		\label{fig:mu_1pt5_AC_zoomed_vorticity}
+	\end{subfigure}
+	\caption{Instantaneous spanwise vorticity at $\psi$ = $270^\circ$ for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 1.5}
+	\label{fig:mu_1pt5_zoomed_vorticity}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/baseline/ph_270_velocity_zoomed_airfoil_0_to_1pt5.png}
+		\caption{ baseline}
+		\label{fig:mu_2pt0_baseline_zoomed_velocity}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/AC/ph_270_velocity_zoomed_airfoil_0_to_1pt5.png}
+		\caption{actuated}
+		\label{fig:mu_2pt0_AC_zoomed_velocity}
+	\end{subfigure}
+	\caption{Instantaneous velocity magnitude at $\psi$ = $270^\circ$ for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
+	\label{fig:mu_2pt0_zoomed_velocity}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/baseline/ph_270_vorticity_zoomed_airfoil.png}
+		\caption{ baseline}
+		\label{fig:mu_2pt0_baseline_zoomed_vorticity}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/mu_2pt0/AC/ph_270_vorticity_zoomed_airfoil.png}
+		\caption{actuated}
+		\label{fig:mu_2pt0_AC_zoomed_vorticity}
+	\end{subfigure}
+	\caption{Instantaneous spanwise vorticity at $\psi$ = $270^\circ$ for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0}
+	\label{fig:mu_2pt0_zoomed_vorticity}
+\end{figure}
+
+%% mu_sect = 2.0
+Figure \ref{fig:vortScreen_mu2pt0_SC1095} shows the instantaneous spanwise vorticity at sectional advance ratio of $\mu_{sect}=2.0$.
+As before, 8 different phases over the retreating phase of the cycle are shown and the vorticity range is selected to be [-30,30]$ U_{sect} /C$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
 Reflex camber is activated at the phase of $\psi$=$200^\circ$ and reaches the full deflection at $\psi$=$205^\circ$.
 After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$335^\circ$, and smoothly reaches its original shape at $\psi$=$340^\circ$.
 
@@ -389,7 +478,6 @@ The flow separation near the trailing edge starts to form at an earlier phase of
 In the subsequent phases after $\psi$=$225^\circ$ the size of the separated region increases for the baseline case till up to $\psi$=$285^\circ$. However, the separation bubble is larger in the baseline case with $\mu_{sect}=2.0$ as compared to that with $\mu_{sect}=1.5$.
 For the actuated case, the separated region is relatively small (see Figures \ref{fig:mu_2pt0_baseline_psi270} and \ref{fig:mu_2pt0_AC_psi270}) and its size remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$ (see Figures \ref{fig:mu_2pt0_AC_psi255}, \ref{fig:mu_2pt0_AC_psi270} and \ref{fig:mu_2pt0_AC_psi285}).
 As before, overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
-The implications of this trailing-edge separated region on the drag force is discussed in Section \ref{sec:drag_profile}.
 
 After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both baseline and actuated cases, see Figures \ref{fig:mu_2pt0_baseline_psi315} and \ref{fig:mu_2pt0_AC_psi315}. 
 For the actuated case at $\psi$=$345^\circ$, the reflexed trailing edge is at its undeflected position.
@@ -558,6 +646,15 @@ As the trailing edge is deflected down to its original position, this results in
 
 \subsubsection{Force Response}
 
+Figure \ref{fig:total_drag_zoomed_mu_2pt0_SC1095} shows the behavior of the total drag in the reverse flow region for SC1095 airfoil for the baseline and actuated cases at $\mu_{sect}=2.0$. 
+Similar results to the NACA 0012 airfoil are observed here.
+In the non-actuated case the drag fluctuates in the reverse flow region, while the drag is fairly monotonic in the actuated case.
+In the non-actuated case, the drag exhibits a local maximum around $\psi=220^\circ$ and a local minimum around $\psi=285^\circ$.
+The resulting peak-to-peak variation in the non-actuated case is substantial, as shown in Figure \ref{fig:total_drag_zoomed_mu_2pt0_SC1095}.
+This peak-to-peak variation in the reverse flow region is mitigated in the actuated case.
+A maximum drag reduction of up to 78\% is reported in this case.
+
+
 \begin{figure}[H]
 	
 	\centering
@@ -569,6 +666,20 @@ As the trailing edge is deflected down to its original position, this results in
 
 
 \subsubsection{Flowfield: Spanwise Vorticity and Velocity Magnitude}
+
+Figure \ref{fig:vortScreen_mu2pt0_SC1095} shows the instantaneous spanwise vorticity for the sectional advance ratio of $\mu_{sect}=2.0$.
+As before, 8 different phases over the retreating phase of the cycle are shown and the vorticity range is selected to be [-30,30]$ U_{sect} /C$. Note that the set of phases shown is different between $\mu_{sect}=1.5$ and $2.0$. For this advance ratio, the airfoil enters the reverse flow region at $\psi=210^\circ$, and exits the reverse flow at $\psi=330^\circ$.
+Reflex camber is activated at the phase of $\psi$=$200^\circ$ and reaches the full deflection at $\psi$=$205^\circ$.
+After the airfoil exits the reverse flow, the reflexed airfoil starts returning to its undeflected position at $\psi$=$335^\circ$, and smoothly reaches its original shape at $\psi$=$340^\circ$.
+
+Roll up of the boundary layer and LEV formation is seen for both baseline and actuated cases at $\psi$=$210^\circ$.
+
+In the subsequent phases after $\psi$=$225^\circ$ the size of the separated region increases for the baseline case till up to $\psi$=$285^\circ$.
+For the actuated case, the separated region is relatively small (see Figures \ref{fig:mu_2pt0_baseline_psi270} and \ref{fig:mu_2pt0_AC_psi270}) and its size remains fairly constant between phases $\psi$=$255^\circ$ and $285^\circ$ (see Figures \ref{fig:SC1095_AC_psi255}, \ref{fig:SC1095_AC_psi270} and \ref{fig:SC1095_AC_psi285}).
+As before, overall a significant reduction is observed in the size/extent as well as unsteadiness of the separation bubble near the trailing edge during the reverse flow region due to active reflex camber.
+
+After $\psi$=$285^\circ$, the trailing-edge flow separation begins to wash away from the airfoil for both baseline and actuated cases, see Figures \ref{fig:SC1095_baseline_psi315} and \ref{fig:SC1095_AC_psi315}. 
+For the actuated case at $\psi$=$345^\circ$, the reflexed trailing edge is at its undeflected position.
 
 \begin{figure}[H]
 	\centering
@@ -733,6 +844,6 @@ As the trailing edge is deflected down to its original position, this results in
 	
 	
 	\caption{Instantaneous spanwise vorticity at 8 different phases for the baseline (left column) and actuated (right column) cases at $\mu_{sect}$ = 2.0 for SC1095 airfoil}
-	\label{fig:vortScreen_mu2pt0}
+	\label{fig:vortScreen_mu2pt0_SC1095}
 \end{figure}
 

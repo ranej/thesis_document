@@ -45,7 +45,7 @@ At this phase, the differences in the structures resolved by the different meshe
 Similar to $\psi=195$, the Msa1\_nz50 mesh shows poor resolution of the fine-scale flow structures as compared to  Mza1\_nz50 and Mfa1\_nz50 meshes.
 
 For $\psi=270^\circ$, differences can be seen in the shear layer at the geometric leading edge of the airfoil, and the resolution of the LEV. 
-The LEV and the shear layer are best resolved for Mfa1\_nz50 meshes. 
+The LEV and the shear layer are best resolved for Mfa1\_nz50 and Mza1\_nz50 meshes. 
 Recall that Mfa1\_nz50 is obtained using feature-based mesh refinement designed to resolve the LEV accurately, and has the same mesh resolution as Mza1\_nz50 along the path of the LEV. 
 Once again, shear layer is not well resolved for Msa1\_nz50 as compared to other refined/adapted meshes.
 
@@ -165,6 +165,12 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 \label{fig:vorticity_270}
 \end{figure}
 
+Figures \ref{fig:Mza1_zoomed}, \ref{fig:Msa1_zoomed}, and \ref{fig:Mfa1_zoomed}, show a zoomed in view of the mesh, spanwise vorticity at $\psi=210^\circ$, and the (max) error field over all phases and also in spanwise direction, for Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes.
+These figures show that a uniform mesh size is maintained for Mza1\_nz50 and Mfa1\_nz50 meshes, while the Msa1\_nz50 mesh is patchy, i.e., a uniform mesh size is not maintained in this adaptation strategy.
+The error field for Msa1\_nz50 is also patchy, as compared to Mza1\_nz50 and Mfa1\_nz50, with elements that have a higher local estimated error.
+
+The implications of this are clear from the vorticity plots, especially in the wake region, where Msa1\_nz50 shows poor resolution of flow structures, as compared to Mza1\_nz50 and Mfa1\_nz50.
+
 \begin{figure}[H]
 	\centering
 \begin{subfigure}[b]{0.7\textwidth}
@@ -181,14 +187,12 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 \end{subfigure}
 \begin{subfigure}[b]{0.7\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_max_error.png}
+	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_error.png}
 	\caption{Mza1\_nz50 max error (zoomed)}
 	\label{fig:Mza1_max_error_zoomed}
 \end{subfigure}
-
-
-\label{fig:Mza1_zoomed}
 \caption{Zoomed in view of Mza1\_nz50 mesh, flowfield, and max error}
+\label{fig:Mza1_zoomed}
 \end{figure}
 
 \begin{figure}[H]
@@ -207,19 +211,42 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 	\end{subfigure}
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_max_error.png}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_error.png}
 		\caption{Msa1\_nz50 max error (zoomed)}
 		\label{fig:Msa1_max_error_zoomed}
 	\end{subfigure}
-	
-	
-	\label{fig:Msa1_zoomed}
 	\caption{Zoomed in view of Msa1\_nz50 mesh, flowfield, and max error}
+	\label{fig:Msa1_zoomed}
 \end{figure}
 
 
-For a more quantitative comparison, we focus on $C_p$  at different phases of interest leading up to LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all meshes. At $\psi=180^\circ$, we can see that flow has started to separate for Mz\_a2 mesh around $x/c=0.1$, whereas for all the other meshes, the flow remains attached. For $\psi=195^\circ$, Mz\_a2 and Ms\_a1 meshes show clear signs of separation and LEV formation/boundary layer roll-up, whereas the other meshes do not. Although note that the location and $C_p$ curve for Mz\_a2 and Ms\_a2 meshes are quite different, and separation is detected further downstream for Mz\_a2. For $\psi=210^\circ$, LEV formation is seen for all meshes 
-apart from M0 mesh. $\psi=225^\circ$ shows LEV formation and flow separation for all meshes, with clear differences in separation location and $C_p$ curve for all the meshes. Note that the y-axis limits vary for different phases to highlight differences in $C_p$,.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.7\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_mesh.png}
+		\caption{Mfa1\_nz50 mesh (zoomed)}
+		\label{fig:Mfa1_mesh_zoomed}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.7\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_ph_210.png}
+		\caption{Mfa1\_nz50 vorticity at $\psi=210^\circ$ (zoomed)}
+		\label{fig:Mfa1_vorticity_zoomed}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.7\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_error.png}
+		\caption{Mfa1\_nz50 max error (zoomed)}
+		\label{fig:Mfa1_max_error_zoomed}
+	\end{subfigure}
+	\caption{Zoomed in view of Mfa1\_nz50 mesh, flowfield, and max error}
+	\label{fig:Mfa1_zoomed}
+\end{figure}
+
+
+
+For a more quantitative comparison, we focus on $C_p$  at different phases of interest leading up to LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all meshes. At $\psi=180^\circ$, we can see that flow has started to separate for all meshes apart from M0\_nz25. For $\psi=195^\circ$, Msa1\_nz50 mesh shows larger Cp and LEV formation/boundary layer roll-up, as compared to the other meshes, with M0\_nz25 mesh showing the lowest Cp. For $\psi=210^\circ$, LEV formation is seen for all meshes apart from M0\_nz25 mesh. $\psi=225^\circ$ shows LEV formation and flow separation for all meshes, with some differences in separation location for Msa1 mesh from Mza1\_nz50 and Mfa1\_nz50. Note that the y-axis limits vary for different phases to highlight differences in $C_p$,.
 $\psi=270^\circ$ and $\psi=285^\circ$ also show differences in $C_p$ at the geometric trailing edge when the trailing edge vortex starts forming. 
 
 %%Cp plots
@@ -266,7 +293,6 @@ $\psi=270^\circ$ and $\psi=285^\circ$ also show differences in $C_p$ at the geom
 \caption{$C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines}
 \label{fig:Cp_plots}
 \end{figure}
-
 
 In summary, mesh refinement/adaptation is necessary to perform accurate LES of complex aerodynamic problems.
 

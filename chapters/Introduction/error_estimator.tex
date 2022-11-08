@@ -22,8 +22,24 @@ The fine-scale Green's function is also used to formulate an \textit{a posterior
 In this work, we employ the VMS-based error estimator
 since the VMS framework is currently used for LES and it is computationally inexpensive
 
+Error estimators and correction indicators have been used in a wide range of problems to drive mesh adaptation. These include both isotropic and anisotropic mesh adaptation and for both steady and unsteady problems. For flow problems, mesh adaptation has been shown to provide significant computational savings or better accuracy for a variety of problems. For example, for boundary layer flows \cite{bib:Sahni2008,bib:Sahni2017_adapt} including turbulent flows \cite{bib:Chitale2015}. Similarly, mesh adaptation has been applied for unsteady cardiovascular flows \cite{bib:Muller2005,bib:Sahni2006,bib:Sahni2009} including high-order meshes \cite{bib:Sahni2010}. In particular, cardiovascular flows are typically periodic in time (i.e., based on the cardiac cycle) and in this scenario one can construct an adapted mesh that would be appropriate for the entire cardiac cycle. This can be done by applying error estimation or correction indication at several pre-defined instants of the cycle and then combine them into a single one that meets the requirements for the entire cycle. A similar strategy is used in this work. On the other hand, for a fully unsteady problem (without any periodic behavior), mesh adaptation can be applied repeatedly over time, which is relatively more expensive. For example, unsteady mesh adaptation has been applied to unsteady problems with two-phase flows \cite{bib:rodriguez2013} and evolving shocks and geometry \cite{bib:Yang2021}.
 
-%TODO: Mesh adaptivity references for steady, unsteady, and periodic problems
 
+% A parallel interface tracking approach for evolving geometry problems \cite{bib:Yang2021}.
 
+%Parallel anisotropic mesh adaptation with boundary layers for automated viscous flow simulations \cite{bib:Sahni2017_adapt}.
+
+%Anisotropic Adaptation for Transonic Flows with Turbulent Boundary Layers \cite{bib:Chitale2015}
+
+%A parallel adaptive mesh method for the numerical simulation of multiphase flows \cite{bib:rodriguez2013}
+
+% Curved boundary layer meshing for adaptive viscous flow simulations \cite{bib:Sahni2010}
+
+%Automated adaptive cardiovascular flow simulations \cite{bib:Sahni2009}
+
+%Adaptive boundary layer meshing for viscous flow simulations \cite{bib:Sahni2008}
+
+%Efficient anisotropic adaptive discretization of the cardiovascular system \cite{bib:Sahni2006}
+
+%Anisotropic adaptive finite element method for modelling blood flow \cite{bib:Muller2005}
 

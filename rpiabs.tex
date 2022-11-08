@@ -10,8 +10,6 @@ Large eddy simulation (LES) is an attractive turbulence modeling approach due to
 LES is shown to be robust and provides accurate predictions for complex flow problems including unsteady aerodynamic flows with spatiotemporal inhomogeneity.
 In this work, the specific problem of interest is of flow over surging airfoils, which arise in many aerodynamic problems of interest. For example, for a rotorcraft in a forward flight, or for wind turbines in non-uniform flows (e.g., shear).
 
-%TODO: Check italics for a priori/posteriori
-
 Mesh resolution requirements for such complex and unsteady flow problems are not known \textit{a priori}.
 In this work, we develop an adaptive approach where mesh resolution is refined or adapted based on an \textit{a posteriori} error estimator leading to error-driven/controlled adaptive LES.
 In addition, a flow feature-based adaptation criterion that can use the error estimator is developed.
@@ -22,8 +20,6 @@ Three different adaptive strategies based on VMS error estimator are explored: (
 The zonal-based strategy is found to be most effective. This strategy is applied for adaptive LES of flow over surging airfoils. A series of adapted meshes are constructed, and mesh convergence is shown. In particular, for quantities of interest including pressure coefficient and leading edge vortex (LEV) evolution.
 In addition, very high advance ratios are considered, where massive trailing edge separation also occurs due to flow reversal. In these cases, LES includes active flow control in the form of active reflex camber that is applied to dynamically morph the airfoil shape during flow reversal (i.e., only for a part of the surging cycle). Active reflex camber results in a significant reduction of drag force and fluctuations in it.
 
-
-%TODO: very high advance ratio, trailing edge separation, 
 
 
 

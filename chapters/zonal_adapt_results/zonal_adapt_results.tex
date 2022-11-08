@@ -1,10 +1,33 @@
 \chapter{Adaptive LES of Flow Over Surging Airfoil}
 
-In this chapter, we focus on applying the mesh adaptation strategies based on the VMS-based estimated error to large eddy simulation of flow over surging airfoil. A brief overview of the three strategies considered is mentioned in chapter \ref{sec:adapt_strat_overview}. We focus on applying these strategies to low Reynolds number case of $Re = 40, 000$ at an angle of attack of $\alpha = 6^\circ$ and advance ratio of $\mu_{sect} = 1.2$.
+In this chapter, we focus on applying the mesh adaptation strategies based on the VMS-based estimated error to large eddy simulation of flow over surging airfoil. A brief overview of the three strategies considered is mentioned in chapter \ref{sec:adapt_strat_overview}.
 
 \section{Problem Setup}
 
+The problem setup for these cases is similar to the one mentioned in Chapter \ref{sec:problem_setup_baseline}.
+
 \section{Summary of Cases}
+
+In this chapter, flow over a surging NACA 0012 airfoil is considered for $Re=40,000$ and $200,000$, for a sectional advance ratio of $\mu_{sect}=1.2$
+
+\begin{table}[H]
+	\centering
+	\caption{Summary of cases}
+	\label{table:summary_cases}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		Airfoil   & $\alpha$ & $k$ & $\mu_{sect}$ & $Re$ \\
+		\hline
+		\hline
+		NACA 0012 & 6$^\circ$ & $0.133$ &  1.2 & 40,000\\
+		\hline
+		NACA 0012 & 6$^\circ$ & $0.133$ & 1.2 & 200,000 \\
+	\hline
+	\end{tabular}
+\end{table}
+
+
+Next, adaptive LES is performed for $Re=40,000$ and $Re=200,000$ cases, where a series of adapted meshes is constructed, and mesh convergence is shown.
 
 \section{Comparison of Adaptive Strategies}
 \label{sec:adaptive_strategy_comparison}
@@ -14,9 +37,8 @@ In this chapter, we focus on applying the mesh adaptation strategies based on th
 
 \section{Application of Zonal Refinement Strategy}
 
-%TODO: Introduce the cases that will be presented here
 
-In chapter \ref{sec:adaptive_strategy_comparison}, we established that the zonal based refinement/adaptation is the best strategy for accurate numerical solution of periodic problems in space and time using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation/refinement strategy to different cases.
+In chapter \ref{sec:adaptive_strategy_comparison}, we established that the zonal based refinement/adaptation is the best strategy for accurate numerical solution of periodic problems in space and time using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation/refinement strategy. the zonal based refinement strategy is applied to two Reynolds numbers of $Re=40,000$ and $Re=200,000$, at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$
 
 We explore mesh resolution effects in the in-plane and also in the spanwise direction. 
 The run plan to achieve mesh convergence is as follows. 
@@ -33,10 +55,9 @@ This process is repeated for further adaptation cycles till mesh convergence is 
 
 \subsection{ $Re=40,000$}
 
-
 In this section, we focus on applying the zonal based adaptation/refinement strategy to the low Reynolds number case of $Re=40,000$ at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$ till we obtain mesh convergence.
 We start with a baseline mesh that satisfies LES surface resolution criteria in wall plus units at maximum Reynolds number, which is achieved at $\psi=90^\circ$ (since relative velocity over the airfoil is maximum at this phase). 
-This mesh is referred to as M0\_nz25, where nz25 refers to the number of extruded layers in the spanwise/z direction. Note that 25 extruded layers are used here since this corresponds to $\Delta z^+ = 40$ for this mesh.
+This mesh is referred to as M0\_nz25, where nz25 refers to the number of extruded layers in the spanwise/z direction.
 
 Next, Mza1 series of meshes is obtained using zonal-based adaptation/refinement, and multiple spanwise resolutions are considered, starting with Mza1\_nz25, and refining by a factor of 2 in spanwise direction to get Mza1\_nz50 and Mza1\_nz100.
 We observed that Mza1\_nz25 results compare well both Mza1\_nz50 and Mza1\_nz100 meshes.

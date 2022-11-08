@@ -11,6 +11,8 @@ In this section, we focus on LES of flow over a surging airfoil at different con
 \section{Problem Setup}
 \label{sec:problem_setup_baseline}
 
+%TODO: Add U_rel velocity profile with t_tilde
+
 A schematic of the problem setup is shown in Figure~\ref{fig:SetUpSketch}, where $U_\infty$ is the free-stream or mean velocity and $\alpha$ is the angle of attack.
 
 \begin{figure}[H]
@@ -235,7 +237,7 @@ As expected, the boundary layer is much thicker for the lowest Reynolds number o
 		\label{fig:Re_1m_1pt0_phi255}
 	\end{subfigure}
 	
-	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.0}
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.0}
 	\label{fig:vortScreen_1pt0}
 \end{figure}
 
@@ -317,7 +319,7 @@ As expected, the boundary layer is much thicker for the lowest Reynolds number o
 		\caption{$Re=1e6$, $\psi$ = $345^\circ$, $\tilde{t}=0.958$}
 		\label{fig:Re_1m_1pt0_phi345}
 	\end{subfigure}	
-\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.0}
+\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.0}
 \label{fig:vortScreen_1pt0}
 \end{figure}
 
@@ -435,7 +437,7 @@ This aspect is discussed further in Section \ref{sec:LEV}.
 		\label{fig:Re_1m_1pt2_phi255}
 	\end{subfigure}
 	
-	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.2}
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.2}
 %	\label{fig:vortScreen_1pt2}
 \end{figure}
 
@@ -517,7 +519,7 @@ This aspect is discussed further in Section \ref{sec:LEV}.
 		\label{fig:Re_1m_1pt2_phi345}
 	\end{subfigure}
 	
-	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\lambda$ = 1.2}
+	\caption{Spanwise vorticity at 8 different phases for $Re$=40,000 (left column), 200,000 (middle column) and 1,000,000 (right column) at $\mu_{sect}$ = 1.2}
 	\label{fig:vortScreen_1pt2}
 \end{figure}
 
@@ -579,7 +581,24 @@ This feature/vortex detection and tracking procedure is useful for feature-based
 	\label{fig:LEV_location_LE_airfoil}
 \end{figure}
 
+In Figure \ref{fig:LEV_delta_x}, the horizontal displacement of the LEV with respect to the ground is presented.
+The displacement is taken about the initial position when the LEV is formed, i.e., the displacement is zero at the initial position.
+Again, as the Reynolds number increases the LEV is formed later in the cycle (for a given advance ratio) while as the advance ratio increases it is formed earlier in the cycle (for a given Reynolds number).
 
-%TODO: LEV ground position plots
-%TODO: 
+An important aspect to note in Figure \ref{fig:LEV_delta_x} is that the horizontal displacement of the LEV follows a straight line for each case and is parallel among all cases.
+The slope of the horizontal displacement in each case is remarkably close to the free-stream velocity, i.e., the LEV is advected in the horizontal direction at the free-stream velocity.
 
+\begin{figure}[H]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\textwidth]{figures/LEV_deltax_lambda_1pt0.png}
+		\caption{$\mu_{sect} = 1.0$}
+		\label{fig:LEV_deltax_lambda_1p0}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\textwidth]{figures/LEV_deltax_lambda_1pt2.png}
+		\caption{$\mu_{sect} = 1.2$}
+		\label{fig:LEV_deltax_lambda_1p2}
+	\end{subfigure}
+	\caption{LEV displacement (in the horizontal direction) for $Re$=40,000 (green line with open triangles), 200,000 (red line with closed circles) and 1,000,000 (blue line with open circles) at $\mu_{sect}$=1.0 and 1.2}
+	\label{fig:LEV_delta_x}
+\end{figure}
