@@ -18,6 +18,18 @@ This strategy is represented in Figure \ref{fig:zonal_based_strat}
 	\label{fig:zonal_based_strat}
 \end{figure}
 
+For example, estimated error field in the case of flow over a surging airfoil is shown in Figure \ref{fig:zonal_based_strat_schematic}.
+Note that maximum elemental error is obtained for all phases and in spanwise direction over the entire surging cycle.
+Estimated error is higher in the airfoil wake, as well as in the region where the leading edge vortex (LEV) traverses through.
+High error zones are identified in, and mesh in these zones is refined by a factor of 2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/adapt_strat/zonal_based_schematic.png}
+	\caption{Schematic for zonal refinement}
+	\label{fig:zonal_based_strat_schematic}
+\end{figure}
+
 \subsection{Nodal Size Field-based Adaptation}
 
 The second strategy we employ is fully automated mesh adaptation based on the VMS-based error estimator. In this strategy, the estimated error and a specified target error are used to compute the desired mesh size or resolution in a local fashion, i.e., at every mesh vertex. We refer to this as the nodal size field, and the mesh is refined or coarsened based on this nodal size field. 
@@ -36,7 +48,7 @@ This strategy is represented in Figure \ref{fig:size_based_strat}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/adapt_strat/size_based.png}
-	\caption{Nodal Size Field-based Refinement/Adaptation Strategy}
+	\caption{Nodal size field-based adaptation strategy}
 	\label{fig:size_based_strat}
 \end{figure}
 
@@ -46,22 +58,59 @@ The third strategy is to employ feature-based refinement/adaptation.
 One of the primary flow features is the leading edge vortex (LEV) in the current problems of interest focused on surging airfoils. LEV forms during the retreating portion of the surging cycle when the boundary layer rolls up, separates from the airfoil, and advects away from the airfoil.
 This allows for refinement around the dominant flow features and also along the path/trajectory of such features, in particular for LEV.
 
+For example, Figure \ref{fig:feature_based_strat_schematic} shows the path of an LEV. 
+Mesh refinement is applied along this path, shown by the shaded region.
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/adapt_strat/feature_based_schematic.png}
+	\caption{Schematic for feature-based refinement strategy}
+	\label{fig:feature_based_strat_schematic}
+\end{figure}
 
 \subsubsection{LEV Detection and Tracking}
 
 %TODO: Show pics and schematics from AIAA paper and presentations (LEV trace)
 
 In this section, we quantify the evolution of the LEV based on its size and position.
-In order to do so, for each case at first the phase of formation of the LEV is detected and in subsequent phases the LEV is tracked.
+In order to do so, phase and spanwise averaged data is obtained over multiple cycles. For example, in Figure \ref{fig:LEV_tracking}, difference between the instantaneous and phase and span averaged vorticity is shown.
+Next, for each case, the phase of formation of the LEV is detected and in subsequent phases the LEV is tracked.
 Pressure and velocity data is analyzed to automatically detect the formation of the LEV.
 In the retreating portion of the cycle, location with minimum pressure is determined starting at $\psi=180^\circ$.
 The first phase at which the minimum pressure location is off the airfoil surface (i.e., away from the airfoil and into the flow) is tagged to be a potential phase for LEV formation.
 At this potential phase, velocity profile is obtained over multiple lines passing through the minimum pressure location.
 These are radial lines that are taken at an equispaced interval along the azimuth in the plane of the airfoil (note that the data is averaged in the spanwise direction).
+These radial lines are shown in Figure \ref{fig:LEV_tracking2}.
 Along these lines, at first a relative velocity is computed with respect to the velocity at the minimum pressure location.
 Subsequently, normal component of the relative velocity is obtained (i.e., normal to each line), which is the azimuthal or tangential component in the polar coordinate system centered around the minimum pressure location.
 The azimuthal component (of the relative velocity) is analyzed against the velocity profile of a Lamb-Oseen vortex.
 It is noteworthy that the azimuthal component of the relative velocity along several radial lines at multiple phases in the surging cycle were visually analyzed for different cases and found to fit the Lamb-Oseen vortex model fairly well.
+
+The trace of the LEV is obtained by applying this process over multiple phases in the surging cycle, which can be used to quantify LEV evolution and to apply feature-based adaptation (as shown above in Figure \ref{fig:feature_based_strat_schematic}).
+
+\begin{figure}[H]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/LEV_tracking1.png}
+		\caption{Instantaneous LEV}
+		\label{fig:LEV_tracking1}
+	\end{subfigure}
+	\begin{subfigure}{0.51\textwidth}
+	\includegraphics[width=1\textwidth]{figures/adapt_strat/LEV_tracking2.png}
+	\caption{Averaged LEV}
+	\label{fig:LEV_tracking2}
+	\end{subfigure}
+
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=1\textwidth]{figures/adapt_strat/LEV_tracking3.png}
+	\label{fig:LEV_tracking3}
+    \caption{Averaged LEV with core radius}
+\end{subfigure}
+	
+	\caption{LEV quantification}
+	\label{fig:LEV_tracking}
+\end{figure}
+
 
 \subsubsection{LEV-based Refinement/Adaptation}
 
