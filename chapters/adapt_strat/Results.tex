@@ -167,9 +167,9 @@ The relatively poor resolution of flow, with more diffused flow structures, obse
 
 Figures \ref{fig:Mza1_zoomed}, \ref{fig:Msa1_zoomed} and \ref{fig:Mfa1_zoomed} show a zoomed-in view of the mesh, spanwise vorticity at $\psi=210^\circ$, and the element-level/local error (maximum over multiple phases and over the spanwise direction). This is done for Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes.
 The different meshes in these figures show that a quasi-uniform mesh size is maintained in specified zones for both Mza1\_nz50 and Mfa1\_nz50, while the Msa1\_nz50 mesh is patchy, i.e., a uniform mesh size is not maintained in Msa1\_nz50.
-The error field for Msa1\_nz50 is also patchy, as compared to Mza1\_nz50 and Mfa1\_nz50, with elements that have a higher local estimated error.
-
+The error field for Msa1\_nz50 is also patchy, as compared to Mza1\_nz50 and Mfa1\_nz50, with elements that have a higher local estimated error in Msa1\_nz50.
 This becomes further evident from the vorticity plots, especially in the wake region, where Msa1\_nz50 shows a poor resolution of fine-scale flow structures, as compared to Mza1\_nz50 and Mfa1\_nz50.
+Note that the Mza1\_nz50 and Mfa1\_nz50 meshes are very comparable and the zonal refinement encompasses the regions/portions covered by the feature/LEV-based refinement, and thus, they turn out to be equivalent for the current case.
 
 \begin{figure}[H]
 	\centering
@@ -246,8 +246,8 @@ This becomes further evident from the vorticity plots, especially in the wake re
 
 
 
-For a more quantitative comparison, we focus on pressure coefficient, $C_p$,  at different phases of interest leading up to LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all meshes. At $\psi=180^\circ$, we can see that flow has started to separate for all meshes apart from M0\_nz25. For $\psi=195^\circ$, Msa1\_nz50 mesh shows larger Cp and LEV formation/boundary layer roll-up, as compared to the other meshes, with M0\_nz25 mesh showing the lowest Cp. For $\psi=210^\circ$, LEV formation is seen for all meshes apart from M0\_nz25 mesh. $\psi=225^\circ$ shows LEV formation and flow separation for all meshes, with some differences in separation location for Msa1 mesh from Mza1\_nz50 and Mfa1\_nz50. Note that the y-axis limits vary for different phases to highlight differences in $C_p$,.
-$\psi=270^\circ$ and $\psi=285^\circ$ also show differences in $C_p$ at the geometric trailing edge when the trailing edge vortex starts forming. 
+For a more quantitative comparison, we focus on pressure coefficient, $C_p$,  at different phases of interest including those around LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all adapted meshes. At $\psi=180^\circ$, we can see that flow has started to separate for all meshes apart from M0\_nz25. For $\psi=195^\circ$, Msa1\_nz50 shows a larger $C_p$ value as compared to the other meshes, with M0\_nz25 showing the lowest $C_p$. For $\psi=210^\circ$, LEV presence is seen for all meshes apart from M0\_nz25 mesh. $\psi=225^\circ$ shows LEV presence and flow separation for all meshes, with some differences in separation location for Msa1\_nz50 as compared to Mza1\_nz50 and Mfa1\_nz50. Note that a different range of $C_p$ is used for each phase to highlight the differences. At
+$\psi=270^\circ$ and $\psi=285^\circ$, marginal differences are seen in $C_p$ among different meshes, specifically at the geometric trailing edge where flow separation starts to occur. 
 
 %%Cp plots
 
@@ -294,6 +294,4 @@ $\psi=270^\circ$ and $\psi=285^\circ$ also show differences in $C_p$ at the geom
 \label{fig:Cp_plots}
 \end{figure}
 
-In summary, mesh refinement/adaptation is necessary to perform accurate LES of complex aerodynamic problems.
-
-From the flowfield and the estimated error-field, it can be concluded that zonal-based refinement/adaptation is the best for applying VMS-based error estimator driven mesh adaptation.
+In summary, mesh refinement/adaptation is necessary to perform accurate LES of complex aerodynamic problems. The above comparison among different adaptive strategies clearly indicates that the zonal-based refinement/adaptation strategy is the most appropriate for the current problem of interest involving surging airfoils. Thus, it is used subsequently to construct a series of adapted meshes and demonstrate mesh convergence.
