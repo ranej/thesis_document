@@ -3,19 +3,19 @@ Computational fluid dynamics (CFD) has been on a fast rise, having found applica
 Almost all naturally occuring flows involve turbulence, and the major drive in research remains on efficient and accurate techniques to accurately resolve/model turbulence.
 To this end, one of the most popular techniques, especially for industrial applications is Reynolds-averaged Navier–Stokes (RANS), since it is computationally inexpensive and feasible for most problems.
 In RANS, the averaged quantities are resolved, whereas the fluctuating quantities are modeled using some form of a turbulence model. For example, the Spalart-Allmaras turbulence model \cite{bib:Spalart} has been widely used for flow over airfoils.
-While RANS is sufficient for predicting averaged quantities, it fails to accurately predict flows that are highly turbulent and highly unsteady.
-At the other end of the spectrum, Direct Numerical Simulation (DNS) is the most accurate approach for simulating fluid flows, where turbulent scales are resolved all the way up to molecular diffusion (i.e., Kolmogorov micro-scales).
-DNS, however, is computationally very expensive, and as a result, can only be feasibly applied to low Reynolds number flows for simple geometries.
+While RANS is sufficient for predicting averaged quantities, it fails to accurately predict flows that are highly exhibit spatiotemporal inhomogeneity.
+At the other end of the spectrum, direct numerical simulation (DNS) is the most accurate approach for simulating fluid flows, where scales are resolved all the way up to Kolmogorov scales.
+DNS, however, is computationally very expensive, and as a result, can only be feasibly applied to relatively low Reynolds number flows for simpler geometries.
 
-An alternative turbulence modeling approach that provides a good balance between computational cost and turbulence/scale-resolving capabilities is Large eddy simulation (LES), which was proposed by Smagorinsky \cite{bib:smag} for simulating atmospheric flows, and first applied by Deardorff \cite{bib:deardorff1970} in 1970.
+An alternative turbulence modeling approach that provides a balance between computational cost and turbulence/scale-resolving capabilities is large eddy simulation (LES), which was proposed by Smagorinsky \cite{bib:smag} for simulating atmospheric flows, and later applied by Deardorff \cite{bib:deardorff1970} in 1970.
 In LES, large scale effects of turbulent flow are resolved directly, while the small scale effects are modeled using a sub-grid scale model.
 LES is shown to be robust and provides accurate predictions for complex flow problems including aerodynamic problems with spatiotemporal inhomogeneity. Particularly for problems that involve transition to turbulence and relaminarization in space and/or time and wake turbulence along with its interactions.
 
-However, an adequate LES requires a mesh that follows certain resolution requirements, e.g., in case of a wall-bounded turbulent/boundary layer flows mesh resolution is well-known in wall units in each direction (i.e., wall-normal, streamwise and spanwise directions) and similarly, for a mixing layer.
+However, an adequate LES requires a mesh that follows certain resolution requirements, e.g., in case of a wall-bounded turbulent/boundary layer flow mesh resolution is well-known in wall units in each direction (i.e., wall-normal, streamwise and spanwise directions) and similarly, for a mixing layer.
 Such mesh resolution requirements are well-established for canonical turbulent flows such as homogenous isotropic turbulence, boundary layers, mixing layers, etc. 
 On the other hand, for non-canonical or complex problems such mesh resolution requirements are unknown in advance. 
 
-In this work, we develop an adaptive approach where mesh resolution is changed (refined or adapted) based on an error estimator leading to error-drive/controlled adaptive large eddy simulations.
+In this work, we develop an adaptive approach where mesh resolution is changed (refined or adapted) based on an error estimator leading to error-driven/controlled adaptive large eddy simulations.
 In particular, we formulate and investigate three adaptive strategies
 (all dictated by estimated error) including zonal refinement/adaptation, size field-based adaptation and
 feature-based refinement/adaptation. 
@@ -29,4 +29,4 @@ We apply our adaptive LES for a specific problem of interest that involves surgi
 This is a relevant problem from a practical/application viewpoint as well as from a flow physics viewpoint.
 It exhibits a number of complexities and challenges that arise in complex aerodynamic
 problems (e.g., unsteady motion with large-scale bulk unsteadiness, flow separation and re-attachment, transition to turbulence and relaminarization, wake turbulence and its interaction with airfoil, dominant flow features such as a turbulent leading-edge vortex, possibility to explore flow control, etc.), and also
-offers computational feasibility to perform multiple cycles of mesh adaptation. Experimental data and other simulation studies are also available for this problem.
+offers computational feasibility to perform multiple cycles/iterations of mesh adaptation. Experimental data and other simulation studies are also available for this problem for certain conditions.

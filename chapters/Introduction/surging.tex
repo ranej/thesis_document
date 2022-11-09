@@ -3,15 +3,14 @@ For example, in a forward flight for a rotorcraft.
 In a forward flight, rotor blades are subjected to fluctuating local velocity due to the forward motion of the rotorcraft 
 and rotational motion of the blade along the azimuth. 
 In a high-speed forward flight or at a high advance ratio (i.e., the ratio of forward to rotational motion), the relative velocity 
-can reverse in direction near the inboard portion of the retreating blade.
-The oscillatory relative velocity causes large changes in the lift force, with high lift 
-generated as the blade advances and small to no lift generated as the blade retreats. 
+can reverse in direction for a significant (inboard) portion of the retreating blade.
+The oscillatory relative velocity causes large changes in the aerodynamic forces experienced by a blade, i.e., as the blade advances and retreats. 
 
 Analytical models have been formulated in an attempt to predict this behavior. These theoretical efforts for predicting forces for surging motions began with unsteady potential flow models at low incidence. 
 Due to added mass effects and the influence of the airfoil’s wake, traditional thin airfoil theory failed to accurately predict flows of variable velocity. 
 Isaacs \cite{bib:Isaacs} adapted the thin aerofoil theory and applied it to sinusoidal flows, and caluclated lift as a Fourier series.
-Greenberg \cite{bib:Greenberg1947} modified Isaac's theory to assume a sinusoidal wake, and incorporated theory developed by Theodorsen \cite{bib:Theodorsen1934}, to obtain closed form expressions for the lift and moment of an airfoil in attached flow undergoing sinusoidal pitch, surge and plunge. 
-These theoretical models predict the forces reasonably well \cite{bib:greenblatt2016} for motions with low angle of attack and low advance ratios, but often pose issues for higher angles of attack, and also when there is complete flow reversal and the sharp trailing edge temporarily acts as the aerodynamic leading edge.
+Greenberg \cite{bib:Greenberg1947} modified Isaac's theory to assume a sinusoidal wake, and incorporated theory developed by Theodorsen \cite{bib:Theodorsen1934}, to obtain closed form expressions for the lift and moment of an airfoil with attached flow undergoing sinusoidal pitch, surge and plunge motions. 
+These theoretical models predict the forces reasonably well \cite{bib:greenblatt2016} for motions with low angles of attack and low advance ratios, but often pose issues for higher angles of attack, and also when there is complete flow reversal and the sharp (geometric) trailing edge temporarily acts as the aerodynamic leading edge.
 
 Some of the recent work to understand these flow phenomena has been done by conducting experiments in a quasi-3D environment by subjecting a blade model to cyclic surging and/or pitching motions.
 Greenblatt \textit{et al.}~\cite{bib:greenblatt2016} looked into the effects of fluctuating free-stream velocity and cyclic pitching on an airfoil section through experiments.
@@ -22,7 +21,7 @@ Hodara \textit{et al.}~\cite{bib:hodara2016} investigated a pitching airfoil in 
 Others have chosen to study the entire rotor in a forward flight using experimental testing~\cite{bib:norman2011} or a RANS or hybrid RANS-LES approach, e.g., see~\cite{bib:chaderjian2012detached,bib:potsdam2016}.
 
 Kirk and Jones ~\cite{bib:kirk_jones_2019} performed experiments to study geometric trailing edge separation in sinusoidally surging flows over airfoil with widely varying amplitudes and frequencies, including reverse flow surge. These experiments were compared against high-advance-ratio rotor experiments, performed by 
-Lind \textit{et al.}~\cite{bib:Lind2018}, and showed that reverse flow surging separation/vortices were of comparable strength to those observed in full rotor experiments. This shows that a surging-airfoil simplification provides a suitable basis for much more complex three-dimensional flows.
+Lind \textit{et al.}~\cite{bib:Lind2018}, and showed that reverse flow surging separation/vortices were of comparable strength to those observed in full rotor experiments. This shows that a surging-airfoil simplification provides a basis for much more complex three-dimensional flows.
 Smith and Jones ~\cite{bib:smith2020} also performed experiments to provide insight into the effect of a large amplitude unsteady freestream on the timing of vortex formation, for a range of high advance ratios and reduced frequencies. 
 
 Substantial research has also been done in studying constant reverse flow over an airfoil. 
@@ -51,7 +50,7 @@ Studying a rotor blade under a reversed flow condition
 is necessary to improve the forward flight capabilities of a rotorcraft.
 One way to achieve this is to employ high-fidelity simulations with reliable modeling.
 In this study, large eddy simulation is used to predict flow over an oscillating airfoil at various Reynolds numbers and advance ratios.
-For high Reynolds number ($Re=1,000,000$) and very high advance ratios ($\mu_{sect}=1.5$ and $2.0$), active reflex camber is employed when the airfoil enters
+For high Reynolds number (up to $Re=1,000,000$) and very high section advance ratios (up to $\mu_{sect}=2.0$), active reflex camber is employed when the airfoil enters
 the reverse flow region to make the airfoil more streamlined to the reverse flow and to reduce
 the peak-to-peak variation in the drag (within the reverse flow region).
 
