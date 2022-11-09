@@ -1,12 +1,12 @@
-In this section, we compare results of adapted meshes obtained from different adaptive strategies mentioned above. 
+In this section, we compare results of different adapted meshes obtained from three adaptive strategies mentioned above. 
 We compare different quantities of interest. 
 A comparison of force response in the form of normalized lift and drag forces is shown in Figures \ref{fig:lift_plot} and \ref{fig:drag_plot}, respectively. The normalized lift and drag matches up well for all the adapted meshes.
 
-A comparison of spanwise vorticity for the different meshes is shown in Figures \ref{fig:vorticity_195}, \ref{fig:vorticity_210}, and \ref{fig:vorticity_270} for phases $\psi=210^\circ$, $\psi=225^\circ$, and $\psi=270^\circ$, respectively.
+A comparison of spanwise vorticity for the different adapted meshes is shown in Figures \ref{fig:vorticity_195}, \ref{fig:vorticity_210} and \ref{fig:vorticity_270}, for 3 phases of $\psi=210^\circ$, $\psi=225^\circ$ and $\psi=270^\circ$, respectively.
 For $\psi=195^\circ$, as the airfoil is in the retreating phase, boundary layer roll-up towards the geometric leading edge is observed over the airfoil surface.
-For the meshes based on zonal refinement, as we go from M0\_nz25 to Mza1\_nz50, the separation over the airfoil is well resolved, and more structures are visible as the mesh becomes fine
-Comparing Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes, we can see that Msa1\_nz50 mesh does not capture the fine-scale flow structures as compared to the Mza1\_nz50 mesh, both over the airfoil surface and in the wake of the airfoil. 
-On the other hand, the Mfa1\_nz50 mesh captures these fine-scale flow structures.
+For the meshes based on zonal refinement, as we go from M0\_nz25 to Mza1\_nz50, the separation over the airfoil is well resolved, and finer scales or flow structures are visible on the adapted mesh.
+Comparing Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes, we can see that the Msa1\_nz50 mesh (sizefield-based adapted mesh) does not capture the finer scales/structures as compared to the Mza1\_nz50 mesh, both over the airfoil surface and in the wake of the airfoil, i.e., flow structures are more diffused in the case of Msa1\_nz50.
+On the other hand, the Mfa1\_nz50 mesh captures them well.
 
 \begin{figure}[H]
 \centering
@@ -25,7 +25,7 @@ On the other hand, the Mfa1\_nz50 mesh captures these fine-scale flow structures
 \end{subfigure}
 
 \label{fig:force_response_adapt}
-\caption{Normalized forces for different meshes}
+\caption{Normalized forces for different adaptive strategies/adapted meshes}
 \end{figure}
 
 %Next, we look at the location of the LEV core for different meshes in Figure \ref{fig:LEV_location}. Some differences in the LEV location for various phases are observed. LEV location for Ma1, FB, and hadapt meshes is similar in the beginning phases. Ma1 starts to deviate from FB and hadapt in the later phases. LEV location for FB and hadapt meshes start to match with Ma2 in the later phases, whereas M0 LEV location fluctuates around the other meshes. This however is still not conclusive as to which mesh performs better and a more quantitative study is needed.
@@ -40,16 +40,16 @@ On the other hand, the Mfa1\_nz50 mesh captures these fine-scale flow structures
 %%
 
 
-For $\psi=210^\circ$, formation of LEV begins to take place, as we see a distinct vortex build up near the geometric leading edge. 
+For $\psi=210^\circ$, formation of LEV begins to take place, as we start to see the roll-up of separated shear layer near the geometric leading edge. 
 At this phase, the differences in the structures resolved by the different meshes become more clear.
-Similar to $\psi=195$, the Msa1\_nz50 mesh shows poor resolution of the fine-scale flow structures as compared to  Mza1\_nz50 and Mfa1\_nz50 meshes.
+Similar to $\psi=195^\circ$, the Msa1\_nz50 mesh shows a relatively poor resolution of the finer flow structures as compared to the Mza1\_nz50 and Mfa1\_nz50 meshes.
 
-For $\psi=270^\circ$, differences can be seen in the shear layer at the geometric leading edge of the airfoil, and the resolution of the LEV. 
-The LEV and the shear layer are best resolved for Mfa1\_nz50 and Mza1\_nz50 meshes. 
-Recall that Mfa1\_nz50 is obtained using feature-based mesh refinement designed to resolve the LEV accurately, and has the same mesh resolution as Mza1\_nz50 along the path of the LEV. 
-Once again, shear layer is not well resolved for Msa1\_nz50 as compared to other refined/adapted meshes.
+For $\psi=270^\circ$, differences can be seen in the separated shear layer at the geometric leading edge of the airfoil, and the resolution of the LEV, among different adapted meshes.
+These are resolved better on the Mfa1\_nz50 and Mza1\_nz50 meshes. 
+Recall that Mfa1\_nz50 is obtained using feature-based mesh refinement designed to capture the LEV accurately, and has the same mesh resolution as Mza1\_nz50 along the path of the LEV. 
+%Once again, shear layer is not well resolved for Msa1\_nz50 as compared to other refined/adapted meshes.
 
-The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed to the mesh not having a uniform refinement in the regions of interest, having been adapted solely based on the error-field obtained, which results in a patchy mesh, i.e., the mesh size does not remain constant in particular zones, and hence, structures are not resolved as desired.
+The relatively poor resolution of flow, with more diffused flow structures, observed for Msa1\_nz50 can be attributed to the variation in mesh sizes (even by a factor of 1.5 or 2) in crucial regions of interest, i.e., the mesh size is not uniform or even quasi-uniform in particular zones. In particular, this seem to have an adverse effect in regions with turbulence.
 
 \begin{figure}[H]
 \centering
@@ -83,7 +83,7 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 \caption{Mfa1\_nz50 mesh, $\psi$ = $195^\circ$}
 \label{fig:FB_psi195}
 \end{subfigure}
-\caption{Spanwise vorticity comparison at $\psi$ = $195^\circ$ for different meshes}
+\caption{Spanwise vorticity comparison at $\psi$ = $195^\circ$ for different adaptive strategies/adapted meshes}
 \label{fig:vorticity_195}
 \end{figure}
 
@@ -121,7 +121,7 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 \caption{Mfa1\_nz50 mesh, $\psi$ = $210^\circ$}
 \label{fig:FB_psi210}
 \end{subfigure}
-\caption{Spanwise vorticity comparison at $\psi$ = $210^\circ$ for different meshes}
+\caption{Spanwise vorticity comparison at $\psi$ = $210^\circ$ for different adaptive strategies/adapted meshes}
 \label{fig:vorticity_210}
 \end{figure}
 
@@ -161,37 +161,37 @@ The poor resolution of the flow-field observed for Msa1\_nz50 can be attributed 
 \caption{Mfa1\_nz50 mesh, $\psi$ = $270^\circ$}
 \label{fig:FB_psi270}
 \end{subfigure}
-\caption{Spanwise vorticity comparison at $\psi$ = $270^\circ$ for different meshes}
+\caption{Spanwise vorticity comparison at $\psi$ = $270^\circ$ for different adaptive strategies/adapted meshes}
 \label{fig:vorticity_270}
 \end{figure}
 
-Figures \ref{fig:Mza1_zoomed}, \ref{fig:Msa1_zoomed}, and \ref{fig:Mfa1_zoomed}, show a zoomed in view of the mesh, spanwise vorticity at $\psi=210^\circ$, and the (max) error field over all phases and also in spanwise direction, for Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes.
-These figures show that a uniform mesh size is maintained for Mza1\_nz50 and Mfa1\_nz50 meshes, while the Msa1\_nz50 mesh is patchy, i.e., a uniform mesh size is not maintained in this adaptation strategy.
+Figures \ref{fig:Mza1_zoomed}, \ref{fig:Msa1_zoomed} and \ref{fig:Mfa1_zoomed} show a zoomed-in view of the mesh, spanwise vorticity at $\psi=210^\circ$, and the element-level/local error (maximum over multiple phases and over the spanwise direction). This is done for Mza1\_nz50, Msa1\_nz50, and Mfa1\_nz50 meshes.
+The different meshes in these figures show that a quasi-uniform mesh size is maintained in specified zones for both Mza1\_nz50 and Mfa1\_nz50, while the Msa1\_nz50 mesh is patchy, i.e., a uniform mesh size is not maintained in Msa1\_nz50.
 The error field for Msa1\_nz50 is also patchy, as compared to Mza1\_nz50 and Mfa1\_nz50, with elements that have a higher local estimated error.
 
-The implications of this are clear from the vorticity plots, especially in the wake region, where Msa1\_nz50 shows poor resolution of flow structures, as compared to Mza1\_nz50 and Mfa1\_nz50.
+This becomes further evident from the vorticity plots, especially in the wake region, where Msa1\_nz50 shows a poor resolution of fine-scale flow structures, as compared to Mza1\_nz50 and Mfa1\_nz50.
 
 \begin{figure}[H]
 	\centering
 \begin{subfigure}[b]{0.7\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_mesh.png}
-	\caption{Mza1\_nz50 mesh (zoomed)}
+	\caption{Mza1\_nz50 mesh}
 	\label{fig:Mza1_mesh_zoomed}
 \end{subfigure}
 \begin{subfigure}[b]{0.7\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_ph_210.png}
-	\caption{Mza1\_nz50 vorticity at $\psi=210^\circ$ (zoomed)}
-	\label{fig:Mza1_vorticity_zoomed}
+	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_error.png}
+	\caption{Mza1\_nz50 estimated error}
+	\label{fig:Mza1_max_error_zoomed}
 \end{subfigure}
 \begin{subfigure}[b]{0.7\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_error.png}
-	\caption{Mza1\_nz50 max error (zoomed)}
-	\label{fig:Mza1_max_error_zoomed}
+	\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mza1_ph_210.png}
+	\caption{Mza1\_nz50 vorticity at $\psi=210^\circ$}
+	\label{fig:Mza1_vorticity_zoomed}
 \end{subfigure}
-\caption{Zoomed in view of Mza1\_nz50 mesh, flowfield, and max error}
+\caption{Zoomed-in view for Mza1\_nz50: mesh, estimated error and vorticity}
 \label{fig:Mza1_zoomed}
 \end{figure}
 
@@ -200,22 +200,22 @@ The implications of this are clear from the vorticity plots, especially in the w
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_mesh.png}
-		\caption{Msa1\_nz50 mesh (zoomed)}
+		\caption{Msa1\_nz50 mesh}
 		\label{fig:Msa1_mesh_zoomed}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_ph_210.png}
-		\caption{Msa1\_nz50 vorticity at $\psi=210^\circ$ (zoomed)}
-		\label{fig:Msa1_vorticity_zoomed}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_error.png}
+		\caption{Msa1\_nz50 estimated error}
+		\label{fig:Msa1_max_error_zoomed}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_error.png}
-		\caption{Msa1\_nz50 max error (zoomed)}
-		\label{fig:Msa1_max_error_zoomed}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Msa1_ph_210.png}
+		\caption{Msa1\_nz50 vorticity at $\psi=210^\circ$}
+		\label{fig:Msa1_vorticity_zoomed}
 	\end{subfigure}
-	\caption{Zoomed in view of Msa1\_nz50 mesh, flowfield, and max error}
+	\caption{Zoomed-in view for Msa1\_nz50: mesh, estimated error and vorticity}
 	\label{fig:Msa1_zoomed}
 \end{figure}
 
@@ -225,28 +225,28 @@ The implications of this are clear from the vorticity plots, especially in the w
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_mesh.png}
-		\caption{Mfa1\_nz50 mesh (zoomed)}
+		\caption{Mfa1\_nz50 mesh}
 		\label{fig:Mfa1_mesh_zoomed}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_ph_210.png}
-		\caption{Mfa1\_nz50 vorticity at $\psi=210^\circ$ (zoomed)}
-		\label{fig:Mfa1_vorticity_zoomed}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_error.png}
+		\caption{Mfa1\_nz50 estimated error}
+		\label{fig:Mfa1_max_error_zoomed}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.7\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_error.png}
-		\caption{Mfa1\_nz50 max error (zoomed)}
-		\label{fig:Mfa1_max_error_zoomed}
+		\includegraphics[width=1\textwidth]{figures/adapt_strat/zoomed/Mfa1_ph_210.png}
+		\caption{Mfa1\_nz50 vorticity at $\psi=210^\circ$}
+		\label{fig:Mfa1_vorticity_zoomed}
 	\end{subfigure}
-	\caption{Zoomed in view of Mfa1\_nz50 mesh, flowfield, and max error}
+	\caption{Zoomed-in view for Mfa1\_nz50: mesh, estimated error and vorticity}
 	\label{fig:Mfa1_zoomed}
 \end{figure}
 
 
 
-For a more quantitative comparison, we focus on $C_p$  at different phases of interest leading up to LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all meshes. At $\psi=180^\circ$, we can see that flow has started to separate for all meshes apart from M0\_nz25. For $\psi=195^\circ$, Msa1\_nz50 mesh shows larger Cp and LEV formation/boundary layer roll-up, as compared to the other meshes, with M0\_nz25 mesh showing the lowest Cp. For $\psi=210^\circ$, LEV formation is seen for all meshes apart from M0\_nz25 mesh. $\psi=225^\circ$ shows LEV formation and flow separation for all meshes, with some differences in separation location for Msa1 mesh from Mza1\_nz50 and Mfa1\_nz50. Note that the y-axis limits vary for different phases to highlight differences in $C_p$,.
+For a more quantitative comparison, we focus on pressure coefficient, $C_p$,  at different phases of interest leading up to LEV formation. $C_p$ is shown in Figure \ref{fig:Cp_plots} at six phases for all meshes. At $\psi=180^\circ$, we can see that flow has started to separate for all meshes apart from M0\_nz25. For $\psi=195^\circ$, Msa1\_nz50 mesh shows larger Cp and LEV formation/boundary layer roll-up, as compared to the other meshes, with M0\_nz25 mesh showing the lowest Cp. For $\psi=210^\circ$, LEV formation is seen for all meshes apart from M0\_nz25 mesh. $\psi=225^\circ$ shows LEV formation and flow separation for all meshes, with some differences in separation location for Msa1 mesh from Mza1\_nz50 and Mfa1\_nz50. Note that the y-axis limits vary for different phases to highlight differences in $C_p$,.
 $\psi=270^\circ$ and $\psi=285^\circ$ also show differences in $C_p$ at the geometric trailing edge when the trailing edge vortex starts forming. 
 
 %%Cp plots
