@@ -38,17 +38,17 @@ Next, adaptive LES is performed for $Re=40,000$ and $Re=200,000$ cases, where a 
 \section{Application of Zonal Refinement Strategy}
 
 
-In chapter \ref{sec:adaptive_strategy_comparison}, we established that the zonal based refinement/adaptation is the best strategy for accurate numerical solution of periodic problems in space and time using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation/refinement strategy. the zonal based refinement strategy is applied to two Reynolds numbers of $Re=40,000$ and $Re=200,000$, at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$
+In chapter \ref{sec:adaptive_strategy_comparison}, we established that the zonal based refinement is the most effective strategy for accurate numerical solution of periodic problems in space and time using VMS-based error estimator driven mesh adaptation. In this chapter, we focus on applying the zonal based adaptation strategy. This is applied to two Reynolds numbers of $Re=40,000$ and $Re=200,000$, at angle of attack $\alpha=6^\circ$ and advance ratio of $\mu_{sect}=1.2$
 
 We explore mesh resolution effects in the in-plane and also in the spanwise direction. 
 The run plan to achieve mesh convergence is as follows. 
 We start off with an initial mesh that satisfies LES surface resolution criteria for wall-bounded flows. This mesh is referred to as M0.
 We obtain the maximum error over all phases through the surging cycle and also maximum in the spanwise direction.
-The in-plane mesh is then refined by a factor of 2 in regions of high error zones, i.e., we employ the zonal-based adaptation/refinement strategy.
+The in-plane mesh is then refined by a factor of 2 in regions of high error zones, i.e., we employ the zonal-based adaptation strategy.
 This resultant mesh is the in-plane mesh after the first adaptation cycle, which is referred to as Mza1.
 Here, multiple spanwise resolutions are considered, starting with the spanwise resolution of M0 mesh, to obtain a series of meshes for Mza1 with different spanwise resolutions.
 In this series of meshes, spanwise resolution is refined by a factor of 2, till spanwise convergence is achieved for this adaptation cycle. 
-For the next adaptation cycle, zonal-based adaptation/refinement is again employed to refine the mesh in the in-plane direction, and the mesh with the second highest spanwise resolution of the previous adaptation cycle is used as the initial spanwise resolution for the current adaptation cycle. 
+For the next adaptation cycle, zonal-based adaptation is again employed to refine the mesh in the in-plane direction, and the mesh with the second highest spanwise resolution of the previous adaptation cycle is used as the initial spanwise resolution for the current adaptation cycle. 
 This mesh is referred to as Mza2.
 Multiple spanwise resolutions are considered again for this adaptation cycle.
 This process is repeated for further adaptation cycles till mesh convergence is achieved.

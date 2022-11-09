@@ -1,18 +1,39 @@
 \chapter{Closing Remarks and Future Work}
 
-This thesis focused on developing error estimator driven adaptive mesh refinement strategies and applying them to LES unsteady aerodynamic flows.
-Three adaptive strategies were developed and applied: zonal refinement, size field-based adaptation, and
-feature-based refinement. This was done in a variational multiscale (VMS) based finite element framework.
+This thesis focused on the development and application of error estimator driven adaptive mesh refinement strategies to LES of unsteady aerodynamic flows.
+Adaptive LES is applied to a specific problem of interest of flow over surging airfoils.
+Both the LES methodology and the error estimator used in this work are in a variational multiscale (VMS) based finite element framework.
+In addition, an error-estimator driven flow-feature based adaptation criterion is also developed. In particular, a robust vortex detection and tracking methodology is developed that also allows for a quantitative analysis of vortices.
 
-Applied to a specific problem of interest: Surging Airfoil.
+Three error estimator driven adaptive strategies are considered: (i) zonal refinement, where mesh is refined in high estimated error regions or zones, (ii) nodal size field-based adaptation, where mesh is adapted by computing a size field based on a target error, and (iii) feature-based refinement, where flow features of interest (such as the LEV) are detected and tracked, and mesh is refined along the path of these flow features.
+For the current problem of interest, zonal-based refinement was found to be most effective.
+Feature-based refinement was found to be a subset of zonal-based refinement, and can be used when LEV travels further away from the airfoil. 
+For example, for higher advance ratios.
+Zonal-based refinement was applied for LES of flow over surging airfoils at $Re=40,000$ and $Re=200,000$ to construct a series of adapted meshes and to show mesh convergence. In particular, for quantities such as force response, spanwise vorticity, pressure coefficient, and LEV evolution.
 
-Zonal-based refinement was applied to LES of flow over Re=40,000...
-Feature-based refinement can be used for higher advance ratios and other types of flows.
-
-Mesh convergence is shown.
-
-A higher Re=200,000 is also considered.
-
-Active reflex camber is applied and drag reduction is shown.
+For surging cases with high Reynolds number and very high advance ratios, massive flow separation due to flow reversal is seen near the geometric trailing edge, along with high drag force and fluctuations. 
+Active flow control in the form of active reflex camber is applied to dynamically morph the airfoil shape in the reverse flow regime of the surging cycle for these very high advance ratio cases.
+This results in significant drag reduction (of up to 75\%) during flow reversal, along with mitigation of drag fluctuations.
 
 \subsection{Future Work}
+
+For future work, we propose the following:
+
+\begin{itemize}
+	\item Combination of different adaptive strategies:
+	We plan to combine different adaptive strategies that are developed in this work. For example, a combination of zonal-based and feature-based refinement is especially promising for flows with dominant flow structures, and will allow for maintaining proper mesh resolution for these flow structures, and elsewhere in the domain.
+	
+	\item Adaptive LES at high Reynolds numbers and advance ratios:
+	We plan to apply the VMS-based error estimator and the adaptive strategies developed above to
+	surging airfoil cases with high Reynolds numbers ($Re=1,000,000$) and advance ratios. The results for high Reynolds number and advance ratio cases for non-adapted meshes are mentioned above, but error estimator-based adaptivity is not yet applied to determine proper mesh resolution for these cases.
+	
+	\item Application to active reflex camber
+	The results for active reflex camber for non-adapted meshes are mentioned above, but error estimator-based	adaptivity is not yet applied to determine proper mesh resolution for these cases. In the future, we plan to apply adaptive LES to active reflex camber cases, to determine proper mesh resolution and accurate prediction of flow separation and drag reduction for these cases.
+	
+	\item Application to other complex aerodynamic problems
+	The adaptive LES methodology developed here can be applied to various other unsteady aerodynamic problems of interest. For example, an airfoil in pitch, surge, plunge, or any combination of these motions.
+	It can also be applied to other unsteady flow scenarios, such as wind turbine flows, or rotorcraft flows, etc., where dominant flow features exist. 
+	
+	
+	
+\end{itemize}
