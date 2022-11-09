@@ -59,7 +59,7 @@ The six cases are summarized in Table~\ref{table:summary_cases}.
 
 \begin{table}[H]
 \centering
-\caption{Summary of cases}
+\caption{Summary of surging cases for LES}
 \label{table:summary_cases}
 \begin{tabular}{|l|c|c|c|c|}
 \hline
@@ -90,7 +90,7 @@ In the subsequent two zones (Z2 and Z3), it is set to be $C/128$ and $C/64$, res
 In the spanwise direction, 50 extruded elements are used.
 A layered and graded mesh (with geometric growth) is used around the airfoil surface, see Figure \ref{fig:mesh2}.
 The first layer height is set to be $\mathcal{O}(10^{-5} C)$ such that it is below 1 in wall units for all cases.
-Similarly, mesh spacing on the airfoil surface in the streamwise and spanwise directions is set to be below 80 and 50 in wall units, respectively, for the XXX (which Reynolds number and which part of the cycle).
+Similarly, mesh spacing/resolution on the airfoil surface in the streamwise and spanwise directions is set to be below 80 and 50 in wall units, respectively, for $Re=40,000$ and $200,000$, and about 200 in wall units for $Re=1,000,000$. These are determined for the phase with the maximum relative velocity or instantaneous Reynolds number (i.e., $\psi=90^\circ$). Note that the surface mesh resolution is on the higher/coarser side for the highest Reynolds number of $Re=1,000,000$, however, it is sufficient for an initial non-adapted mesh used here to get familiar with the features of the current problem.
 Overall the mesh contains about 6.2 million nodes and 10.8 million elements.
 
 \begin{figure}[H]
