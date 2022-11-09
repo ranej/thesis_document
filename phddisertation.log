@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.13)  9 NOV 2022 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.13)  9 NOV 2022 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1788,77 +1788,76 @@ png  used on input line 160.
  [50 <./figures/adapt_strat/vorticity_plots/M0/phase_210.png (PNG copy)> <./fig
 ures/adapt_strat/vorticity_plots/Mza1_50/phase_210.png (PNG copy)> <./figures/a
 dapt_strat/vorticity_plots/Msa1_50/phase_210.png (PNG copy)> <./figures/adapt_s
-trat/vorticity_plots/Mfa1_50/phase_210.png (PNG copy)> <./figures/adapt_strat/v
-orticity_plots/M0/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_pl
-ots/Mza1_50/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_plots/Ms
-a1_50/phase_270.png (PNG copy)> <./figures/adapt_strat/vorticity_plots/Mfa1_50/
-phase_270.png (PNG copy)>]
+trat/vorticity_plots/Mfa1_50/phase_210.png (PNG copy)>]
 <figures/adapt_strat/zoomed/Mza1_mesh.png, id=1218, 1467.4825pt x 780.9175pt>
 File: figures/adapt_strat/zoomed/Mza1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mza1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_mesh.png  used on inpu
 t line 178.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Mza1_ph_210.png, id=1219, 1467.4825pt x 780.9175pt>
+<figures/adapt_strat/zoomed/Mza1_error.png, id=1219, 1467.4825pt x 780.9175pt>
+File: figures/adapt_strat/zoomed/Mza1_error.png Graphic file (type png)
+<use figures/adapt_strat/zoomed/Mza1_error.png>
+Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_error.png  used on inp
+ut line 184.
+(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
+<figures/adapt_strat/zoomed/Mza1_ph_210.png, id=1220, 1467.4825pt x 780.9175pt>
 
 File: figures/adapt_strat/zoomed/Mza1_ph_210.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mza1_ph_210.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_ph_210.png  used on in
-put line 184.
+put line 190.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Mza1_error.png, id=1220, 1467.4825pt x 780.9175pt>
-File: figures/adapt_strat/zoomed/Mza1_error.png Graphic file (type png)
-<use figures/adapt_strat/zoomed/Mza1_error.png>
-Package pdftex.def Info: figures/adapt_strat/zoomed/Mza1_error.png  used on inp
-ut line 190.
-(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
- [51]
+ [51 <./figures/adapt_strat/vorticity_plots/M0/phase_270.png (PNG copy)> <./fig
+ures/adapt_strat/vorticity_plots/Mza1_50/phase_270.png (PNG copy)> <./figures/a
+dapt_strat/vorticity_plots/Msa1_50/phase_270.png (PNG copy)> <./figures/adapt_s
+trat/vorticity_plots/Mfa1_50/phase_270.png (PNG copy)>]
 <figures/adapt_strat/zoomed/Msa1_mesh.png, id=1225, 1467.4825pt x 780.9175pt>
 File: figures/adapt_strat/zoomed/Msa1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Msa1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_mesh.png  used on inpu
 t line 202.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Msa1_ph_210.png, id=1226, 1467.4825pt x 780.9175pt>
+<figures/adapt_strat/zoomed/Msa1_error.png, id=1226, 1467.4825pt x 780.9175pt>
+File: figures/adapt_strat/zoomed/Msa1_error.png Graphic file (type png)
+<use figures/adapt_strat/zoomed/Msa1_error.png>
+Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_error.png  used on inp
+ut line 208.
+(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
+<figures/adapt_strat/zoomed/Msa1_ph_210.png, id=1227, 1467.4825pt x 780.9175pt>
 
 File: figures/adapt_strat/zoomed/Msa1_ph_210.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Msa1_ph_210.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_ph_210.png  used on in
-put line 208.
-(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Msa1_error.png, id=1227, 1467.4825pt x 780.9175pt>
-File: figures/adapt_strat/zoomed/Msa1_error.png Graphic file (type png)
-<use figures/adapt_strat/zoomed/Msa1_error.png>
-Package pdftex.def Info: figures/adapt_strat/zoomed/Msa1_error.png  used on inp
-ut line 214.
+put line 214.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
  [52 <./figures/adapt_strat/zoomed/Mza1_mesh.png (PNG copy)> <./figures/adapt_s
-trat/zoomed/Mza1_ph_210.png (PNG copy)> <./figures/adapt_strat/zoomed/Mza1_erro
-r.png (PNG copy)>]
+trat/zoomed/Mza1_error.png (PNG copy)> <./figures/adapt_strat/zoomed/Mza1_ph_21
+0.png (PNG copy)>]
 <figures/adapt_strat/zoomed/Mfa1_mesh.png, id=1232, 1467.4825pt x 780.9175pt>
 File: figures/adapt_strat/zoomed/Mfa1_mesh.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mfa1_mesh.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mfa1_mesh.png  used on inpu
 t line 227.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Mfa1_ph_210.png, id=1233, 1467.4825pt x 780.9175pt>
+<figures/adapt_strat/zoomed/Mfa1_error.png, id=1233, 1467.4825pt x 780.9175pt>
+File: figures/adapt_strat/zoomed/Mfa1_error.png Graphic file (type png)
+<use figures/adapt_strat/zoomed/Mfa1_error.png>
+Package pdftex.def Info: figures/adapt_strat/zoomed/Mfa1_error.png  used on inp
+ut line 233.
+(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
+<figures/adapt_strat/zoomed/Mfa1_ph_210.png, id=1234, 1467.4825pt x 780.9175pt>
 
 File: figures/adapt_strat/zoomed/Mfa1_ph_210.png Graphic file (type png)
 <use figures/adapt_strat/zoomed/Mfa1_ph_210.png>
 Package pdftex.def Info: figures/adapt_strat/zoomed/Mfa1_ph_210.png  used on in
-put line 233.
-(pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
-<figures/adapt_strat/zoomed/Mfa1_error.png, id=1234, 1467.4825pt x 780.9175pt>
-File: figures/adapt_strat/zoomed/Mfa1_error.png Graphic file (type png)
-<use figures/adapt_strat/zoomed/Mfa1_error.png>
-Package pdftex.def Info: figures/adapt_strat/zoomed/Mfa1_error.png  used on inp
-ut line 239.
+put line 239.
 (pdftex.def)             Requested size: 328.82707pt x 174.9839pt.
  [53 <./figures/adapt_strat/zoomed/Msa1_mesh.png (PNG copy)> <./figures/adapt_s
-trat/zoomed/Msa1_ph_210.png (PNG copy)> <./figures/adapt_strat/zoomed/Msa1_erro
-r.png (PNG copy)>] [54 <./figures/adapt_strat/zoomed/Mfa1_mesh.png (PNG copy)> 
-<./figures/adapt_strat/zoomed/Mfa1_ph_210.png (PNG copy)> <./figures/adapt_stra
-t/zoomed/Mfa1_error.png (PNG copy)>]
+trat/zoomed/Msa1_error.png (PNG copy)> <./figures/adapt_strat/zoomed/Msa1_ph_21
+0.png (PNG copy)>] [54 <./figures/adapt_strat/zoomed/Mfa1_mesh.png (PNG copy)> 
+<./figures/adapt_strat/zoomed/Mfa1_error.png (PNG copy)> <./figures/adapt_strat
+/zoomed/Mfa1_ph_210.png (PNG copy)>]
 <figures/Results/Cp_plots/Cp_ph_180.png, id=1245, 421.575pt x 316.0608pt>
 File: figures/Results/Cp_plots/Cp_ph_180.png Graphic file (type png)
 <use figures/Results/Cp_plots/Cp_ph_180.png>
@@ -1895,11 +1894,11 @@ File: figures/Results/Cp_plots/Cp_ph_285.png Graphic file (type png)
 Package pdftex.def Info: figures/Results/Cp_plots/Cp_ph_285.png  used on input 
 line 289.
 (pdftex.def)             Requested size: 223.13649pt x 167.28958pt.
- [55] [56 <./figures/Results/Cp_plots/Cp_ph_180.png (PNG copy)> <./figures/Resu
-lts/Cp_plots/Cp_ph_195.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_210.pn
-g (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_225.png (PNG copy)> <./figures/
-Results/Cp_plots/Cp_ph_270.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_28
-5.png (PNG copy)>]))
+ [55])) [56 <./figures/Results/Cp_plots/Cp_ph_180.png (PNG copy)> <./figures/Re
+sults/Cp_plots/Cp_ph_195.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_210.
+png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_225.png (PNG copy)> <./figure
+s/Results/Cp_plots/Cp_ph_270.png (PNG copy)> <./figures/Results/Cp_plots/Cp_ph_
+285.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 59.
@@ -3384,7 +3383,7 @@ cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on phddisertation.pdf (128 pages, 130053721 bytes).
+Output written on phddisertation.pdf (128 pages, 130054626 bytes).
 PDF statistics:
  1906 PDF objects out of 2073 (max. 8388607)
  1453 compressed objects within 15 object streams

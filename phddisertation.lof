@@ -19,13 +19,13 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Meshes and estimated error fields for zonal-based strategy\relax }}{44}{figure.caption.30}% 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Meshes and estimated error fields for size-based strategy\relax }}{45}{figure.caption.31}% 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Meshes and estimated error fields for feature-based strategy\relax }}{47}{figure.caption.32}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized forces for different meshes\relax }}{48}{figure.caption.33}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $195^\circ $ for different meshes\relax }}{49}{figure.caption.34}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $210^\circ $ for different meshes\relax }}{50}{figure.caption.35}% 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $270^\circ $ for different meshes\relax }}{50}{figure.caption.36}% 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Zoomed in view of Mza1\_nz50 mesh, flowfield, and max error\relax }}{52}{figure.caption.37}% 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Zoomed in view of Msa1\_nz50 mesh, flowfield, and max error\relax }}{53}{figure.caption.38}% 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Zoomed in view of Mfa1\_nz50 mesh, flowfield, and max error\relax }}{54}{figure.caption.39}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Normalized forces for different adaptive strategies/adapted meshes\relax }}{48}{figure.caption.33}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $195^\circ $ for different adaptive strategies/adapted meshes\relax }}{49}{figure.caption.34}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $210^\circ $ for different adaptive strategies/adapted meshes\relax }}{50}{figure.caption.35}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Spanwise vorticity comparison at $\psi $ = $270^\circ $ for different adaptive strategies/adapted meshes\relax }}{51}{figure.caption.36}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Zoomed-in view for Mza1\_nz50: mesh, estimated error and vorticity\relax }}{52}{figure.caption.37}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Zoomed-in view for Msa1\_nz50: mesh, estimated error and vorticity\relax }}{53}{figure.caption.38}% 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Zoomed-in view for Mfa1\_nz50: mesh, estimated error and vorticity\relax }}{54}{figure.caption.39}% 
 \contentsline {figure}{\numberline {5.11}{\ignorespaces $C_p$ comparison for different meshes. Top surface $C_p$ is denoted by solid lines and bottom surface $C_p$ is denoted by dashed lines\relax }}{56}{figure.caption.40}% 
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Mesh and estimated error\relax }}{59}{figure.caption.41}% 
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Normalized forces for different meshes\relax }}{61}{figure.caption.42}% 
