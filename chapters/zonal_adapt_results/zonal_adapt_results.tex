@@ -1,14 +1,16 @@
 \chapter{Adaptive LES of Flow Over Surging Airfoil}
 
-In this chapter, we focus on applying the mesh adaptation strategies based on the VMS-based estimated error to large eddy simulation of flow over surging airfoil. A brief overview of the three strategies considered is mentioned in chapter \ref{sec:adapt_strat_overview}.
+In this chapter, we first investigate the three different mesh adaptation strategies based on the VMS-based estimated error to perform adaptive large eddy simulation of flow over a surging airfoil.
+The zonal-based strategy is found to be most effective. This strategy is subsequently applied for adaptive LES, at two Reynolds numbers of $Re=40,000$ and $200,000$, to construct a series of adapted meshes and mesh convergence is shown. In particular, for quantities of interest including pressure coefficient and leading edge vortex (LEV) evolution.
+% A brief overview of the three strategies considered is mentioned in chapter \ref{sec:adapt_strat_overview}.
 
 \section{Problem Setup}
 
-The problem setup for these cases is similar to the one mentioned in Chapter \ref{sec:problem_setup_baseline}.
+The problem setup for these cases is the same to the one described in Section \ref{sec:problem_setup_baseline}.
 
 \section{Summary of Cases}
 
-In this chapter, flow over a surging NACA 0012 airfoil is considered for $Re=40,000$ and $200,000$, for a sectional advance ratio of $\mu_{sect}=1.2$
+In this chapter, NACA 0012 airfoil is considered at Reynolds number of $Re=40,000$ and $200,000$, and at a sectional advance ratio of $\mu_{sect}=1.2$ (i.e., higher value). Note that $Re=1,000,000$ ... xxx future ... exhibit similar behavior especiailly in LEV evolution.
 
 \begin{table}[H]
 	\centering
@@ -19,15 +21,17 @@ In this chapter, flow over a surging NACA 0012 airfoil is considered for $Re=40,
 		Airfoil   & $\alpha$ & $k$ & $\mu_{sect}$ & $Re$ \\
 		\hline
 		\hline
-		NACA 0012 & 6$^\circ$ & $0.133$ &  1.2 & 40,000\\
-		\hline
-		NACA 0012 & 6$^\circ$ & $0.133$ & 1.2 & 200,000 \\
+		NACA 0012 & 6$^\circ$ & $0.133$ &  1.2 & \{40,000,\; 200,000\} \\
+		% \hline
+		% NACA 0012 & 6$^\circ$ & $0.133$ & 1.2 & 200,000 \\
 	\hline
 	\end{tabular}
 \end{table}
 
+First xxx
+Next xxx
 
-Next, adaptive LES is performed for $Re=40,000$ and $Re=200,000$ cases, where a series of adapted meshes is constructed, and mesh convergence is shown.
+% Next, adaptive LES is performed for $Re=40,000$ and $Re=200,000$ cases, where a series of adapted meshes is constructed, and mesh convergence is shown.
 
 \section{Comparison of Adaptive Strategies}
 \label{sec:adaptive_strategy_comparison}
