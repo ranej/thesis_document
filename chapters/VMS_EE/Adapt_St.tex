@@ -6,7 +6,7 @@ We explore three different adaptation strategies for mesh adaptation based on th
 
 
 The first strategy we employ is error estimator based zonal refinement/adaptation. 
-In this strategy, we obtain an initial solution on a baseline mesh for the problem at hand. The VMS-based error estimator is then applied to the solution corresponding to this mesh, and based on the estimated error, the mesh is refined by a specified factor in particular zones where relatively high error values are found. Estimated error for this adapted mesh is then calculated, and the mesh is again refined by the specified factor in zones of high error. This process is repeated till it is computationally feasible, or when mesh convergence is reached.
+In this strategy, we obtain the solution on an initial mesh for the problem at hand. The VMS-based error estimator is then applied to the solution corresponding to this mesh, and based on the estimated error, the mesh is refined by a specified factor in particular zones where relatively high error values are found. Estimated error for this adapted mesh is then calculated, and the mesh is again refined by the specified factor in zones of high error. This process is repeated till it is computationally feasible, or when mesh convergence is reached.
 Note that for this adaptation strategy, coarsening can possibly be done for zones with relatively low error, but was not needed in this work. The flowchart for this strategy is illustrated in Figure \ref{fig:zonal_based_strat}.
 
 \begin{figure}[H]
