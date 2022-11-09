@@ -1,39 +1,42 @@
-In this adaptation strategy, solution is obtained on an initial mesh with  a set of canonical refinement zones that are usually used for a flow over an airfoil. We refer to this mesh as M0\_nz25, see Figure \ref{fig:M0_mesh}. 
-Here nz25 refers to the number of spanwise extruded layers used in this mesh. 
-For this mesh, the VMS-based error estimator is applied to phase-averaged data, and the maximum error value over all phases and the maximum in the spanwise direction (recall that we use an extruded mesh) for each element is selected to represent the error for that element throughout the surging cycle. 
+In this strategy, an initial solution is obtained on an initial mesh with a set of canonical refinement zones that are usually used for a flow over an airfoil. We refer to this mesh as M0\_nz25, see Figure \ref{fig:M0_mesh}. In-plane mesh sizes are indicated in the figure. The initial mesh spacing/resolution on the surface of the airfoil in the streamwise and spanwise directions is set to be below XXX and XXX in wall units, respectively.
+Here nz25 refers to the number of spanwise extruded layers (i.e., 25) used in this mesh. 
+As mentioned before, the VMS-based error estimator is applied to phase-averaged data, and the maximum error value over multiple phases (i.e., at 24 equispaced phases over the surging cycle), and over the spanwise direction, is selected to represent the element-level local error within the airfoil plane/section throughout the surging cycle. 
 The element-level error estimated on this mesh is shown in Figure \ref{fig:M0_err_plot}. 
-We can see that higher errors are observed primarily in the region where the LEV traverses through the surging cycle, as well as in the wake of the airfoil. 
-Higher errors are also observed close to the airfoil surface and in the boundary layer mesh region.
+We can see that higher errors are observed primarily in the regions traversed by the LEV through the surging cycle, as well as in the wake of the airfoil. 
+Higher errors are also observed close to the airfoil surface and in the boundary layer region.
 
-Based on estimated error, the mesh is refined by a factor of 2 in zones where high error values are found, including the boundary layer mesh in the streamwise direction. 
+Based on the estimated error, the mesh is refined by a factor of 2 in zones where high error values are found, including in the boundary layer mesh (i.e., along the streamwise direction). 
 The spanwise resolution is also refined by a factor of 2 (i.e., the number of layers in the spanwise direction is doubled). 
-This mesh, which is referred to as Mza1\_nz50 is shown in Figure \ref{fig:Mza1_mesh} and the estimated error is shown in Figure \ref{fig:Mza1_err_plot}. 
-It is observed that the error has reduced by a factor of 4 in the Mza1\_nz50 mesh as compared to the M0 mesh.
+This adapted mesh is shown in Figure \ref{fig:Mza1_mesh} and the estimated error on it is shown in Figure \ref{fig:Mza1_err_plot}. It is referred to as the Mza1\_nz50 mesh (where za is short for zonal-based adaptation and 1 in za1 denotes the first iteration of mesh adaptation).
+%It is observed that the error has approximately reduced by a factor of 4 in the Mza1\_nz50 mesh as compared to the M0 mesh.
+It is observed that the error has reduced in the Mza1\_nz50 mesh as compared to the M0 mesh
+These meshes, M0\_nz25 and Mza1\_nz50, consist of 774,525 and 2,874,300 elements, respectively.
 
 %Zonal refinements are added to the Mza1 mesh in regions of high error, and the mesh is refined further by a factor of 2 in these zones, along with the boundary layer mesh in the streamwise direction, and the number of layers in the spanwise direction is doubled.  This mesh, which is referred to as Mza2, is shown in Figure \ref{fig:Mza2_mesh}. Again, we observe that the error has reduced by a factor of 4 in the Mz\_a2 mesh as compared to Mz\_a1 mesh.
 
-The number of elements for each mesh is presented in Table \ref{table:mesh_zonal_summary}.
+%The number of elements for each mesh is presented in Table \ref{table:mesh_zonal_summary}.
 
-\begin{table}[H]
-	\centering
-	\caption{Summary of zonal refinement based meshes}
-	\label{table:mesh_zonal_summary}
-	\begin{tabular}{|l|c|c|c|c|c|}
-		\hline
-		Mesh case  & No. of elements\\
-		\hline
-		\hline
-		M0\_nz25 & 774,525 \\
-		\hline
-		Mza1\_nz50 &  2,874,300 \\
-		\hline
-%		Mz\_a2 & 14,329,200 \\
-%		\hline
-	\end{tabular}
+
+% \begin{table}[H]
+% 	\centering
+% 	\caption{Summary of zonal refinement based meshes}
+% 	\label{table:mesh_zonal_summary}
+% 	\begin{tabular}{|l|c|c|c|c|c|}
+% 		\hline
+% 		Mesh case  & No. of elements\\
+% 		\hline
+% 		\hline
+% 		M0\_nz25 & 774,525 \\
+% 		\hline
+% 		Mza1\_nz50 &  2,874,300 \\
+% 		\hline
+% %		Mz\_a2 & 14,329,200 \\
+% %		\hline
+% 	\end{tabular}
 	
-\end{table}
+% \end{table}
 
-A detailed comparison of results based on these meshes is provided in Section \ref{sec:results_adapt}.
+A comparison of different adaptive strategies/adapted meshes is provided in Section \ref{sec:results_adapt}.
 
 \begin{figure}[H]
 \centering
@@ -73,6 +76,6 @@ A detailed comparison of results based on these meshes is provided in Section \r
 %\caption{Mz\_a2 error field}
 %\label{fig:Mza2_err_plot}
 %\end{subfigure}
-\caption{Mesh and error-field for zonal based refinement strategy}
+\caption{Meshes and estimated error fields for zonal-based strategy}
 \end{figure}
 
