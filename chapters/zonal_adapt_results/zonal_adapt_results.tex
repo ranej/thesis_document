@@ -6,16 +6,16 @@ The zonal-based strategy is found to be most effective. This strategy is subsequ
 
 \section{Problem Setup}
 
-The problem setup for these cases is the same to the one described in Section \ref{sec:problem_setup_baseline}.
+The problem setup for these cases is the same as the one described in Section \ref{sec:problem_setup_baseline}.
 
 \section{Summary of Cases}
 
-In this chapter, NACA 0012 airfoil is considered at Reynolds number of $Re=40,000$ and $200,000$, and at a sectional advance ratio of $\mu_{sect}=1.2$ (i.e., higher value). Note that $Re=1,000,000$ ... xxx future ... exhibit similar behavior especiailly in LEV evolution.
+In this chapter, NACA 0012 airfoil is considered at Reynolds number of $Re=40,000$ and $200,000$, and at a sectional advance ratio of $\mu_{sect}=1.2$ (i.e., higher value), see Table \ref{table:adapt_summary_cases}. Note that for the $Re=1,000,000$ case, the computational cost is significantly higher and it exhibits a similar flow behavior as the $Re=200,000$ case, especially in LEV evolution. Thus, $Re=40,000$ and $200,000$ are considered in this chapter for adaptive LES. Similarly, only higher advance ratio of $\mu_{sect}=1.2$ is considered for adaptive LES (since it shows more complex flow behaviour as compared to the lower advance ratio of $\mu_{sect}=1.0$).
 
 \begin{table}[H]
 	\centering
-	\caption{Summary of cases}
-	\label{table:summary_cases}
+	\caption{Summary of surging cases for adaptive LES}
+	\label{table:adapt_summary_cases}
 	\begin{tabular}{|l|c|c|c|c|}
 		\hline
 		Airfoil   & $\alpha$ & $k$ & $\mu_{sect}$ & $Re$ \\
@@ -28,8 +28,7 @@ In this chapter, NACA 0012 airfoil is considered at Reynolds number of $Re=40,00
 	\end{tabular}
 \end{table}
 
-First xxx
-Next xxx
+First, three different adaptive strategies are studied for the lower Reynolds number of $Re=40,000$, in which zonal-based strategy is found to be most effective. Subsequently, zonal-based strategy is used for both Reynolds numbers of $Re=40,000$ and $200,000$ to create a series of adapted meshes and show mesh convergence for adaptive LES.
 
 % Next, adaptive LES is performed for $Re=40,000$ and $Re=200,000$ cases, where a series of adapted meshes is constructed, and mesh convergence is shown.
 
