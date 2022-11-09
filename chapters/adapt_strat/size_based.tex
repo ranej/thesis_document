@@ -31,7 +31,7 @@ In this adaptive strategy, the VMS-based error is calculated on the initial mesh
 \begin{subfigure}[b]{0.475\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/adapt_strat/Msa1_error.png}
-\caption{Ms\_nz50 error field}
+\caption{Msa1\_nz50 error field}
 \label{fig:h_adapt1_error_plot}
 \end{subfigure}
 
@@ -39,4 +39,4 @@ In this adaptive strategy, the VMS-based error is calculated on the initial mesh
 \end{figure}
 
 As before, M0\_nz25 is used as the initial mesh (Figure \ref{fig:M0_mesh}) and the corresponding error estimated on M0\_nz25 mesh (Figure \ref{fig:M0_err_plot}) is used to calculate nodal size field (i.e., $h_{new}$ at every mesh node/vertex). The mesh adaptation is limited or controlled to have a maximum refinement and maximum coarsening by a factor of 2 to avoid excessive refinement or coarsening in any local region. The number of extruded layers in the spanwise direction are doubled to 50. The adapted mesh obtained using this strategy is shown in Figure \ref{fig:h_adapt1_mesh}. It is referred to as the Msa1\_nz50 mesh (where sa is short for size-based adaptation and 1 in sa1 denotes the first iteration of mesh adaptation). Note that in terms of mesh resolution, this adapted mesh, Msa1\_nz50, compares well against the Mza1\_nz50 mesh obtained from the zonal-based strategy. Msa1\_nz25 mesh consists of 2,859,450 elements, which is comparable to 2,874,300 elements for the Mza1\_n50 mesh. The major differences between the two meshes is that Mza1\_nz50 maintains the same mesh size in various zones, whereas mesh size varies locally (even within a zone) in Msa1\_nz50.
-The corresponding estimated error for this mesh is shown in Figure \ref{fig:h_adapt1_error_plot}. Comparing the estimated error between the Msa1\_nz50 and Mza1\_nz50 meshes, higher error values are similarly observed in the LEV regions as well as in the wake of the airfoil. A more detailed comparison of different adaptive strategies/adapted meshes is provided in Section \ref{sec:results_adapt}.
+The corresponding estimated error for this mesh is shown in Figure \ref{fig:h_adapt1_error_plot}. M0\_nz0 mesh and error field are shown again to compare against Msa1\_nz50. Comparing the estimated error between the Msa1\_nz50 and Mza1\_nz50 meshes, higher error values are observed in the LEV regions as well as in the wake of the airfoil. Overall, the estimated error on the Msa1\_nz50 mesh is higher as compared to that on the Mza1\_nz50 mesh. A more detailed comparison of different adaptive strategies/adapted meshes is provided in Section \ref{sec:results_adapt}.
