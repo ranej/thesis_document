@@ -1,4 +1,4 @@
-We explore three different adaptation strategies for mesh adaptation based on the VMS-based estimated error. 
+We explore three different adaptation strategies for mesh adaptation based on the VMS-based estimated error as discussed below. 
 
 \subsection{Zonal Adaptation}
 
@@ -6,33 +6,31 @@ We explore three different adaptation strategies for mesh adaptation based on th
 
 
 The first strategy we employ is error estimator based zonal refinement/adaptation. 
-In this strategy, we obtain an initial solution on a baseline mesh for the problem at hand. The VMS-based error estimator is then applied to the solution corresponding to this mesh, and based on the estimated error, the mesh is refined by a factor of 2 in particular zones where high error values are found. Estimated error for this adapted mesh is then calculated, and the mesh is again refined by a factor of 2 in zones of high error. This process is repeated till it is computationally feasible, or a convergence is reached.
-Note that for this adaptation strategy, coarsening can possibly be done, but was not needed in this work.
-
-This strategy is represented in Figure \ref{fig:zonal_based_strat}
+In this strategy, we obtain an initial solution on a baseline mesh for the problem at hand. The VMS-based error estimator is then applied to the solution corresponding to this mesh, and based on the estimated error, the mesh is refined by a specified factor in particular zones where relatively high error values are found. Estimated error for this adapted mesh is then calculated, and the mesh is again refined by the specified factor in zones of high error. This process is repeated till it is computationally feasible, or when mesh convergence is reached.
+Note that for this adaptation strategy, coarsening can possibly be done for zones with relatively low error, but was not needed in this work. The flowchart for this strategy is illustrated in Figure \ref{fig:zonal_based_strat}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/adapt_strat/zonal_based.png}
-	\caption{Zonal Refinement/Adaptation Strategy}
+	\caption{Flowchart for zonal adaptation strategy}
 	\label{fig:zonal_based_strat}
 \end{figure}
 
-For example, estimated error field in the case of flow over a surging airfoil is shown in Figure \ref{fig:zonal_based_strat_schematic}.
-Note that maximum elemental error is obtained for all phases and in spanwise direction over the entire surging cycle.
-Estimated error is higher in the airfoil wake, as well as in the region where the leading edge vortex (LEV) traverses through.
-High error zones are identified in, and mesh in these zones is refined by a factor of 2.
+For example, a sample of estimated error field in the case of flow over a surging airfoil is shown in Figure \ref{fig:zonal_based_strat_schematic}.
+Note that maximum element-level error is obtained for all phases of the cycle and in spanwise direction.
+Estimated error is higher in the wake region, as well as in the regions through which the leading edge vortex (LEV) traverses.
+High error zones are identified in, and mesh in these zones is refined by a specified factor.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{figures/adapt_strat/zonal_based_schematic.png}
-	\caption{Schematic for zonal refinement}
+	\caption{Schematic of zonal refinement strategy}
 	\label{fig:zonal_based_strat_schematic}
 \end{figure}
 
 \subsection{Nodal Size Field-based Adaptation}
 
-The second strategy we employ is fully automated mesh adaptation based on the VMS-based error estimator. In this strategy, the estimated error and a specified target error are used to compute the desired mesh size or resolution in a local fashion, i.e., at every mesh vertex. We refer to this as the nodal size field, and the mesh is refined or coarsened based on this nodal size field. 
+The second strategy employs a fully automated mesh adaptation based on the VMS-based error estimator. In this strategy, the estimated error and a specified target error are used to compute the desired mesh size or resolution in a local fashion, i.e., at every mesh vertex. We refer to this as the nodal size field, and the mesh is refined or coarsened based on this nodal size field. 
 
 In this adaptive strategy, the VMS-based error is calculated on the initial mesh. Based on the estimated error, a nodal size field is calculated using the following equation \cite{zhang19}
 
@@ -41,30 +39,34 @@ In this adaptive strategy, the VMS-based error is calculated on the initial mesh
 	\label{eq:diez}
 \end{equation}
 
-Here, $e_k$ is the measured local error (in the $\HOne$-seminorm) at an element $k$, $\tilde{e}_k$ is the target error for an element specified by the user, $m$ is the polynomial order of the approximation space (i.e., $m=1$ for the linear finite elements used currently) , and $N$ is the number of spatial dimensions. $h_{old}$ is current size of the element, and $h_{new}$ is the desired new mesh size.
+Here, $e_k$ is the measured local error (in the $\HOne$-seminorm) at an element $k$, $\tilde{e}_k$ is the local target error as specified by the user, $m$ is the polynomial order of the approximation space (i.e., $m=1$ for the linear finite elements used currently) , and $N$ is the number of spatial dimensions. $h_{old}$ is the current size of the element, and $h_{new}$ is the desired new mesh size.
 This new mesh size at the element level is assembled at the node/vertex level to perform mesh adaptation.
-This strategy is represented in Figure \ref{fig:size_based_strat}.
+The flowchart for this strategy is shown in Figure \ref{fig:size_based_strat}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/adapt_strat/size_based.png}
-	\caption{Nodal size field-based adaptation strategy}
+	\caption{Flowchart for nodal size field-based adaptation strategy}
 	\label{fig:size_based_strat}
 \end{figure}
 
 \subsection{Feature-based Refinement/Adaptation}
 
 The third strategy is to employ feature-based refinement/adaptation. 
-One of the primary flow features is the leading edge vortex (LEV) in the current problems of interest focused on surging airfoils. LEV forms during the retreating portion of the surging cycle when the boundary layer rolls up, separates from the airfoil, and advects away from the airfoil.
-This allows for refinement around the dominant flow features and also along the path/trajectory of such features, in particular for LEV.
+This strategy allows for refinement around the dominant flow features and also along the path/trajectory of such features.
+One of the primary flow features is the leading edge vortex (LEV) in the current problems of interest focused on surging airfoils. 
+Figure \ref{fig:feature_based_strat_schematic} shows an example of the LEV path and size with respect to the airfoil. 
+Mesh refinement is applied along this path as shown by the shaded region.
 
-For example, Figure \ref{fig:feature_based_strat_schematic} shows the path of an LEV. 
-Mesh refinement is applied along this path, shown by the shaded region.
+
+Two aspects are involved in this strategy: feature detection and tracking, and refinement/adaptation along the feature. These are discussed below.
+
+
 	
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{figures/adapt_strat/feature_based_schematic.png}
-	\caption{Schematic for feature-based refinement strategy}
+	\caption{Schematic of feature-based refinement strategy}
 	\label{fig:feature_based_strat_schematic}
 \end{figure}
 
@@ -73,8 +75,10 @@ Mesh refinement is applied along this path, shown by the shaded region.
 %TODO: Show pics and schematics from AIAA paper and presentations (LEV trace)
 
 In this section, we quantify the evolution of the LEV based on its size and position.
-In order to do so, phase and spanwise averaged data is obtained over multiple cycles. For example, in Figure \ref{fig:LEV_tracking}, difference between the instantaneous and phase and span averaged vorticity is shown.
-Next, for each case, the phase of formation of the LEV is detected and in subsequent phases the LEV is tracked.
+In order to do so, phase- and spanwise-averaged data is obtained over multiple cycles.
+Note that the LEV forms during the retreating portion of the surging cycle when the boundary layer separates and the separated shear layer rolls up into a vortex. Subsequently, this vortex separates/ejects from the airfoil, and advects with the background flow.
+%For example, in Figure \ref{fig:LEV_tracking}, difference between the instantaneous and phase and span averaged vorticity is shown.
+Thus, the phase of formation of the LEV is first detected and in subsequent phases the LEV is tracked.
 Pressure and velocity data is analyzed to automatically detect the formation of the LEV.
 In the retreating portion of the cycle, location with minimum pressure is determined starting at $\psi=180^\circ$.
 The first phase at which the minimum pressure location is off the airfoil surface (i.e., away from the airfoil and into the flow) is tagged to be a potential phase for LEV formation.
@@ -86,7 +90,7 @@ Subsequently, normal component of the relative velocity is obtained (i.e., norma
 The azimuthal component (of the relative velocity) is analyzed against the velocity profile of a Lamb-Oseen vortex.
 It is noteworthy that the azimuthal component of the relative velocity along several radial lines at multiple phases in the surging cycle were visually analyzed for different cases and found to fit the Lamb-Oseen vortex model fairly well.
 
-The trace of the LEV is obtained by applying this process over multiple phases in the surging cycle, which can be used to quantify LEV evolution and to apply feature-based adaptation (as shown above in Figure \ref{fig:feature_based_strat_schematic}).
+The trace of the LEV is then obtained by applying this process over multiple phases in the surging cycle, which can be used to quantify LEV evolution and to apply feature-based adaptation (as shown above in Figure \ref{fig:feature_based_strat_schematic}).
 
 \begin{figure}[H]
 	\begin{subfigure}{0.5\textwidth}
@@ -107,7 +111,7 @@ The trace of the LEV is obtained by applying this process over multiple phases i
     \caption{Averaged LEV with core radius}
 \end{subfigure}
 	
-	\caption{LEV quantification}
+	\caption{Schematic of LEV quantification}
 	\label{fig:LEV_tracking}
 \end{figure}
 
@@ -116,17 +120,12 @@ The trace of the LEV is obtained by applying this process over multiple phases i
 
 For a given simulation, we can follow three steps: (i) get information on the approximate path and extent that a certain feature will follow, (ii) estimate the error along this path/region, and (iii) perform refinement/adaptation along this path.
 For example, in the case of flow over surging airfoils, the path and size of LEV over a surging cycle is used to detect portions in the mesh where refinement is applied.
-Similarly, other features such as trailing edge vortex (TEV) can also be targeted using such a feature-based refinement.
-
-%TODO: Schematic to illustrate feature-based adaptation zone
-%TODO: Flowchart
-
-This strategy is represented in Figure \ref{fig:feature_based_strat}.
+Similarly, other features such as trailing edge vortex (TEV) can also be targeted using such a feature-based refinement. The flowchart for this strategy is shown in Figure \ref{fig:feature_based_strat}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/adapt_strat/feature_based.png}
-	\caption{Feature-based Refinement/Adaptation Strategy}
+	\caption{Flowchart for feature-based refinement strategy}
 	\label{fig:feature_based_strat}
 \end{figure}
 

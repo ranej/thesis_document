@@ -3,13 +3,13 @@ parameter in a local fashion, we follow the localized version of
 the variational Germano identity (VGI) developed by
 Tran \textit{et al.}~\cite{bib:tran2017b}.
 In this procedure, Lagrangian averaging along fluid pathtubes is applied to make it robust and which maintains the localized nature of the VGI.
-The dynamic local procedure and the associated approximations are summarized in this section.
+The dynamic local procedure and the associated assumptions and approximations are summarized in this section.
 
 \subsection{Local Variational Germano Identity}
 \label{sec:VGI}
 
 The VGI involves comparing the variational form (including the model terms)
-between different levels of the discretization such that they are nested.
+between different levels of the discretization.
 In the localized version of the VGI, a set of nested spaces are constructed
 by using a series of coarser second-level grids
 along with the primary or original grid.
@@ -50,7 +50,7 @@ $H_k$-grids with the $h$-grid to compute the model
 parameter at every node $k$ in the $h$-grid.
 By setting $\bm{W}^h = \bm{W}^{H_k}$,
 since $\bm{\mathcal{V}}^{H_k} \subset \bm{\mathcal{V}}^h \subset \bm{\mathcal{V}}$,
-we get (for details see Ref.~\cite{bib:tran2017b}).
+we get (for details see~\cite{bib:tran2017b})
 
 \begin{equation}
 \label{eq:vgil}
@@ -65,7 +65,7 @@ computation or projection (operations which involve looping over the elements of
 $\bm{U}^{H_k}$ is approximated within the macro element
 using a volume-weighted average of $\bm{U}^h$ while outside
 of the macro element the solution is assumed to be the same between the two grid levels.
-This assumption further bypasses a grid-level computation. This assumption arises from the requirement on the variational multiscale (VMS) method to provide a localization at the element level and the desire to yield nodal exactness at element corners\cite{bib:hughes3}.
+This assumption further bypasses a grid-level computation. This assumption arises from the requirement on the variational multiscale (VMS) method to provide a localization at the element level and the desire to yield nodal exactness at element corners \cite{bib:hughes3}.
 This leads to
 $\bm{U}^{H_k} \approx \widetilde{\bm{U}}^{H_k}|_{\Omega^{H_k}} = \aHk(\bm{U}^h)$, where
 $\aHk$ is the local averaging operator defined below.
@@ -78,22 +78,22 @@ $\aHk$ is the local averaging operator defined below.
 and $\Omega^h_e$ indicates an element in the $h$-grid.
 
 This choice is only feasible when the spatial derivatives exist on the weight function.
-In addition, instead of using $\widetilde{\bm{U}}^{H_k}$ to compute $\bm{S}^{H_k}$, $\bm{S}^{H_k}$ is also approximated within the macro element as $\widetilde{\bm{S}}^{H_k}|_{\Omega^{H_k}} \approx \aHk(\bm{S}^h)$.
+In addition, instead of using $\widetilde{\bm{U}}^{H_k}$ to compute $\bm{S}^{H_k}$ (strain-rate tensor), $\bm{S}^{H_k}$ is also approximated within the macro element as $\widetilde{\bm{S}}^{H_k}|_{\Omega^{H_k}} \approx \aHk(\bm{S}^h)$.
 Furthermore, among all of the terms in Equation~\eqref{eq:vgil} 
 not involving the unknown model parameter, the non-linear convective 
-term is found to be dominating\cite{bib:tran2017b}. We note that this assumption holds 
+term is found to be dominating \cite{bib:tran2017b}. We note that this assumption holds 
 exactly in a spectral setting where all the bilinear terms cancel out 
 between the $H$- and $h$-level grids due to the $L_2$ orthogonality of 
-spectral modes\cite{bib:oberai2005_2}. 
+spectral modes \cite{bib:oberai2005_2}. 
 The local VGI simplifies to
 
 \begin{equation}
 	\label{eq:vgilb}
 \begin{split}
-% M_{smag}(\bm{W}^{H_k},\bm{U}^{h}; C_S^k, h_k)_{\Omega^{P_k}} - M_{smag}(&\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k} ; C_S^k, H_k)_{\Omega^{H_k}}\\
-% \approx -(B_2(\bm{W}^{H_k},\bm{U}^{h})_{\Omega^{P_k}} - B_2(\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k})_{\Omega^{H_k}} )
--(B_2(\bm{W}^{H_k},\bm{U}^{h})_{\Omega^{P_k}} - B_2(\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k})_{\Omega^{H_k}} \\
- M_{smag}(\bm{W}^{H_k},\bm{U}^{h}; C_S^k, h_k)_{\Omega^{P_k}} - M_{smag}(&\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k} ; C_S^k, H_k)_{\Omega^{H_k}}
+M_{smag}(\bm{W}^{H_k},\bm{U}^{h}; C_S^k, h_k)_{\Omega^{P_k}} - M_{smag}(\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k} ; C_S^k, H_k)_{\Omega^{H_k}} \approx\\
+-(B_2(\bm{W}^{H_k},\bm{U}^{h})_{\Omega^{P_k}} - B_2(\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k})_{\Omega^{H_k}} )
+%-(B_2(\bm{W}^{H_k},\bm{U}^{h})_{\Omega^{P_k}} - B_2(\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k})_{\Omega^{H_k}}) \approx \\
+ %M_{smag}(\bm{W}^{H_k},\bm{U}^{h}; C_S^k, h_k)_{\Omega^{P_k}} - M_{smag}(&\bm{W}^{H_k},\widetilde{\bm{U}}^{H_k} ; C_S^k, H_k)_{\Omega^{H_k}}
 \end{split}
 \end{equation}
 
@@ -125,7 +125,7 @@ however, a larger patch must be considered. An extra layer
 of elements is needed around the macro element to attain a constant value
 in the outside region. This extra layer acts as a buffer region.
 This choice is made due to its ease of implementation.
-For more details see Refs.~\cite{bib:tran2017b}.
+For more details see~\cite{bib:tran2017b}.
 
 
 \subsection{Local Variational Germano Identity Computation}
@@ -155,10 +155,10 @@ The least squares method is applied to determine the model parameter as follows
 (C_S h)^2 = \frac{1}{2}\frac{L_{ij}M_{ij}}{M_{ij}M_{ij}}
 \end{equation}
 
-Since the local VGI procedure often leads to negative values
+Since the local VGI procedure can lead to negative values
 for $(C_S h)^2$, an averaging scheme is employed to avoid this issue.
 Specifically, Lagrangian averaging 
-is applied\cite{bib:meneveau96}.
+is applied \cite{bib:meneveau96}.
 To do so, two additional advection-relaxation scalar equations are solved.
 These are shown in Equations~\eqref{eq:ILM} and~\eqref{eq:IMM}.
 The scalars $I_{LM}$ and $I_{MM}$ in these equations are the
@@ -186,5 +186,5 @@ of Equation~\eqref{eq:vgi_cs} as follows
 \end{equation}
 
 \noindent where, as before, $\aH$ represents a local averaging operator.
-This is equivalent to averaging over local pathtubes\cite{bib:tran2016,bib:tran2017b} and maintains the utility of the local VGI.
+This is equivalent to averaging over local pathtubes \cite{bib:tran2016,bib:tran2017b} and maintains the utility of the local VGI.
 

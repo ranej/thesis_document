@@ -1,5 +1,5 @@
 \label{sec:VMS_NS}
-As discussed previously, the Navier-Stokes equations possess advective and diffusive properties and extending the stabilization expressions from the 1D advection-diffusion to 3D Navier-Stokes have been effective in previous work.
+As discussed previously, the Navier-Stokes equations possess advective and diffusive properties and extending the stabilization expressions from the 1D advection-diffusion to 3D Navier-Stokes have been effective in previous works.
 We follow the same path for applying Equation \ref{eq:VMSerr} to each momentum component of the Navier-Stokes equations and arrive at the following
 
 \begin{align}
@@ -9,7 +9,7 @@ We follow the same path for applying Equation \ref{eq:VMSerr} to each momentum c
     \label{eq:VMSerrNS}
 \end{align} 
 
-\noindent which uses the momentum residual $R^{NS}_i(\bar{u})=R^{NS}_i(u^h)$.
+\noindent which uses the strong-form residual of the momentum equation due to the coarse-scale solution: $R^{NS}_i(\bar{u})=R^{NS}_i(u^h)$.
 
 The discretization error resulting from the continuity equation is ignored since it is generally insignificant compared to the momentum discretization error.
 

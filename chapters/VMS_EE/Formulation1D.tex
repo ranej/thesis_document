@@ -8,40 +8,41 @@ The steady advection-diffusion equation with the strong form given by: find the 
 
 \noindent where $a_i$ is an advection vector, $\kappa$ is the diffusivity constant and $f$
 is a forcing function.
-We can define the corresponding spaces for the solution and weighting functions as usual
+We can define the corresponding spaces for the solution and weight functions as usual
 
 \begin{equation}
 \label{eq:testspace}
-\mathcal{S}_{\psi} = \{ v| v \in H^1(\Omega)^N, v = g \text{ on } \Gamma_g\} 
+\mathcal{S}_{\psi} = \{ \psi| \psi \in H^1(\Omega)^N, \psi = g \text{ on } \Gamma_g\} 
 \end{equation}
 
 \begin{equation}
 \label{eq:Vweightspace}
 \mathcal{W}_{\psi} = \{ w|w \in H^1(\Omega)^N, w = 0 \text{ on } \Gamma_g\}
 \end{equation}
+\noindent where $\Gamma_g$ and $\Gamma_h$ are portions of domain boundary with Dirichlet and Neumann boundary conditions, respectively.
 
 \noindent The corresponding weak form is given by: find $\psi \in \mathcal{S}_{\psi}$ such that
 
 \begin{equation} 
-\int_\Omega \left[ \wAD a_i \psi_{,i} + \kappa {\wAD}_{,i}\psi_{,i}\right] \, d\Omega- 
-\int_{\Gamma_h} \kappa \wAD \psi_{,i} n_i\, d\Gamma_h = 
-\int_\Omega \wAD f \, d\Omega, \qquad \forall \wAD \in \mathcal{W}_{\psi}
+\int_\Omega \left[ w a_i \psi_{,i} + \kappa {w}_{,i}\psi_{,i}\right] \, d\Omega- 
+\int_{\Gamma_h} \kappa w \psi_{,i} n_i\, d\Gamma_h = 
+\int_\Omega w f \, d\Omega, \qquad \forall w \in \mathcal{W}_{\psi}
 \label{eq:AD_model}
 \end{equation}
 
 Equation \ref{eq:uPrimeSoln} describes the relationship between the coarse-scale solution $\bar{\psi}$ and the discretization error.
 The strong residual acts as a local source for error and the fine-scale Green's function distributes it over the spatial domain.
 %Following the optimality approximation of $\bar{u}$ in the $\HOne$-sense, we consider only the $\HOne$-seminorm.
-From Equation \ref{eq:uPrimeSoln}, we can define the $\HOne$-seminorm over an element
+From Equation \ref{eq:uPrimeSoln}, we can define the $\HOne$-seminorm over an element $k$
 
 \begin{equation}
     |e^{\psi}_k|_* = |e^{\psi}_k|_{\HOne(\Omega^h_k)} = |\psi'_k|_{\HOne(\Omega^h_{k})}= |(\mathcal{R}(\bar{\psi}_k)| \norm{ \int_{\Omega^{h}_{k}} g_{,i}' d\Omega^h_{k}}_{L^2(\Omega^h_k)}
 \end{equation}
 
-\noindent where $\mathcal{R}(\bar{\psi})=\mathcal{L}(\bar{\psi})-f=\mathcal{L}(\psi^h)-f$ is constant for piecewise linear finite elements with piecewise constant input data and material properties.
+\noindent where $\mathcal{R}(\bar{\psi})=\mathcal{L}(\bar{\psi})-f=\mathcal{L}(\psi^h)-f$ is constant for piecewise linear finite elements with piecewise constant input data and material parameters/properties.
 We focus on the $\HOne$-seminorm in particular since we want to control the error in the gradients in the solution field.
 
-For the 1D advection-diffusion equation, the fine-scale Green's function has an analytical form (see Hauke, Doweidar, and Miana \cite{hauke2006proper}) that is used to attain the following simplified form
+For the 1D advection-diffusion equation, the fine-scale Green's function has an analytical form (see Hauke, Doweidar and Miana \cite{hauke2006proper}) that is used to attain the following simplified form
 
 \begin{align}
       \norm{\psi_k'}_{H^1(\Omega^h_k)} &= \nu^{err}_{k,1D} |\mathcal{R}(\bar{\psi}_k)| \sqrt{|\Omega^h_k|} \\
@@ -50,16 +51,16 @@ For the 1D advection-diffusion equation, the fine-scale Green's function has an 
 \end{align}
 
 %\noindent where $\nu^{err}_{e,1D} = \dfrac{1}{|a|} min \left( \sqrt{\Peh},\dfrac{\Peh}{\sqrt{3}} \right)$ and $\Peh = \frac{h_e |a|}{2\kappa}$ is the cell-Peclet number.
-\noindent where $\nu^{err}_{k,1D} = \dfrac{1}{|a_i|} \sqrt{\Peh \text{coth}({\Peh})-1}$ and $\Peh = \frac{h_k |a_i|}{2\kappa}$ is the cell-Peclet number, and $h_k$ denotes a local mesh size.
+\noindent where $\nu^{err}_{k,1D} = \dfrac{1}{|a_i|} \sqrt{\Peh \text{coth}({\Peh})-1}$ and $\Peh = \frac{h_k |a_i|}{2\kappa}$ is the cell-Peclet number, and $h_k$ denotes the local mesh size.
 
 Note that this is an explicit expression which does not require solving additional differential equations (local or global) like implicit error estimators.
-This makes Equation \ref{eq:VMSerr1D} inexpensive to evaluate, although limited in scope to the one-dimensional case. The effectivity of the VMS based error estimator was tested for a series of cell Peclet numbers $Pe_h$ by Zhang \cite{zhang19} and showed that across all cases, the VMS error estimator provides the exact error in 1D. 
-This is expected since the VMS theory in 1D linear, steady advection-diffusion case makes no assumptions or approximations.
+This makes Equation \ref{eq:VMSerr1D} inexpensive to evaluate, although limited in scope to 1D cases. The effectivity of the VMS based error estimator was tested for a series of cell Peclet numbers $Pe_h$ by Zhang \cite{zhang19} and showed that across all cases, the VMS error estimator provides the exact error in 1D. 
+This is expected since the VMS approach in 1D for a linear, steady advection-diffusion case with constant material parameters makes no assumptions or approximations.
 
 \subsection{Generalization to Multi-dimensional Cases}
 
-The primary component of Equation \ref{eq:VMSerr1D} that is one-dimensional is the parameter $\nu^{err}_{e,1D}$ because it is not immediately obvious how to choose $h_k$, the element mesh size, for multi-dimensional anisotropic elements.
-This problem is equivalent to the problem found when generalizing the 1D stabilization expressions that are used in stabilized finite element methods for advection-diffusion equations to multi-dimensional problems \cite{hughes1986newiii} and can therefore be addressed with a similar approach.
+The primary component of Equation \ref{eq:VMSerr1D} that is 1D in nature is the parameter $\nu^{err}_{e,1D}$ because it is not immediately obvious how to choose $h_k$, the element mesh size, for multi-dimensional anisotropic elements.
+This problem is equivalent to the problem found when generalizing the 1D stabilization parameter (that are used in stabilized finite element methods for advection-diffusion equations) to multi-dimensional problems \cite{hughes1986newiii} and can therefore be addressed with a similar approach.
 %The generalization procedure follows three steps:
 
 %\begin{enumerate}
@@ -75,17 +76,17 @@ This problem is equivalent to the problem found when generalizing the 1D stabili
 %    \nu^{err}_{k,1D} \approx \dfrac{1}{\sqrt{\dfrac{\kappa|a_i|}{h_k/2} + \dfrac{3\kappa^2}{(h_k/2)^2} } }
 %\end{equation}
 
-For advective-diffusive systems, there are two element-sizes of interest - one corresponding to the direction of local advection and the other corresponding to diffusion.
+For advective-diffusive cases, there are two parts of interest: one corresponding to the direction of local advection and the other corresponding to diffusion.
 This is reflected in the asymptotes for the exact expression for $\nu^{err}_{k,1D}$. %Equation \ref{eq:VMSerr1D}.
-The magnitude of the local advection relative to the local mesh size $\dfrac{|a_i|}{h_k/2}$ can be represented with $\sqrt{a_i g_{ij} a_j}$ as $g_{ij} = \left(\dfrac{2}{h_k}\right)^2$ in 1D.
-For the diffusive length-scale, the metric tensor intrinsically represents an average mesh size for an element so $g_{ij}g_{ij}$ provides a convenient choice.
+The magnitude of the local advection relative to the local mesh size, $\dfrac{|a_i|}{h_k/2}$, can be represented with $\sqrt{a_i g_{ij} a_j}$ (where $g_{ij} = \left(\dfrac{2}{h_k}\right)^2$ in 1D).
+For the diffusive part, the element-level metric tensor intrinsically represents an average mesh size for an element so $g_{ij}g_{ij}$ provides a convenient choice.
 This leads to the final generalized result for $\nu^{err}_k$
 
 \begin{equation}
     \nu^{err}_{k} = \dfrac{1}{\sqrt{ \kappa\sqrt{a_i g_{ij} a_j} + 3\kappa^2\sqrt{g_{ij}g_{ij}}  }  }
 \end{equation}
 
-\noindent and the subsequent final form of the a posteriori error estimator
+\noindent and the subsequent final form of the \textit{a posteriori} error estimator as follows
 
 \begin{equation}
       |e^{\psi}_k|_{\HOne(\Omega^h_k)} = \seminorm{\psi'_k}_{H^1(\Omega^h_k)} \approx \nu^{err}_{k} \norm{\mathcal{R}(\bar{\psi}_k)}_{L^2(\Omega^h_k)}
@@ -95,7 +96,7 @@ This leads to the final generalized result for $\nu^{err}_k$
 The effectivity of the VMS-based error estimator in 2D was tested by Zhang \cite{zhang19} for a 2D advection-diffusion problem. For this multi-dimensional case, it is reported that the error estimator does not exactly capture the true error. Instead, for a wide-range of $Pe_h$ the global effectivity was slightly greater than unity.   
 For $Pe_h=100$, the effectivity was approximately 1.1, which indicates that the error estimator is slightly overestimating the true error.
 Note that an effectivity above 1 implies a more conservative error estimator. 
-For an advection-diffusion-reaction problem with a similar $Pe_h$, Ainsworth et al. \cite{ainsworth2013fully} reports an effectivity of $\mathcal{O}(50)$ using the equilibrated residual method, which suggests that the VMS-based error estimator performs well.
+For an advection-diffusion-reaction problem with a similar $Pe_h$, Ainsworth \textit{et al.} \cite{ainsworth2013fully} reports an effectivity of $\mathcal{O}(50)$ using the equilibrated residual method, which suggests that the VMS-based error estimator performs well.
 
  
 
