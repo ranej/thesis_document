@@ -1,7 +1,7 @@
 \contentsline {chapter}{LIST OF TABLES}{vi}{chapter*.3}% 
 \contentsline {chapter}{LIST OF FIGURES}{vii}{chapter*.5}% 
-\contentsline {chapter}{ACKNOWLEDGMENT}{x}{section*.6}% 
-\contentsline {chapter}{ABSTRACT}{xi}{section*.8}% 
+\contentsline {chapter}{ACKNOWLEDGMENT}{xi}{section*.6}% 
+\contentsline {chapter}{ABSTRACT}{xii}{section*.8}% 
 \contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Motivation and Background}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Error Estimator Driven Mesh Adaptivity}{2}{section.1.2}% 
@@ -46,22 +46,24 @@
 \contentsline {subsubsection}{\numberline {5.4.1.3}Flowfield: Spanwise Vorticity}{60}{subsubsection.5.4.1.3}% 
 \contentsline {subsubsection}{\numberline {5.4.1.4}Pressure Coefficient}{68}{subsubsection.5.4.1.4}% 
 \contentsline {subsubsection}{\numberline {5.4.1.5}LEV Evolution}{70}{subsubsection.5.4.1.5}% 
-\contentsline {subsection}{\numberline {5.4.2} $Re=200,000$}{75}{subsection.5.4.2}% 
-\contentsline {subsubsection}{\numberline {5.4.2.1}Adapted Meshes}{75}{subsubsection.5.4.2.1}% 
-\contentsline {subsubsection}{\numberline {5.4.2.2}Force Response}{75}{subsubsection.5.4.2.2}% 
-\contentsline {subsubsection}{\numberline {5.4.2.3}Flowfield: Spanwise Vorticity}{75}{subsubsection.5.4.2.3}% 
-\contentsline {subsubsection}{\numberline {5.4.2.4}Pressure Coefficient}{75}{subsubsection.5.4.2.4}% 
-\contentsline {subsubsection}{\numberline {5.4.2.5}LEV Evolution}{75}{subsubsection.5.4.2.5}% 
-\contentsline {chapter}{\numberline {6.}LES of Flow Over Surging Airfoils including Active Reflex}{76}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Problem Setup}{76}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Summary of Cases}{77}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Results and Discussion}{79}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}NACA 0012: $\mu _{sect} = 1.5$ and $2.0$}{79}{subsection.6.3.1}% 
-\contentsline {subsubsection}{\numberline {6.3.1.1}Force Response}{79}{subsubsection.6.3.1.1}% 
-\contentsline {subsubsection}{\numberline {6.3.1.2}Flowfield: Spanwise Vorticity and Velocity Magnitude}{82}{subsubsection.6.3.1.2}% 
-\contentsline {subsection}{\numberline {6.3.2}SC1095: $\mu _{sect}=2.0$}{91}{subsection.6.3.2}% 
-\contentsline {subsubsection}{\numberline {6.3.2.1}Force Response}{91}{subsubsection.6.3.2.1}% 
-\contentsline {subsubsection}{\numberline {6.3.2.2}Flowfield: Spanwise Vorticity and Velocity Magnitude}{91}{subsubsection.6.3.2.2}% 
-\contentsline {chapter}{REFERENCES}{96}{section*.74}% 
+\contentsline {subsection}{\numberline {5.4.2} $Re=200,000$}{76}{subsection.5.4.2}% 
+\contentsline {subsubsection}{\numberline {5.4.2.1}Adapted Meshes}{76}{subsubsection.5.4.2.1}% 
+\contentsline {subsubsection}{\numberline {5.4.2.2}Force Response}{76}{subsubsection.5.4.2.2}% 
+\contentsline {subsubsection}{\numberline {5.4.2.3}Flowfield: Spanwise Vorticity}{77}{subsubsection.5.4.2.3}% 
+\contentsline {subsubsection}{\numberline {5.4.2.4}Pressure Coefficient}{82}{subsubsection.5.4.2.4}% 
+\contentsline {subsubsection}{\numberline {5.4.2.5}LEV Evolution}{85}{subsubsection.5.4.2.5}% 
+\contentsline {chapter}{\numberline {6.}LES of Flow Over Surging Airfoils including Active Reflex}{86}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Problem Setup}{86}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Summary of Cases}{87}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Results and Discussion}{89}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}NACA 0012: $\mu _{sect} = 1.5$ and $2.0$}{89}{subsection.6.3.1}% 
+\contentsline {subsubsection}{\numberline {6.3.1.1}Force Response}{89}{subsubsection.6.3.1.1}% 
+\contentsline {subsubsection}{\numberline {6.3.1.2}Flowfield: Spanwise Vorticity and Velocity Magnitude}{92}{subsubsection.6.3.1.2}% 
+\contentsline {subsection}{\numberline {6.3.2}SC1095: $\mu _{sect}=2.0$}{101}{subsection.6.3.2}% 
+\contentsline {subsubsection}{\numberline {6.3.2.1}Force Response}{101}{subsubsection.6.3.2.1}% 
+\contentsline {subsubsection}{\numberline {6.3.2.2}Flowfield: Spanwise Vorticity and Velocity Magnitude}{101}{subsubsection.6.3.2.2}% 
+\contentsline {chapter}{\numberline {7.}Closing Remarks and Future Work}{106}{chapter.7}% 
+\contentsline {subsection}{\numberline {7.0.1}Future Work}{106}{subsection.7.0.1}% 
+\contentsline {chapter}{REFERENCES}{107}{section*.83}% 
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{102}{appendix.A}% 
+\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{113}{appendix.A}% 
