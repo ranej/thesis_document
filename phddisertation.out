@@ -34,11 +34,11 @@
 \BOOKMARK [0][-]{chapter.5}{Adaptive LES of Flow Over Surging Airfoil}{}% 34
 \BOOKMARK [1][-]{section.5.1}{Problem Setup}{chapter.5}% 35
 \BOOKMARK [1][-]{section.5.2}{Summary of Cases}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.3}{Comparison of Adaptive Strategies}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.3.1}{Zonal Refinement/Adaptation}{section.5.3}% 38
+\BOOKMARK [1][-]{section.5.3}{Application and Comparison of Different Adaptive Strategies}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.3.1}{Zonal Refinement}{section.5.3}% 38
 \BOOKMARK [2][-]{subsection.5.3.2}{Nodal Size Field-based Adaptation}{section.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.3.3}{Feature-based Refinement/Adaptation}{section.5.3}% 40
-\BOOKMARK [2][-]{subsection.5.3.4}{Results and Discussion}{section.5.3}% 41
+\BOOKMARK [2][-]{subsection.5.3.3}{Feature-based Refinement}{section.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.3.4}{Comparison}{section.5.3}% 41
 \BOOKMARK [1][-]{section.5.4}{Application of Zonal Refinement Strategy}{chapter.5}% 42
 \BOOKMARK [2][-]{subsection.5.4.1}{ Re=40,000}{section.5.4}% 43
 \BOOKMARK [3][-]{subsubsection.5.4.1.1}{Adapted Meshes}{subsection.5.4.1}% 44
@@ -64,5 +64,5 @@
 \BOOKMARK [3][-]{subsubsection.6.3.2.2}{Flowfield: Spanwise Vorticity and Velocity Magnitude}{subsection.6.3.2}% 64
 \BOOKMARK [0][-]{chapter.7}{Closing Remarks and Future Work}{}% 65
 \BOOKMARK [1][-]{subsection.7.0.1}{Future Work}{chapter.7}% 66
-\BOOKMARK [0][-]{section*.83}{REFERENCES}{}% 67
+\BOOKMARK [0][-]{section*.82}{REFERENCES}{}% 67
 \BOOKMARK [0][-]{appendix.A}{THIS IS AN APPENDIX}{}% 68
