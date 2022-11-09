@@ -5,7 +5,7 @@
 %TODO: explain bar and h equivalance for VMS-based coarse scale
 
 In this work, we focus on controlling the spatial discretization error through an \textit{a posteriori} error estimate.
-Ideally, \textit{a posteriori} error estimate must provide pointwise the exact error, $e^{exact}=u-u^h$, where $u$ is the exact solution and $u^h$ is the numerical approximation $u$, since knowing how the error varies over space allows us to better choose our spatial discretization. 
+Ideally, \textit{a posteriori} error estimate must provide pointwise the exact error, $e^{exact}=u-u^h$, where $u$ is the exact solution and $u^h$ is the numerical approximation of $u$, since knowing how the error varies over space allows us to better choose our spatial discretization. 
 Of course, knowledge of the exact error implies knowledge of the true solution rendering the simulation pointless.
 Therefore, we employ an approximate error estimate $\apee$ measured in some norm of interest such as the $L^2$ norm, $\HOne$ norm, or $\HOne$ semi-norm.
 We would like that the the error estimate has a local representation over an element $k$ and bounds (from above) the exact error.
@@ -22,9 +22,9 @@ We would like that the the error estimate has a local representation over an ele
 %\noindent which is the ratio between the estimated error and the exact error.
 %Note that a local effectivity can also be defined on the element-level.
 
-Many estimators, both explicit and implicit, have been developed and studied in the literature (e.g. see books by Ainsworth and Oden \cite{ainsworth2011book}, Verf\"urth \cite{verfurth2013posteriori}).
+Many estimators, both explicit and implicit, have been developed and studied in the literature (e.g., see Ainsworth and Oden \cite{ainsworth2011book} and Verf\"urth \cite{verfurth2013posteriori}).
 %and convection-diffusion systems (reviewed by John \cite{john2000numerical} and Verfurth \cite{verfurth2005robust}).
-More recently, progress has been made in obtaining reliable explicit error estimates for the Navier-Stokes equations through the variational multi-scale approach (e.g. Hauke, Fuster, and Lizarraga \cite{hauke2015variational}).
+More recently, progress has been made in obtaining reliable explicit error estimates for the Navier-Stokes equations through the variational multiscale/VMS approach (e.g., Hauke, Fuster, and Lizarraga \cite{hauke2015variational}).
 %Although even in the context of convection-diffusion systems, John \cite{john2000numerical} finds that there is no optimal approach for all situations.
 We employ the VMS-based error estimator since the VMS framework is currently used for LES and it is computationally inexpensive.
 
@@ -41,22 +41,22 @@ We then extend the VMS-based error estimator to the Navier-Stokes equations and 
 
 The VMS paradigm relies on the idea of decomposing spaces of interest into coarse-scale and fine-scale subspaces.
 The coarse-scale space represents our choice of spatial discretization and is therefore finite dimensional, whereas the fine-scale space encompasses the remainder of the space that our discretization cannot represent and is therefore infinite dimensional.
-More importantly, the fine-scale space is necessarily a representation of the spatial discretization error for the solution space.
+More importantly, the fine-scale space is necessarily a representation of the spatial discretization error associated with the coarse-scale space.
 
-Let us specifically consider the trial and weighting spaces for some model finite element problem as $\mathcal{S}$ and $\mathcal{W}$, respectively.
+Let us specifically consider the trial and weight spaces as $\mathcal{S}$ and $\mathcal{W}$, respectively.
 %Let $\mathcal{S}^h$ or $\bar{\mathcal{S}}$ be a subset of $\mathcal{S}$ and let $\Projector: \mathcal{S} \rightarrow \mathcal{S}^h$ or $\bar{\mathcal{S}}$ be a linear projector such that $\Projector u = u^h = \bar{u}$ where $u \in \mathcal{S}$, $u^h=\bar{u} \in \mathcal{S}^h=\bar{\mathcal{S}}$, and $Range(\Projector)=\mathcal{S}^h=\bar{\mathcal{S}}$.
 Let $\bar{\mathcal{S}}$ be a subset of $\mathcal{S}$ and let $\Projector: \mathcal{S} \rightarrow \bar{\mathcal{S}}$ be a linear projector such that $\Projector u = \bar{u}$ where $u \in \mathcal{S}$, $\bar{u} \in \bar{\mathcal{S}}$, and $Range(\Projector)=\bar{\mathcal{S}}$.
-This naturally leads to the definition of a complementary space $\mathcal{S}' = Kernel(\Projector)$ and allows for the direct sum decomposition $\mathcal{S} = \bar{\mathcal{S}} \oplus \mathcal{S}'$ and $\mathcal{W}$ = $\bar{\mathcal{W}} \oplus \mathcal{W}'$, where $\bar{\mathcal{S}}$ and $\bar{\mathcal{W}}$ represent the coarse-scale subspaces and $\mathcal{S}'$ and $\mathcal{W}'$ represent the fine-scale subspaces. This is a similar decomposition that used in Chapter \ref{sec:dynLES} for LES to define the coarse- and fine-scale solutions: $u^h$ and $u'$, where the fine-scale solution contributes to the subgrid-scale model.
-Here, the fine-scale solution is used to determine the element-level or local error. In the following, we use $\bar{u}$ for fine-scale quantities. In summary, $\bar{\mathcal{S}}$ is the same as $\mathcal{S}^h$ and $\bar{u}$ is the same as $u^h$. This equivalence applies for the coarse-scale weighting space as well. 
+This naturally leads to the definition of a complementary space $\mathcal{S}' = Kernel(\Projector)$ and allows for the direct sum decomposition $\mathcal{S} = \bar{\mathcal{S}} \oplus \mathcal{S}'$ and $\mathcal{W}$ = $\bar{\mathcal{W}} \oplus \mathcal{W}'$, where $\bar{\mathcal{S}}$ and $\bar{\mathcal{W}}$ represent the coarse-scale subspaces and $\mathcal{S}'$ and $\mathcal{W}'$ represent the fine-scale subspaces. This is a similar decomposition to that used in Chapter \ref{sec:dynLES} for LES to define the coarse- and fine-scale solutions: $u^h$ and $u'$, where the fine-scale solution contributes to the subgrid-scale model.
+Here, the fine-scale solution is used to determine the element-level or local error. In the following, we use $\bar{u}$ for fine-scale quantities. In summary, $\bar{\mathcal{S}}$ is the same as $\mathcal{S}^h$ and $\bar{u}$ is the same as $u^h$. This equivalence applies for the coarse-scale weight space as well. 
 We use the $\bar{(\cdot)}$ notation for the coarse-scale quantities in this section to be consistent with the most prevalant literature on VMS-based error estimation (i.e., it is slightly different from the notation used previously).
 
 Because of the direct-sum representation, we can also state that $u=\bar{u}+u'$ is a unique decomposition where $\bar{u} \in \bar{\mathcal{S}}$ and $u' \in \mathcal{S}'$ for any $u \in \mathcal{S}$.
 
 
-Consider the usual statement of a homogeneous linear partial-differential equation with linear operator $\mathcal{L}$ and forcing function $f$
+Consider the usual statement of a homogeneous linear partial-differential equation with linear operator $\mathcal{L}$ and forcing function $f$ (where $\Gamma$ represents the domain boundary)
 
 \begin{equation}
-    \mathcal{L}(u) = f \qquad u|_{\Gamma} = 0
+    \mathcal{L}(u) = f, \qquad u|_{\Gamma} = 0
     \label{eq:modelProblem}
 \end{equation} 
 
@@ -91,12 +91,12 @@ The fine-scale problem does afford a solution (see Hughes and Sangalli \cite{hug
     \label{eq:uPrimeSoln}
 \end{equation} 
 
-\noindent where $g'(x_i,y_i)$ is the fine-scale Green's function with $x_i,y_j \in \Omega$, which is not known in general, except for certain cases - one of which is the 1D linear advection-diffusion equation.
-Since the Navier-Stokes equations have advective and diffusive properties, we use the 1D linear advection-diffusion as a starting point to derive the a posteriori error estimator.
+\noindent where $g'(x_i,y_i)$ is the fine-scale Green's function with $x_i,y_j \in \Omega$, and is not known in general, except for certain cases - one of which is the 1D linear advection-diffusion equation.
+Since the Navier-Stokes equations have advective and diffusive properties, we use the 1D linear advection-diffusion as a starting point to derive the \textit{a posteriori} error estimator.
 
 One final remark is that the form of the fine-scale Green's function is directly tied to the choice of projector $\Projector$.
 This equivalently also means that the various choices of $\Projector$ leads to different unique pairings of $u$ and $u'$.
-Hughes and Sangalli \cite{hughes2007variational} explored two options for the $\Projector$: $\Projector_{L^2}$ and $\Projector_{H^1}$, and found that for 1D advection-diffusion systems, the $\Projector_{H^1}$ led to a localization of $g'$ to single elements and led to an optimal solution for $\bar{u}$ in the $\HOne_0$-norm or $\HOne$-seminorm, making this choice a practical one.
+Hughes and Sangalli \cite{hughes2007variational} explored two options for the $\Projector$, namely, $\Projector_{L^2}$ and $\Projector_{H^1}$, and found that for the 1D advection-diffusion case, $\Projector_{H^1}$ led to a localization of $g'$ to an element and led to an optimal solution for $\bar{u}$ in the $\HOne_0$-norm or $\HOne$-seminorm, making this choice a practical one.
 The localization of $g'$ is ideal for constructing local error estimators.
 
 \section{Formulation for 1D Advection-diffusion Equation}

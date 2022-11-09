@@ -1,4 +1,4 @@
-In this adaptation strategy, an initial solution is obtained on a baseline mesh with basic refinement zones that are usually used for a flow over an airfoil. We refer to this mesh as M0\_nz25, see Figure \ref{fig:M0_mesh}. 
+In this adaptation strategy, solution is obtained on an initial mesh with  a set of canonical refinement zones that are usually used for a flow over an airfoil. We refer to this mesh as M0\_nz25, see Figure \ref{fig:M0_mesh}. 
 Here nz25 refers to the number of spanwise extruded layers used in this mesh. 
 For this mesh, the VMS-based error estimator is applied to phase-averaged data, and the maximum error value over all phases and the maximum in the spanwise direction (recall that we use an extruded mesh) for each element is selected to represent the error for that element throughout the surging cycle. 
 The element-level error estimated on this mesh is shown in Figure \ref{fig:M0_err_plot}. 
