@@ -40,18 +40,20 @@
 \contentsline {subsection}{\numberline {5.3.3}Feature-based Refinement}{46}{subsection.5.3.3}% 
 \contentsline {subsection}{\numberline {5.3.4}Comparison}{47}{subsection.5.3.4}% 
 \contentsline {section}{\numberline {5.4}Application of Zonal Refinement Strategy}{57}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1} $Re=40,000$}{57}{subsection.5.4.1}% 
+\contentsline {subsection}{\numberline {5.4.1} $Re=40,000$}{58}{subsection.5.4.1}% 
 \contentsline {subsubsection}{\numberline {5.4.1.1}Adapted Meshes}{59}{subsubsection.5.4.1.1}% 
 \contentsline {subsubsection}{\numberline {5.4.1.2}Force Response}{61}{subsubsection.5.4.1.2}% 
 \contentsline {subsubsection}{\numberline {5.4.1.3}Flowfield: Spanwise Vorticity}{62}{subsubsection.5.4.1.3}% 
 \contentsline {subsubsection}{\numberline {5.4.1.4}Pressure Coefficient}{70}{subsubsection.5.4.1.4}% 
 \contentsline {subsubsection}{\numberline {5.4.1.5}LEV Evolution}{72}{subsubsection.5.4.1.5}% 
-\contentsline {subsection}{\numberline {5.4.2} $Re=200,000$}{77}{subsection.5.4.2}% 
+\contentsline {subsubsection}{\numberline {5.4.1.6}Summary}{77}{subsubsection.5.4.1.6}% 
+\contentsline {subsection}{\numberline {5.4.2} $Re=200,000$}{78}{subsection.5.4.2}% 
 \contentsline {subsubsection}{\numberline {5.4.2.1}Adapted Meshes}{78}{subsubsection.5.4.2.1}% 
 \contentsline {subsubsection}{\numberline {5.4.2.2}Force Response}{79}{subsubsection.5.4.2.2}% 
 \contentsline {subsubsection}{\numberline {5.4.2.3}Flowfield: Spanwise Vorticity}{80}{subsubsection.5.4.2.3}% 
 \contentsline {subsubsection}{\numberline {5.4.2.4}Pressure Coefficient}{86}{subsubsection.5.4.2.4}% 
-\contentsline {subsubsection}{\numberline {5.4.2.5}LEV Evolution}{88}{subsubsection.5.4.2.5}% 
+\contentsline {subsubsection}{\numberline {5.4.2.5}LEV Evolution}{87}{subsubsection.5.4.2.5}% 
+\contentsline {subsubsection}{\numberline {5.4.2.6}Summary}{90}{subsubsection.5.4.2.6}% 
 \contentsline {chapter}{\numberline {6.}LES of Flow Over Surging Airfoils including Active Reflex}{91}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Problem Setup}{92}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Summary of Cases}{93}{section.6.2}% 
@@ -63,7 +65,5 @@
 \contentsline {subsubsection}{\numberline {6.3.2.1}Force Response}{107}{subsubsection.6.3.2.1}% 
 \contentsline {subsubsection}{\numberline {6.3.2.2}Flowfield: Spanwise Vorticity and Velocity Magnitude}{107}{subsubsection.6.3.2.2}% 
 \contentsline {chapter}{\numberline {7.}Closing Remarks and Future Work}{112}{chapter.7}% 
-\contentsline {subsection}{\numberline {7.0.1}Future Work}{112}{subsection.7.0.1}% 
+\contentsline {section}{\numberline {7.1}Future Work}{112}{section.7.1}% 
 \contentsline {chapter}{REFERENCES}{114}{section*.86}% 
-\parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}THIS IS AN APPENDIX}{120}{appendix.A}% 
