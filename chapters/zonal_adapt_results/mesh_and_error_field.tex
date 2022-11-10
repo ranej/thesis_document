@@ -1,3 +1,34 @@
+Figure \ref{fig:Re40k_meshes} shows a series of meshes obtained using zonal-based refinement for the $Re=40,000$ case, and the corresponding VMS-based estimated error. As mentioned previously, mesh is refined in zones of high estimated error. 
+Reduction in error can be seen as the mesh is refined in high error zones.
+Note that meshes with only a selected few spanwise resolution are shown in Figure \ref{fig:Re40k_meshes}.
+
+The mesh details of all the meshes considered here as shown in Table \ref{table:adapt_mesh_details_Re40k}
+
+\begin{table}[H]
+	\centering
+	\caption{Summary of meshes for adaptive LES of $Re=40,000$ surging case}
+	\label{table:adapt_mesh_details_Re40k}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		Mesh   & No. of elements \\
+		\hline
+		M0\_nz25	& 774,525 \\
+		\hline
+		Mza1\_nz25	& 1,437,150 \\
+		\hline		
+		Mza1\_nz50 &  2,874,300 \\
+		\hline
+		Mza2\_nz50  &  7,164,600 \\
+		\hline
+		Mza2\_nz100  &  14,329,200 \\
+		\hline
+		Mza3\_nz50  &  18,286,100 \\
+		\hline
+		Mza3\_nz100  &  36,572,200 \\
+		\hline
+	\end{tabular}
+\end{table}
+
 \begin{figure}[H]
 \centering
 
@@ -53,7 +84,6 @@
 	\caption{Mza3\_nz50 error field}
 	\label{fig:zonal_Mza3_error}
 \end{subfigure}
-
-
 \caption{Mesh and estimated error}
+\label{fig:Re40k_meshes}
 \end{figure}
