@@ -1,12 +1,12 @@
-Using the LEV detection and tracking procedure developed in chapter \ref{sec:LEV_detect_track}, a quantitative comparison of the LEV is presented in this section. 
-Recall that only results from meshes with the 2nd highest spanwise resolution are considered here for brevity, since it was previously established that results between highest and second highest spanwise resolutions compare well with each other. 
-Also note that phase-averaged and spanwise averaged data over multiple cycles is used here.
+Using the LEV detection and tracking procedure developed in Section \ref{sec:LEV_detect_track}, a quantitative comparison of the LEV is presented in this section. 
+Recall that only results from meshes with the second highest spanwise resolution are presented here, i.e., from M0\_nz25, Mza1\_nz25, Mza2\_nz50 and Mza3\_nz50 meshes.
+Also note that phase- and spanwise-averaged data over multiple cycles is used here.
 
 Figure \ref{fig:zonal_LEV_radius} shows the radius of the LEV core ($r_c$).
 In the initial phases when LEV is close to the airfoil surface, Mza2\_nz50 and Mza3 meshes predict a larger LEV radius than the coarser meshes. 
 This difference in size can also be seen in the spanwise vorticity plots shown in Figure \ref{fig:vorticity_zonal_240}.
-From phase $\psi = 270^\circ$ and onwards when the LEV is away from the airfoil surface, Mza3 which is the finest mesh, predicts the smallest LEV radius, followed by the second finest mesh, Mza2\_nz50. 
-This is expected, since a finer mesh will have a less diffused vortex core. Also note that M0\_nz25 mesh completely fails to predict the trend in LEV radius that Mza1, Mza2\_nz50, and Mza3\_nz50 meshes show.
+From phase $\psi = 270^\circ$ and onwards, when the LEV is away from the airfoil surface, Mza3 which is the finest mesh, predicts the smallest LEV radius, followed by the second finest mesh, Mza2. 
+This is expected, since a finer mesh will have a less diffused vortex core. Also note that M0\_nz25 mesh completely fails to predict the trend in LEV radius that the Mza1, Mza2 and Mza3 meshes show.
 
 \begin{figure}[H]
 	\centering
@@ -15,10 +15,10 @@ This is expected, since a finer mesh will have a less diffused vortex core. Also
 	\label{fig:zonal_LEV_radius}
 \end{figure}
 
-Figure \ref{fig:zonal_LEV_location} shows the location of the center of the LEV core for different phases after it is ejected from the airfoil surface. 
-It is observed that LEV formation for M0\_nz25 mesh occurs closer to the geometric leading edge, as well as closer to the airfoil surface as compared to the other meshes.
-For the initial phase of LEV location, Mza2\_nz50 and Mza3\_nz50 meshes show differences, where Mza3\_nz50 mesh shows LEV formation closer to the airfoil surface and also closer to the geometric leading edge as compared to Mza2\_nz50 mesh.
-After the initial phase, LEV paths for the finer meshes converge, with Mza2\_nz50 and Mza3\_nz50 meshes showing a similar LEV path.
+Figure \ref{fig:zonal_LEV_location} shows the location of the center of the LEV for different phases after it is ejected from the airfoil surface. 
+It is observed that LEV formation for M0 mesh occurs closer to the geometric leading edge, as well as closer to the airfoil surface as compared to the other meshes.
+For the initial phase of LEV location, Mza2\_nz50 and Mza3\_nz50 meshes show some differences, where Mza3\_nz50 mesh shows LEV formation closer to the airfoil surface and also closer to the geometric leading edge as compared to Mza2\_nz50 mesh.
+After the initial phase, LEV paths for the finer meshes converge well, with Mza2\_nz50 and Mza3\_nz50 meshes showing a similar LEV path.
 
 
 \begin{figure}[H]
@@ -28,13 +28,13 @@ After the initial phase, LEV paths for the finer meshes converge, with Mza2\_nz5
 	\label{fig:zonal_LEV_location}
 \end{figure}
 
-Figure \ref{fig:zonal_utheta_LEV} shows the tangential velocity profiles for the LEV core for different meshes at phases  $\psi = 240^\circ$,  $\psi = 270^\circ$, and  $\psi = 300^\circ$. 
-Note that tangential velocity is computed along multiple radial lines passing through the LEV center, and the mean tangential velocity over these radial lines is shown in Figure \ref{fig:zonal_utheta_LEV}, along with a 95\% confidence interval around the mean.
+Figure \ref{fig:zonal_utheta_LEV} shows the tangential/azimuthal velocity ($u_{\theta}$) profiles for the LEV from different meshes at 4 phases of $\psi = 240^\circ$,  $\psi = 270^\circ$ and  $\psi = 300^\circ$. 
+Note that the tangential velocity is computed along multiple radial lines passing through the LEV center, and the mean tangential velocity over these radial lines is shown in Figure \ref{fig:zonal_utheta_LEV}, along with a 95\% confidence interval due to multiple radial lines.
 The radial distance from the center of the LEV, $r$, is normalized by the LEV core radius $r_c$ of the finest mesh (Mza3\_nz50 mesh in this case) at that particular phase. 
 
 For $\psi = 240^\circ$, max $u_\theta$ is achieved around $r/r_c = 0.6$ for M0\_nz25 mesh and around $r/r_c = 0.8$ for Mza1 mesh, 
-For Mza2\_nz50 and Mza3\_nz50 meshes, the max $u_\theta$ is achieved at $r/r_c = 1$. Note that since $r$ is normalized with $r_c$ for Mza3\_nz50 mesh, max $r/r_c$ will always be 1 for Mza3\_nz50 mesh. 
-Mean tangential velocity profile for both Mza2\_nz50 and Mza3\_nz50 meshes, along with the 95\% confidence interval agree with each other. 
+For Mza2\_nz50 and Mza3\_nz50 meshes, the max $u_\theta$ is achieved at $r/r_c = 1$. Note that since $r$ is normalized with $r_c$ from Mza3\_nz50 mesh, max $r/r_c$ will always be 1 for Mza3\_nz50 mesh. 
+Mean tangential velocity profile for both Mza2\_nz50 and Mza3\_nz50 meshes agree well along with the 95\% confidence interval. 
 Also note the large thickness of the confidence interval band around the mean, which can be attributed to the LEV core being azimuthally asymmetric, since the LEV in this phase is close to the airfoil surface, as can be seen in Figure \ref{fig:vorticity_zonal_240}.
 
 For $\psi = 270^\circ$, maximum $u_\theta$ is achieved around $r/r_c= 1$ for all meshes. 
@@ -43,9 +43,9 @@ Mean tangential velocity profile for Mza2\_nz50 and Mza3\_nz50 meshes agree well
 The confidence interval for Mza3\_nz50 mesh lies within the confidence interval for Mza2\_nz50 mesh.
 
 At $\psi = 300^\circ$, for Mza2\_nz50 and Mza3\_nz50, both the mean and confidence interval for the tangential velocity matches very well, apart for slight differences at higher $r/r_c$ values. 
-Peak $u_\theta$ for both these meshes is around $r/r_c= 1$.
+Max $u_\theta$ for both these meshes is around $r/r_c= 1$.
 Also note that the thickness/width of the confidence interval has reduced significantly as compared to the previous phases, showing that the LEV core is more azimuthally symmetric at this phase than the previous phases, as it is further away from the airfoil surface.
-Mza1 predicts a lower tangential velocity than the finer meshes, with peak $u_\theta$ around $r/r_c= 1.1$. M0\_nz25 mesh predicts the lowest tangential velocity, and the peak $u_\theta$ is not reached within $r/r_c= 1.1$.
+Mza1\_nz25 predicts a lower tangential velocity than the finer meshes, with max $u_\theta$ around $r/r_c= 1.1$. M0\_nz25 mesh predicts the lowest tangential velocity, and the max $u_\theta$ is not reached within $r/r_c= 1.1$.
 
 \begin{figure}[H]
 	\centering
@@ -75,20 +75,20 @@ Mza1 predicts a lower tangential velocity than the finer meshes, with peak $u_\t
 
 %TODO: Instead, we look into LEV tangential profiles and TI
 
-Figure \ref{fig:zonal_TI_plots_LEV} shows mean turbulence intensity for LEV for phases $\psi = 240^\circ$, $\psi = 270^\circ$, and $\psi = 300^\circ$. 
-Note that mean is taken along multiple radial lines passing through center of LEV core, in a similar fashion to tangential velocity profiles.
+Figure \ref{fig:zonal_TI_plots_LEV} shows the turbulence intensity profiles for LEV at 4 phases of $\psi = 240^\circ$, $\psi = 270^\circ$ and $\psi = 300^\circ$. 
+Note that it is taken along multiple radial lines passing through the LEV center, in a similar fashion to tangential velocity profiles.
 
-At phase $\psi = 240^\circ$, turbulence intensity for M0\_nz25 mesh increases with radial distance from center of LEV core till about $r/r_c = 0.6$ and then starts to drop after this location.
+At $\psi = 240^\circ$, turbulence intensity for M0\_nz25 mesh increases with radial distance from center of LEV till about $r/r_c = 0.6$ and then starts to drop after this location.
 Mza1 mesh follows a similar profile, with a less gradual drop in turbulence intensity for higher $r/r_c $ values.
 Mza2\_nz50 and Mza3\_nz50 meshes agree reasonably well with each other, with both showing a higher turbulence intensity for higher $r/r_c$ values.
 
 
-At phase $\psi = 270^\circ$, turbulence intensity increases for all meshes with increase in radial distance from center of LEV core.
-Turbulence intensity is lowest overall for M0\_nz25 mesh, followed by Mza1 mesh. Turbulence intensity for Mza2\_nz50 and Mza3\_nz50 meshes is the highest, and compare well with each other.
+At phase $\psi = 270^\circ$, turbulence intensity increases for all meshes with increase in radial distance from the center of LEV.
+Turbulence intensity is lowest overall for M0\_nz25 mesh, followed by Mza1\_nz25 mesh. Turbulence intensity for Mza2\_nz50 and Mza3\_nz50 meshes is the highest, and compare well with each other.
 
 At phase $\psi = 300^\circ$, amongst all the meshes, M0\_nz25 mesh shows the highest turbulence intensity closer to the LEV center, till about $r/r_c = 0.25$, and lowest after this location.
-Note that M0\_nz25 mesh fails to predict the trend in turbulence intensity that other meshes show.
-Mza1 mesh predicts a higher turbulence intensity as compared to the finer meshes, Mza2\_nz50 and Mza3\_nz50, till about $r/r_c = 0.25$, and lower after this location.
+Note that M0\_nz25 mesh fails to predict the trend in turbulence intensity as compared to other meshes.
+Mza1\_nz25 mesh predicts a higher turbulence intensity as compared to the finer meshes, Mza2\_nz50 and Mza3\_nz50, till about $r/r_c = 0.25$, and lower after this location.
 Turbulence intensity for Mza2\_nz50 and Mza3\_nz50 meshes agree well with each other. 
 
 
@@ -116,5 +116,5 @@ Turbulence intensity for Mza2\_nz50 and Mza3\_nz50 meshes agree well with each o
 	\label{fig:zonal_TI_plots_LEV}
 \end{figure}
 
-In summary, a thorough quantitative comparison of relevant aerodynamic quantities, such as spanwise vorticity comparison, $C_p$, and LEV evolution and quantification is performed for a series of adapted meshes. Mza2\_nz50 mesh compares well with Mza2\_nz100, Mza3\_nz50, and Mza3\_nz100 for all of the quantities considered above.
-Hence, it can be concluded that resolution of Mza2\_nz50 mesh is adequate to accurately LES for this case.
+\subsubsection{Summary}
+In summary, a thorough quantitative comparison of relevant quantities, such as spanwise vorticity, $C_p$ and LEV evolution and quantification, is performed for a series of adapted meshes. Mza2\_nz50 mesh compares well with Mza2\_nz100, Mza3\_nz50, and Mza3\_nz100 for all of the quantities considered above. This demonstrates mesh convergence and shows that the Mza2\_nz50 mesh is adequate for accurate LES for this case.
