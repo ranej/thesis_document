@@ -1446,7 +1446,7 @@ Year = {2019},
 }
 
 @article{bib:kirk_jones_2019, 
-title={Vortex formation on surging aerofoils with application to reverse flow modelling}, 
+title={Vortex formation on surgins with application to reverse flow modelling}, 
 volume={859}, 
 DOI={10.1017/jfm.2018.800}, 
 journal={Journal of Fluid Mechanics}, 
@@ -2121,29 +2121,6 @@ number={1},
 pages={25-36},
 }
 
-﻿@Article{@bib:Sahni2008,
-author={Sahni, Onkar and Jansen, Kenneth E. and Shephard, Mark S. and Taylor, Charles A. and Beall, Mark W.},
-title={Adaptive boundary layer meshing for viscous flow simulations},
-journal={Engineering with Computers},
-year={2008},
-month={Sep},
-day={01},
-volume={24},
-number={3},
-pages={267-285},
-}
-
-@article{@bib:Sahni2006,
-author = {O. Sahni and J. Müller and K.E. Jansen and M.S. Shephard and C.A. Taylor},
-title = {Efficient anisotropic adaptive discretization of the cardiovascular system},
-journal = {Computer Methods in Applied Mechanics and Engineering},
-volume = {195},
-number = {41},
-pages = {5634-5655},
-year = {2006},
-note = {John H. Argyris Memorial Issue. Part II},
-}
-
 @article{bib:Muller2005,
 author = { J.   Müller  and  O.   Sahni  and  X.   Li  and  K. E.   Jansen  and  M. S.   Shephard  and  C. A.   Taylor },
 title = {Anisotropic adaptive finite element method for modelling blood flow},
@@ -2155,3 +2132,38 @@ year  = {2005},
 publisher = {Taylor & Francis},
 }
 
+@article{SAHNI20065634,
+title = {Efficient anisotropic adaptive discretization of the cardiovascular system},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {195},
+number = {41},
+pages = {5634-5655},
+year = {2006},
+note = {John H. Argyris Memorial Issue. Part II},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2005.10.018},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782505004998},
+author = {O. Sahni and J. Müller and K.E. Jansen and M.S. Shephard and C.A. Taylor},
+keywords = {Anisotropic mesh adaptivity, Mesh metric field, Boundary layer mesh, Computational blood flow, Wall shear stress},
+abstract = {We present an anisotropic adaptive discretization method and demonstrate how computational efficiency can be increased when applying it to the simulation of cardiovascular flow. We further propose a new adaptive approach which controls the mesh adaptation procedure to maintain structured and graded elements near the wall resulting in a more accurate wall shear stress computation. To perform mesh adaptation for hemodynamic flows, a single mesh metric field is constructed for the whole cardiac cycle. Two alternative approaches are applied, one in which a metric field is constructed based on the average flow whereas in the other approach the metric field is obtained by intersecting metric fields computed at specified instants in the cycle. We apply the method to the case of a 3D branching vessel model. The efficiency of our approach is measured by analyzing the wall shear stress, a challenging but important quantity in the understanding of cardiovascular disease. The general anisotropic adaptivity based on metric intersection achieves over an order of magnitude reduction in terms of degrees of freedom when compared to uniform refinement for a given level of accuracy.}
+}
+
+﻿@Article{Sahni2008,
+author={Sahni, Onkar
+and Jansen, Kenneth E.
+and Shephard, Mark S.
+and Taylor, Charles A.
+and Beall, Mark W.},
+title={Adaptive boundary layer meshing for viscous flow simulations},
+journal={Engineering with Computers},
+year={2008},
+month={Sep},
+day={01},
+volume={24},
+number={3},
+pages={267-285},
+abstract={A procedure for anisotropic mesh adaptation accounting for mixed element types and boundary layer meshes is presented. The method allows to automatically construct meshes on domains of interest to accurately and efficiently compute key flow quantities, especially near wall quantities like wall shear stress. The new adaptive approach uses local mesh modification procedures in a manner that maintains layered and graded elements near the walls, which are popularly known as boundary layer or semi-structured meshes, with highly anisotropic elements of mixed topologies. The technique developed is well suited for viscous flow applications where exact knowledge of the mesh resolution over the computational domain required to accurately resolve flow features of interest is unknown a priori. We apply the method to two types of problem cases; the first type, which lies in the field of hemodynamics, involves pulsatile flow in blood vessels including a porcine aorta case with a stenosis bypassed by a graft whereas the other involves high-speed flow through a double throat nozzle encountered in the field of aerodynamics.},
+issn={1435-5663},
+doi={10.1007/s00366-008-0095-0},
+url={https://doi.org/10.1007/s00366-008-0095-0}
+}
