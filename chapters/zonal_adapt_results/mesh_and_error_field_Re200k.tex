@@ -1,8 +1,12 @@
-An intitial mesh that satisfies LES surface resolution criteria in wall plus units at maximum Reynolds number is considered.
-This mesh is referred to as M0\_nz50, where nz50 refers to the number of extruded layers in the spanwise/z direction.
-As mentioned previously, mesh is refined in zones of high estimated error. 
-Reduction in error can be seen as the mesh is refined in high error zones
-The mesh details of all the meshes considered here as shown in Table \ref{table:adapt_mesh_details_Re200k}.
+% M0\_nz50: 180 (strm) and 65 (span)
+% Mza1\_nz50: 110 (strm) and 65 (span)
+% Mza2\_nz50: 60 (strm) and 70 (span)
+
+Figure \ref{fig:adapted_meshes_200k} shows 
+shows the series of adapted meshes obtained using the zonal-based refinement for $Re=200,000$. The corresponding VMS-based estimated error is also shown. As mentioned previously, mesh is refined in zones of high estimated error. 
+Reduction in error can be seen as the mesh is refined.
+Note that in-plane meshes are shown in this figure.
+Table \ref{table:adapt_mesh_details_Re200k} provides the number of elements for each of the 3 meshes.
 
 \begin{table}[H]
 	\centering
@@ -65,4 +69,5 @@ The mesh details of all the meshes considered here as shown in Table \ref{table:
 	\end{subfigure}
 	
 	\caption{Mesh and estimated error}
+    \label{fig:adapted_meshes_200k}
 \end{figure}
