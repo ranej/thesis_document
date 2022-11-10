@@ -1,11 +1,8 @@
-Figure \ref{fig:zonal_LEV_radius_Re200k} shows the radius of the LEV for different meshes at multiple phases.
-Recall that LEV radius is considered to be
-the radial distance from center of LEV core where maximum tangential velocity is achieved. This tangential velocity is computed along multiple radial lines, and the peak of the averaged tangential velocity for these radial lines is the LEV radius.
+Figure \ref{fig:zonal_LEV_radius_Re200k} shows the LEV core radius ($r_c$) for different meshes at multiple phases.
 
 M0\_nz50 mesh shows the largest radius among all the meshes, and fails to capture the trend that the other finer meshes show.
 Mza1\_nz50 mesh follows a similar trend as Mza2\_nz50 mesh.
 Mza2\_nz50 shows the lowest radius among all the meshes, which is expected as mesh resolution is highest in this mesh, and as a result, a less diffused LEV is resolved.
-
 
 \begin{figure}[H]
 	\centering
@@ -27,7 +24,7 @@ M0\_nz50 mesh shows differences for LEV path from Mza1\_nz50 and Mza2\_nz50 mesh
 
 Figure \ref{fig:zonal_utheta_LEV_Re200k} shows the tangential velocity profiles for the LEV core for different meshes at phases  $\psi = 255^\circ$,  $\psi = 270^\circ$, and  $\psi = 300^\circ$. 
 Note that tangential velocity is computed along multiple radial lines passing through the LEV center, and the mean tangential velocity over these radial lines is shown in Figure \ref{fig:zonal_utheta_LEV}, along with a 95\% confidence interval around the mean.
-The radial distance from the center of the LEV, $r$, is normalized by the peak radius of the LEV core $r_p$ of the finest mesh (Mza2\_nz50 mesh in this case) at that particular phase.
+The radial distance from the center of the LEV, $r$, is normalized by the radius of the LEV core $r_c$ of the finest mesh (Mza2\_nz50 mesh in this case) at that particular phase.
 
 Tangential velocity at the phases shown differs for all the meshes, with M0\_nz50 predicting the lowest tangential velocity, and Mza2\_nz50 predicting the highest.
 Note that the confidence interval bounds for these are significantly smaller than for lower Reynolds number case of $Re=40,000$ at all phases shown here, indicating that the LEV is more azimuthally symmetric than the $Re=40,000$ case.
