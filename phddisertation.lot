@@ -3,5 +3,5 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Summary of meshes for adaptive LES at $Re=40,000$\relax }}{59}{table.caption.41}% 
 \contentsline {table}{\numberline {5.3}{\ignorespaces Summary of meshes for adaptive LES at $Re=200,000$\relax }}{78}{table.caption.55}% 
 \contentsline {table}{\numberline {6.1}{\ignorespaces Summary of surging cases for LES at very high advance ratios\relax }}{93}{table.caption.68}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Surging cases with active camber at $\mu _{sect} = 1.5$: drag ratios\relax }}{96}{table.caption.71}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Surging cases with active camber at $\mu _{sect} = 2.0$: drag ratios\relax }}{98}{table.caption.73}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Surging cases with active camber at $\mu _{sect} = 1.5$: drag ratios (NACA 0012 airfoil)\relax }}{96}{table.caption.71}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Surging cases with active camber at $\mu _{sect} = 2.0$: drag ratios (NACA 0012 airfoil)\relax }}{98}{table.caption.73}% 
