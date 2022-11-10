@@ -1,8 +1,33 @@
 \chapter{LES of Flow Over Surging Airfoils including Active Reflex}
 
+In this chapter, we focus on surging airfoils at high Reynolds number and very high advance ratios ($\mu_{sect}$). For $\mu_{sect}>1$, the airfoil experiences flow reversal for a portion of the surging cycle, i.e., relative flow over the airfoil is from geometric trailing edge to leading edge for a portion of the surging cycle.
+This flow reversal causes massive flow separation, especially for very high advance ratios and high angles of attack. 
+For example, consider a rotorcraft in forward flight, as shown in Figure \ref{fig:forward_flight_schematic}.
+For a tip advance ratio of $\mu_{sect} = 0.75$, the shaded area shows the reverse flow region that the blades pass through.
+For this tip advance ratio, 75\% of the inboard section of the blade is in reverse flow region at $\psi=270^\circ$.
+This results in a large drag force over the rotor, and limits the high speed forward flight capabilities of a rotorcraft.
+It has been shown previously that high advance ratio rotors show remarkably similar flow features including trailing edge separation, to that of a surging airfoil at high advance ratios \cite{bib:kirk_jones_2019}.
+
+\begin{figure}[H]
+	\centering
+	\texttt{}		\includegraphics[width=4in]{figures/Setup/forward_flight_schematic.png}
+	\caption{Top view of the rotor plane of a rotorcraft in a forward flight with reverse flow region}
+	\label{fig:forward_flight_schematic}
+\end{figure}
+
+In this work, we perform LES of surging airfoils at high advance ratios.
+To reduce the massive flow separation that results due to flow reversal, we employ active flow control in the form of active reflex camber, where the airfoil shape is dynamically morphed to make it more streamlined to the incoming reverse flow.
+
+A NACA 0012 airfoil at a high Reynolds number of $Re=1,000,000$ for angle of attack of $\alpha=6^\circ$ and advance ratios of $\mu_{sect}=1.5$ and $2.0$ are considered here.
+An SC1095 airfoil, which is used in the inboard region of the rotor blades for a UH-60A helicopter, is also considered here for $Re=1,000,000$ at angle of attack of $\alpha=6^\circ$ and advance ratios of $2.0$.
+Active reflex camber is applied to these cases, and results are compared against the non-actuated case.
+Significant reduction in flow separation in the reverse flow region is observed, along with significant reduction in drag and its fluctuations.
+ 
+
 \section{Problem Setup}
 
-In this section, we focus on high Reynolds number flow with $Re=1,000,000$ and at a higher angle of attack of $\alpha=10^\circ$. Two very high (sectional) advance ratios of $\mu_{sect}= 1.5$ and $2.0$ are considered. 
+
+In this section, we focus only on high Reynolds number flow ($Re=1,000,000$) at higher angle of attack of $\alpha=10^\circ$ and sectional advance ratios of $\mu_{sect}= 1.5$ and $2.0$. 
 These advance ratios include a significant portion of the retreating phase with negative relative velocity or a reversed flow condition. 
 In this reverse flow condition, massive flow separation near the geometric trailing edge is observed, and as a result, a force is experienced by the airfoil along the surging direction. 
 We try to mitigate this by applying active flow control in the form of active reflex camber. 
